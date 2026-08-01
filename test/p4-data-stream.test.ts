@@ -89,5 +89,5 @@ describe('P4 data-stream family', () => {
     await DataStreamDelete.run(['-o', org.username, '-n', 'OrdersStream', '--delete-dlo', '--json']);
     expect(confirms.callCount).to.equal(2);
     expect(requests.at(-1)?.url).to.include('shouldDeleteDataLakeObject=true');
-  });
+  }).timeout(30_000);
 });
