@@ -391,6 +391,8 @@ describe('P1 contracts', () => {
     const yarnLock = await readFile(resolve(root, 'yarn.lock'), 'utf8');
     const oclifLock = await readFile(resolve(root, 'oclif.lock'), 'utf8');
     expect(oclifLock).to.equal(yarnLock);
+    const attributes = await readFile(resolve(root, '.gitattributes'), 'utf8');
+    expect(attributes).to.include('yarn.lock text eol=lf').and.include('oclif.lock text eol=lf');
   });
 
   it('binds every live date to successful scrubbed command evidence', async () => {

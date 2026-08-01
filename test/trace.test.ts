@@ -1,4 +1,4 @@
-import { mkdtemp, readFile } from 'node:fs/promises';
+import { mkdtemp, readFile, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { expect } from 'chai';
@@ -245,7 +245,8 @@ describe('Agent Testbed trace hook', () => {
     expect(process.env.SF_DATA360_TRACE_COMMAND_SEQ).to.equal(undefined);
   });
 
-  it('redacts split and attached query/body values through real oclif parsing and command tracing', async () => {
+  it('redacts split and attached query/body values through real oclif parsing and command tracing', async function () {
+    this.timeout(process.platform === 'win32' ? 60_000 : 10_000);
     const directory = await mkdtemp(join(tmpdir(), 'd360-trace-argv-'));
     const path = join(directory, 'events.jsonl');
     process.env.SF_DATA360_TRACE = path;
@@ -415,7 +416,10 @@ describe('Agent Testbed trace hook', () => {
   });
 
   it('drops trace filesystem failures instead of changing command behavior', async () => {
-    process.env.SF_DATA360_TRACE = '/dev/null/events.jsonl';
+    const directory = await mkdtemp(join(tmpdir(), 'd360-trace-failure-'));
+    const blocker = join(directory, 'not-a-directory');
+    await writeFile(blocker, 'block child creation');
+    process.env.SF_DATA360_TRACE = join(blocker, 'events.jsonl');
     process.env.SF_DATA360_TRACE_ID = 'trace-failure-0001';
     expect(await appendTraceEvent({ type: 'note', text: 'ignored' })).to.equal(undefined);
   });

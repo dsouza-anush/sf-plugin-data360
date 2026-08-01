@@ -69,7 +69,8 @@ describe('enterprise proxy transport', () => {
     expect(shouldBypassProxy(new URL('https://anything.invalid'), '*')).to.equal(true);
   });
 
-  it('routes token, Direct, and raw requests through a local proxy and honors NO_PROXY', async () => {
+  it('routes token, Direct, and raw requests through a local proxy and honors NO_PROXY', async function () {
+    this.timeout(process.platform === 'win32' ? 60_000 : 10_000);
     const targetProxyAuthorization: Array<string | undefined> = [];
     let targetOrigin = '';
     const target = createServer((request, response) => {

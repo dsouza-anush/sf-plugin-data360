@@ -245,6 +245,8 @@ const git = (root, gitBinary, operation, args, options = {}) => {
 
 const parseNulPaths = (buffer) => buffer.toString('utf8').split('\0').filter(Boolean);
 
+const portablePath = (path) => path.replaceAll('\\', '/');
+
 const scanContents = (contents, source, path, findings) => {
   const lines = syntheticFixturePaths.has(path) ? contents.split(/\r?\n/u) : [];
   for (const finding of findSensitiveValues(contents)) {
@@ -276,7 +278,7 @@ const scanWorkingTree = async (root, gitBinary, findings) => {
     } catch {
       throw new Error(`Release secret scan could not read a tracked working-tree file.`);
     }
-    scanContents(contents, 'working tree', relative(root, absolutePath), findings);
+    scanContents(contents, 'working tree', portablePath(relative(root, absolutePath)), findings);
     scanned += 1;
   }
   return scanned;

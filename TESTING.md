@@ -103,7 +103,7 @@ Live tests require `D360_LIVE_ORG` (the org alias or username) and the correspon
 
 Unit tests exercise byte-bounded JSON/NDJSON chunking, header-preserving CSV splitting (including quoted newlines), raw CSV transport, seven-day job caching, lifecycle wire shapes, and timeout exit 69 metadata. Synthetic fixtures cover documented streaming and bulk states.
 
-`yarn test:ingest:large` generates a temporary CSV above 150,000,000 bytes, verifies strict decimal-cap splitting, and removes all generated files. Normal tests inject small limits. Bulk upload uses bounded-memory, mode-0600 temporary parts and streaming backpressure. Data 360 documents at most 100 uploaded data files per job; the command enforces that API limit rather than imposing an invented record or credit cap.
+`yarn test:ingest:large` generates a temporary CSV above 150,000,000 bytes, verifies strict decimal-cap splitting, and removes all generated files. Normal tests inject small limits. Bulk upload uses bounded-memory temporary parts, POSIX mode `0600` where supported, and streaming backpressure. Data 360 documents at most 100 uploaded data files per job; the command enforces that API limit rather than imposing an invented record or credit cap.
 
 The P3 mock NUT uses a stateful Fastify server and real `fetch` transport after token exchange. It covers all seven commands, timeout 69 followed by successful resume, abort races, validation reports, failed jobs, and partial completion. The verification matrix marks mock coverage only after this lifecycle passes.
 

@@ -22,7 +22,7 @@ describe('production token cache', () => {
 
     const cachePath = join(directory, 'data360-token-cache.json');
     expect(await readFile(cachePath, 'utf8')).to.not.include('production-jwt-secret');
-    expect((await stat(cachePath)).mode & 0o777).to.equal(0o600);
+    if (process.platform !== 'win32') expect((await stat(cachePath)).mode & 0o777).to.equal(0o600);
 
     const reopened = await TokenCache.create({
       rootFolder: directory,

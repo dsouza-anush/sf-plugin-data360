@@ -48,7 +48,7 @@ flowchart LR
 ## Security boundaries
 
 - The plugin consumes existing Salesforce CLI org authentication. It does not persist the Salesforce Core org access token in its own cache.
-- Direct API tenant tokens are short-lived, encrypted with Salesforce Core's keychain-backed crypto, stored with restrictive permissions, and can be bypassed with `--no-token-cache`.
+- Direct API tenant tokens are short-lived, encrypted with Salesforce Core's keychain-backed crypto, stored with restrictive POSIX modes or the current user's inherited Windows ACLs, and can be bypassed with `--no-token-cache`.
 - External tenant URLs, authorization-header overrides, redirects, path traversal, and unsafe proxy behavior fail closed.
 - Destructive or billable operations require explicit flags and, where applicable, interactive confirmation.
 - Public source, Git history, fixtures, and the npm tarball are checked independently for credentials, tenant identifiers, private working material, and unexpected files.

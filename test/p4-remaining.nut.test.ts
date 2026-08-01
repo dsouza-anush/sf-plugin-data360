@@ -45,7 +45,8 @@ describe('P4 remaining command-level Fastify matrix', () => {
       }
     }
   };
-  it('executes every remaining parser with its explicit wire contract', async () => {
+  it('executes every remaining parser with its explicit wire contract', async function () {
+    this.timeout(process.platform === 'win32' ? 120_000 : 10_000);
     const requests: Array<{ method: string; url: string; body?: unknown }> = [];
     const server = Fastify({ logger: false });
     server.route({
