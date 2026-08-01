@@ -58,7 +58,7 @@
       "tags": ["query", "J5"],
       "commands": [
         {
-          "argv": ["data360", "query", "cancel", "--query-id", "fixture-query-id", "--json"],
+          "argv": ["data360", "query", "cancel", "--query-id", "fixture-query-id", "--no-prompt", "--json"],
           "expect": { "exitCode": 0, "jsonPath": { "$.result.cancelled": { "equals": true } } }
         }
       ]
