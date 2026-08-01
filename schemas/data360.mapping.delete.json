@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.mapping.delete",
+  "title": "data360.mapping.delete JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "required": ["deleted", "name"],
+      "properties": {
+        "deleted": { "const": true },
+        "name": { "type": "string" },
+        "fields": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

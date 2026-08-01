@@ -1,0 +1,15 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "basedOn": "Data 360 Query SQL documentation"
+  },
+  "chunkCount": 0,
+  "completionStatus": "Running",
+  "expirationTime": "2026-07-11T00:00:00Z",
+  "progress": 0.5,
+  "queryId": "opaque/id%value",
+  "rowCount": 0,
+  "rowsProcessed": 2,
+  "stalenessReasons": [],
+  "wallClockTime": 0.02
+}

@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 dlo create",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "Unrecognized field \"dataSpaceName\" at [line:1, column:113]",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "RegistryLeaf",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "JSON_PARSER_ERROR",
+    "message": "Unrecognized field \"dataSpaceName\" at [line:1, column:113]",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/data-lake-objects"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "RegistryLeaf"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.ingest.validate",
+  "title": "data360.ingest.validate JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["valid", "records"],
+      "properties": { "valid": { "const": true }, "records": { "type": "integer", "minimum": 0 } }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

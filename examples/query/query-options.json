@@ -1,0 +1,14 @@
+{
+  "sqlParameters": [
+    {
+      "name": "status",
+      "type": "Varchar",
+      "value": "Boarded"
+    }
+  ],
+  "querySettings": {
+    "date_style": "MDY",
+    "lc_time": "en_US",
+    "query_timeout": "1800000ms"
+  }
+}

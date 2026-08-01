@@ -1,0 +1,26 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-17",
+    "command": "data360 ingest validate",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_TOKEN_EXCHANGE_FAILED",
+  "message": "Data 360 token exchange failed with HTTP 500.",
+  "exitCode": 1,
+  "actions": [
+    "Check the External Client App and its cdp_* scopes.",
+    "Run sf data360 doctor for setup guidance."
+  ],
+  "context": "IngestValidate",
+  "data": {
+    "httpStatus": 500
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_TOKEN_EXCHANGE_FAILED",
+  "status": 1,
+  "commandName": "IngestValidate"
+}

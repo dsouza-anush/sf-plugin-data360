@@ -1,0 +1,616 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 connector list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "features": [],
+        "label": "Act! CRM",
+        "name": "act",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "ActiveCampaign",
+        "name": "ActiveCampaign",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Act-On",
+        "name": "ActOn",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Acumatica",
+        "name": "Acumatica",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Adform MI",
+        "name": "AdFormMI",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Adobe Analytics",
+        "name": "AdobeAnalytics",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Adobe Analytics for MI",
+        "name": "AdobeAnalyticsMI",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Adobe Commerce",
+        "name": "AdobeCommerce",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Adobe Marketo Engage",
+        "name": "AdobeMarketoEngage",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "ADP",
+        "name": "ADP",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "AIPlatform Connector",
+        "name": "AIPlatform",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Airtable",
+        "name": "Airtable",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Ajna Kafka",
+        "name": "AjnaKafka",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Amazon Ads for MI",
+        "name": "AmazonAdsMI",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Amazon DSP for MI",
+        "name": "AmazonDspEMI",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Amazon MSK",
+        "name": "AmazonKafka",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Amazon Marketing Cloud",
+        "name": "AmazonMarketingCloud",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Amazon Marketplace",
+        "name": "AmazonMarketplace",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Apache CouchDB",
+        "name": "ApacheCouchDB",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Apache HBase",
+        "name": "ApacheHBase",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Apache Hive",
+        "name": "ApacheHive",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Apache Impala",
+        "name": "ApacheImpala",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Apache Phoenix",
+        "name": "ApachePhoenix",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Asana",
+        "name": "Asana",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "AWS Athena",
+        "name": "AwsAthena",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "AWS DynamoDB",
+        "name": "AwsDynamoDB",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Amazon Kinesis",
+        "name": "AwsKinesisDS",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "AWS Aurora MySQL",
+        "name": "AwsRdsAuroraMySql",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "AWS Aurora PostgreSQL",
+        "name": "AwsRdsAuroraPostgres",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "AWS RDS MariaDB",
+        "name": "AwsRdsMariaDB",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "AWS RDS MySQL",
+        "name": "AwsRdsMySql",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "AWS RDS Oracle",
+        "name": "AwsRdsOracle",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "AWS RDS PostgreSQL",
+        "name": "AwsRdsPostgres",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "AWS RDS SQL Server",
+        "name": "AwsRdsSqlServer",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Amazon S3",
+        "name": "AwsS3",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Azure Analysis Services",
+        "name": "AzureAnalysisServices",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Microsoft Azure Blob Storage",
+        "name": "AzureBlob",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Azure Cosmos DB",
+        "name": "AzureCosmosDB",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Azure MariaDB",
+        "name": "AzureMariaDB",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Azure MySQL",
+        "name": "AzureMySql",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Azure PostgreSQL",
+        "name": "AzurePostgres",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Azure SQL Server",
+        "name": "AzureSql",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Azure Synapse",
+        "name": "AzureSynapse",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Salesforce B2C Commerce Intelligence",
+        "name": "B2CE",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "BigCommerce",
+        "name": "BigCommerce",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Google Big Query",
+        "name": "BIGQUERY",
+        "releaseLevel": "ACCESS_CHECK"
+      },
+      {
+        "features": [],
+        "label": "Microsoft Advertising for MI",
+        "name": "BingAdsEMI",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Apache Cassandra",
+        "name": "Cassandra",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "S3 ARN Extended Connector for Catalog MDLO Creation",
+        "name": "CatalogMdloConnection",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Google Analytics",
+        "name": "CDataJdbcGoogleAnalytics",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Cleanroom S3 Connector",
+        "name": "CleanroomAwsS3",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "IBM Cloudant",
+        "name": "Cloudant",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "CockroachDB",
+        "name": "CockroachDB",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Confluence",
+        "name": "Confluence",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Confluence Unstructured Data",
+        "name": "ConfluenceUnstructured",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Conversation Transcripts",
+        "name": "ConversationTranscripts",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Creative Assets Downloader For MI",
+        "name": "CreativeAssetsDownloader",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Criteo Marketing for MI",
+        "name": "CriteoMarketingMI",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Criteo Retail for MI",
+        "name": "CriteoRetailMI",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Databricks",
+        "name": "Databricks",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Databricks File Federation",
+        "name": "DATABRICKS_UNITY",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Data Clean Room Snowflake Connector",
+        "name": "DataCleanRoomSnowflake",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Salesforce Data Cloud",
+        "name": "DATACLOUD",
+        "releaseLevel": "ACCESS_CHECK"
+      },
+      {
+        "features": [],
+        "label": "Data Custom Code Connector",
+        "name": "DataCustomCode",
+        "releaseLevel": "ACCESS_CHECK"
+      },
+      {
+        "features": [],
+        "label": "IBM Db2",
+        "name": "DB2",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Demandbase",
+        "name": "Demandbase",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "eBay",
+        "name": "eBay",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "eBay Analytics",
+        "name": "eBayAnalytics",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "ECI Connector",
+        "name": "ECI",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Generic OAuth connector for EDC BYO MlModels",
+        "name": "EdcMlModelBYOConnector",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Elasticsearch",
+        "name": "Elasticsearch",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "EnterpriseDB",
+        "name": "EnterpriseDB",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Epicor Kinetic",
+        "name": "EpicorERP",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "ESO Connector",
+        "name": "ESO",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Salesforce Platform Events",
+        "name": "EventBusConnector",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Microsoft 365 Excel Online",
+        "name": "ExcelOnline",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Facebook",
+        "name": "Facebook",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Meta Ads",
+        "name": "FacebookAds",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Meta Conversion API",
+        "name": "FacebookConversion",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Facebook Page &amp; Insight for MI",
+        "name": "FacebookPageInsightMI",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Facebook Posts Insights for MI",
+        "name": "FacebookPostInsightMI",
+        "releaseLevel": "ACCESS_CHECK"
+      },
+      {
+        "features": [],
+        "label": "Google Cloud Storage",
+        "name": "GCS",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Google Drive Unstructured Data",
+        "name": "GDriveUnstructured",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "AWS Glue Data Catalog",
+        "name": "GLUE_IRC",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Google Ad Manager",
+        "name": "GoogleAdManager",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Google Ad Manager for MI",
+        "name": "GoogleAdManagerMI",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Google Ads",
+        "name": "GoogleAds",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Google Analytics for MI",
+        "name": "GoogleAnalyticsEMI",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Google Campaign Manager",
+        "name": "GoogleCampaignManager",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Google Contacts",
+        "name": "GoogleContacts",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Google DFA for MI",
+        "name": "GoogleDfaEMI",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Google Drive Structured Data",
+        "name": "GoogleDrive",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Google Display and Video 360",
+        "name": "GoogleDV360",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Google Display &amp; Video 360 For MI",
+        "name": "GoogleDVMI",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Google Search Ads 360 for MI",
+        "name": "GoogleSearchAds360MI",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Google Search Console For MI",
+        "name": "GoogleSearchConsoleMI",
+        "releaseLevel": "GA"
+      },
+      {
+        "features": [],
+        "label": "Google Sheets",
+        "name": "GoogleSheet",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Google Spanner",
+        "name": "GoogleSpanner",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "GraphQL",
+        "name": "GraphQL",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "Greenplum",
+        "name": "Greenplum",
+        "releaseLevel": "BETA"
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

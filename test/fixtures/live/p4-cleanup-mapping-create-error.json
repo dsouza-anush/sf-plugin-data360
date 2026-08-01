@@ -1,0 +1,26 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 mapping delete",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "Object Source Target Map not found for the given name : Fixture_Ingest_Source_map_lv_p4_20260712001815_217920_event_1783815791243 ",
+  "exitCode": 1,
+  "actions": ["Re-run with --verbose to inspect the raw API response."],
+  "context": "MappingDelete",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "NOT_FOUND",
+    "message": "Object Source Target Map not found for the given name : Fixture_Ingest_Source_map_lv_p4_20260712001815_217920_event_1783815791243 ",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/data-model-object-mappings/Fixture_Ingest_Source_map_lv_p4_20260712001815_217920_event_1783815791243"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "MappingDelete"
+}

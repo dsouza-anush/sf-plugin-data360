@@ -1,0 +1,14 @@
+{
+  "dataKitDevName": "CustomerFoundation",
+  "label": "Customer Foundation",
+  "dataKitType": "None",
+  "components": [
+    {
+      "type": "DataLakeObject",
+      "info": {
+        "name": "Customer__dll",
+        "label": "Customer"
+      }
+    }
+  ]
+}

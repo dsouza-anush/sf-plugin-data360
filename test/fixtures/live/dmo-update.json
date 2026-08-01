@@ -1,0 +1,191 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 dmo update",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "category": "ENGAGEMENT",
+      "creationType": "Custom",
+      "dataSpaceName": "default",
+      "description": "Disposable P4 live verification DMO matched to an approved read-only source DLO",
+      "fields": [
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "AI Agent Interaction Id",
+          "name": "AiAgentInteractionId__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "AI Agent Moment Id",
+          "name": "AiAgentMomentId__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "AI Agent Session Id",
+          "name": "AiAgentSessionId__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "isPrimaryKey": true,
+          "keyQualifierName": "KQ_Id",
+          "label": "AI Agent Tag Association Id",
+          "name": "Id__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "AI Agent Tag Definition Association Id",
+          "name": "AiAgentTagDefinitionAssociationId__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "AI Agent Tag Id",
+          "name": "AiAgentTagId__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Association Reason",
+          "name": "AssociationReasonText__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Attributes",
+          "name": "AttributeText__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Created By User Id",
+          "name": "CreatedByUserId__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Created Date",
+          "name": "CreatedDate__c",
+          "type": "DateTime",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "System",
+          "isDistinct": false,
+          "label": "Data Source",
+          "name": "DataSource__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "System",
+          "isDistinct": false,
+          "label": "Data Source Object",
+          "name": "DataSourceObject__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "System",
+          "isDistinct": false,
+          "label": "Internal Organization",
+          "name": "InternalOrganization__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Is Passed",
+          "name": "IsPassed__c",
+          "type": "Boolean",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "System",
+          "isDistinct": false,
+          "label": "Key Qualifier AI Agent Tag Association Id",
+          "name": "KQ_Id__c",
+          "type": "Text",
+          "usageTag": "KeyQualifier"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Org Id",
+          "name": "OrgId__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Outcome Type",
+          "name": "OutcomeType__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Session Start Timestamp",
+          "name": "SessionStartTimestamp__c",
+          "type": "DateTime",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Source Type",
+          "name": "SourceType__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Value",
+          "name": "ValueText__c",
+          "type": "Text",
+          "usageTag": "None"
+        }
+      ],
+      "hasExternalDataLakeObjectMappings": false,
+      "id": "LIVE_ID_0deaaf747202",
+      "isEditable": true,
+      "isEnabled": false,
+      "isSegmentable": false,
+      "label": "lv_p4_20260726092424_c00316 event DMO",
+      "name": "lv_p4_20260726092424_c00316_event__dlm"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

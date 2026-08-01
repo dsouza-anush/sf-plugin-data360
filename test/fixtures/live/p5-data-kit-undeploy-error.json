@@ -1,0 +1,29 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit undeploy",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "The Data 360 API request failed.",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --json to inspect the structured API error details."
+  ],
+  "context": "DataKitUndeploy",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "INVALID_API_INPUT",
+    "message": "The Data 360 API request failed.",
+    "detail": "",
+    "endpoint": ""
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "DataKitUndeploy"
+}

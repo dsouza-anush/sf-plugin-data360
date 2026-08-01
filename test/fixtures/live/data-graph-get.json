@@ -1,0 +1,107 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-graph get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "createdBy": "LIVE_ID_edbf0014d350",
+      "createdDate": "Wed Jul 29 06:07:06 GMT 2026",
+      "dataspaceName": "default",
+      "dayZeroMappingDevName": "Dg_lv_p5_20260729060636_077397_dg_1785305262406",
+      "dayZeroTransformDevName": "Dg_lv_p5_20260729060636_077397_dg_1785305262406",
+      "description": "Disposable P5 Account graph",
+      "extendedProperties": "",
+      "fullRefreshConfig": {
+        "schedule": {
+          "frequency": 1,
+          "timeGranularity": "day"
+        }
+      },
+      "id": "LIVE_ID_add29e1ad389",
+      "idDmoLabel": "lv_p5_20260729060636_07739 Graph Id",
+      "idDmoName": "lv_p5_20260729060636_07_1785305229713_ID__dlm",
+      "incrementalRefreshConfig": {
+        "enabled": false
+      },
+      "kind": "CdpDataGraphOutputRepresentation",
+      "label": "lv_p5_20260729060636_07739 Graph",
+      "modifiedDate": "Wed Jul 29 06:07:40 GMT 2026",
+      "name": "lv_p5_20260729060636_077397_dg",
+      "primaryObjectLabel": "lv_p5_20260729060636_077397 model",
+      "primaryObjectName": "lv_p5_20260729060636_077397_model__dlm",
+      "sourceObject": {
+        "categoryDevName": "Profile",
+        "dependency": [],
+        "devName": "lv_p5_20260729060636_077397_dg_lv_p5_20260729060636_077397_model",
+        "fields": [
+          {
+            "dataType": "Text",
+            "dependency": [],
+            "devName": "lv_p5_20260729060636_077397_dg_ztILFhWt",
+            "fieldRoles": [],
+            "id": "LIVE_ID_94ff2f184787",
+            "isDGRootKeyField": false,
+            "isKeyColumn": true,
+            "isProjected": true,
+            "name": "lv_p5_20260729060636_077397_dg_ztILFhWt",
+            "sourceFieldLabel": "Record ID",
+            "sourceFieldName": "record_id__c",
+            "usageTag": "none"
+          },
+          {
+            "dataType": "Text",
+            "dependency": [],
+            "devName": "lv_p5_20260729060636_077397_dg_KcVEzYTa",
+            "fieldRoles": [],
+            "id": "LIVE_ID_978e65fa2df5",
+            "isDGRootKeyField": false,
+            "isKeyColumn": false,
+            "isProjected": true,
+            "name": "lv_p5_20260729060636_077397_dg_KcVEzYTa",
+            "sourceFieldLabel": "Display Name",
+            "sourceFieldName": "display_name__c",
+            "usageTag": "none"
+          },
+          {
+            "dataType": "Text",
+            "dependency": [],
+            "devName": "lv_p5_20260729060636_077397_dg_lv_p5_20260729060636_077397_model_KQ_record_id",
+            "fieldRoles": [],
+            "id": "LIVE_ID_672107787778",
+            "isDGRootKeyField": false,
+            "isKeyColumn": false,
+            "isProjected": true,
+            "name": "lv_p5_20260729060636_077397_dg_lv_p5_20260729060636_077397_model_KQ_record_id",
+            "sourceFieldLabel": "Key Qualifier Record ID",
+            "sourceFieldName": "KQ_record_id__c",
+            "usageTag": "key_qualifier"
+          }
+        ],
+        "fragmentDMOLabel": "lv_p5_20260729060636_07739 Graph lv_p5_20260729060636_077397_model Fragment",
+        "fragmentDMOName": "Dg_ekrv_LIVE_ID_497476f71aba_FRAGMENT__dlm",
+        "id": "LIVE_ID_497476f71aba",
+        "jsonPath": "$",
+        "label": "lv_p5_20260729060636_077397 model",
+        "name": "lv_p5_20260729060636_077397_model__dlm",
+        "path": [],
+        "projectedName": "lv_p5_20260729060636_077397_model__dlm",
+        "recencyCriteria": [],
+        "relatedObjects": [],
+        "relatedSegments": [],
+        "type": "custom"
+      },
+      "status": "ready",
+      "type": "none",
+      "valuesDmoLabel": "lv_p5_20260729060636_07739 Graph Value",
+      "valuesDmoName": "lv_p5_20260729060636_1785305231533_VALUE__dlm",
+      "version": "0"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

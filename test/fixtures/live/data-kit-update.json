@@ -1,0 +1,26 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit update",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "components": [
+        {
+          "info": {
+            "name": "lv_p5_2026072906_7c2b62_kit_source__dll"
+          },
+          "type": "DataLakeObject"
+        }
+      ],
+      "devName": "lv_p5_20260729061343_7c2b62_kit",
+      "label": "lv_p5_20260729061343_7c2b62 Kit"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

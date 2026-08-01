@@ -1,0 +1,13 @@
+{
+  "0": {
+    "errorCode": "ITEM_NOT_FOUND",
+    "message": "No record exists or User might not have access to DMO with Developer name : lv_20260713231801_a92040_registry__dlm"
+  },
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-13",
+    "command": "data360 api request",
+    "outcome": "error",
+    "expectedFailure": true
+  }
+}

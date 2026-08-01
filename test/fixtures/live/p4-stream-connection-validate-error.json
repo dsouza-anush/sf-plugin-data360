@@ -1,0 +1,12 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-28",
+    "command": "data360 connection validate",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_LIVE_TIMEOUT",
+  "message": "Live command exceeded 30000 ms",
+  "exitCode": 1
+}

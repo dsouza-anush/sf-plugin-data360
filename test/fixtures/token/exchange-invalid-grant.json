@@ -1,0 +1,10 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "capturedAt": "2026-07-10",
+    "apiVersion": "67.0"
+  },
+  "synthetic": true,
+  "error": "invalid_grant",
+  "error_description": "The subject token is invalid or expired."
+}

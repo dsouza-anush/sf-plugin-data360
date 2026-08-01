@@ -1,0 +1,322 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 metadata get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "fields": [
+      {
+        "name": "ssot__EmployeeCount__c",
+        "displayName": "Employee Count",
+        "type": "NUMBER",
+        "businessType": "NUMBER"
+      },
+      {
+        "name": "KQ_ParentAccountId__c",
+        "displayName": "Key Qualifier Parent Account",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__AccountRatingType__c",
+        "displayName": "Account Rating Type",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__WebsiteAddr__c",
+        "displayName": "Website",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__AnnualRevenueAmount__c",
+        "displayName": "Annual Revenue Amount",
+        "type": "NUMBER",
+        "businessType": "NUMBER"
+      },
+      {
+        "name": "KQ_BillContactAddressId__c",
+        "displayName": "Key Qualifier Bill Contact Address",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__Id__c",
+        "displayName": "Account Id",
+        "type": "STRING",
+        "keyQualifier": "KQ_Id__c",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__LastModifiedDate__c",
+        "displayName": "Last Modified Date",
+        "type": "DATE_TIME",
+        "businessType": "DATE_TIME"
+      },
+      {
+        "name": "ssot__DataSourceId__c",
+        "displayName": "Data Source",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__BillContactAddressId__c",
+        "displayName": "Bill Contact Address",
+        "type": "STRING",
+        "keyQualifier": "KQ_BillContactAddressId__c",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__Name__c",
+        "displayName": "Account Name",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__AccountType__c",
+        "displayName": "Account Type",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__Number__c",
+        "displayName": "Account Number",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__AccountSource__c",
+        "displayName": "Account Source",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__PrimaryIndustry__c",
+        "displayName": "Primary Industry",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__ParentAccountId__c",
+        "displayName": "Parent Account",
+        "type": "STRING",
+        "keyQualifier": "KQ_ParentAccountId__c",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__AccountBusinessType__c",
+        "displayName": "Account Business Type",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "KQ_OwnerId__c",
+        "displayName": "Key Qualifier Owner",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "KQ_SalesPhoneId__c",
+        "displayName": "Key Qualifier Sales Phone",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__DataSourceObjectId__c",
+        "displayName": "Data Source Object",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__OwnerId__c",
+        "displayName": "Owner",
+        "type": "STRING",
+        "keyQualifier": "KQ_OwnerId__c",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__LastActivityDate__c",
+        "displayName": "Last Activity Date",
+        "type": "DATE_TIME",
+        "businessType": "DATE_TIME"
+      },
+      {
+        "name": "KQ_Id__c",
+        "displayName": "Key Qualifier Account Id",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__CreatedDate__c",
+        "displayName": "Created Date",
+        "type": "DATE_TIME",
+        "businessType": "DATE_TIME"
+      },
+      {
+        "name": "ssot__AccountTypeId__c",
+        "displayName": "Account Type",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__SalesPhoneId__c",
+        "displayName": "Sales Phone",
+        "type": "STRING",
+        "keyQualifier": "KQ_SalesPhoneId__c",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__AccountOwnershipType__c",
+        "displayName": "Account Ownership Type",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "ssot__Description__c",
+        "displayName": "Account Description",
+        "type": "STRING",
+        "businessType": "TEXT"
+      }
+    ],
+    "indexes": [],
+    "category": "Profile",
+    "name": "ssot__Account__dlm",
+    "displayName": "Account",
+    "relationships": [
+      {
+        "fromEntity": "SearchResults_d7ace855_7_chunk__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "SourceRecordId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__ContactPointPhone__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__PartyId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__ContactPointEmail__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__PartyId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__ContactPointAddress__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__PartyId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__Individual__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__PrimaryAccountId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__AccountContact__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__AccountId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__Opportunity__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__CustomerAccountId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__Account__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__ParentAccountId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__User__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__AccountId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__Lead__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__ConvertedToAccountId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__Case__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__AccountId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "Account_SM_1784451086279__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "Id__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "Account_SMH_1784451092160__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "Id__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__Account__dlm",
+        "toEntity": "ssot__User__dlm",
+        "fromEntityAttribute": "ssot__OwnerId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__Account__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__ParentAccountId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__Account__dlm",
+        "toEntity": "ssot__ContactPointPhone__dlm",
+        "fromEntityAttribute": "ssot__SalesPhoneId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__Account__dlm",
+        "toEntity": "ssot__ContactPointAddress__dlm",
+        "fromEntityAttribute": "ssot__BillContactAddressId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      }
+    ],
+    "primaryKeys": [
+      {
+        "name": "ssot__Id__c",
+        "displayName": "Account Id",
+        "indexOrder": "1"
+      }
+    ],
+    "referenceModelEntityDeveloperName": "Account"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

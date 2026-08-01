@@ -1,0 +1,17 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "capturedAt": "2026-07-10",
+    "apiVersion": "67.0"
+  },
+  "synthetic": true,
+  "chunkCount": 1,
+  "completionStatus": "Finished",
+  "expirationTime": "2026-07-11T00:00:00Z",
+  "progress": 1,
+  "queryId": "polling-id",
+  "rowCount": 1,
+  "rowsProcessed": 1,
+  "stalenessReasons": [],
+  "wallClockTime": 0.03
+}

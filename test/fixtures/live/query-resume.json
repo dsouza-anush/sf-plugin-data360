@@ -1,0 +1,18 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 query resume",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "queryId": "LIVE_ID_QUERY_20260711",
+    "status": "Finished",
+    "done": true,
+    "rowCount": 0
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

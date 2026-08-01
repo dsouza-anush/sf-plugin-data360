@@ -1,0 +1,96 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 activation get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "activationDefinitionId": "LIVE_ID_edd9fd691a08",
+      "activationRecordSchema": "{\n  &quot;type&quot; : &quot;object&quot;,\n  &quot;Id&quot; : {\n    &quot;type&quot; : &quot;string&quot;,\n    &quot;nullable&quot; : true,\n    &quot;dataCloudDataType&quot; : &quot;Text&quot;,\n    &quot;label&quot; : &quot;Individual Id&quot;,\n    &quot;fieldApiName&quot; : &quot;ssot__Id__c&quot;,\n    &quot;objectApiName&quot; : &quot;ssot__Individual__dlm&quot;\n  }\n}",
+      "activationTarget": {
+        "description": "CS-1 Casey&#39;s scenario: activation target for repeat-engager offers",
+        "id": "LIVE_ID_79c2fbc2eec7",
+        "lastModifiedDate": "2026-07-04T23:36:33.000Z",
+        "name": "cs24_ad_0704_target",
+        "platformName": "DataCloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      "activationTargetId": "LIVE_ID_01679037a36a",
+      "activationTargetName": "cs24_ad_0704_target",
+      "activationTargetSubjectConfig": {
+        "developerName": "ssot__Individual__dlm",
+        "id": "LIVE_ID_9349891214fe",
+        "masterLabel": "Individual",
+        "queryPathConfig": {
+          "configs": []
+        }
+      },
+      "activationType": "SEGMENT",
+      "attributesConfig": {
+        "attributes": [
+          {
+            "dataSourceType": "Text",
+            "entityName": "ssot__Individual__dlm",
+            "label": "Individual Id",
+            "name": "ssot__Id__c",
+            "queryPathConfig": {
+              "configs": []
+            },
+            "referenceAttributeName": "Id",
+            "type": "MODEL"
+          }
+        ]
+      },
+      "contactPointsConfig": {
+        "contactPoints": []
+      },
+      "createdBy": {
+        "id": "LIVE_ID_edbf0014d350"
+      },
+      "createdDate": "2026-07-04T23:36:33.000Z",
+      "curatedEntity": {},
+      "dataSourcesConfig": {
+        "dataSources": []
+      },
+      "dataSpaceName": "default",
+      "developerName": "cs24_ad_0704_repeat_engagers_activation1783208188884",
+      "enabled": true,
+      "historyAudienceDmoApiName": "AA_DataCloud_LIVE_ID_79c2fbc2eec7__dlm",
+      "historyAudienceDmoLabel": "Activation Audience - cs24_ad_0704_target",
+      "id": "LIVE_ID_68647dceb057",
+      "isEnabled": true,
+      "lastModifiedBy": {
+        "id": "LIVE_ID_4a0133c3614b"
+      },
+      "lastModifiedDate": "2026-07-28T14:07:59.000Z",
+      "lastPublishDate": "2026-07-28T14:07:48.000Z",
+      "lastPublishStatus": "SUCCESS",
+      "latestAudienceDmoApiName": "AAL_DataCloud_LIVE_ID_79c2fbc2eec7__dlm",
+      "latestAudienceDmoLabel": "Activation Audience Latest - cs24_ad_0704_target",
+      "latestAudienceDmoLastRunTimestamp": "2026-07-28T14:03:46.000Z",
+      "marketSegmentId": "LIVE_ID_1c601ebd97c8",
+      "membershipName": "Individual",
+      "name": "cs24_ad_0704_repeat_engagers_activation",
+      "processingType": "Batch",
+      "queryPathConfig": {
+        "configs": []
+      },
+      "refreshType": "FULL_REFRESH",
+      "segmentApiName": "cs24_ad_0704_repeat_engagers",
+      "segmentId": "LIVE_ID_1c601ebd97c8",
+      "shouldExcludeDeletes": false,
+      "shouldExcludeUpdates": false,
+      "staticDataConfig": {
+        "staticData": []
+      },
+      "status": "ACTIVE"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

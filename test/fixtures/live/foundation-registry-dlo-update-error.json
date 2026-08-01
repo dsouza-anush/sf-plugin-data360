@@ -1,0 +1,29 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-13",
+    "command": "data360 dlo update",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "Internal Error: error id 1234649207-38571 (-571086566)",
+  "exitCode": 20,
+  "actions": [
+    "Re-run with --json to inspect the structured API error details."
+  ],
+  "context": "RegistryLeaf",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "INTERNAL_ERROR",
+    "message": "Internal Error: error id 1234649207-38571 (-571086566)",
+    "detail": "{\"errorCode\":\"INTERNAL_ERROR\",\"message\":\"Internal Error: error id 1234649207-38571 (-571086566)\"}",
+    "endpoint": "/services/data/v67.0/ssot/data-lake-objects/lv_20260713231801_a92040_registry__dll"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 20,
+  "commandName": "RegistryLeaf"
+}

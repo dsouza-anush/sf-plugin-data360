@@ -1,0 +1,7 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "chunkingStrategy": "PARAGRAPH",
+  "embeddingModel": "e5",
+  "similarityMetric": "COSINE"
+}

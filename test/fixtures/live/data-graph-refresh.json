@@ -1,0 +1,23 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-graph refresh",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "errors": [
+        {
+          "errorCode": "DG_REFRESH_NOT_ALLOWED",
+          "message": "Refresh operation not allowed for data Graph in PROCESSING status"
+        }
+      ],
+      "success": false
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

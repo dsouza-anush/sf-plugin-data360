@@ -1,0 +1,21 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 mapping list",
+    "expectedFailure": true
+  },
+  "name": "D360_INVALID_DEFINITION",
+  "message": "At least one mapping filter is required.",
+  "exitCode": 1,
+  "actions": [
+    "Pass --dmo or --source-object."
+  ],
+  "context": "MappingList",
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_INVALID_DEFINITION",
+  "status": 1,
+  "commandName": "MappingList"
+}

@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "name": "Order",
+  "label": "Order",
+  "category": "Engagement",
+  "mappedDlos#": 1,
+  "fields": [
+    {
+      "name": "Id__c",
+      "dataType": "Text"
+    }
+  ]
+}

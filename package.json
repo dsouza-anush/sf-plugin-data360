@@ -1,0 +1,311 @@
+{
+  "name": "sf-plugin-data360",
+  "version": "0.1.0",
+  "description": "Data 360 commands for Salesforce CLI",
+  "keywords": [
+    "salesforce",
+    "salesforce-cli",
+    "sf-plugin",
+    "data-360",
+    "data-cloud",
+    "cdp",
+    "query",
+    "ingestion",
+    "oclif"
+  ],
+  "license": "MIT",
+  "author": "Anush D'Souza",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsouza-anush/sf-plugin-data360.git"
+  },
+  "homepage": "https://github.com/dsouza-anush/sf-plugin-data360#readme",
+  "bugs": {
+    "url": "https://github.com/dsouza-anush/sf-plugin-data360/issues"
+  },
+  "packageManager": "yarn@1.22.22",
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || ^24.0.0"
+  },
+  "resolutions": {
+    "@oclif/core": "4.13.0",
+    "@oclif/core/ejs": "6.0.1",
+    "@oclif/core/minimatch/brace-expansion": "5.0.8"
+  },
+  "overrides": {
+    "@oclif/core": {
+      "ejs": "6.0.1",
+      "minimatch": {
+        "brace-expansion": "5.0.8"
+      }
+    }
+  },
+  "bin": {
+    "sf-plugin-data360": "./bin/run.js"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/messages",
+    "/schemas",
+    "/oclif.manifest.json",
+    "/oclif.lock",
+    "/npm-shrinkwrap.json",
+    "/command-snapshot.json",
+    "/docs/API_COVERAGE.md",
+    "/docs/CLI_CONTRACT.md",
+    "/docs/COMMAND_REFERENCE.md",
+    "/docs/EXTERNAL_CLIENT_APP.md",
+    "/docs/GETTING_STARTED.md",
+    "/docs/INSTALLATION.md",
+    "/docs/REPL_CHECKLIST.md",
+    "/docs/RELEASE.md",
+    "/CHANGELOG.md",
+    "/SECURITY.md",
+    "/VERIFICATION.md",
+    "/NOTICE",
+    "/examples"
+  ],
+  "exports": "./lib/index.js",
+  "oclif": {
+    "bin": "sf",
+    "commands": "./lib/commands",
+    "configMeta": "./lib/configMeta",
+    "topicSeparator": " ",
+    "flexibleTaxonomy": true,
+    "hooks": {
+      "sf-doctor-sf-plugin-data360": "./lib/hooks/sf-doctor-data360"
+    },
+    "topics": {
+      "data360": {
+        "description": "Commands for Salesforce Data 360.",
+        "subtopics": {
+          "query": {
+            "description": "Run and manage Data 360 SQL queries."
+          },
+          "metadata": {
+            "description": "Inspect Data 360 metadata."
+          },
+          "api": {
+            "description": "Send authenticated Data 360 API requests."
+          },
+          "token": {
+            "description": "Manage Data 360 Direct API tokens."
+          },
+          "ingest": {
+            "description": "Stream and bulk ingest data into Data 360."
+          },
+          "connection": {
+            "description": "Manage Data 360 connections."
+          },
+          "connector": {
+            "description": "Inspect Data 360 connector types."
+          },
+          "dlo": {
+            "description": "Manage Data 360 Data Lake Objects."
+          },
+          "dmo": {
+            "description": "Manage Data 360 Data Model Objects.",
+            "subtopics": {
+              "relationship": {
+                "description": "Manage Data Model Object relationships."
+              }
+            }
+          },
+          "mapping": {
+            "description": "Manage Data Lake Object to Data Model Object mappings."
+          },
+          "data-stream": {
+            "description": "Manage Data 360 data streams."
+          },
+          "transform": {
+            "description": "Manage Data 360 transforms.",
+            "subtopics": {
+              "schedule": {
+                "description": "Manage transform schedules."
+              }
+            }
+          },
+          "data-space": {
+            "description": "Manage Data 360 data spaces.",
+            "subtopics": {
+              "member": {
+                "description": "Manage data-space members."
+              }
+            }
+          },
+          "data-kit": {
+            "description": "Manage and deploy Data 360 data kits.",
+            "subtopics": {
+              "component": {
+                "description": "Inspect Data 360 data kit component dependencies and deployment status."
+              }
+            }
+          },
+          "identity-resolution": {
+            "description": "Manage and run Data 360 identity resolution rulesets."
+          },
+          "calculated-insight": {
+            "description": "Manage, run, and query Data 360 calculated insights."
+          },
+          "segment": {
+            "description": "Manage, publish, and deactivate Data 360 segments."
+          },
+          "activation": {
+            "description": "Manage Data 360 activations and result data."
+          },
+          "activation-target": {
+            "description": "Manage Data 360 activation targets."
+          },
+          "search-index": {
+            "description": "Manage and describe Data 360 search indexes."
+          },
+          "data-graph": {
+            "description": "Manage, refresh, and query Data 360 data graphs."
+          },
+          "profile": {
+            "description": "Read Data 360 profiles and universal IDs."
+          },
+          "retriever": {
+            "description": "Inspect live-verified Data 360 retrievers.",
+            "subtopics": {
+              "configuration": {
+                "description": "Inspect live-verified retriever configurations."
+              }
+            }
+          },
+          "docai": {
+            "description": "Inspect live-verified Document AI capabilities.",
+            "subtopics": {
+              "config": {
+                "description": "Inspect live-verified Document AI configurations."
+              }
+            }
+          },
+          "semantic": {
+            "description": "Inspect live-verified Data 360 semantic resources.",
+            "subtopics": {
+              "model": {
+                "description": "Inspect live-verified semantic models."
+              }
+            }
+          },
+          "data-action": {
+            "description": "Inspect live-verified Data 360 data actions."
+          },
+          "data-action-target": {
+            "description": "Inspect live-verified Data 360 data action targets."
+          },
+          "setup": {
+            "description": "Configure org prerequisites for Data 360 CLI operations."
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "api:operations:audit": "node scripts/audit-openapi-operations.mjs",
+    "audit:production": "npm audit --omit=dev --audit-level=high",
+    "build": "yarn compile && yarn schemas:generate && yarn snapshot:generate && yarn manifest:generate && yarn docs:commands:generate && yarn criteria:generate && yarn verification:generate && yarn format:generated",
+    "clean": "node scripts/clean.mjs",
+    "compile": "tsc -p .",
+    "precontract:check": "yarn compile",
+    "contract:check": "yarn public:check && yarn secrets:scan && yarn fixtures:scan && yarn schemas:check && yarn artifacts:check && yarn criteria:check && yarn verify:all",
+    "criteria:check": "node scripts/generate-command-criteria.mjs --check",
+    "criteria:generate": "node scripts/generate-command-criteria.mjs",
+    "docs:commands:check": "node scripts/generate-command-reference.mjs --check",
+    "docs:commands:generate": "node scripts/generate-command-reference.mjs",
+    "fixtures:scan": "node scripts/scan-live-fixtures.mjs",
+    "fixtures:minimize": "node scripts/minimize-live-fixtures.mjs",
+    "format": "prettier --write \"{src,test}/**/*.ts\" \"{scripts,messages}/**/*.{js,mjs,json,md}\" \"testbed/{bin,lib}/**/*.mjs\" \"testbed/{schema,suites}/**/*.json\" \"testbed/*.md\" \"docs/**/*.md\" \"examples/**/*.{md,json}\" \".github/**/*.{md,yml,yaml}\" package.json tsconfig.json .mocharc.json .prettierrc.json eslint.config.js \"{README,TESTING,CONTRIBUTING,SECURITY,CHANGELOG,VERIFICATION}.md\" && yarn format:generated",
+    "format:check": "prettier --check \"{src,test}/**/*.ts\" \"{scripts,messages,schemas}/**/*.{js,mjs,json,md}\" \"testbed/{bin,lib}/**/*.mjs\" \"testbed/{schema,suites}/**/*.json\" \"testbed/*.md\" \"docs/**/*.md\" \"examples/**/*.{md,json}\" \".github/**/*.{md,yml,yaml}\" package.json tsconfig.json .mocharc.json .prettierrc.json eslint.config.js \"{README,TESTING,CONTRIBUTING,SECURITY,CHANGELOG,VERIFICATION}.md\"",
+    "format:generated": "prettier --write \"schemas/**/*.json\" command-snapshot.json oclif.manifest.json docs/COMMAND_REFERENCE.md VERIFICATION.md",
+    "hooks:install": "node scripts/install-git-hooks.mjs",
+    "prehelp:smoke": "yarn clean && yarn compile && yarn manifest:generate",
+    "public:check": "node scripts/public-source-check.mjs",
+    "public:check:history": "node scripts/public-source-check.mjs --history HEAD",
+    "release:check": "node scripts/pre-push.mjs",
+    "help:smoke": "node scripts/help-smoke.mjs",
+    "lint": "eslint src test testbed",
+    "live:ledger": "node scripts/build-live-completion-ledger.mjs",
+    "live:verify": "node scripts/live-verify-all.mjs",
+    "artifacts:check": "node scripts/generate-schemas.mjs --check && node scripts/generate-command-snapshot.mjs --check && node scripts/check-manifest.mjs && yarn docs:commands:check && node scripts/verification-md.mjs --check",
+    "manifest:generate": "oclif manifest . && node scripts/normalize-manifest.mjs",
+    "mock:start": "tsx test/mock/server.ts",
+    "secrets:scan": "node scripts/release-secret-scan.mjs",
+    "schemas:check": "node scripts/check-schemas.mjs",
+    "schemas:generate": "node scripts/generate-schemas.mjs",
+    "snapshot:generate": "node scripts/generate-command-snapshot.mjs",
+    "test": "yarn test:compile && mocha --config .mocharc.json",
+    "test:compile": "tsc -p test",
+    "test:contract": "mocha --config .mocharc.json test/contract.test.ts",
+    "test:demo": "yarn test:compile && node scripts/demo-e2e.mjs",
+    "test:eval": "node scripts/evaluate-release-criteria.mjs",
+    "test:ingest:large": "D360_LARGE_FILE_TEST=1 mocha --config .mocharc.json test/ingest.large.test.ts",
+    "test:nuts:live": "scripts/smoke-p1.sh \"${D360_LIVE_ORG:?set D360_LIVE_ORG}\"",
+    "test:nuts:live:p2": "scripts/smoke-p2.sh",
+    "test:nuts:live:p3": "scripts/smoke-p3.sh",
+    "test:nuts:live:p4": "scripts/smoke-p4.sh",
+    "test:nuts:live:p5": "scripts/smoke-p5.sh",
+    "test:nuts:live:p6": "scripts/smoke-p6.sh",
+    "test:nuts:live:readonly": "scripts/smoke-readonly.sh",
+    "test:nuts:mock": "yarn test",
+    "test:nuts:mock:subprocess": "node --loader ts-node/esm node_modules/mocha/bin/mocha.js --no-config --timeout 30000 test/subprocess.nut.ts",
+    "test:nuts:mock:testbed": "node scripts/testbed-smoke.mjs",
+    "test:package": "node scripts/package-smoke.mjs",
+    "test:coverage": "c8 --all --include='src/**/*.ts' --exclude='src/commands/**/*.ts' --exclude='src/hooks/**/*.ts' --exclude='src/**/types.ts' --exclude='src/index.ts' --reporter=text --check-coverage --lines 85 --branches 85 --functions 85 --statements 85 mocha --config .mocharc.json",
+    "test:perf": "node scripts/perf-smoke.mjs",
+    "test:prepush": "node scripts/pre-push.mjs",
+    "test:security": "node --loader ts-node/esm node_modules/mocha/bin/mocha.js --no-config --timeout 10000 test/p2.test.ts test/tokenCache.production.test.ts",
+    "test:t1": "yarn test",
+    "test:t2": "yarn build && yarn test:compile && yarn test:nuts:mock:subprocess && yarn test:nuts:mock:testbed && yarn test:demo",
+    "test:t3": "yarn contract:check",
+    "test:t4": "yarn test:nuts:live",
+    "test:t5": "node scripts/manual-tty-gate.mjs",
+    "test:t6": "yarn test:security",
+    "test:t7": "yarn build && yarn test:perf",
+    "testbed": "node testbed/bin/testbed.mjs",
+    "verification:generate": "node scripts/verification-md.mjs",
+    "verify:all": "node scripts/verify-all.mjs",
+    "verify:command": "node scripts/verify-command.mjs",
+    "prepack": "sf-prepack",
+    "postpack": "sf-clean --ignore-signing-artifacts && node scripts/normalize-manifest.mjs"
+  },
+  "dependencies": {
+    "@oclif/core": "^4.13.0",
+    "@oclif/multi-stage-output": "^0.8.44",
+    "@salesforce/core": "^8.32.2",
+    "@salesforce/kit": "^3.2.6",
+    "@salesforce/sf-plugins-core": "^12.2.28",
+    "open": "^11.0.0",
+    "undici": "^6.27.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.1",
+    "@oclif/plugin-command-snapshot": "^5.3.30",
+    "@salesforce/cli-plugins-testkit": "^5.3.62",
+    "@salesforce/dev-scripts": "^11.0.4",
+    "@salesforce/plugin-info": "^3.4.147",
+    "@salesforce/ts-sinon": "^1.4.36",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.0.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "c8": "^11.0.0",
+    "chai": "^6.2.2",
+    "eslint": "^8.57.1",
+    "eslint-plugin-sf-plugin": "^1.20.33",
+    "fastify": "^5.10.0",
+    "mocha": "^11.7.6",
+    "nock": "^14.0.16",
+    "nyc": "^18.0.0",
+    "oclif": "^4.23.27",
+    "prettier": "^3.9.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.0",
+    "typescript": ">=5.5.4 <6",
+    "typescript-eslint": "^7.18.0"
+  }
+}

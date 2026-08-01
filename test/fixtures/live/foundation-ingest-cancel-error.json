@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 ingest cancel",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "The request conflicts with current state of the target resource.",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "IngestCancel",
+  "data": {
+    "httpStatus": 409,
+    "apiCode": "",
+    "message": "The request conflicts with current state of the target resource.",
+    "detail": "{\"timestamp\":\"2026-07-11T22:47:43.599782276Z\",\"error\":\"409 CONFLICT\",\"message\":\"The request conflicts with current state of the target resource.\",\"path\":\"uri=/api/v1/ingest/jobs/LIVE_UUID_89e3f93a33a2\",\"tenantId\":\"a360/[REDACTED_TENANT]\",\"internalErrorCode\":\"COMMON_ERROR_GENERIC\",\"details\":{}}",
+    "endpoint": "https://mock.c360a.example/api/v1/ingest/jobs/LIVE_UUID_89e3f93a33a2"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "IngestCancel"
+}

@@ -1,0 +1,13 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "name": "OrdersStream",
+  "label": "Orders",
+  "connectorType": "CRM",
+  "refreshMode": "FULL",
+  "lastRunStatus": "SUCCESS",
+  "lastRunTime": "2026-07-10T00:00:00Z",
+  "externalSource": false
+}

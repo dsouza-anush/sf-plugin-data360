@@ -1,0 +1,14 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "reference": "Salesforce Connect REST API v67 OpenAPI: GET /ssot/data-kits/{dataKitName}/components/{componentName}/dependencies"
+  },
+  "synthetic": true,
+  "componentDependencies": [
+    {
+      "id": "0gO000000000001AAA",
+      "name": "Customer__dll",
+      "type": "DataLakeObject"
+    }
+  ]
+}

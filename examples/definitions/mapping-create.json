@@ -1,0 +1,18 @@
+{
+  "sourceEntityDeveloperName": "ExampleEvent__dll",
+  "targetEntityDeveloperName": "ExampleEvent__dlm",
+  "fieldMapping": [
+    {
+      "sourceFieldDeveloperName": "event_id__c",
+      "targetFieldDeveloperName": "event_id__c"
+    },
+    {
+      "sourceFieldDeveloperName": "event_time__c",
+      "targetFieldDeveloperName": "event_time__c"
+    },
+    {
+      "sourceFieldDeveloperName": "value__c",
+      "targetFieldDeveloperName": "value__c"
+    }
+  ]
+}

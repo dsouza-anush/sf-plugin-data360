@@ -1,0 +1,66 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-19",
+    "command": "data360 calculated-insight update",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "apiName": "lv_p5_20260719085040_943f8e_ci__cio",
+      "calculatedInsightStatus": "PROCESSING",
+      "creationType": "Custom",
+      "dataSpace": "default",
+      "definitionStatus": "IN_USE",
+      "definitionType": "CALCULATED_METRIC",
+      "description": "Disposable P5 account count update",
+      "dimensions": [
+        {
+          "apiName": "account_id__c",
+          "creationType": "Custom",
+          "dataSource": {
+            "sourceApiName": "ssot__Id__c",
+            "type": "STREAMING_DATA_MODEL"
+          },
+          "dataType": "Text",
+          "dateGranularity": null,
+          "displayName": "account_id",
+          "fieldRole": "DIMENSION",
+          "formula": "ssot__Account__dlm.ssot__Id__c"
+        }
+      ],
+      "displayName": "lv_p5_202607190850 Count Updated",
+      "expression": "SELECT COUNT(ssot__Account__dlm.ssot__Id__c) AS account_count__c, ssot__Account__dlm.ssot__Id__c AS account_id__c FROM ssot__Account__dlm GROUP BY ssot__Account__dlm.ssot__Id__c",
+      "isEnabled": true,
+      "lastCalcInsightStatusDateTime": "2026-07-19T08:51:06.000Z",
+      "lastCalcInsightStatusErrorCode": null,
+      "lastRunDateTime": null,
+      "lastRunStatus": null,
+      "lastRunStatusDateTime": null,
+      "lastRunStatusErrorCode": null,
+      "measures": [
+        {
+          "apiName": "account_count__c",
+          "creationType": "Custom",
+          "dataSource": {
+            "sourceApiName": "ssot__Id__c",
+            "type": "STREAMING_DATA_MODEL"
+          },
+          "dataType": "Number",
+          "displayName": "account_count",
+          "fieldAggregationType": "AGGREGATABLE",
+          "fieldRole": "MEASURE",
+          "formula": "COUNT(ssot__Account__dlm.ssot__Id__c)"
+        }
+      ],
+      "publishScheduleEndDate": null,
+      "publishScheduleInterval": "NOT_SCHEDULED",
+      "publishScheduleStartDateTime": null,
+      "subType": null
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

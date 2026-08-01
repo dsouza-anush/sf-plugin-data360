@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.transform.cancel",
+  "title": "data360.transform.cancel JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "required": ["cancelled", "name"],
+      "properties": { "cancelled": { "const": true }, "name": { "type": "string" } }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

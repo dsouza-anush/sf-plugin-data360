@@ -1,0 +1,17 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "name": "Orders__dll",
+  "label": "Orders",
+  "category": "Engagement",
+  "fields": [
+    {
+      "name": "Id__c",
+      "label": "Id",
+      "dataType": "VARCHAR",
+      "isPrimaryKey": true
+    }
+  ]
+}

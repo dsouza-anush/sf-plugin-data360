@@ -1,0 +1,13 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "basedOn": "Salesforce REST error format"
+  },
+  "statusCode": 403,
+  "body": [
+    {
+      "errorCode": "FORBIDDEN",
+      "message": "Data 360 metadata is unavailable."
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 mapping get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "developerName": "Account_Home_map_Account_1780118054709",
+      "fieldMappings": [
+        {
+          "developerName": "Ownership__c_fieldmap_ssot__AccountOwnershipType__c",
+          "sourceFieldDeveloperName": "Ownership__c",
+          "targetFieldDeveloperName": "ssot__AccountOwnershipType__c"
+        },
+        {
+          "developerName": "AnnualRevenue__c_fieldmap_ssot__AnnualRevenueAmount__c",
+          "sourceFieldDeveloperName": "AnnualRevenue__c",
+          "targetFieldDeveloperName": "ssot__AnnualRevenueAmount__c"
+        },
+        {
+          "developerName": "LastActivityDate__c_fieldmap_ssot__LastActivityDate__c",
+          "sourceFieldDeveloperName": "LastActivityDate__c",
+          "targetFieldDeveloperName": "ssot__LastActivityDate__c"
+        },
+        {
+          "developerName": "Name__c_fieldmap_ssot__Name__c",
+          "sourceFieldDeveloperName": "Name__c",
+          "targetFieldDeveloperName": "ssot__Name__c"
+        },
+        {
+          "developerName": "Industry__c_fieldmap_ssot__PrimaryIndustry__c",
+          "sourceFieldDeveloperName": "Industry__c",
+          "targetFieldDeveloperName": "ssot__PrimaryIndustry__c"
+        },
+        {
+          "developerName": "NumberOfEmployees__c_fieldmap_ssot__EmployeeCount__c",
+          "sourceFieldDeveloperName": "NumberOfEmployees__c",
+          "targetFieldDeveloperName": "ssot__EmployeeCount__c"
+        },
+        {
+          "developerName": "AccountSource__c_fieldmap_ssot__AccountSource__c",
+          "sourceFieldDeveloperName": "AccountSource__c",
+          "targetFieldDeveloperName": "ssot__AccountSource__c"
+        },
+        {
+          "developerName": "ParentId__c_fieldmap_ssot__ParentAccountId__c",
+          "sourceFieldDeveloperName": "ParentId__c",
+          "targetFieldDeveloperName": "ssot__ParentAccountId__c"
+        },
+        {
+          "developerName": "CreatedDate__c_fieldmap_ssot__CreatedDate__c",
+          "sourceFieldDeveloperName": "CreatedDate__c",
+          "targetFieldDeveloperName": "ssot__CreatedDate__c"
+        },
+        {
+          "developerName": "AccountNumber__c_fieldmap_ssot__Number__c",
+          "sourceFieldDeveloperName": "AccountNumber__c",
+          "targetFieldDeveloperName": "ssot__Number__c"
+        },
+        {
+          "developerName": "Description__c_fieldmap_ssot__Description__c",
+          "sourceFieldDeveloperName": "Description__c",
+          "targetFieldDeveloperName": "ssot__Description__c"
+        },
+        {
+          "developerName": "DataSource__c_fieldmap_ssot__DataSourceId__c",
+          "sourceFieldDeveloperName": "DataSource__c",
+          "targetFieldDeveloperName": "ssot__DataSourceId__c"
+        },
+        {
+          "developerName": "Type__c_fieldmap_ssot__AccountTypeId__c",
+          "sourceFieldDeveloperName": "Type__c",
+          "targetFieldDeveloperName": "ssot__AccountTypeId__c"
+        },
+        {
+          "developerName": "Type__c_fieldmap_ssot__AccountType__c",
+          "sourceFieldDeveloperName": "Type__c",
+          "targetFieldDeveloperName": "ssot__AccountType__c"
+        },
+        {
+          "developerName": "Type__c_fieldmap_ssot__AccountBusinessType__c",
+          "sourceFieldDeveloperName": "Type__c",
+          "targetFieldDeveloperName": "ssot__AccountBusinessType__c"
+        },
+        {
+          "developerName": "OwnerId__c_fieldmap_ssot__OwnerId__c",
+          "sourceFieldDeveloperName": "OwnerId__c",
+          "targetFieldDeveloperName": "ssot__OwnerId__c"
+        },
+        {
+          "developerName": "DataSourceObject__c_fieldmap_ssot__DataSourceObjectId__c",
+          "sourceFieldDeveloperName": "DataSourceObject__c",
+          "targetFieldDeveloperName": "ssot__DataSourceObjectId__c"
+        },
+        {
+          "developerName": "Website__c_fieldmap_ssot__WebsiteAddr__c",
+          "sourceFieldDeveloperName": "Website__c",
+          "targetFieldDeveloperName": "ssot__WebsiteAddr__c"
+        },
+        {
+          "developerName": "Id__c_fieldmap_ssot__SalesPhoneId__c",
+          "sourceFieldDeveloperName": "Id__c",
+          "targetFieldDeveloperName": "ssot__SalesPhoneId__c"
+        },
+        {
+          "developerName": "Id__c_fieldmap_ssot__Id__c",
+          "sourceFieldDeveloperName": "Id__c",
+          "targetFieldDeveloperName": "ssot__Id__c"
+        },
+        {
+          "developerName": "KQ_Id__c_fieldmap_KQ_Id__c",
+          "sourceFieldDeveloperName": "KQ_Id__c",
+          "targetFieldDeveloperName": "KQ_Id__c"
+        },
+        {
+          "developerName": "Id__c_fieldmap_ssot__BillContactAddressId__c",
+          "sourceFieldDeveloperName": "Id__c",
+          "targetFieldDeveloperName": "ssot__BillContactAddressId__c"
+        },
+        {
+          "developerName": "Rating__c_fieldmap_ssot__AccountRatingType__c",
+          "sourceFieldDeveloperName": "Rating__c",
+          "targetFieldDeveloperName": "ssot__AccountRatingType__c"
+        },
+        {
+          "developerName": "LastModifiedDate__c_fieldmap_ssot__LastModifiedDate__c",
+          "sourceFieldDeveloperName": "LastModifiedDate__c",
+          "targetFieldDeveloperName": "ssot__LastModifiedDate__c"
+        },
+        {
+          "developerName": "KQ_Id__c_fieldmap_KQ_BillContactAddressId__c",
+          "sourceFieldDeveloperName": "KQ_Id__c",
+          "targetFieldDeveloperName": "KQ_BillContactAddressId__c"
+        },
+        {
+          "developerName": "KQ_ParentId__c_fieldmap_KQ_ParentAccountId__c",
+          "sourceFieldDeveloperName": "KQ_ParentId__c",
+          "targetFieldDeveloperName": "KQ_ParentAccountId__c"
+        },
+        {
+          "developerName": "KQ_OwnerId__c_fieldmap_KQ_OwnerId__c",
+          "sourceFieldDeveloperName": "KQ_OwnerId__c",
+          "targetFieldDeveloperName": "KQ_OwnerId__c"
+        },
+        {
+          "developerName": "KQ_Id__c_fieldmap_KQ_SalesPhoneId__c",
+          "sourceFieldDeveloperName": "KQ_Id__c",
+          "targetFieldDeveloperName": "KQ_SalesPhoneId__c"
+        }
+      ],
+      "sourceEntityDeveloperName": "Account_Home__dll",
+      "status": "ACTIVE",
+      "targetEntityDeveloperName": "ssot__Account__dlm"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

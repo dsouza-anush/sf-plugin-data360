@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit delete",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "deleted": true,
+    "name": "lv_p5_20260729061343_7c2b62_kit"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

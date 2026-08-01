@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 calculated-insight update",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_NAME_NOT_FOUND",
+  "message": "No resource matches \"lv_p5_20260729061826_10bf32_ci__cio\".",
+  "exitCode": 1,
+  "actions": [
+    "Available resources include: Customer_Profile_Completeness__cio, Customer Profile Completeness Score, Scenario5_Account_Count__cio, Scenario5 Account Count Metric, Individual_Engagement_Score__cio, Individual Engagement Score, codex_live_20260629_sdm__cio, codex_live_20260629_sdm, cs24_ad_0704_completeness__cio, CS24 Profile Completeness Score, Email_Contact_Quality__cio, Email Contact Quality Metric."
+  ],
+  "context": "RegistryLeaf",
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_NAME_NOT_FOUND",
+  "status": 1,
+  "commandName": "RegistryLeaf"
+}

@@ -1,0 +1,100 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed"
+  },
+  "objectSourceTargetMaps": [
+    {
+      "developerName": "Account_Home_map_Account_1772130161728",
+      "fieldMappings": [
+        {
+          "developerName": "Name__c_fieldmap_ssot__Name__c",
+          "sourceFieldDeveloperName": "Name__c",
+          "targetFieldDeveloperName": "ssot__Name__c"
+        },
+        {
+          "developerName": "EffectiveDate__c_fieldmap_ssot__EffectiveDate__c",
+          "sourceFieldDeveloperName": "EffectiveDate__c",
+          "targetFieldDeveloperName": "ssot__EffectiveDate__c"
+        },
+        {
+          "developerName": "CreatedDate_c__c_fieldmap_ssot__CreatedDate__c",
+          "sourceFieldDeveloperName": "CreatedDate_c__c",
+          "targetFieldDeveloperName": "ssot__CreatedDate__c"
+        },
+        {
+          "developerName": "SDO_Default_Price_Book_c__c_fieldmap_ssot__DefaultPriceBookId__c",
+          "sourceFieldDeveloperName": "SDO_Default_Price_Book_c__c",
+          "targetFieldDeveloperName": "ssot__DefaultPriceBookId__c"
+        },
+        {
+          "developerName": "AccountSource__c_fieldmap_ssot__AccountSource__c",
+          "sourceFieldDeveloperName": "AccountSource__c",
+          "targetFieldDeveloperName": "ssot__AccountSource__c"
+        },
+        {
+          "developerName": "EndDate__c_fieldmap_ssot__EndDate__c",
+          "sourceFieldDeveloperName": "EndDate__c",
+          "targetFieldDeveloperName": "ssot__EndDate__c"
+        },
+        {
+          "developerName": "SDO_Account_Priority_c__c_fieldmap_ssot__AccountPriority__c",
+          "sourceFieldDeveloperName": "SDO_Account_Priority_c__c",
+          "targetFieldDeveloperName": "ssot__AccountPriority__c"
+        },
+        {
+          "developerName": "AccountNumber__c_fieldmap_ssot__Number__c",
+          "sourceFieldDeveloperName": "AccountNumber__c",
+          "targetFieldDeveloperName": "ssot__Number__c"
+        },
+        {
+          "developerName": "SDO_Operating_Hours_c__c_fieldmap_ssot__OperatingHoursId__c",
+          "sourceFieldDeveloperName": "SDO_Operating_Hours_c__c",
+          "targetFieldDeveloperName": "ssot__OperatingHoursId__c"
+        },
+        {
+          "developerName": "Description__c_fieldmap_ssot__Description__c",
+          "sourceFieldDeveloperName": "Description__c",
+          "targetFieldDeveloperName": "ssot__Description__c"
+        },
+        {
+          "developerName": "Type__c_fieldmap_ssot__AccountType__c",
+          "sourceFieldDeveloperName": "Type__c",
+          "targetFieldDeveloperName": "ssot__AccountType__c"
+        },
+        {
+          "developerName": "Type__c_fieldmap_ssot__AccountTypeId__c",
+          "sourceFieldDeveloperName": "Type__c",
+          "targetFieldDeveloperName": "ssot__AccountTypeId__c"
+        },
+        {
+          "developerName": "DataSource__c_fieldmap_ssot__DataSourceId__c",
+          "sourceFieldDeveloperName": "DataSource__c",
+          "targetFieldDeveloperName": "ssot__DataSourceId__c"
+        },
+        {
+          "developerName": "DataSourceObject__c_fieldmap_ssot__DataSourceObjectId__c",
+          "sourceFieldDeveloperName": "DataSourceObject__c",
+          "targetFieldDeveloperName": "ssot__DataSourceObjectId__c"
+        },
+        {
+          "developerName": "Id__c_fieldmap_ssot__Id__c",
+          "sourceFieldDeveloperName": "Id__c",
+          "targetFieldDeveloperName": "ssot__Id__c"
+        },
+        {
+          "developerName": "KQ_Id__c_fieldmap_KQ_Id__c",
+          "sourceFieldDeveloperName": "KQ_Id__c",
+          "targetFieldDeveloperName": "KQ_Id__c"
+        },
+        {
+          "developerName": "LastModifiedDate__c_fieldmap_ssot__LastModifiedDate__c",
+          "sourceFieldDeveloperName": "LastModifiedDate__c",
+          "targetFieldDeveloperName": "ssot__LastModifiedDate__c"
+        }
+      ],
+      "sourceEntityDeveloperName": "Account_Home__dll",
+      "status": "ACTIVE",
+      "targetEntityDeveloperName": "ssot__Account__dlm"
+    }
+  ]
+}

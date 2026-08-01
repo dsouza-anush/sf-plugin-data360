@@ -1,0 +1,19 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 mapping delete",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "deleted": true,
+    "name": "AgentOpt_Tag_Association_BCF18D32_map_lv_p4_20260726092424_c00316_event_1785058099879",
+    "fields": [
+      "ValueText__c_fieldmap_ValueText__c"
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

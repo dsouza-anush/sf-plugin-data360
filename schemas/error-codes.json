@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:error-codes",
+  "title": "Data 360 public error codes",
+  "type": "string",
+  "enum": [
+    "D360_API_ERROR",
+    "D360_AUTH_EXPIRED",
+    "D360_CONFIRMATION_REQUIRED",
+    "D360_ECA_CREATE_FAILED",
+    "D360_ECA_INVALID_NAME",
+    "D360_ECA_OAUTH_FAILED",
+    "D360_INVALID_DEFINITION",
+    "D360_JOB_FAILED",
+    "D360_JOB_TIMEOUT",
+    "D360_NAME_AMBIGUOUS",
+    "D360_NAME_NOT_FOUND",
+    "D360_NOT_FOUND",
+    "D360_NOT_PROVISIONED",
+    "D360_QUERY_SYNTAX",
+    "D360_RATE_LIMITED",
+    "D360_SCOPE_MISSING",
+    "D360_TOKEN_EXCHANGE_FAILED",
+    "D360_UNSUPPORTED_OP"
+  ]
+}

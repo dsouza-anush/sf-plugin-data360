@@ -1,0 +1,494 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-space member list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "memberLabel": "Account_Home",
+        "memberName": "Account_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "OrgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AgentOpt_Tag_Association_BCF18D32__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AgentOpt-Tag Association",
+        "memberName": "AgentOpt_Tag_Association_BCF18D32__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "OrgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AgentOpt_Tag_D37274F6__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AgentOpt-Tag",
+        "memberName": "AgentOpt_Tag_D37274F6__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "OrgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AgentOpt_Tag_Def_1668FA2B__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AgentOpt-Tag Def",
+        "memberName": "AgentOpt_Tag_Def_1668FA2B__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "OrgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AgentOpt_Tag_Def_Association_7B32D19F__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AgentOpt-Tag Def Association",
+        "memberName": "AgentOpt_Tag_Def_Association_7B32D19F__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "AgentWork_Home",
+        "memberName": "AgentWork_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "AgentWorkSkill_Home",
+        "memberName": "AgentWorkSkill_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "AiAgentGenerativeAiUsage",
+        "memberName": "AiAgentGenerativeAiUsage__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AiAgentInteraction__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AiAgentInteraction",
+        "memberName": "AiAgentInteraction__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AiAgentInteractionMessage__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AiAgentInteractionMessage",
+        "memberName": "AiAgentInteractionMessage__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AiAgentInteractionStep__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AiAgentInteractionStep",
+        "memberName": "AiAgentInteractionStep__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AiAgentMessageAttachmentBridge__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AiAgentMessageAttachmentBridge",
+        "memberName": "AiAgentMessageAttachmentBridge__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AiAgentSession__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AiAgentSession",
+        "memberName": "AiAgentSession__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AiAgentSessionAttachmentBridge__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AiAgentSessionAttachmentBridge",
+        "memberName": "AiAgentSessionAttachmentBridge__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AiAgentSessionLog__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AiAgentSessionLog",
+        "memberName": "AiAgentSessionLog__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AiAgentSessionParticipant__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AiAgentSessionParticipant",
+        "memberName": "AiAgentSessionParticipant__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "AiAgentSessionTag_Home",
+        "memberName": "AiAgentSessionTag_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "AiAgentTagDefAssoc_Home",
+        "memberName": "AiAgentTagDefAssoc_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AiRetrieverQualityMetric__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AiRetrieverQualityMetric",
+        "memberName": "AiRetrieverQualityMetric__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "AIRetrieverRequest",
+        "memberName": "AIRetrieverRequest__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "AIRetrieverResponse",
+        "memberName": "AIRetrieverResponse__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "AiTagDefinition_Home",
+        "memberName": "AiTagDefinition_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "AiTagValue_Home",
+        "memberName": "AiTagValue_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "BotDefinition_Home",
+        "memberName": "BotDefinition_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "BotVersion_Home",
+        "memberName": "BotVersion_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "BusinessHours_Home",
+        "memberName": "BusinessHours_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "Case_Home",
+        "memberName": "Case_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "CaseArticle_Home",
+        "memberName": "CaseArticle_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "CaseHistory2_Home",
+        "memberName": "CaseHistory2_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "Consumption Resource Tag",
+        "memberName": "ConsumptionResourceTags_std__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "Contact_Home",
+        "memberName": "Contact_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "ContentDocument_Home__dll",
+        "memberName": "ContentDocument_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "ContentDocumentLink_Home__dll",
+        "memberName": "ContentDocumentLink_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "ContentVersion_Home__dll",
+        "memberName": "ContentVersion_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "ConversationDefinitionSession_Home",
+        "memberName": "ConversationDefinitionSession_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "Copilot Analytics Calculator",
+        "memberName": "CopilotAnalyticsCalculator__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "CopilotEvents",
+        "memberName": "CopilotEvents__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "Copilot for Salesforce Apps Events",
+        "memberName": "CopilotForSalesforceAppsEvents__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "Copilot Utterance Analysis",
+        "memberName": "CopilotUtteranceAnalysis__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "CurrencyType_Home",
+        "memberName": "CurrencyType_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "DataCategory_Home",
+        "memberName": "DataCategory_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "DataCategoryGroup_Home",
+        "memberName": "DataCategoryGroup_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "EmailMessage_Home",
+        "memberName": "EmailMessage_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "GenAIAppGeneration__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "GenAIAppGeneration",
+        "memberName": "GenAIAppGeneration__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "GenAIContentCategory__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "GenAIContentCategory",
+        "memberName": "GenAIContentCategory__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "GenAIContentQuality__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "GenAIContentQuality",
+        "memberName": "GenAIContentQuality__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "GenAIFeedback__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "GenAIFeedback",
+        "memberName": "GenAIFeedback__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "GenAIFeedbackDetail__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "GenAIFeedbackDetail",
+        "memberName": "GenAIFeedbackDetail__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "memberLabel": "GenAiFunctionDefinition_Home",
+        "memberName": "GenAiFunctionDefinition_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "orgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "GenAIGatewayRequest__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "GenAIGatewayRequest",
+        "memberName": "GenAIGatewayRequest__dll",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "0": {
+    "errorCode": "INVALID_INPUT",
+    "message": "A data lake object instance with Id: 1dlWt0000011wnlIAA does not exists."
+  },
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 api request",
+    "expectedFailure": true
+  }
+}

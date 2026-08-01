@@ -1,0 +1,360 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 calculated-insight list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "apiName": "Scenario5_Account_Count__cio",
+        "calculatedInsightStatus": "ERROR",
+        "creationType": "Custom",
+        "dataSpace": "default",
+        "definitionStatus": "IN_USE",
+        "definitionType": "CALCULATED_METRIC",
+        "description": "Customer scenario: Analyst tracks total accounts by type for business reporting",
+        "dimensions": [
+          {
+            "apiName": "account_type__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Text",
+            "dateGranularity": null,
+            "displayName": "account_type",
+            "fieldRole": "DIMENSION",
+            "formula": "ssot__Account__dlm.ssot__AccountType__c"
+          }
+        ],
+        "displayName": "Scenario5 Account Count Metric",
+        "expression": "SELECT ssot__Account__dlm.ssot__AccountType__c as account_type__c, COUNT(ssot__Account__dlm.ssot__Id__c) as account_count__c FROM ssot__Account__dlm GROUP BY ssot__Account__dlm.ssot__AccountType__c",
+        "isEnabled": true,
+        "lastCalcInsightStatusDateTime": "2026-07-03T23:26:25.000Z",
+        "lastCalcInsightStatusErrorCode": "CREATE_FAILED",
+        "lastRunDateTime": null,
+        "lastRunStatus": null,
+        "lastRunStatusDateTime": null,
+        "lastRunStatusErrorCode": null,
+        "measures": [
+          {
+            "apiName": "account_count__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "account_count",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__Account__dlm.ssot__Id__c)"
+          }
+        ],
+        "publishScheduleEndDate": null,
+        "publishScheduleInterval": "NOT_SCHEDULED",
+        "publishScheduleStartDateTime": null,
+        "queryDialect": "ANSI_SQL",
+        "subType": null
+      },
+      {
+        "apiName": "Individual_Engagement_Score__cio",
+        "calculatedInsightStatus": "ACTIVE",
+        "creationType": "Custom",
+        "dataSpace": "default",
+        "definitionStatus": "IN_USE",
+        "definitionType": "CALCULATED_METRIC",
+        "description": "Scenario E: Multi-touchpoint engagement scoring - represents SMBC/Williams Sonoma 360 engagement view",
+        "dimensions": [
+          {
+            "apiName": "individual_id__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Text",
+            "dateGranularity": null,
+            "displayName": "individual_id",
+            "fieldRole": "DIMENSION",
+            "formula": "ssot__Individual__dlm.ssot__Id__c"
+          }
+        ],
+        "displayName": "Individual Engagement Score",
+        "expression": "SELECT ssot__Individual__dlm.ssot__Id__c as individual_id__c, COUNT(ssot__ContactPointEmail__dlm.ssot__Id__c) as email_touchpoints__c, COUNT(ssot__ContactPointPhone__dlm.ssot__Id__c) as phone_touchpoints__c FROM ssot__Individual__dlm LEFT JOIN ssot__ContactPointEmail__dlm ON ssot__Individual__dlm.ssot__Id__c = ssot__ContactPointEmail__dlm.ssot__PartyId__c LEFT JOIN ssot__ContactPointPhone__dlm ON ssot__Individual__dlm.ssot__Id__c = ssot__ContactPointPhone__dlm.ssot__PartyId__c GROUP BY ssot__Individual__dlm.ssot__Id__c",
+        "isEnabled": true,
+        "lastCalcInsightStatusDateTime": "2026-07-04T21:56:09.000Z",
+        "lastCalcInsightStatusErrorCode": null,
+        "lastRunDateTime": null,
+        "lastRunStatus": null,
+        "lastRunStatusDateTime": null,
+        "lastRunStatusErrorCode": null,
+        "measures": [
+          {
+            "apiName": "phone_touchpoints__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "phone_touchpoints",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__ContactPointPhone__dlm.ssot__Id__c)"
+          },
+          {
+            "apiName": "email_touchpoints__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "email_touchpoints",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__ContactPointEmail__dlm.ssot__Id__c)"
+          }
+        ],
+        "publishScheduleEndDate": null,
+        "publishScheduleInterval": "NOT_SCHEDULED",
+        "publishScheduleStartDateTime": null,
+        "queryDialect": "ANSI_SQL",
+        "subType": null
+      },
+      {
+        "apiName": "codex_live_20260629_sdm__cio",
+        "calculatedInsightStatus": "ACTIVE",
+        "creationType": "Custom",
+        "dataSpace": "default",
+        "definitionStatus": "IN_USE",
+        "definitionType": "CALCULATED_METRIC",
+        "description": null,
+        "dimensions": [
+          {
+            "apiName": "account_type__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Text",
+            "dateGranularity": null,
+            "displayName": "account_type",
+            "fieldRole": "DIMENSION",
+            "formula": "ssot__Account__dlm.ssot__AccountBusinessType__c"
+          }
+        ],
+        "displayName": "codex_live_20260629_sdm",
+        "expression": "SELECT ssot__Account__dlm.ssot__AccountBusinessType__c as account_type__c, COUNT(ssot__Account__dlm.ssot__Id__c) as account_count__c FROM ssot__Account__dlm GROUP BY ssot__Account__dlm.ssot__AccountBusinessType__c",
+        "isEnabled": true,
+        "lastCalcInsightStatusDateTime": "2026-06-29T10:44:48.000Z",
+        "lastCalcInsightStatusErrorCode": null,
+        "lastRunDateTime": "2026-07-13T02:34:55.000Z",
+        "lastRunStatus": "SUCCESS",
+        "lastRunStatusDateTime": "2026-07-13T02:35:45.000Z",
+        "lastRunStatusErrorCode": null,
+        "measures": [
+          {
+            "apiName": "account_count__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "account_count",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__Account__dlm.ssot__Id__c)"
+          }
+        ],
+        "publishScheduleEndDate": null,
+        "publishScheduleInterval": "NOT_SCHEDULED",
+        "publishScheduleStartDateTime": null,
+        "queryDialect": "ANSI_SQL",
+        "subType": null
+      },
+      {
+        "apiName": "Email_Contact_Quality__cio",
+        "calculatedInsightStatus": "ERROR",
+        "creationType": "Custom",
+        "dataSpace": "default",
+        "definitionStatus": "IN_USE",
+        "definitionType": "CALCULATED_METRIC",
+        "description": "Scenario B2: Email quality assessment - identifies shared/generic emails that need IR deduplication (BofA referral analog)",
+        "dimensions": [
+          {
+            "apiName": "email_domain__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Text",
+            "dateGranularity": null,
+            "displayName": "email_domain",
+            "fieldRole": "DIMENSION",
+            "formula": "ssot__ContactPointEmail__dlm.ssot__EmailAddress__c"
+          }
+        ],
+        "displayName": "Email Contact Quality Metric",
+        "expression": "SELECT ssot__ContactPointEmail__dlm.ssot__EmailAddress__c as email_domain__c, COUNT(ssot__ContactPointEmail__dlm.ssot__Id__c) as email_count__c FROM ssot__ContactPointEmail__dlm GROUP BY ssot__ContactPointEmail__dlm.ssot__EmailAddress__c",
+        "isEnabled": true,
+        "lastCalcInsightStatusDateTime": "2026-07-04T20:00:23.000Z",
+        "lastCalcInsightStatusErrorCode": "CREATE_FAILED",
+        "lastRunDateTime": null,
+        "lastRunStatus": null,
+        "lastRunStatusDateTime": null,
+        "lastRunStatusErrorCode": null,
+        "measures": [
+          {
+            "apiName": "email_count__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "email_count",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__ContactPointEmail__dlm.ssot__Id__c)"
+          }
+        ],
+        "publishScheduleEndDate": null,
+        "publishScheduleInterval": "NOT_SCHEDULED",
+        "publishScheduleStartDateTime": null,
+        "queryDialect": "ANSI_SQL",
+        "subType": null
+      },
+      {
+        "apiName": "cs24_ad_0704_completeness__cio",
+        "calculatedInsightStatus": "ERROR",
+        "creationType": "Custom",
+        "dataSpace": "default",
+        "definitionStatus": "IN_USE",
+        "definitionType": "CALCULATED_METRIC",
+        "description": null,
+        "dimensions": [
+          {
+            "apiName": "individual_id__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__EmailAddress__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Text",
+            "dateGranularity": null,
+            "displayName": "individual_id",
+            "fieldRole": "DIMENSION",
+            "formula": "ssot__Individual__dlm.ssot__Id__c"
+          }
+        ],
+        "displayName": "CS24 Profile Completeness Score",
+        "expression": "SELECT ssot__Individual__dlm.ssot__Id__c AS individual_id__c, SUM(CASE WHEN ssot__ContactPointEmail__dlm.ssot__EmailAddress__c IS NOT NULL THEN 1 ELSE 0 END) AS has_email__c, SUM(CASE WHEN ssot__ContactPointPhone__dlm.ssot__TelephoneNumber__c IS NOT NULL THEN 1 ELSE 0 END) AS has_phone__c FROM ssot__Individual__dlm LEFT JOIN ssot__ContactPointEmail__dlm ON ssot__ContactPointEmail__dlm.ssot__PartyId__c = ssot__Individual__dlm.ssot__Id__c LEFT JOIN ssot__ContactPointPhone__dlm ON ssot__ContactPointPhone__dlm.ssot__PartyId__c = ssot__Individual__dlm.ssot__Id__c GROUP BY ssot__Individual__dlm.ssot__Id__c",
+        "isEnabled": true,
+        "lastCalcInsightStatusDateTime": "2026-07-05T03:35:19.000Z",
+        "lastCalcInsightStatusErrorCode": "CREATE_FAILED",
+        "lastRunDateTime": null,
+        "lastRunStatus": null,
+        "lastRunStatusDateTime": null,
+        "lastRunStatusErrorCode": null,
+        "measures": [
+          {
+            "apiName": "has_phone__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__EmailAddress__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "has_phone",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "SUM(CASE WHEN ssot__ContactPointPhone__dlm.ssot__TelephoneNumber__c IS NOT NULL THEN 1 ELSE 0 END)"
+          },
+          {
+            "apiName": "has_email__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__EmailAddress__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "has_email",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "SUM(CASE WHEN ssot__ContactPointEmail__dlm.ssot__EmailAddress__c IS NOT NULL THEN 1 ELSE 0 END)"
+          }
+        ],
+        "publishScheduleEndDate": null,
+        "publishScheduleInterval": "NOT_SCHEDULED",
+        "publishScheduleStartDateTime": null,
+        "queryDialect": "ANSI_SQL",
+        "subType": null
+      },
+      {
+        "apiName": "Customer_Profile_Completeness__cio",
+        "calculatedInsightStatus": "ERROR",
+        "creationType": "Custom",
+        "dataSpace": "default",
+        "definitionStatus": "IN_USE",
+        "definitionType": "CALCULATED_METRIC",
+        "description": "Fast-Start Scenario: Profile completeness metric for Under Armour CDP displacement analog",
+        "dimensions": [
+          {
+            "apiName": "last_name__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Text",
+            "dateGranularity": null,
+            "displayName": "last_name",
+            "fieldRole": "DIMENSION",
+            "formula": "ssot__Individual__dlm.ssot__LastName__c"
+          }
+        ],
+        "displayName": "Customer Profile Completeness Score",
+        "expression": "SELECT ssot__Individual__dlm.ssot__LastName__c as last_name__c, COUNT(ssot__Individual__dlm.ssot__Id__c) as profile_count__c FROM ssot__Individual__dlm GROUP BY ssot__Individual__dlm.ssot__LastName__c",
+        "isEnabled": true,
+        "lastCalcInsightStatusDateTime": "2026-07-04T19:59:50.000Z",
+        "lastCalcInsightStatusErrorCode": "CREATE_FAILED",
+        "lastRunDateTime": null,
+        "lastRunStatus": null,
+        "lastRunStatusDateTime": null,
+        "lastRunStatusErrorCode": null,
+        "measures": [
+          {
+            "apiName": "profile_count__c",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "profile_count",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__Individual__dlm.ssot__Id__c)"
+          }
+        ],
+        "publishScheduleEndDate": null,
+        "publishScheduleInterval": "NOT_SCHEDULED",
+        "publishScheduleStartDateTime": null,
+        "queryDialect": "ANSI_SQL",
+        "subType": null
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

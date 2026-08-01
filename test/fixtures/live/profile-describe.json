@@ -1,0 +1,5500 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 profile describe",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "metadata": [
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Account Contact Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountId__c",
+              "displayName": "Account",
+              "type": "STRING",
+              "keyQualifier": "KQ_AccountId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AssistantName__c",
+              "displayName": "Assistant Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AssistantPhone__c",
+              "displayName": "Assistant Phone",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__DepartmentName__c",
+              "displayName": "Department Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__FirstName__c",
+              "displayName": "First Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Gender__c",
+              "displayName": "Gender",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Account Contact Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastActivityDate__c",
+              "displayName": "Last Activity Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastName__c",
+              "displayName": "Last Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__OwnerId__c",
+              "displayName": "Owner",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PersonName__c",
+              "displayName": "Person Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Title__c",
+              "displayName": "Title",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_BusinessPhoneId__c",
+              "displayName": "Key Qualifier Business Phone",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_ContactEmailId__c",
+              "displayName": "Key Qualifier Contact Email",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_FaxPhoneId__c",
+              "displayName": "Key Qualifier Fax Phone",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_HomePhoneId__c",
+              "displayName": "Key Qualifier Home Phone",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_IndividualId__c",
+              "displayName": "Key Qualifier Individual",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_MailingAddressId__c",
+              "displayName": "Key Qualifier Mailing Address",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_MobilePhoneId__c",
+              "displayName": "Key Qualifier Mobile Phone",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_ReportsToAccountContactId__c",
+              "displayName": "Key Qualifier Reports To Account Contact",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__BusinessPhoneId__c",
+              "displayName": "Business Phone",
+              "type": "STRING",
+              "keyQualifier": "KQ_BusinessPhoneId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ContactEmailId__c",
+              "displayName": "Contact Email",
+              "type": "STRING",
+              "keyQualifier": "KQ_ContactEmailId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__FaxPhoneId__c",
+              "displayName": "Fax Phone",
+              "type": "STRING",
+              "keyQualifier": "KQ_FaxPhoneId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__HomePhoneId__c",
+              "displayName": "Home Phone",
+              "type": "STRING",
+              "keyQualifier": "KQ_HomePhoneId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IndividualId__c",
+              "displayName": "Individual",
+              "type": "STRING",
+              "keyQualifier": "KQ_IndividualId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__MailingAddressId__c",
+              "displayName": "Mailing Address",
+              "type": "STRING",
+              "keyQualifier": "KQ_MailingAddressId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__MobilePhoneId__c",
+              "displayName": "Mobile Phone",
+              "type": "STRING",
+              "keyQualifier": "KQ_MobilePhoneId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ReportsToAccountContactId__c",
+              "displayName": "Reports To Account Contact",
+              "type": "STRING",
+              "keyQualifier": "KQ_ReportsToAccountContactId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_AccountId__c",
+              "displayName": "Key Qualifier Account",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Profile",
+          "name": "ssot__AccountContact__dlm",
+          "displayName": "Account Contact",
+          "relationships": [
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__AccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__AccountContact__dlm",
+              "fromEntityAttribute": "ssot__ReportsToAccountContactId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__OpportunityContact__dlm",
+              "toEntity": "ssot__AccountContact__dlm",
+              "fromEntityAttribute": "ssot__AccountContactId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramGroupMemberRelationship__dlm",
+              "toEntity": "ssot__AccountContact__dlm",
+              "fromEntityAttribute": "ssot__AccountContactId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__BusinessPhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointEmail__dlm",
+              "fromEntityAttribute": "ssot__ContactEmailId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__FaxPhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__HomePhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__IndividualId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointAddress__dlm",
+              "fromEntityAttribute": "ssot__MailingAddressId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__MobilePhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__AccountContact__dlm",
+              "fromEntityAttribute": "ssot__ReportsToAccountContactId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Account Contact Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "AccountContact"
+        },
+        {
+          "fields": [
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Account Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountBusinessType__c",
+              "displayName": "Account Business Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountOwnershipType__c",
+              "displayName": "Account Ownership Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountRatingType__c",
+              "displayName": "Account Rating Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountSource__c",
+              "displayName": "Account Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountType__c",
+              "displayName": "Account Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountTypeId__c",
+              "displayName": "Account Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AnnualRevenueAmount__c",
+              "displayName": "Annual Revenue Amount",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Description__c",
+              "displayName": "Account Description",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__EmployeeCount__c",
+              "displayName": "Employee Count",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Account Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastActivityDate__c",
+              "displayName": "Last Activity Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Number__c",
+              "displayName": "Account Number",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__OwnerId__c",
+              "displayName": "Owner",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PrimaryIndustry__c",
+              "displayName": "Primary Industry",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ProfileImageUrl__c",
+              "displayName": "Profile Image URL",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ShippingPhoneid__c",
+              "displayName": "Shipping Phone",
+              "type": "STRING",
+              "keyQualifier": "KQ_ShippingPhoneid__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__WebsiteAddr__c",
+              "displayName": "Website",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_BillContactAddressId__c",
+              "displayName": "Key Qualifier Bill Contact Address",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_FaxPhoneId__c",
+              "displayName": "Key Qualifier Fax Phone",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_ParentAccountId__c",
+              "displayName": "Key Qualifier Parent Account",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_SalesPhoneId__c",
+              "displayName": "Key Qualifier Sales Phone",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_ShippingPhoneid__c",
+              "displayName": "Key Qualifier Shipping Phone",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__BillContactAddressId__c",
+              "displayName": "Bill Contact Address",
+              "type": "STRING",
+              "keyQualifier": "KQ_BillContactAddressId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__FaxPhoneId__c",
+              "displayName": "Fax Phone",
+              "type": "STRING",
+              "keyQualifier": "KQ_FaxPhoneId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ParentAccountId__c",
+              "displayName": "Parent Account",
+              "type": "STRING",
+              "keyQualifier": "KQ_ParentAccountId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__SalesPhoneId__c",
+              "displayName": "Sales Phone",
+              "type": "STRING",
+              "keyQualifier": "KQ_SalesPhoneId__c",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Profile",
+          "name": "ssot__Account__dlm",
+          "displayName": "Account",
+          "relationships": [
+            {
+              "fromEntity": "mcp_test_account_idx_chunk__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "SourceRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__AccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointEmail__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Individual__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PrimaryAccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointAddress__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__ParentAccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__FinancialCustomer__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__AccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointPhone__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramPartner__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PartnerAccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramGroupMemberRelationship__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__AccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__ShippingPhoneid__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__ContactPointAddress__dlm",
+              "fromEntityAttribute": "ssot__BillContactAddressId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__FaxPhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__ParentAccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__SalesPhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Account Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "Account"
+        },
+        {
+          "fields": [
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Financial Customer Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CustomerRating__c",
+              "displayName": "Customer Rating",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Financial Customer Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_AccountId__c",
+              "displayName": "Key Qualifier Account",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountId__c",
+              "displayName": "Account",
+              "type": "STRING",
+              "keyQualifier": "KQ_AccountId__c",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Profile",
+          "name": "ssot__FinancialCustomer__dlm",
+          "displayName": "Financial Customer",
+          "relationships": [
+            {
+              "fromEntity": "ssot__FinancialCustomer__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__AccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Financial Customer Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "FinancialCustomer"
+        },
+        {
+          "fields": [
+            {
+              "name": "ssot__PhotoURL__c",
+              "displayName": "Photo URL",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Individual Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__BirthDate__c",
+              "displayName": "Birth Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__ExternalRecordId__c",
+              "displayName": "External Record Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__FirstName__c",
+              "displayName": "First Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__GenderIdentity__c",
+              "displayName": "Gender Identity",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Individual Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastName__c",
+              "displayName": "Last Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PartyId__c",
+              "displayName": "Party",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PersonName__c",
+              "displayName": "Person Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PrimaryAccountId__c",
+              "displayName": "Primary Account",
+              "type": "STRING",
+              "keyQualifier": "KQ_PrimaryAccountId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Pronoun__c",
+              "displayName": "Pronoun",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Salutation__c",
+              "displayName": "Salutation",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__TitleName__c",
+              "displayName": "Title",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_PrimaryAccountId__c",
+              "displayName": "Key Qualifier Primary Account",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ExternalSourceId__c",
+              "displayName": "External Source Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Profile",
+          "name": "ssot__Individual__dlm",
+          "displayName": "Individual",
+          "relationships": [
+            {
+              "fromEntity": "ssot__Individual__dlm",
+              "toEntity": "IndividualIdentityLink__dlm",
+              "fromEntityAttribute": "ssot__Id__c",
+              "toEntityAttribute": "SourceRecordId__c",
+              "cardinality": "ONETOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointAddress__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Party__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__IndividualId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__IndividualId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointEmail__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointPhone__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "Individual_SM_1782730038872__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "Id__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "Individual_SMH_1782730047378__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "Id__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Individual__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PrimaryAccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Individual Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "Individual"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Party Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Party Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PartyType__c",
+              "displayName": "Party Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IndividualId__c",
+              "displayName": "Individual",
+              "type": "STRING",
+              "keyQualifier": "KQ_IndividualId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_IndividualId__c",
+              "displayName": "Key Qualifier Individual",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Profile",
+          "name": "ssot__Party__dlm",
+          "displayName": "Party",
+          "relationships": [
+            {
+              "fromEntity": "ssot__Party__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__IndividualId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Party Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "Party"
+        },
+        {
+          "fields": [
+            {
+              "name": "ssot__BirthDate__c",
+              "displayName": "Birth Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__GenderIdentity__c",
+              "displayName": "Gender Identity",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__ExternalRecordId__c",
+              "displayName": "External Record Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ExternalSourceId__c",
+              "displayName": "External Source Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__FirstName__c",
+              "displayName": "First Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Unified Individual Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastName__c",
+              "displayName": "Last Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PartyId__c",
+              "displayName": "Party",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PersonName__c",
+              "displayName": "Person Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PrimaryAccountId__c",
+              "displayName": "Primary Account",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Pronoun__c",
+              "displayName": "Pronoun",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Salutation__c",
+              "displayName": "Salutation",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__TitleName__c",
+              "displayName": "Title",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PhotoURL__c",
+              "displayName": "Photo URL",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [
+            {
+              "fields": [
+                {
+                  "name": "ssot__FirstName__c",
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "name": "ssot__LastName__c",
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "name": "ssot__FirstName__c",
+                  "type": "STRING"
+                },
+                {
+                  "name": "ssot__LastName__c",
+                  "type": "STRING"
+                }
+              ]
+            }
+          ],
+          "category": "Profile",
+          "name": "UnifiedIndividual__dlm",
+          "displayName": "Unified Individual",
+          "relationships": [
+            {
+              "fromEntity": "Individual_Unified_SM_1783130214848__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "Id__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "Individual_Unified_SMH_1783130220309__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "Id__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "UnifiedContactPointAddress__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "UnifiedContactPointPhone__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "IndividualIdentityLink__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "UnifiedRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "UnifiedContactPointEmail__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Unified Individual Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "UnifiedIndividual"
+        },
+        {
+          "fields": [
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_SourceRecordId__c",
+              "displayName": "Key Qualifier Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "PriorityBucket__c",
+              "displayName": "Priority Bucket",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "SourceRecordId__c",
+              "displayName": "Contact Point Address Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_SourceRecordId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__InternalOrganizationId__c",
+              "displayName": "Internal Organization",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "UnifiedRecordId__c",
+              "displayName": "Unified Contact Point Address Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ContactPointAddressIdentityLink__dlm",
+          "displayName": "Unified Link Contact Point Address",
+          "relationships": [
+            {
+              "fromEntity": "ssot__ContactPointAddress__dlm",
+              "toEntity": "ContactPointAddressIdentityLink__dlm",
+              "fromEntityAttribute": "ssot__Id__c",
+              "toEntityAttribute": "SourceRecordId__c",
+              "cardinality": "ONETOONE"
+            },
+            {
+              "fromEntity": "ContactPointAddressIdentityLink__dlm",
+              "toEntity": "UnifiedContactPointAddress__dlm",
+              "fromEntityAttribute": "UnifiedRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "indexOrder": "2"
+            },
+            {
+              "name": "SourceRecordId__c",
+              "displayName": "Contact Point Address Id",
+              "indexOrder": "1"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "indexOrder": "3"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "ContactPointAddressIdentityLink"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_SourceRecordId__c",
+              "displayName": "Key Qualifier Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "PriorityBucket__c",
+              "displayName": "Priority Bucket",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "SourceRecordId__c",
+              "displayName": "Contact Point Email Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_SourceRecordId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__InternalOrganizationId__c",
+              "displayName": "Internal Organization",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "UnifiedRecordId__c",
+              "displayName": "Unified Contact Point Email Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ContactPointEmailIdentityLink__dlm",
+          "displayName": "Unified Link Contact Point Email",
+          "relationships": [
+            {
+              "fromEntity": "ssot__ContactPointEmail__dlm",
+              "toEntity": "ContactPointEmailIdentityLink__dlm",
+              "fromEntityAttribute": "ssot__Id__c",
+              "toEntityAttribute": "SourceRecordId__c",
+              "cardinality": "ONETOONE"
+            },
+            {
+              "fromEntity": "ContactPointEmailIdentityLink__dlm",
+              "toEntity": "UnifiedContactPointEmail__dlm",
+              "fromEntityAttribute": "UnifiedRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "SourceRecordId__c",
+              "displayName": "Contact Point Email Id",
+              "indexOrder": "1"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "indexOrder": "2"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "indexOrder": "3"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "ContactPointEmailIdentityLink"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_SourceRecordId__c",
+              "displayName": "Key Qualifier Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "PriorityBucket__c",
+              "displayName": "Priority Bucket",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "SourceRecordId__c",
+              "displayName": "Contact Point Phone Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_SourceRecordId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__InternalOrganizationId__c",
+              "displayName": "Internal Organization",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "UnifiedRecordId__c",
+              "displayName": "Unified Contact Point Phone Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ContactPointPhoneIdentityLink__dlm",
+          "displayName": "Unified Link Contact Point Phone",
+          "relationships": [
+            {
+              "fromEntity": "ssot__ContactPointPhone__dlm",
+              "toEntity": "ContactPointPhoneIdentityLink__dlm",
+              "fromEntityAttribute": "ssot__Id__c",
+              "toEntityAttribute": "SourceRecordId__c",
+              "cardinality": "ONETOONE"
+            },
+            {
+              "fromEntity": "ContactPointPhoneIdentityLink__dlm",
+              "toEntity": "UnifiedContactPointPhone__dlm",
+              "fromEntityAttribute": "UnifiedRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "SourceRecordId__c",
+              "displayName": "Contact Point Phone Id",
+              "indexOrder": "1"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "indexOrder": "2"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "indexOrder": "3"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "ContactPointPhoneIdentityLink"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_SourceRecordId__c",
+              "displayName": "Key Qualifier Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "MatchKeys__c",
+              "displayName": "Match Keys",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "PriorityBucket__c",
+              "displayName": "Priority Bucket",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "SourceRecordId__c",
+              "displayName": "Individual Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_SourceRecordId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__InternalOrganizationId__c",
+              "displayName": "Internal Organization",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "UnifiedRecordId__c",
+              "displayName": "Unified Individual Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [
+            {
+              "fields": [
+                {
+                  "name": "SourceRecordId__c",
+                  "type": "STRING"
+                }
+              ]
+            }
+          ],
+          "category": "Related",
+          "name": "IndividualIdentityLink__dlm",
+          "displayName": "Unified Link Individual",
+          "relationships": [
+            {
+              "fromEntity": "ssot__Individual__dlm",
+              "toEntity": "IndividualIdentityLink__dlm",
+              "fromEntityAttribute": "ssot__Id__c",
+              "toEntityAttribute": "SourceRecordId__c",
+              "cardinality": "ONETOONE"
+            },
+            {
+              "fromEntity": "IndividualIdentityLink__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "UnifiedRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "SourceRecordId__c",
+              "displayName": "Individual Id",
+              "indexOrder": "1"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "indexOrder": "2"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "indexOrder": "3"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "IndividualIdentityLink"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_CampaignId__c",
+              "displayName": "Key Qualifier Campaign",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Bulk Email Message Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "CcAddress__c",
+              "displayName": "CC Address",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "OwnerId__c",
+              "displayName": "Owner",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ReplyToName__c",
+              "displayName": "Reply To Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CampaignId__c",
+              "displayName": "Campaign",
+              "type": "STRING",
+              "keyQualifier": "KQ_CampaignId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__FromAddress__c",
+              "displayName": "From Address",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__FromName__c",
+              "displayName": "From Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__HasAttachment__c",
+              "displayName": "Has Attachment",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__HTMLBodyText__c",
+              "displayName": "HTML Body",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Bulk Email Message Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ReplyToAddress__c",
+              "displayName": "Reply To Address",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ScheduledDate__c",
+              "displayName": "Scheduled Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__SendMechanismName__c",
+              "displayName": "Send Mechanism Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Subject__c",
+              "displayName": "Subject",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__BulkEmailMessage__dlm",
+          "displayName": "Bulk Email Message",
+          "relationships": [
+            {
+              "fromEntity": "ssot__BulkEmailMessage__dlm",
+              "toEntity": "ssot__Campaign__dlm",
+              "fromEntityAttribute": "ssot__CampaignId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Bulk Email Message Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "BulkEmailMessage"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Business Period Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__BusinessPeriodType__c",
+              "displayName": "Business Period Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__FullyQualifiedLabel__c",
+              "displayName": "Fully Qualified Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Business Period Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PeriodLabel__c",
+              "displayName": "Period Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PeriodNumber__c",
+              "displayName": "Period Number",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__QuarterLabel__c",
+              "displayName": "Quarter Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__BusinessPeriod__dlm",
+          "displayName": "Business Period",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Business Period Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "BusinessPeriod"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Campaign Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ActualCostAmount__c",
+              "displayName": "Actual Cost Amount",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__BudgetedCostAmount__c",
+              "displayName": "Budgeted Cost Amount",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__CampaignEndDate__c",
+              "displayName": "Campaign End Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__CampaignStartDate__c",
+              "displayName": "Campaign Start Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__CampaignStatus__c",
+              "displayName": "Campaign Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CampaignType__c",
+              "displayName": "Campaign Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Description__c",
+              "displayName": "Description",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ExpectedResponsePercent__c",
+              "displayName": "Expected Response Percent",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__ExpectedRevenueAmount__c",
+              "displayName": "Expected Revenue Amount",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Campaign Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_ParentCampaignId__c",
+              "displayName": "Key Qualifier Parent Campaign Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ParentCampaignId__c",
+              "displayName": "Parent Campaign Status",
+              "type": "STRING",
+              "keyQualifier": "KQ_ParentCampaignId__c",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__Campaign__dlm",
+          "displayName": "Campaign",
+          "relationships": [
+            {
+              "fromEntity": "ssot__Campaign__dlm",
+              "toEntity": "ssot__Campaign__dlm",
+              "fromEntityAttribute": "ssot__ParentCampaignId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__BulkEmailMessage__dlm",
+              "toEntity": "ssot__Campaign__dlm",
+              "fromEntityAttribute": "ssot__CampaignId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Campaign__dlm",
+              "toEntity": "ssot__Campaign__dlm",
+              "fromEntityAttribute": "ssot__ParentCampaignId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Campaign Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "Campaign"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Category Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CategoryStatus__c",
+              "displayName": "Category Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Category Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LabelName__c",
+              "displayName": "Label",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__SortOrderNumber__c",
+              "displayName": "Sort Order",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__Category__dlm",
+          "displayName": "Category",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Category Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "Category"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Contact Point Address Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AddressLine1__c",
+              "displayName": "Address Line 1",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CityId__c",
+              "displayName": "City",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CountryId__c",
+              "displayName": "Country",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CountryName__c",
+              "displayName": "Country Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__GeoLatitude__c",
+              "displayName": "Geo Latitude",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__GeoLongitude__c",
+              "displayName": "Geo Longitude",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Contact Point Address Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__PartyId__c",
+              "displayName": "Party",
+              "type": "STRING",
+              "keyQualifier": "KQ_PartyId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PostalCodeId__c",
+              "displayName": "Postal Code",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__StateProvinceId__c",
+              "displayName": "State Province",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__StateProvinceName__c",
+              "displayName": "State Province Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_PartyId__c",
+              "displayName": "Key Qualifier Party",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CityName__c",
+              "displayName": "City Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PostalCodeText__c",
+              "displayName": "Postal Code Text",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__ContactPointAddress__dlm",
+          "displayName": "Contact Point Address",
+          "relationships": [
+            {
+              "fromEntity": "ssot__ContactPointAddress__dlm",
+              "toEntity": "ContactPointAddressIdentityLink__dlm",
+              "fromEntityAttribute": "ssot__Id__c",
+              "toEntityAttribute": "SourceRecordId__c",
+              "cardinality": "ONETOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointAddress__dlm",
+              "fromEntityAttribute": "ssot__MailingAddressId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__ContactPointAddress__dlm",
+              "fromEntityAttribute": "ssot__BillContactAddressId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointAddress__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointAddress__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Contact Point Address Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "ContactPointAddress"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Contact Point Email Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__EmailAddress__c",
+              "displayName": "Email Address",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__EmailLatestBounceDateTime__c",
+              "displayName": "Email Latest Bounce Date Time",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__EmailLatestBounceReasonText__c",
+              "displayName": "Email Latest Bounce Reason Text",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Contact Point Email Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "KQ_PartyId__c",
+              "displayName": "Key Qualifier Party",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PartyId__c",
+              "displayName": "Party",
+              "type": "STRING",
+              "keyQualifier": "KQ_PartyId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__ContactPointEmail__dlm",
+          "displayName": "Contact Point Email",
+          "relationships": [
+            {
+              "fromEntity": "ssot__ContactPointEmail__dlm",
+              "toEntity": "ContactPointEmailIdentityLink__dlm",
+              "fromEntityAttribute": "ssot__Id__c",
+              "toEntityAttribute": "SourceRecordId__c",
+              "cardinality": "ONETOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointEmail__dlm",
+              "fromEntityAttribute": "ssot__ContactEmailId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointEmail__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointEmail__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Contact Point Email Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "ContactPointEmail"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Contact Point Phone Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__FormattedE164PhoneNumber__c",
+              "displayName": "Formatted E164 Phone Number",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Contact Point Phone Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__TelephoneNumber__c",
+              "displayName": "Telephone Number",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_PartyId__c",
+              "displayName": "Key Qualifier Party",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ForBusinessUse__c",
+              "displayName": "For Business Use",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ForPersonalUse__c",
+              "displayName": "For Personal Use",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PartyId__c",
+              "displayName": "Party",
+              "type": "STRING",
+              "keyQualifier": "KQ_PartyId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__ContactPointPhone__dlm",
+          "displayName": "Contact Point Phone",
+          "relationships": [
+            {
+              "fromEntity": "ssot__ContactPointPhone__dlm",
+              "toEntity": "ContactPointPhoneIdentityLink__dlm",
+              "fromEntityAttribute": "ssot__Id__c",
+              "toEntityAttribute": "SourceRecordId__c",
+              "cardinality": "ONETOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__MobilePhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__FaxPhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__HomePhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__BusinessPhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__ShippingPhoneid__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__FaxPhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Account__dlm",
+              "toEntity": "ssot__ContactPointPhone__dlm",
+              "fromEntityAttribute": "ssot__SalesPhoneId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointPhone__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointPhone__dlm",
+              "toEntity": "ssot__Individual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Contact Point Phone Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "ContactPointPhone"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Digital Content Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DigitalContentType__c",
+              "displayName": "Digital Content Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Digital Content Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__DigitalContent__dlm",
+          "displayName": "Digital Content",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Digital Content Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "DigitalContent"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Engagement Channel Type Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ContactPointType__c",
+              "displayName": "Contact Point Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Engagement Channel Type Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__EngagementChannelType__dlm",
+          "displayName": "Engagement Channel Type",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Engagement Channel Type Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "EngagementChannelType"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Aggr Point Expiration Ledger Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ExpirationDate__c",
+              "displayName": "Expiration Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__ExpirationPointsNumber__c",
+              "displayName": "Expiration Points Number",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Aggr Point Expiration Ledger Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramCurrency__c",
+              "displayName": "Loyalty Program Currency",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramMemberId__c",
+              "displayName": "Loyalty Program Member",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PointsStatus__c",
+              "displayName": "Points Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__RedeemedPointsNumber__c",
+              "displayName": "Redeemed Points Number",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyAggregatedPointExpirationLedger__dlm",
+          "displayName": "Loyalty Aggr Point Expiration Ledger",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Aggr Point Expiration Ledger Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyAggregatedPointExpirationLedger"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Member Currency Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyProgramCurrencyId__c",
+              "displayName": "Key Qualifier Loyalty Program Currency",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "LoyaltyProgramCurrencyId__c",
+              "displayName": "Loyalty Program Currency",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyProgramCurrencyId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__ExpirablePointsNumber__c",
+              "displayName": "Expirable Points",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Member Currency Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastAccrualProcessedDate__c",
+              "displayName": "Last Accrual Processed Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastEscrowProcessedDateTime__c",
+              "displayName": "Last Escrow Processed Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastExpirationProcessRunDate__c",
+              "displayName": "Last Expiration Process Run Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastPointsAggregationDateTime__c",
+              "displayName": "Last Points Aggregation Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastResetDate__c",
+              "displayName": "Last Reset Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyProgramMemberId__c",
+              "displayName": "Loyalty Program Member",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__NextResetDate__c",
+              "displayName": "Next Reset Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__PointsBalanceBeforeResetNumber__c",
+              "displayName": "Points Balance Before Reset",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__PointsBalanceNumber__c",
+              "displayName": "Points Balance",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__PointsBalBeforeSecondLastReset__c",
+              "displayName": "Points Bal Bef Second To Last Reset",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__RedemStlPendFromDateTime__c",
+              "displayName": "Redemption Stl Pending From Date Time",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__TotalEscrowAccruedPointsNumber__c",
+              "displayName": "Total Escrow Points Accrued",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__TotalPointsAccruedNumber__c",
+              "displayName": "Total Points Accrued",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__TotalPointsExpiredNumber__c",
+              "displayName": "Total Points Expired",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__TotalPointsRedeemedNumber__c",
+              "displayName": "Total Points Redeemed",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyMemberCurrency__dlm",
+          "displayName": "Loyalty Member Currency",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyMemberCurrency__dlm",
+              "toEntity": "ssot__LoyaltyProgramCurrency__dlm",
+              "fromEntityAttribute": "LoyaltyProgramCurrencyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Member Currency Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyMemberCurrency"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Member Tier Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyTierId__c",
+              "displayName": "Key Qualifier Loyalty Tier",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__EffectiveDate__c",
+              "displayName": "Effective Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Member Tier Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyMemberTierChangeTypeId__c",
+              "displayName": "Loyalty Member Tier Change Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramMemberId__c",
+              "displayName": "Loyalty Program Member",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyTierId__c",
+              "displayName": "Loyalty Tier",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyTierId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__TierChangeReasonText__c",
+              "displayName": "Tier Change Reason",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__TierExpirationDate__c",
+              "displayName": "TierExpirationDate",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyMemberTier__dlm",
+          "displayName": "Loyalty Member Tier",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyMemberTier__dlm",
+              "toEntity": "ssot__LoyaltyTier__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyTierId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Member Tier Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyMemberTier"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Partner Product Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyProgramPartnerId__c",
+              "displayName": "Key Qualifier Loyalty Program Partner",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__EndDate__c",
+              "displayName": "End Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Partner Product Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyProgramPartnerId__c",
+              "displayName": "Loyalty Program Partner",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyProgramPartnerId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ProductId__c",
+              "displayName": "Product",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__StartDate__c",
+              "displayName": "Start Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyPartnerProduct__dlm",
+          "displayName": "Loyalty Partner Product",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyPartnerProduct__dlm",
+              "toEntity": "ssot__LoyaltyProgramPartner__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramPartnerId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Partner Product Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyPartnerProduct"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Program Badge Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__BadgeStatus__c",
+              "displayName": "Badge Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__BadgeValidityType__c",
+              "displayName": "Badge Validity Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Description__c",
+              "displayName": "Description",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Badge Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ImageUrl__c",
+              "displayName": "Image Url",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramId__c",
+              "displayName": "Loyalty Program",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__StartDate__c",
+              "displayName": "Start Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__ValidityDurationQuantity__c",
+              "displayName": "Validity Duration",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__ValidityDurationUOMId__c",
+              "displayName": "Validity Duration UOM",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ValidityEndDate__c",
+              "displayName": "Validity End Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramBadge__dlm",
+          "displayName": "Loyalty Program Badge",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Badge Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramBadge"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Program Currency Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyProgramId__c",
+              "displayName": "Key Qualifier Loyalty Program",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyTierGroupId__c",
+              "displayName": "Key Qualifier Loyalty Tier Group",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__CurrencyExpirationExtensionModelId__c",
+              "displayName": "Currency Expiration Extension Model",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CurrencyExpirationModelId__c",
+              "displayName": "Currency Expiration Model",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CurrencyTypeId__c",
+              "displayName": "Currency Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ExpirationPeriodFrequencyNumber__c",
+              "displayName": "Expiration Period Frequency",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__ExpirationPeriodFrequencyTimeUOM__c",
+              "displayName": "Expiration Period Frequency Time UOM",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Currency Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsActive__c",
+              "displayName": "Is Active",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsPrimary__c",
+              "displayName": "Is Primary",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyProgramId__c",
+              "displayName": "Loyalty Program",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyProgramId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyTierGroupId__c",
+              "displayName": "Loyalty Tier Group",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyTierGroupId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__UnitCostAmount__c",
+              "displayName": "Unit Cost",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramCurrency__dlm",
+          "displayName": "Loyalty Program Currency",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyMemberCurrency__dlm",
+              "toEntity": "ssot__LoyaltyProgramCurrency__dlm",
+              "fromEntityAttribute": "LoyaltyProgramCurrencyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramCurrency__dlm",
+              "toEntity": "ssot__LoyaltyProgram__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramCurrency__dlm",
+              "toEntity": "ssot__LoyaltyTierGroup__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyTierGroupId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Currency Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramCurrency"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Program Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Description__c",
+              "displayName": "Description",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__EscrowPeriodNumber__c",
+              "displayName": "Escrow Period",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyProgramStatusId__c",
+              "displayName": "Loyalty Program Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgram__dlm",
+          "displayName": "Loyalty Program",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyTierGroup__dlm",
+              "toEntity": "ssot__LoyaltyProgram__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramPartner__dlm",
+              "toEntity": "ssot__LoyaltyProgram__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramCurrency__dlm",
+              "toEntity": "ssot__LoyaltyProgram__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Promotion__dlm",
+              "toEntity": "ssot__LoyaltyProgram__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgram"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Program Enagement Attribute Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AttributeStatus__c",
+              "displayName": "Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DefaultValueText__c",
+              "displayName": "Default Value",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Description__c",
+              "displayName": "Description",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__EndDate__c",
+              "displayName": "End Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Enagement Attribute Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramId__c",
+              "displayName": "Loyalty Program",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__MaximumResetCountPerPeriod__c",
+              "displayName": "Maximum Reset Count Per Period",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ResetValueOnText__c",
+              "displayName": "Reset Value On",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ShouldOverwriteAttributeCurrentValue__c",
+              "displayName": "Should Overwrite Attribute Current Val",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__StartDate__c",
+              "displayName": "Start Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__TargetValueText__c",
+              "displayName": "Target Value",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ValueResetFrequency__c",
+              "displayName": "Value Reset Frequency",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramEngagementAttribute__dlm",
+          "displayName": "Loyalty Program Engagement Attribute",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyProgramMemberAttributeValue__dlm",
+              "toEntity": "ssot__LoyaltyProgramEngagementAttribute__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyPgmEngmtAttributeId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramEngmtAttributePromotion__dlm",
+              "toEntity": "ssot__LoyaltyProgramEngagementAttribute__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramEngagementAttributeId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Enagement Attribute Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramEngagementAttribute"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Pgm Engmt Attribute Promotion Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyProgramEngagementAttributeId__c",
+              "displayName": "Key Qualifier Loyalty Program Engagement Attribute",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_PromotionId__c",
+              "displayName": "Key Qualifier Promotion",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Pgm Engmt Attribute Promotion Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramEngagementAttributeId__c",
+              "displayName": "Loyalty Program Engagement Attribute",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyProgramEngagementAttributeId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PromotionId__c",
+              "displayName": "Promotion",
+              "type": "STRING",
+              "keyQualifier": "KQ_PromotionId__c",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramEngmtAttributePromotion__dlm",
+          "displayName": "Loyalty Pgm Engmt Attribute Promotion",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyProgramEngmtAttributePromotion__dlm",
+              "toEntity": "ssot__LoyaltyProgramEngagementAttribute__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramEngagementAttributeId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramEngmtAttributePromotion__dlm",
+              "toEntity": "ssot__Promotion__dlm",
+              "fromEntityAttribute": "ssot__PromotionId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Pgm Engmt Attribute Promotion Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramEngmtAttributePromotion"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Pgm Group Member Relationship Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CanMemberRedeemFromGroup__c",
+              "displayName": "Can Member Redeem From Group",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ContributionCalculationType__c",
+              "displayName": "Contribution Calculation Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Pgm Group Member Relationship Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramGroupMemberId__c",
+              "displayName": "Loyalty Program Group Member",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__MemberName__c",
+              "displayName": "Member Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__MemberPointContributionPercent__c",
+              "displayName": "Member Point Contribution Percent",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__MemberRole__c",
+              "displayName": "Member Role",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__RelatedLoyaltyProgramMemberId__c",
+              "displayName": "Related Loyalty Program Member",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_AccountContactId__c",
+              "displayName": "Key Qualifier Account Contact",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_AccountId__c",
+              "displayName": "Key Qualifier Account",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountContactId__c",
+              "displayName": "Account Contact",
+              "type": "STRING",
+              "keyQualifier": "KQ_AccountContactId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountId__c",
+              "displayName": "Account",
+              "type": "STRING",
+              "keyQualifier": "KQ_AccountId__c",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramGroupMemberRelationship__dlm",
+          "displayName": "Loyalty Pgm Group Member Relationship",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyProgramGroupMemberRelationship__dlm",
+              "toEntity": "ssot__AccountContact__dlm",
+              "fromEntityAttribute": "ssot__AccountContactId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramGroupMemberRelationship__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__AccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Pgm Group Member Relationship Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramGroupMemberRelationship"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Pgm Member Attribute Value Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyPgmEngmtAttributeId__c",
+              "displayName": "Key Qualifier Loyalty Program Engagement Attribute",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CumulativeValueNumber__c",
+              "displayName": "Cumulative Value",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__CurrentValueText__c",
+              "displayName": "Current Value",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__EndDate__c",
+              "displayName": "End Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Pgm Member Attribute Value Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastResetDate__c",
+              "displayName": "Last Reset Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyPgmEngmtAttributeId__c",
+              "displayName": "Loyalty Program Engagement Attribute",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyPgmEngmtAttributeId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramMemberId__c",
+              "displayName": "Loyalty Program Member",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ResetCount__c",
+              "displayName": "Reset Count Number",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__StartDate__c",
+              "displayName": "Start Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramMemberAttributeValue__dlm",
+          "displayName": "Loyalty Program Member Attribute Value",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyProgramMemberAttributeValue__dlm",
+              "toEntity": "ssot__LoyaltyProgramEngagementAttribute__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyPgmEngmtAttributeId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Pgm Member Attribute Value Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramMemberAttributeValue"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Program Member Case Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CaseId__c",
+              "displayName": "Case",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Member Case Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramMemberId__c",
+              "displayName": "Loyalty Program Member",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramMemberCase__dlm",
+          "displayName": "Loyalty Program Member Case",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Member Case Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramMemberCase"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Program Member Promotion Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_PromotionId__c",
+              "displayName": "Key Qualifier Promotion",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__CumulativeUsageCompleted__c",
+              "displayName": "Cumulative Usage Completed",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__CumulativeUsageCompletePercent__c",
+              "displayName": "Cumulative Usage Complete Percent",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__CumulativeUsageTargetNumber__c",
+              "displayName": "Cumulative Usage Target",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Member Promotion Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsEnrollmentActive__c",
+              "displayName": "Is Enrollment Active",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyProgramMemberId__c",
+              "displayName": "Loyalty Program Member",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PromotionId__c",
+              "displayName": "Promotion",
+              "type": "STRING",
+              "keyQualifier": "KQ_PromotionId__c",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramMemberPromotion__dlm",
+          "displayName": "Loyalty Program Member Promotion",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyProgramMemberPromotion__dlm",
+              "toEntity": "ssot__Promotion__dlm",
+              "fromEntityAttribute": "ssot__PromotionId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Member Promotion Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramMemberPromotion"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Program Partner Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyProgramId__c",
+              "displayName": "Key Qualifier Loyalty Program",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Partner Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyPartnerCategoryId__c",
+              "displayName": "Loyalty Partner Category",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyPartnerStatusId__c",
+              "displayName": "Loyalty Partner Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyPartnerTypeId__c",
+              "displayName": "Loyalty Partner Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramId__c",
+              "displayName": "Loyalty Program",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyProgramId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__MemberLinkingEffEndDate__c",
+              "displayName": "Member Linking Effective End Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__MemberLinkingEffStartDate__c",
+              "displayName": "Member Linking Effective Start Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__PartnerAccountId__c",
+              "displayName": "Partner Account",
+              "type": "STRING",
+              "keyQualifier": "KQ_PartnerAccountId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PartnerIndustryId__c",
+              "displayName": "Partner Industry",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PartnershipEndDate__c",
+              "displayName": "Partnership End Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__PartnershipStartDate__c",
+              "displayName": "Partnership Start Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "KQ_PartnerAccountId__c",
+              "displayName": "Key Qualifier Partner Account",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramPartner__dlm",
+          "displayName": "Loyalty Program Partner",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyProgramPartnerPromotion__dlm",
+              "toEntity": "ssot__LoyaltyProgramPartner__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramPartnerId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyPartnerProduct__dlm",
+              "toEntity": "ssot__LoyaltyProgramPartner__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramPartnerId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramPartner__dlm",
+              "toEntity": "ssot__LoyaltyProgram__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramPartner__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PartnerAccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Partner Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramPartner"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Program Partner Promotion Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyProgramPartnerId__c",
+              "displayName": "Key Qualifier Loyalty Program Partner",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_PromotionId__c",
+              "displayName": "Key Qualifier Promotion",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ContributionPercent__c",
+              "displayName": "Contribution Percentage",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Partner Promotion Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyProgramPartnerId__c",
+              "displayName": "Loyalty Program Partner",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyProgramPartnerId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PromotionId__c",
+              "displayName": "Promotion",
+              "type": "STRING",
+              "keyQualifier": "KQ_PromotionId__c",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyProgramPartnerPromotion__dlm",
+          "displayName": "Loyalty Program Partner Promotion",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyProgramPartnerPromotion__dlm",
+              "toEntity": "ssot__LoyaltyProgramPartner__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramPartnerId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramPartnerPromotion__dlm",
+              "toEntity": "ssot__Promotion__dlm",
+              "fromEntityAttribute": "ssot__PromotionId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Program Partner Promotion Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyProgramPartnerPromotion"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Tier Benefit Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyTierId__c",
+              "displayName": "Key Qualifier Loyalty Tier",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Tier Benefit Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyBenefitId__c",
+              "displayName": "Loyalty Benefit",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyTierId__c",
+              "displayName": "Loyalty Tier",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyTierId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyTierBenefit__dlm",
+          "displayName": "Loyalty Tier Benefit",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyTierBenefit__dlm",
+              "toEntity": "ssot__LoyaltyTier__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyTierId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Tier Benefit Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyTierBenefit"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Tier Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyTierGroupId__c",
+              "displayName": "Key Qualifier Loyalty Tier Group",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Tier Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyTierGroupId__c",
+              "displayName": "Loyalty Tier Group",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyTierGroupId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__MaximumEligibleBalanceNumber__c",
+              "displayName": "Maximum Eligible Balance",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__MinimumEligibleBalanceNumber__c",
+              "displayName": "Minimum Eligible Balance",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__SequenceNumber__c",
+              "displayName": "Sequence Number",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyTier__dlm",
+          "displayName": "Loyalty Tier",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyTierBenefit__dlm",
+              "toEntity": "ssot__LoyaltyTier__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyTierId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyMemberTier__dlm",
+              "toEntity": "ssot__LoyaltyTier__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyTierId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyTier__dlm",
+              "toEntity": "ssot__LoyaltyTierGroup__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyTierGroupId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Tier Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyTier"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Loyalty Tier Group Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyProgramId__c",
+              "displayName": "Key Qualifier Loyalty Program",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Tier Group Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsActive__c",
+              "displayName": "Is Active",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsExtendedToEndOfMonth__c",
+              "displayName": "Is Extended To End Of Month",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsHiddenToMembers__c",
+              "displayName": "Is Hidden To Members",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsPrimary__c",
+              "displayName": "Is Primary",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyProgramId__c",
+              "displayName": "Loyalty Program",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyProgramId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LoyaltyTierModelId__c",
+              "displayName": "Loyalty Tier Model",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__QualifyingPointsResetDate__c",
+              "displayName": "Qualifying Points Reset Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__QualifyingPointsResetFrequencyNumber__c",
+              "displayName": "Qualifying Points Reset Frequency",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__QualifyingPointsResetPeriodUOM__c",
+              "displayName": "Qualifying Points Reset Period UOM",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__TierPeriodTimeUOM__c",
+              "displayName": "Tier Period Time UOM",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__TierTimePeriodQuantity__c",
+              "displayName": "Tier Time Period Quantity",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__LoyaltyTierGroup__dlm",
+          "displayName": "Loyalty Tier Group",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyProgramCurrency__dlm",
+              "toEntity": "ssot__LoyaltyTierGroup__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyTierGroupId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyTier__dlm",
+              "toEntity": "ssot__LoyaltyTierGroup__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyTierGroupId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyTierGroup__dlm",
+              "toEntity": "ssot__LoyaltyProgram__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Loyalty Tier Group Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "LoyaltyTierGroup"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Market Segment Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Description__c",
+              "displayName": "Description",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ExcludeCriteriaText__c",
+              "displayName": "Exclude Criteria",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Market Segment Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IncludeCriteriaText__c",
+              "displayName": "Include Criteria",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastStatusDate__c",
+              "displayName": "Last Status Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LastStatusErrorMessageText__c",
+              "displayName": "Last Status Error Message",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__MktSegPubStatus__c",
+              "displayName": "Market Segment Publication Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__MarketSegment__dlm",
+          "displayName": "Market Segment",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Market Segment Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "MarketSegment"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Operating Hours Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Friday_EndTime__c",
+              "displayName": "Friday End Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Friday_StartTime__c",
+              "displayName": "Friday Start Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Operating Hours Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__isActive__c",
+              "displayName": "Is Active",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__isDefault__c",
+              "displayName": "Is Default",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Monday_EndTime__c",
+              "displayName": "Monday End Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Monday_StartTime__c",
+              "displayName": "Monday Start Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Saturday_EndTime__c",
+              "displayName": "Saturday End Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Saturday_StartTime__c",
+              "displayName": "Saturday Start Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Sunday_EndTime__c",
+              "displayName": "Sunday End Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Sunday_StartTime__c",
+              "displayName": "Sunday Start Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Thursday_EndTime__c",
+              "displayName": "Thursday End Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Thursday_StartTime__c",
+              "displayName": "Thursday Start Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__TimeZone__c",
+              "displayName": "Time Zone",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Tuesday_EndTime__c",
+              "displayName": "Tuesday End Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Tuesday_StartTime__c",
+              "displayName": "Tuesday Start Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Wednesday_EndTime__c",
+              "displayName": "Wednesday End Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Wednesday_StartTime__c",
+              "displayName": "Wednesday Start Time",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__OperatingHours__dlm",
+          "displayName": "Operating Hours",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Operating Hours Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "OperatingHours"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Opportunity Contact Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__AccountContactId__c",
+              "displayName": "Account Contact",
+              "type": "STRING",
+              "keyQualifier": "KQ_AccountContactId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Opportunity Contact Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsPrimary__c",
+              "displayName": "Is Primary",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__OpportunityId__c",
+              "displayName": "Opportunity",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__OpportunitytContactRole__c",
+              "displayName": "Opportunity Contact Role",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_AccountContactId__c",
+              "displayName": "Key Qualifier Account Contact",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__OpportunityContact__dlm",
+          "displayName": "Opportunity Contact",
+          "relationships": [
+            {
+              "fromEntity": "ssot__OpportunityContact__dlm",
+              "toEntity": "ssot__AccountContact__dlm",
+              "fromEntityAttribute": "ssot__AccountContactId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Opportunity Contact Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "OpportunityContact"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Price Book Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Description__c",
+              "displayName": "Description",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Price Book Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsActive__c",
+              "displayName": "Is Active",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsArchived__c",
+              "displayName": "Is Archived",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsDeleted__c",
+              "displayName": "Is Deleted",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsStandardPriceBook__c",
+              "displayName": "Is Standard Price Book",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Price Book Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__PriceBook__dlm",
+          "displayName": "Price Book",
+          "relationships": [
+            {
+              "fromEntity": "ssot__PriceBookEntry__dlm",
+              "toEntity": "ssot__PriceBook__dlm",
+              "fromEntityAttribute": "ssot__PricebookId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Price Book Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "PriceBook"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Price Book Entry Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_PricebookId__c",
+              "displayName": "Key Qualifier Price Book",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedById__c",
+              "displayName": "Created By",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Price Book Entry Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsActive__c",
+              "displayName": "Is Active",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsArchived__c",
+              "displayName": "Is Archived",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsDeleted__c",
+              "displayName": "Is Deleted",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedById__c",
+              "displayName": "Last Modified By",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PricebookId__c",
+              "displayName": "Price Book",
+              "type": "STRING",
+              "keyQualifier": "KQ_PricebookId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ProductId__c",
+              "displayName": "Product",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__SystemModstamp__c",
+              "displayName": "System Modified Stamp",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__UnitListPriceAmount__c",
+              "displayName": "Unit List Price",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__UseStandardPrice__c",
+              "displayName": "Use Standard Price",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__PriceBookEntry__dlm",
+          "displayName": "Price Book Entry",
+          "relationships": [
+            {
+              "fromEntity": "ssot__PriceBookEntry__dlm",
+              "toEntity": "ssot__PriceBook__dlm",
+              "fromEntityAttribute": "ssot__PricebookId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Price Book Entry Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "PriceBookEntry"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Product Category Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Description__c",
+              "displayName": "Description",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Product Category Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsNavigational__c",
+              "displayName": "Is Navigational",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Category Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ParentCategory__c",
+              "displayName": "Parent Category",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ProductCatalogId__c",
+              "displayName": "Product Catalog",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_ParentCategoryId__c",
+              "displayName": "Key Qualifier Parent Category",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ParentCategoryId__c",
+              "displayName": "Parent Category",
+              "type": "STRING",
+              "keyQualifier": "KQ_ParentCategoryId__c",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__ProductCategory__dlm",
+          "displayName": "Product Category",
+          "relationships": [
+            {
+              "fromEntity": "ssot__ProductCategory__dlm",
+              "toEntity": "ssot__ProductCategory__dlm",
+              "fromEntityAttribute": "ssot__ParentCategoryId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ProductCategory__dlm",
+              "toEntity": "ssot__ProductCategory__dlm",
+              "fromEntityAttribute": "ssot__ParentCategoryId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Product Category Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "ProductCategory"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Promotion Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "KQ_LoyaltyProgramId__c",
+              "displayName": "Key Qualifier Loyalty Program",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "CreatedById__c",
+              "displayName": "Created By",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "MaximumLiabilityAmount__c",
+              "displayName": "Maximum Liability Amount",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__CumulativeUsageTargetAmount__c",
+              "displayName": "Cumulative Usage Target Amount",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__CurrencyId__c",
+              "displayName": "Currency",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Description__c",
+              "displayName": "Description",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__DisplayName__c",
+              "displayName": "Display Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__EndDate__c",
+              "displayName": "End Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__EnrollmentEndDate__c",
+              "displayName": "Enrollment End Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__EnrollmentStartDate__c",
+              "displayName": "Enrollment Start Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__FulfillmentActionId__c",
+              "displayName": "Fulfillment Action",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Promotion Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsActive__c",
+              "displayName": "Is Active",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__IsEnrollmentRequired__c",
+              "displayName": "Is Enrollment Required",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__LoyaltyProgramId__c",
+              "displayName": "Loyalty Program",
+              "type": "STRING",
+              "keyQualifier": "KQ_LoyaltyProgramId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Name__c",
+              "displayName": "Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__ObjectiveText__c",
+              "displayName": "Objective",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PromotionCodeText__c",
+              "displayName": "Promotion Code",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PointsQuantity__c",
+              "displayName": "Points Quantity",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__PromotionalImage__c",
+              "displayName": "Promotional Image",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PromotionStatusId__c",
+              "displayName": "Promotion Status",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PromotionTypeId__c",
+              "displayName": "Promotion Type",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__StartDate__c",
+              "displayName": "Start Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__TotalRewardValueAmount__c",
+              "displayName": "Total Reward Value Amount",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "ssot__Promotion__dlm",
+          "displayName": "Promotion",
+          "relationships": [
+            {
+              "fromEntity": "ssot__LoyaltyProgramEngmtAttributePromotion__dlm",
+              "toEntity": "ssot__Promotion__dlm",
+              "fromEntityAttribute": "ssot__PromotionId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramMemberPromotion__dlm",
+              "toEntity": "ssot__Promotion__dlm",
+              "fromEntityAttribute": "ssot__PromotionId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__LoyaltyProgramPartnerPromotion__dlm",
+              "toEntity": "ssot__Promotion__dlm",
+              "fromEntityAttribute": "ssot__PromotionId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__Promotion__dlm",
+              "toEntity": "ssot__LoyaltyProgram__dlm",
+              "fromEntityAttribute": "ssot__LoyaltyProgramId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Promotion Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "Promotion"
+        },
+        {
+          "fields": [
+            {
+              "name": "KQ_Id__c",
+              "displayName": "Key Qualifier Currency Static Conversion Rate Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "DataSourceId__c",
+              "displayName": "Data Source",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "DataSourceObjectId__c",
+              "displayName": "Data Source Object",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "FromISOCurrencyCode__c",
+              "displayName": "From ISO Currency Code",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "Id__c",
+              "displayName": "Currency Static Conversion Rate Id",
+              "type": "STRING",
+              "keyQualifier": "KQ_Id__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "InternalOrganizationId__c",
+              "displayName": "Internal Organization",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "RateDenominatorNumber__c",
+              "displayName": "Rate Denominator",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "RateNumeratorNumber__c",
+              "displayName": "Rate Numerator",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ToISOCurrencyCode__c",
+              "displayName": "To ISO Currency Code",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Related",
+          "name": "StaticCurrencyRates_Home__dlm",
+          "displayName": "Static Currency Rates Home",
+          "relationships": [],
+          "primaryKeys": [
+            {
+              "name": "Id__c",
+              "displayName": "Currency Static Conversion Rate Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "CurrencyStaticConversionRate"
+        },
+        {
+          "fields": [
+            {
+              "name": "ssot__AddressLine1__c",
+              "displayName": "Address Line 1",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CityId__c",
+              "displayName": "City",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CityName__c",
+              "displayName": "City Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CountryId__c",
+              "displayName": "Country",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CountryName__c",
+              "displayName": "Country Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__GeoLatitude__c",
+              "displayName": "Geo Latitude",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__GeoLongitude__c",
+              "displayName": "Geo Longitude",
+              "type": "NUMBER",
+              "businessType": "NUMBER"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Unified Contact Point Address Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__PartyId__c",
+              "displayName": "Party",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PostalCodeId__c",
+              "displayName": "Postal Code",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__PostalCodeText__c",
+              "displayName": "Postal Code Text",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__StateProvinceId__c",
+              "displayName": "State Province",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__StateProvinceName__c",
+              "displayName": "State Province Name",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [
+            {
+              "fields": [
+                {
+                  "name": "ssot__CityName__c",
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "name": "ssot__CountryName__c",
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "name": "ssot__AddressLine1__c",
+                  "type": "STRING"
+                }
+              ]
+            }
+          ],
+          "category": "Related",
+          "name": "UnifiedContactPointAddress__dlm",
+          "displayName": "Unified Indv Contact Point Address",
+          "relationships": [
+            {
+              "fromEntity": "ContactPointAddressIdentityLink__dlm",
+              "toEntity": "UnifiedContactPointAddress__dlm",
+              "fromEntityAttribute": "UnifiedRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "UnifiedContactPointAddress__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Unified Contact Point Address Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "UnifiedContactPointAddress"
+        },
+        {
+          "fields": [
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__EmailAddress__c",
+              "displayName": "Email Address",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__EmailLatestBounceDateTime__c",
+              "displayName": "Email Latest Bounce Date Time",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__EmailLatestBounceReasonText__c",
+              "displayName": "Email Latest Bounce Reason Text",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Unified Contact Point Email Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__PartyId__c",
+              "displayName": "Party",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [
+            {
+              "fields": [
+                {
+                  "name": "ssot__EmailAddress__c",
+                  "type": "STRING"
+                }
+              ]
+            }
+          ],
+          "category": "Related",
+          "name": "UnifiedContactPointEmail__dlm",
+          "displayName": "Unified Indv Contact Point Email",
+          "relationships": [
+            {
+              "fromEntity": "ContactPointEmailIdentityLink__dlm",
+              "toEntity": "UnifiedContactPointEmail__dlm",
+              "fromEntityAttribute": "UnifiedRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "UnifiedContactPointEmail__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Unified Contact Point Email Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "UnifiedContactPointEmail"
+        },
+        {
+          "fields": [
+            {
+              "name": "ssot__ForPersonalUse__c",
+              "displayName": "For Personal Use",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__CreatedDate__c",
+              "displayName": "Created Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__ForBusinessUse__c",
+              "displayName": "For Business Use",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__FormattedE164PhoneNumber__c",
+              "displayName": "Formatted E164 Phone Number",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Unified Contact Point Phone Id",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__LastModifiedDate__c",
+              "displayName": "Last Modified Date",
+              "type": "DATE_TIME",
+              "businessType": "DATE_TIME"
+            },
+            {
+              "name": "ssot__PartyId__c",
+              "displayName": "Party",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "ssot__TelephoneNumber__c",
+              "displayName": "Telephone Number",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [
+            {
+              "fields": [
+                {
+                  "name": "ssot__TelephoneNumber__c",
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "name": "ssot__FormattedE164PhoneNumber__c",
+                  "type": "STRING"
+                }
+              ]
+            }
+          ],
+          "category": "Related",
+          "name": "UnifiedContactPointPhone__dlm",
+          "displayName": "Unified Indv Contact Point Phone",
+          "relationships": [
+            {
+              "fromEntity": "ContactPointPhoneIdentityLink__dlm",
+              "toEntity": "UnifiedContactPointPhone__dlm",
+              "fromEntityAttribute": "UnifiedRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "UnifiedContactPointPhone__dlm",
+              "toEntity": "UnifiedIndividual__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "ssot__Id__c",
+              "displayName": "Unified Contact Point Phone Id",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "UnifiedContactPointPhone"
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

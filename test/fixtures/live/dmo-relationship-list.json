@@ -1,0 +1,2816 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 dmo relationship list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_9fbbd7272fd3",
+        "name": "AcademicCredential_IssuerId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Issuer",
+          "name": "ssot__IssuerId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Academic Credential",
+          "name": "ssot__AcademicCredential__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_c04f871c0e36",
+        "name": "Account_AutoPaymentMethodId_map_PaymentMethod_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Auto Payment Method",
+          "name": "ssot__AutoPaymentMethodId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Payment Method Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Payment Method",
+          "name": "ssot__PaymentMethod__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_f6322ed5a7b3",
+        "name": "Account_AutoPaymentMethodId_map_Voucher_Id_N_1_1644492261148",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Auto Payment Method",
+          "name": "ssot__AutoPaymentMethodId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Voucher Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Voucher",
+          "name": "ssot__Voucher__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_a8b3b24bd181",
+        "name": "Account_BillContactAddressId_map_ContactPointAddress_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Bill Contact Address",
+          "name": "ssot__BillContactAddressId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Contact Point Address Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Address",
+          "name": "ssot__ContactPointAddress__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_232573ce3a9a",
+        "name": "Account_BillContactAddressId_map_ContactPointAddress_Id_N_1_1645552381146",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Bill Contact Address",
+          "name": "ssot__BillContactAddressId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Address Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Address",
+          "name": "ssot__ContactPointAddress__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_fffb2f419a48",
+        "name": "Account_FaxPhoneId_map_ContactPointPhone_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Fax Phone",
+          "name": "ssot__FaxPhoneId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Phone Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Phone",
+          "name": "ssot__ContactPointPhone__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_726f8ae70fda",
+        "name": "Account_FaxPhoneId_map_ContactPointPhone_Id_N_1_1645552381040",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Fax Phone",
+          "name": "ssot__FaxPhoneId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Phone Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Phone",
+          "name": "ssot__ContactPointPhone__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_a7cf9b19deb6",
+        "name": "Account_Id_map_Account_ParentAccountId_N_1_1645552381321",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Parent Account",
+          "name": "ssot__ParentAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_45f6e830a657",
+        "name": "Account_Id_map_AccountContact_AccountId_N_1_1645552381256",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account Contact",
+          "name": "ssot__AccountContact__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_0b74387f38e2",
+        "name": "Account_Id_map_Case_AccountId_N_1_1645552381224",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Case",
+          "name": "ssot__Case__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_f3c066050ef1",
+        "name": "Account_Id_map_Individual_PrimaryAccountId_N_1_1645552381280",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Primary Account",
+          "name": "ssot__PrimaryAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Individual",
+          "name": "ssot__Individual__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_361e9ca14058",
+        "name": "Account_Id_map_Lead_ConvertedToAccountId_N_1_1645552381301",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Converted To Account",
+          "name": "ssot__ConvertedToAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Lead",
+          "name": "ssot__Lead__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_481e86a9f679",
+        "name": "Account_Id_map_Lead_PartnerAccountId_N_1_1645552381311",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Partner Account",
+          "name": "ssot__PartnerAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Lead",
+          "name": "ssot__Lead__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_3b79d215aa49",
+        "name": "Account_Id_map_LoyaltyProgramMember_AccountId_N_1_1645552381213",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Loyalty Program Member",
+          "name": "ssot__LoyaltyProgramMember__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_0d5437317a40",
+        "name": "Account_Id_map_LoyaltyProgramPartner_PartnerAccountId_N_1_1645552381201",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Partner Account",
+          "name": "ssot__PartnerAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Loyalty Program Partner",
+          "name": "ssot__LoyaltyProgramPartner__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_8c64c7a25d71",
+        "name": "Account_Id_map_Opportunity_CustomerAccountId_N_1_1645552381236",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "CustomerAccount",
+          "name": "ssot__CustomerAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Opportunity",
+          "name": "ssot__Opportunity__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_da500f083953",
+        "name": "Account_Id_map_Opportunity_PartnerAccountId_N_1_1645552381246",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Partner Account",
+          "name": "ssot__PartnerAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Opportunity",
+          "name": "ssot__Opportunity__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_3e2fe04e7adc",
+        "name": "Account_Id_map_SalesOrder_BillToAccountId_N_1_1645552381191",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Bill To Account",
+          "name": "ssot__BillToAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Sales Order",
+          "name": "ssot__SalesOrder__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_30a336894134",
+        "name": "Account_Id_map_SalesOrderProduct_SellerAccountId_N_1_1645552381179",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Seller Account",
+          "name": "ssot__SellerAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Sales Order Product",
+          "name": "ssot__SalesOrderProduct__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_a9dbbe3bdede",
+        "name": "Account_Id_map_Voucher_AccountID_N_1_1645552381291",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountID__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Voucher",
+          "name": "ssot__Voucher__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_e009e156e630",
+        "name": "Account_Id_map_VoucherDefinition_PartnerAccountId_N_1_1645552381267",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Partner Account",
+          "name": "ssot__PartnerAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Voucher Definition",
+          "name": "ssot__VoucherDefinition__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_eb29bc47b736",
+        "name": "Account_IndividualId_map_Individual_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Individual",
+          "name": "ssot__IndividualId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Individual Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Individual",
+          "name": "ssot__Individual__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_b10914d3967f",
+        "name": "Account_OperatingHoursId_map_OperatingHours_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Operating Hours",
+          "name": "ssot__OperatingHoursId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Operating Hours Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Operating Hours",
+          "name": "ssot__OperatingHours__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_cd35a4d08582",
+        "name": "Account_OrderDeliveryMethodId_map_OrderDeliveryMethod_Id_N_1_1645552380995",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Order Delivery Method",
+          "name": "ssot__OrderDeliveryMethodId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Order Delivery Method",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Order Delivery Method",
+          "name": "ssot__OrderDeliveryMethod__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_5deae4a341bf",
+        "name": "Account_OwnerId_map_User_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Owner",
+          "name": "ssot__OwnerId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "User Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "User",
+          "name": "ssot__User__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_c14d175941f6",
+        "name": "Account_ParentAccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Parent Account",
+          "name": "ssot__ParentAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_a89bd448f561",
+        "name": "Account_ParentAccountId_map_Account_Id_N_1_1645552381345",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Parent Account",
+          "name": "ssot__ParentAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_b1e3179d7aea",
+        "name": "Account_PartyId_map_Individual_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Party",
+          "name": "ssot__PartyId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Individual Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Individual",
+          "name": "ssot__Individual__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_9d414e1df1fe",
+        "name": "Account_PartyId_map_Individual_Id_N_1_1645552381169",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Party",
+          "name": "ssot__PartyId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Individual Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Individual",
+          "name": "ssot__Individual__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_7707c2d0efc2",
+        "name": "Account_PartyId_map_Party_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Party",
+          "name": "ssot__PartyId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Party Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Party",
+          "name": "ssot__Party__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_b7b691edceb9",
+        "name": "Account_PrimarySalesContactPointId_map_ContactPoint_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Primary Sales Contact Point",
+          "name": "ssot__PrimarySalesContactPointId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point",
+          "name": "ssot__ContactPoint__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_2c5b0615d640",
+        "name": "Account_PrimarySalesContactPointId_map_ContactPointAddress_Id_N_1_1645552381051",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Primary Sales Contact Point",
+          "name": "ssot__PrimarySalesContactPointId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Address Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Address",
+          "name": "ssot__ContactPointAddress__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_a88c0e447e17",
+        "name": "Account_PrimarySalesContactPointId_map_ContactPointApp_Id_N_1_1645552381064",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Primary Sales Contact Point",
+          "name": "ssot__PrimarySalesContactPointId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point App Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point App",
+          "name": "ssot__ContactPointApp__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_38aaa87d87d4",
+        "name": "Account_PrimarySalesContactPointId_map_ContactPointEmail_Id_N_1_1645552381074",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Primary Sales Contact Point",
+          "name": "ssot__PrimarySalesContactPointId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Email Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Email",
+          "name": "ssot__ContactPointEmail__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_d114a1da82ce",
+        "name": "Account_PrimarySalesContactPointId_map_ContactPointPhone_Id_N_1_1645552381085",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Primary Sales Contact Point",
+          "name": "ssot__PrimarySalesContactPointId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Phone Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Phone",
+          "name": "ssot__ContactPointPhone__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_c506127cc223",
+        "name": "Account_PrimarySalesContactPointId_map_ContactPointSocial_Id_N_1_1645552381097",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Primary Sales Contact Point",
+          "name": "ssot__PrimarySalesContactPointId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Social Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Social",
+          "name": "ssot__ContactPointSocial__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_895703bf96a3",
+        "name": "Account_PrimarySalesRepId_map_User_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Primary Sales Rep",
+          "name": "ssot__PrimarySalesRepId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "User Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "User",
+          "name": "ssot__User__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_df84a69949b8",
+        "name": "Account_SalesPhoneId_map_ContactPointPhone_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Sales Phone",
+          "name": "ssot__SalesPhoneId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Contact Point Phone Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Phone",
+          "name": "ssot__ContactPointPhone__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_b8ad51e7d8c4",
+        "name": "Account_SalesPhoneId_map_ContactPointPhone_Id_N_1_1645552381007",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Sales Phone",
+          "name": "ssot__SalesPhoneId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Phone Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Phone",
+          "name": "ssot__ContactPointPhone__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_99d8926c6696",
+        "name": "Account_ShippingAddressId_map_ContactPointAddress_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Shipping Address",
+          "name": "ssot__ShippingAddressId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Address Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Address",
+          "name": "ssot__ContactPointAddress__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_4aea25d92f02",
+        "name": "Account_ShippingAddressId_map_ContactPointAddress_Id_N_1_1645552381133",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Shipping Address",
+          "name": "ssot__ShippingAddressId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Address Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Address",
+          "name": "ssot__ContactPointAddress__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_8d1f0f7d1b48",
+        "name": "Account_ShippingContactId_map_AccountContact_Id_N_1_1645552381017",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Shipping Contact",
+          "name": "ssot__ShippingContactId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Contact Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account Contact",
+          "name": "ssot__AccountContact__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_1e80aa63c03f",
+        "name": "Account_ShippingEmailId_map_ContactPointEmail_Id_N_1_1645552381158",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Shipping Email",
+          "name": "ssot__ShippingEmailId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Email Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Email",
+          "name": "ssot__ContactPointEmail__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_a26d4543780c",
+        "name": "Account_ShippingPhoneid_map_ContactPointPhone_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Shipping Phone",
+          "name": "ssot__ShippingPhoneid__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Phone Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Phone",
+          "name": "ssot__ContactPointPhone__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_0b51223a39d5",
+        "name": "Account_ShippingPhoneid_map_ContactPointPhone_Id_N_1_1645552381028",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Shipping Phone",
+          "name": "ssot__ShippingPhoneid__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Contact Point Phone Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Contact Point Phone",
+          "name": "ssot__ContactPointPhone__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Segment_Membership",
+        "id": "LIVE_ID_c12fa1d35f50",
+        "name": "Account_SM_1784451086279_Id_map_ssot_Account_ssot_Id_1784451089172",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Id",
+          "name": "Id__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account - Latest",
+          "name": "Account_SM_1784451086279__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Segment_Membership",
+        "id": "LIVE_ID_72fbff350e77",
+        "name": "Account_SMH_1784451092160_Id_map_ssot_Account_ssot_Id_1784451094759",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Id",
+          "name": "Id__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account - History",
+          "name": "Account_SMH_1784451092160__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_b438e9760c76",
+        "name": "AccountContact_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account Contact",
+          "name": "ssot__AccountContact__dlm"
+        },
+        "status": "ACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_9b786806bc46",
+        "name": "AccountContact_AccountId_map_Account_Id_N_1_1645552382944",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account Contact",
+          "name": "ssot__AccountContact__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_57f05cbe8bd2",
+        "name": "AccountContact_Id_map_Account_ShippingContactId_N_1_1645552383013",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Shipping Contact",
+          "name": "ssot__ShippingContactId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Contact Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account Contact",
+          "name": "ssot__AccountContact__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_c316f4bad324",
+        "name": "ActionableListMember_ReferenceRecordId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Reference Record",
+          "name": "ssot__ReferenceRecordId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Actionable List Member",
+          "name": "ssot__ActionableListMember__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_c1fdd946623f",
+        "name": "ActionPlan_TargetId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Target",
+          "name": "ssot__TargetId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Action Plan",
+          "name": "ssot__ActionPlan__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_1a6346a2d4c1",
+        "name": "ActionPlanItem_TargetId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Target",
+          "name": "ssot__TargetId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Action Plan Item",
+          "name": "ssot__ActionPlanItem__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_6600b64fa235",
+        "name": "ActionPlanTemplate_TargetEntityTypeId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Target Entity Type",
+          "name": "ssot__TargetEntityTypeId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Action Plan Template",
+          "name": "ssot__ActionPlanTemplate__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_ffc0a0adcf85",
+        "name": "ActivityTopic_RelatedToId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Related To",
+          "name": "ssot__RelatedToId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Activity Topic",
+          "name": "ssot__ActivityTopic__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_32719b868793",
+        "name": "AdverseEvent_RecordedById_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Recorded By",
+          "name": "ssot__RecordedById__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Adverse Event",
+          "name": "ssot__AdverseEvent__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_00220f92b3d7",
+        "name": "AdverseEvent_SubjectId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Subject",
+          "name": "ssot__SubjectId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Adverse Event",
+          "name": "ssot__AdverseEvent__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_5ecec0fa6373",
+        "name": "AdverseEventCause_AuthoredById_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Authored By",
+          "name": "ssot__AuthoredById__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Adverse Event Cause",
+          "name": "ssot__AdverseEventCause__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_74f307514606",
+        "name": "AdverseEventIdentifier_IssuingAuthorityId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "IssuingAuthority",
+          "name": "ssot__IssuingAuthorityId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Adverse Event Identifier",
+          "name": "ssot__AdverseEventIdentifier__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_2e36a70e67ed",
+        "name": "AdverseEventParty_PartyId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Party",
+          "name": "ssot__PartyId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Adverse Event Party",
+          "name": "ssot__AdverseEventParty__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_54decafa80b9",
+        "name": "AirTravelEnergyUse_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Air Travel Energy Use",
+          "name": "ssot__AirTravelEnergyUse__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_ade3eb5ef902",
+        "name": "AllergyIntolerance_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Allergy Intolerance",
+          "name": "ssot__AllergyIntolerance__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_95969b6186dd",
+        "name": "AllergyIntolerance_AssertionSourceId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Assertion Source",
+          "name": "ssot__AssertionSourceId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Allergy Intolerance",
+          "name": "ssot__AllergyIntolerance__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_3cbb880b2594",
+        "name": "AllergyIntolerance_RecorderId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Recorder",
+          "name": "ssot__RecorderId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Allergy Intolerance",
+          "name": "ssot__AllergyIntolerance__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_1dab3790bd32",
+        "name": "AnnualEmissionsInventory_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Annual Emissions Inventory",
+          "name": "ssot__AnnualEmissionsInventory__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_9d12a0404ff9",
+        "name": "AntiCorruptionInitiativeSummary_SubsidiaryAccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Subsidiary Account",
+          "name": "ssot__SubsidiaryAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Anti-Corruption Initiative Summary",
+          "name": "ssot__AntiCorruptionInitiativeSummary__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_b14216e4ea9b",
+        "name": "Application_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Application",
+          "name": "ssot__Application__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_5c152cadb471",
+        "name": "Application_SubmittedBy_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Submitted By",
+          "name": "ssot__SubmittedBy__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Application",
+          "name": "ssot__Application__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_46cd69144701",
+        "name": "ApplicationDecision_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Application Decision",
+          "name": "ssot__ApplicationDecision__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_67f8715e6ce0",
+        "name": "ApplicationReview_InstitutionId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__InstitutionId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Application Review",
+          "name": "ssot__ApplicationReview__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_17a3ea9ca7e5",
+        "name": "Assessment_SubjectId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Subject",
+          "name": "ssot__SubjectId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Assessment",
+          "name": "ssot__Assessment__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_a532187169d4",
+        "name": "AssessmentEnvelope_RecipientId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Recipient",
+          "name": "ssot__RecipientId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Assessment Envelope",
+          "name": "ssot__AssessmentEnvelope__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_1ba89ffd5ada",
+        "name": "Asset_BillToAccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Bill To Account",
+          "name": "ssot__BillToAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Asset",
+          "name": "ssot__Asset__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_92e89aa6fd9d",
+        "name": "Asset_ServicePartnerId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Service Partner",
+          "name": "ssot__ServicePartnerId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Asset",
+          "name": "ssot__Asset__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_6ae8c5cbe1fd",
+        "name": "Asset_ServicerAccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Servicer Account",
+          "name": "ssot__ServicerAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Asset",
+          "name": "ssot__Asset__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_053621e8ad66",
+        "name": "Asset_SupplierAccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Supplier Account",
+          "name": "ssot__SupplierAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Asset",
+          "name": "ssot__Asset__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_0ed8c20e8816",
+        "name": "AssetParticipant_ParticipantId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Participant Id",
+          "name": "ssot__ParticipantId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Asset Participant",
+          "name": "ssot__AssetParticipant__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_d6b1e0eeb2ea",
+        "name": "BenefitAssignment_EnrolleeId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Enrollee",
+          "name": "ssot__EnrolleeId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Benefit Assignment",
+          "name": "ssot__BenefitAssignment__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_f4c511da5188",
+        "name": "BenefitDisbursement_RecipientId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Recipient",
+          "name": "ssot__RecipientId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Benefit Disbursement",
+          "name": "ssot__BenefitDisbursement__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_5c8080ff7258",
+        "name": "Budget_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Budget",
+          "name": "ssot__Budget__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_538acd652ae1",
+        "name": "BusinessMilestone_PrimaryAccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Primary Account",
+          "name": "ssot__PrimaryAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Business Milestone",
+          "name": "ssot__BusinessMilestone__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_9e7b142b3772",
+        "name": "BuyerIntent_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Buyer Intent",
+          "name": "ssot__BuyerIntent__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_06077329b585",
+        "name": "CareBarrier2_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Barrier",
+          "name": "ssot__CareBarrier2__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_6f52586a353f",
+        "name": "CareDeterminant_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Determinant",
+          "name": "ssot__CareDeterminant__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_5b77a2da6c55",
+        "name": "CareMetricTarget_Patient_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Patient",
+          "name": "ssot__Patient__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Metric Target",
+          "name": "ssot__CareMetricTarget__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_c8de065668e4",
+        "name": "CareObservation_ObservedSubjectAccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Observed Subject Account",
+          "name": "ssot__ObservedSubjectAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Observation",
+          "name": "ssot__CareObservation__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_92e5dafde600",
+        "name": "CareObservation_ObserverId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Observer",
+          "name": "ssot__ObserverId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Observation",
+          "name": "ssot__CareObservation__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_851c208c4e3e",
+        "name": "CareObservationIdentifier_IssuingAuthorityId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "IssuingAuthority",
+          "name": "ssot__IssuingAuthorityId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Observation Identifier",
+          "name": "ssot__CareObservationIdentifier__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_2ebf4cf3a886",
+        "name": "CarePlan_AuthorId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Author",
+          "name": "ssot__AuthorId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Plan",
+          "name": "ssot__CarePlan__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_afdfcba65c55",
+        "name": "CarePlan_ParticipantId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Participant",
+          "name": "ssot__ParticipantId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Plan",
+          "name": "ssot__CarePlan__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_7460c0999087",
+        "name": "CarePlanActivityDetail_DetailRecordId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Detail Record",
+          "name": "ssot__DetailRecordId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Plan Activity Detail",
+          "name": "ssot__CarePlanActivityDetail__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_04cefc84d113",
+        "name": "CarePlanDetail_DetailRecordId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Detail Record",
+          "name": "ssot__DetailRecordId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Plan Detail",
+          "name": "ssot__CarePlanDetail__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_72e3ccadf9aa",
+        "name": "CarePlanIdentifier_IssuingAuthorityId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "IssuingAuthority",
+          "name": "ssot__IssuingAuthorityId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Plan Identifier",
+          "name": "ssot__CarePlanIdentifier__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_6da668944cff",
+        "name": "CarePreauthorization_PayerId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Payer",
+          "name": "ssot__PayerId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Preauthorization",
+          "name": "ssot__CarePreauthorization__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_bff6eb01298d",
+        "name": "CareProgram_SponsorId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Sponsor",
+          "name": "ssot__SponsorId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Program",
+          "name": "ssot__CareProgram__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_760e07be95db",
+        "name": "CareProgramEnrollee_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Program Enrollee",
+          "name": "ssot__CareProgramEnrollee__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_04d86dae148a",
+        "name": "CareProgramIdentifier_IssuingAuthorityId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Issuing Authority",
+          "name": "ssot__IssuingAuthorityId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Program Identifier",
+          "name": "ssot__CareProgramIdentifier__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_e72bb4ea1dac",
+        "name": "CareProgramProviderProduct_AccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Account",
+          "name": "ssot__AccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Program Provider Product",
+          "name": "ssot__CareProgramProviderProduct__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_0dda3d2ef305",
+        "name": "CareProgramTeamMember_MemberId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Member",
+          "name": "ssot__MemberId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Program Team Member",
+          "name": "ssot__CareProgramTeamMember__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_1c99ae638f48",
+        "name": "CareRequest_MemberAccountId_map_Account_Id_N_1",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "Member Account",
+          "name": "ssot__MemberAccountId__c",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "Care Request",
+          "name": "ssot__CareRequest__dlm"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "Account Id",
+          "name": "ssot__Id__c",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "Account",
+          "name": "ssot__Account__dlm"
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

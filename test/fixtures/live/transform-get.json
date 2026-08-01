@@ -1,0 +1,670 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 transform get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "actionUrls": {
+        "action": "BatchAction",
+        "cancelAction": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents/actions/cancel",
+        "refreshStatusAction": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents/actions/refresh-status",
+        "retryAction": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents/actions/retry",
+        "runAction": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents/actions/run"
+      },
+      "createdBy": {
+        "id": "LIVE_ID_dcd39ee36c1e",
+        "name": "Automated Process",
+        "profilePhotoUrl": "https://mock.salesforce.example/profilephoto/005/T"
+      },
+      "createdDate": "2026-05-30T05:37:14.000Z",
+      "creationType": "CUSTOM",
+      "definition": {
+        "label": "Copilot For Salesforce Apps Events",
+        "name": "CopilotForSalesforceAppsEvents",
+        "nodes": {
+          "LOAD_DATASET0": {
+            "action": "load",
+            "parameters": {
+              "dataset": {
+                "name": "BotDefinition_Home__dll",
+                "type": "dataLakeObject"
+              },
+              "fields": [
+                "MasterLabel__c",
+                "DeveloperName__c",
+                "Type__c",
+                "Id__c",
+                "AgentType__c"
+              ],
+              "sampleDetails": {
+                "dataspace": "default",
+                "sortBy": [],
+                "type": "TopN"
+              }
+            },
+            "sources": []
+          },
+          "FILTER0": {
+            "action": "filter",
+            "parameters": {
+              "filterExpressions": [
+                {
+                  "field": "Type__c",
+                  "operands": [
+                    "InternalCopilot"
+                  ],
+                  "operator": "EQUAL",
+                  "type": "TEXT"
+                },
+                {
+                  "field": "AgentType__c",
+                  "operands": [
+                    "Employee"
+                  ],
+                  "operator": "EQUAL",
+                  "type": "TEXT"
+                }
+              ]
+            },
+            "sources": [
+              "LOAD_DATASET0"
+            ]
+          },
+          "LOAD_DATASET1": {
+            "action": "load",
+            "parameters": {
+              "dataset": {
+                "name": "CopilotEvents__dll",
+                "type": "dataLakeObject"
+              },
+              "fields": [
+                "orgId__c",
+                "uuid__c",
+                "botId__c",
+                "conversationEventLogType__c",
+                "conversationDefinition__c",
+                "chatbotSession__c",
+                "eventTimestamp__c",
+                "userId__c",
+                "message__c",
+                "externalLatencyTime__c",
+                "previousEventLogUuid__c",
+                "channelType__c",
+                "externalSessionKey__c",
+                "conversationTurn__c",
+                "plannerActionOutput_actionName__c",
+                "plannerActionOutput_actionId__c",
+                "plannerActionOutput_isSuccess__c",
+                "plannerActionOutput_duration__c",
+                "plannerPlanType_planData__c",
+                "plannerTopic_topic__c"
+              ],
+              "sampleDetails": {
+                "dataspace": "default",
+                "sortBy": [],
+                "type": "TopN"
+              }
+            },
+            "sources": []
+          },
+          "JOIN0": {
+            "action": "join",
+            "parameters": {
+              "joinType": "INNER",
+              "leftKeys": [
+                "Id__c"
+              ],
+              "rightKeys": [
+                "botId__c"
+              ],
+              "rightQualifier": "CopilotEve"
+            },
+            "schema": {
+              "fields": [],
+              "slice": {
+                "fields": [
+                  "DeveloperName__c",
+                  "Type__c",
+                  "Id__c"
+                ],
+                "ignoreMissingFields": true,
+                "mode": "DROP"
+              }
+            },
+            "sources": [
+              "FILTER0",
+              "FORMULA2"
+            ]
+          },
+          "LOAD_DATASET2": {
+            "action": "load",
+            "parameters": {
+              "dataset": {
+                "name": "User_Home__dll",
+                "type": "dataLakeObject"
+              },
+              "fields": [
+                "LastName__c",
+                "Id__c",
+                "FirstName__c"
+              ],
+              "sampleDetails": {
+                "dataspace": "default",
+                "sortBy": [],
+                "type": "TopN"
+              }
+            },
+            "sources": []
+          },
+          "FORMULA0": {
+            "action": "formula",
+            "parameters": {
+              "expressionType": "SQL",
+              "fields": [
+                {
+                  "businessType": "Text",
+                  "defaultValue": "",
+                  "formulaExpression": "concat(FirstName__c, LastName__c)",
+                  "label": "Full Name",
+                  "name": "full_name__c",
+                  "precision": 255,
+                  "type": "TEXT"
+                }
+              ]
+            },
+            "sources": [
+              "LOAD_DATASET2"
+            ]
+          },
+          "FORMULA1": {
+            "action": "formula",
+            "parameters": {
+              "expressionType": "SQL",
+              "fields": [
+                {
+                  "businessType": "Text",
+                  "defaultValue": "",
+                  "formulaExpression": "substr(Id__c, 1, 15)",
+                  "label": "ID 15",
+                  "name": "id_15",
+                  "precision": 255,
+                  "type": "TEXT"
+                }
+              ]
+            },
+            "sources": [
+              "FORMULA0"
+            ]
+          },
+          "JOIN1": {
+            "action": "join",
+            "parameters": {
+              "joinType": "LEFT_OUTER",
+              "leftKeys": [
+                "CopilotEve.userId__c"
+              ],
+              "rightKeys": [
+                "id_15"
+              ],
+              "rightQualifier": "Transformu"
+            },
+            "schema": {
+              "fields": [],
+              "slice": {
+                "fields": [
+                  "Transformu.FirstName__c",
+                  "Transformu.Id__c",
+                  "Transformu.LastName__c",
+                  "Transformu.id_15"
+                ],
+                "ignoreMissingFields": true,
+                "mode": "DROP"
+              }
+            },
+            "sources": [
+              "JOIN0",
+              "FORMULA1"
+            ]
+          },
+          "FORMULA2": {
+            "action": "formula",
+            "parameters": {
+              "expressionType": "SQL",
+              "fields": [
+                {
+                  "businessType": "Boolean",
+                  "defaultValue": "FALSE",
+                  "formulaExpression": "to_boolean(plannerActionOutput_isSuccess__c)",
+                  "label": "Action Success",
+                  "name": "action_success__c",
+                  "type": "BOOLEAN"
+                }
+              ]
+            },
+            "sources": [
+              "LOAD_DATASET1"
+            ]
+          },
+          "OUTPUT0": {
+            "action": "outputD360",
+            "parameters": {
+              "dedupOrder": [],
+              "fieldsMappings": [
+                {
+                  "sourceField": "MasterLabel__c",
+                  "targetField": "CopilotName__c"
+                },
+                {
+                  "sourceField": "CopilotEve.orgId__c",
+                  "targetField": "OrgId__c"
+                },
+                {
+                  "sourceField": "CopilotEve.uuid__c",
+                  "targetField": "uuid__c"
+                },
+                {
+                  "sourceField": "CopilotEve.conversationEventLogType__c",
+                  "targetField": "ConversationEventLogType__c"
+                },
+                {
+                  "sourceField": "CopilotEve.conversationDefinition__c",
+                  "targetField": "ConversationDefinition__c"
+                },
+                {
+                  "sourceField": "CopilotEve.chatbotSession__c",
+                  "targetField": "SessionId__c"
+                },
+                {
+                  "sourceField": "CopilotEve.eventTimestamp__c",
+                  "targetField": "Date__c"
+                },
+                {
+                  "sourceField": "CopilotEve.userId__c",
+                  "targetField": "UserId__c"
+                },
+                {
+                  "sourceField": "CopilotEve.message__c",
+                  "targetField": "Message__c"
+                },
+                {
+                  "sourceField": "CopilotEve.externalLatencyTime__c",
+                  "targetField": "ExternalLatencyTime__c"
+                },
+                {
+                  "sourceField": "CopilotEve.previousEventLogUuid__c",
+                  "targetField": "PreviousEventLogUuid__c"
+                },
+                {
+                  "sourceField": "CopilotEve.channelType__c",
+                  "targetField": "Channel__c"
+                },
+                {
+                  "sourceField": "CopilotEve.externalSessionKey__c",
+                  "targetField": "ExternalSessionKey__c"
+                },
+                {
+                  "sourceField": "CopilotEve.conversationTurn__c",
+                  "targetField": "TurnId__c"
+                },
+                {
+                  "sourceField": "CopilotEve.plannerActionOutput_actionName__c",
+                  "targetField": "ActionName__c"
+                },
+                {
+                  "sourceField": "CopilotEve.plannerActionOutput_actionId__c",
+                  "targetField": "ActionId__c"
+                },
+                {
+                  "sourceField": "CopilotEve.plannerActionOutput_duration__c",
+                  "targetField": "ActionDuration__c"
+                },
+                {
+                  "sourceField": "CopilotEve.plannerPlanType_planData__c",
+                  "targetField": "PlanData__c"
+                },
+                {
+                  "sourceField": "CopilotEve.plannerTopic_topic__c",
+                  "targetField": "Topic__c"
+                },
+                {
+                  "sourceField": "CopilotEve.action_success__c",
+                  "targetField": "ActionSuccess__c"
+                },
+                {
+                  "sourceField": "Transformu.full_name__c",
+                  "targetField": "UserName__c"
+                }
+              ],
+              "name": "CopilotForSalesforceAppsEvents__dll",
+              "type": "dataLakeObject",
+              "writeMode": "OVERWRITE"
+            },
+            "sources": [
+              "JOIN1"
+            ]
+          }
+        },
+        "outputDataObjects": [
+          {
+            "category": "Other",
+            "createdDate": "2026-05-30T05:36:56.000Z",
+            "fields": [
+              {
+                "isPrimaryKey": true,
+                "keyQualifierField": "KQ_uuid",
+                "label": "UUID",
+                "name": "uuid__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_OrgId",
+                "label": "Org ID",
+                "name": "OrgId__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_CopilotName",
+                "label": "Copilot Name",
+                "name": "CopilotName__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_ConversationEventLogType",
+                "label": "Conversation Event Log Type",
+                "name": "ConversationEventLogType__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_SessionId",
+                "label": "Session ID",
+                "name": "SessionId__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_ConversationDefinition",
+                "label": "Conversation Definition",
+                "name": "ConversationDefinition__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_Date",
+                "label": "Date",
+                "name": "Date__c",
+                "type": "DateTime"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_UserId",
+                "label": "User ID",
+                "name": "UserId__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_UserName",
+                "label": "User Name",
+                "name": "UserName__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_ExternalLatencyTime",
+                "label": "External Latency Time",
+                "name": "ExternalLatencyTime__c",
+                "type": "Number"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_Message",
+                "label": "Message",
+                "name": "Message__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_ExternalSessionKey",
+                "label": "External Session Key",
+                "name": "ExternalSessionKey__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_PreviousEventLogUuid",
+                "label": "Previous Event Log UUID",
+                "name": "PreviousEventLogUuid__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_Channel",
+                "label": "Channel",
+                "name": "Channel__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_TurnId",
+                "label": "Turn ID",
+                "name": "TurnId__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_ActionName",
+                "label": "Action Name",
+                "name": "ActionName__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_ActionId",
+                "label": "Action ID",
+                "name": "ActionId__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_ActionSuccess",
+                "label": "Action Success",
+                "name": "ActionSuccess__c",
+                "type": "Boolean"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_ActionDuration",
+                "label": "Action Duration",
+                "name": "ActionDuration__c",
+                "type": "Number"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_PlanData",
+                "label": "Plan Data",
+                "name": "PlanData__c",
+                "type": "Text"
+              },
+              {
+                "isPrimaryKey": false,
+                "keyQualifierField": "KQ_Topic",
+                "label": "Topic",
+                "name": "Topic__c",
+                "type": "Text"
+              }
+            ],
+            "id": "LIVE_ID_fb2d73909101",
+            "label": "Copilot for Salesforce Apps Events",
+            "lastModifiedDate": "2026-05-30T05:37:00.000Z",
+            "name": "CopilotForSalesforceAppsEvents__dll",
+            "status": "active",
+            "type": "dataLakeObject"
+          }
+        ],
+        "type": "STL",
+        "ui": {
+          "nodes": {
+            "LOAD_DATASET0": {
+              "label": "BotDefinition_Home",
+              "type": "LOAD_DATASET",
+              "top": 112,
+              "left": 112,
+              "parameters": {
+                "sampleSize": 2000
+              }
+            },
+            "FILTER0": {
+              "label": "Filter internal copilot",
+              "description": "",
+              "type": "FILTER",
+              "top": 112,
+              "left": 252
+            },
+            "LOAD_DATASET1": {
+              "label": "CopilotEvents",
+              "type": "LOAD_DATASET",
+              "top": 252,
+              "left": 112,
+              "parameters": {
+                "sampleSize": 2000
+              }
+            },
+            "JOIN0": {
+              "label": "Join copilot name",
+              "description": "",
+              "type": "JOIN",
+              "top": 112,
+              "left": 392.4
+            },
+            "LOAD_DATASET2": {
+              "label": "User_Home",
+              "type": "LOAD_DATASET",
+              "top": 392,
+              "left": 112,
+              "parameters": {
+                "sampleSize": 2000
+              }
+            },
+            "TRANSFORM0": {
+              "label": "Transform user data",
+              "description": "",
+              "type": "TRANSFORM",
+              "top": 392,
+              "left": 252,
+              "graph": {
+                "FORMULA0": {
+                  "parameters": {
+                    "type": "BASE_FORMULA_UI"
+                  },
+                  "label": "create full name"
+                },
+                "FORMULA1": {
+                  "parameters": {
+                    "type": "BASE_FORMULA_UI"
+                  },
+                  "label": "trim user id"
+                }
+              },
+              "connectors": [
+                {
+                  "source": "FORMULA0",
+                  "target": "FORMULA1"
+                }
+              ]
+            },
+            "JOIN1": {
+              "label": "Join user name",
+              "description": "",
+              "type": "JOIN",
+              "top": 112,
+              "left": 532
+            },
+            "TRANSFORM1": {
+              "label": "Transform 1",
+              "type": "TRANSFORM",
+              "top": 252,
+              "left": 252,
+              "graph": {
+                "FORMULA2": {
+                  "parameters": {
+                    "type": "BASE_FORMULA_UI"
+                  },
+                  "label": "success field to boolean"
+                }
+              },
+              "connectors": []
+            },
+            "OUTPUT0": {
+              "label": "Output copilot salesforce apps",
+              "description": "",
+              "type": "OUTPUT",
+              "top": 112,
+              "left": 672
+            }
+          },
+          "connectors": [
+            {
+              "source": "LOAD_DATASET0",
+              "target": "FILTER0"
+            },
+            {
+              "source": "FILTER0",
+              "target": "JOIN0"
+            },
+            {
+              "source": "LOAD_DATASET2",
+              "target": "TRANSFORM0"
+            },
+            {
+              "source": "JOIN0",
+              "target": "JOIN1"
+            },
+            {
+              "source": "TRANSFORM0",
+              "target": "JOIN1"
+            },
+            {
+              "source": "LOAD_DATASET1",
+              "target": "TRANSFORM1"
+            },
+            {
+              "source": "JOIN1",
+              "target": "OUTPUT0"
+            },
+            {
+              "source": "TRANSFORM1",
+              "target": "JOIN0"
+            }
+          ],
+          "hiddenColumns": []
+        },
+        "version": "66.0"
+      },
+      "fullRunFrequency": "DAILY",
+      "id": "LIVE_ID_c66d3390abff",
+      "label": "Copilot For Salesforce Apps Events",
+      "lastModifiedBy": {
+        "id": "LIVE_ID_ccb8797279ca",
+        "name": "Jennifer Hynes",
+        "profilePhotoUrl": "https://mock.salesforce.example/profilephoto/005/T"
+      },
+      "lastModifiedDate": "2026-07-29T05:44:11.000Z",
+      "lastRunStatus": "NONE",
+      "name": "CopilotForSalesforceAppsEvents",
+      "status": "ACTIVE",
+      "type": "BATCH",
+      "url": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

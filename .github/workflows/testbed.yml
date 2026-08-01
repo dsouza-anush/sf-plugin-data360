@@ -1,0 +1,74 @@
+name: agent testbed
+permissions:
+  contents: read
+on:
+  pull_request:
+  schedule:
+    - cron: '30 9 * * *'
+  workflow_dispatch:
+jobs:
+  matrix:
+    name: ${{ matrix.persona }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        persona: [first-contact, automation]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Activate pinned Yarn
+        run: corepack enable && corepack prepare yarn@1.22.22 --activate
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - name: Run traced mock suites
+        shell: bash
+        run: |
+          status=0
+          node testbed/bin/testbed.mjs start --agent "${{ matrix.persona }}" --model scripted-ci --mode mock
+          for suite in smoke query ingest-mock adversarial journeys/crm-to-activate; do
+            node testbed/bin/testbed.mjs run --suite "$suite" || status=$?
+          done
+          node testbed/bin/testbed.mjs end || status=$?
+          exit "$status"
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: testbed-${{ matrix.persona }}
+          path: |
+            testbed/sessions/*/session.json
+            testbed/sessions/*/events.jsonl
+            testbed/sessions/*/events.jsonl.seq
+            testbed/sessions/*/results.json
+          retention-days: 7
+          if-no-files-found: error
+  report:
+    needs: matrix
+    if: success()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Activate pinned Yarn
+        run: corepack enable && corepack prepare yarn@1.22.22 --activate
+      - run: yarn install --frozen-lockfile
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: testbed-*
+          path: testbed/sessions
+          merge-multiple: true
+      - run: node testbed/bin/testbed.mjs report --format both --output-dir testbed/reports
+      - uses: actions/upload-artifact@v4
+        with:
+          name: testbed-report
+          path: testbed/reports/
+          retention-days: 7
+          if-no-files-found: error

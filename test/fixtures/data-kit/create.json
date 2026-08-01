@@ -1,0 +1,18 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "reference": "Salesforce Connect REST API v67 OpenAPI: POST /ssot/data-kits"
+  },
+  "synthetic": true,
+  "components": [
+    {
+      "info": {
+        "label": "Customer",
+        "name": "Customer__dll"
+      },
+      "type": "DataLakeObject"
+    }
+  ],
+  "devName": "CustomerFoundation",
+  "label": "Customer Foundation"
+}

@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 mapping delete",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_CONFIRMATION_REQUIRED",
+  "message": "Confirmation is required for this operation.",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --no-prompt."
+  ],
+  "context": "MappingDelete",
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_CONFIRMATION_REQUIRED",
+  "status": 1,
+  "commandName": "MappingDelete"
+}

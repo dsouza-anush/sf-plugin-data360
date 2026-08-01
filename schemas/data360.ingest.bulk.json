@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.ingest.bulk",
+  "title": "data360.ingest.bulk JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["id", "state"],
+      "properties": {
+        "id": { "type": "string" },
+        "state": { "type": "string" },
+        "recordsProcessed": { "type": "integer", "minimum": 0 },
+        "recordsFailed": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

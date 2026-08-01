@@ -1,0 +1,27 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 search-index create",
+    "outcome": "error",
+    "expectedFailure": false
+  },
+  "name": "D360_API_ERROR",
+  "message": "Data lake object DeveloperName can not be over length limit 40 for developerName lv_p5_20260712005606_08090a_account_index_chunk",
+  "exitCode": 1,
+  "actions": ["Re-run with --verbose to inspect the raw API response."],
+  "context": "RegistryLeaf",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "ILLEGAL_QUERY_PARAMETER_VALUE",
+    "message": "Data lake object DeveloperName can not be over length limit 40 for developerName lv_p5_20260712005606_08090a_account_index_chunk",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/search-index"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "RegistryLeaf"
+}

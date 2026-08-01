@@ -1,0 +1,8 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "calculatedInsights": [
+    { "apiName": "Engagement__cio", "displayName": "Engagement", "status": "DRAFT", "lastRunStatus": null }
+  ],
+  "totalSize": 2
+}

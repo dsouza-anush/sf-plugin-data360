@@ -1,0 +1,17 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "dataStreams": [
+    {
+      "name": "OrdersStream",
+      "label": "Orders",
+      "connectorType": "S3",
+      "refreshMode": "FULL",
+      "lastRunStatus": "SUCCESS",
+      "lastRunTime": "2026-07-10T00:00:00Z",
+      "externalSource": true
+    }
+  ]
+}

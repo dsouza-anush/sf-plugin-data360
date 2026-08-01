@@ -1,0 +1,40 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "reference": "Data 360 Ingestion API documentation"
+  },
+  "synthetic": true,
+  "create": {
+    "id": "synthetic-job-id",
+    "state": "Open"
+  },
+  "upload": {
+    "accepted": true
+  },
+  "close": {
+    "id": "synthetic-job-id",
+    "state": "UploadComplete"
+  },
+  "inProgress": {
+    "id": "synthetic-job-id",
+    "state": "InProgress",
+    "recordsProcessed": 1,
+    "recordsFailed": 0
+  },
+  "complete": {
+    "id": "synthetic-job-id",
+    "state": "JobComplete",
+    "recordsProcessed": 3,
+    "recordsFailed": 0
+  },
+  "failed": {
+    "id": "synthetic-job-id",
+    "state": "Failed",
+    "recordsProcessed": 1,
+    "recordsFailed": 2
+  },
+  "aborted": {
+    "id": "synthetic-job-id",
+    "state": "Aborted"
+  }
+}

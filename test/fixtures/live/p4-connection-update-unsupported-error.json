@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 connection update",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_UNSUPPORTED_OP",
+  "message": "Connection update is supported only for Marketing Cloud connector types.",
+  "exitCode": 1,
+  "actions": [
+    "Create a replacement connection or update this connector in Data 360 Setup."
+  ],
+  "context": "ConnectionUpdate",
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_UNSUPPORTED_OP",
+  "status": 1,
+  "commandName": "ConnectionUpdate"
+}

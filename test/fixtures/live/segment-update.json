@@ -1,0 +1,46 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-19",
+    "command": "data360 segment update",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "apiName": "lv_p5_20260719085040_943f8e_seg",
+      "createdBy": {
+        "id": "LIVE_ID_ccb8797279ca"
+      },
+      "createdDate": "2026-07-19T08:51:25.000Z",
+      "dataSpace": "default",
+      "description": "Disposable P5 Account segment update",
+      "displayName": "lv_p5_20260719085040_943f8e segment updated",
+      "includeCriteria": "&lt;DbtPipeline xmlns=&quot;&quot;&gt;&lt;models&gt;&lt;model&gt;&lt;name&gt;Account&lt;/name&gt;&lt;sql&gt;SELECT ssot__Account__dlm.ssot__Id__c, ssot__Account__dlm.KQ_Id__c FROM ssot__Account__dlm WHERE ssot__Account__dlm.ssot__Id__c IS NOT NULL&lt;/sql&gt;&lt;/model&gt;&lt;/models&gt;&lt;/DbtPipeline&gt;",
+      "includeDbt": {
+        "models": [
+          {
+            "name": "Account",
+            "sql": "SELECT ssot__Account__dlm.ssot__Id__c, ssot__Account__dlm.KQ_Id__c FROM ssot__Account__dlm WHERE ssot__Account__dlm.ssot__Id__c IS NOT NULL"
+          }
+        ]
+      },
+      "lastModifiedBy": {
+        "id": "LIVE_ID_ccb8797279ca"
+      },
+      "lastModifiedDate": "2026-07-19T08:52:21.000Z",
+      "lastSegmentMemberCount": 660,
+      "lookbackPeriod": "P90D",
+      "marketSegmentDefinitionId": "LIVE_ID_8c424d39bfd6",
+      "marketSegmentId": "LIVE_ID_dc512eee638a",
+      "parameters": [],
+      "publishInterval": "NO_REFRESH",
+      "segmentOnId": "LIVE_ID_b4bd33910714",
+      "segmentStatus": "PROCESSING",
+      "segmentType": "DBT"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

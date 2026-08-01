@@ -1,0 +1,21 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 connector get",
+    "expectedFailure": true
+  },
+  "name": "D360_NAME_NOT_FOUND",
+  "message": "No resource matches \"IngestApi\".",
+  "exitCode": 1,
+  "actions": [
+    "Available resources include: AdobeMarketoEngage, Adobe Marketo Engage, AIPlatform, AIPlatform Connector, AmazonAdsMI, Amazon Ads for MI, AmazonKafka, Amazon MSK, AmazonMarketingCloud, Amazon Marketing Cloud, AwsKinesisDS, Amazon Kinesis, AwsRdsAuroraMySql, AWS Aurora MySQL, AwsRdsAuroraPostgres, AWS Aurora PostgreSQL, AwsRdsMariaDB, AWS RDS MariaDB, AwsRdsMySql, AWS RDS MySQL."
+  ],
+  "context": "RegistryLeaf",
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_NAME_NOT_FOUND",
+  "status": 1,
+  "commandName": "RegistryLeaf"
+}

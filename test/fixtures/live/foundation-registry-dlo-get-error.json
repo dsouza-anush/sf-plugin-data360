@@ -1,0 +1,21 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 dlo get",
+    "expectedFailure": true
+  },
+  "name": "D360_NAME_AMBIGUOUS",
+  "message": "\"lv_20260711203751_57c870_registry__dll\" matches multiple resources.",
+  "exitCode": 1,
+  "actions": [
+    "Retry with the resource ID or a unique API name."
+  ],
+  "context": "RegistryLeaf",
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_NAME_AMBIGUOUS",
+  "status": 1,
+  "commandName": "RegistryLeaf"
+}

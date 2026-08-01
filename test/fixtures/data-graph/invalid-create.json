@@ -1,0 +1,6 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "errorCode": "INVALID_INPUT",
+  "message": "dataGraphName is required"
+}

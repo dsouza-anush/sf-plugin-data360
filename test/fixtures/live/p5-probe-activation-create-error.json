@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 activation create",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_INVALID_DEFINITION",
+  "message": "Definition must contain a JSON object.",
+  "exitCode": 1,
+  "actions": [
+    "Wrap the resource fields in a JSON object."
+  ],
+  "context": "RegistryLeaf",
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_INVALID_DEFINITION",
+  "status": 1,
+  "commandName": "RegistryLeaf"
+}

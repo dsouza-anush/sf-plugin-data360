@@ -1,0 +1,21 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-space get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "description": "Your org’s default data space. It can be renamed, but not deleted.",
+      "id": "LIVE_ID_394fbcb8ac65",
+      "label": "default",
+      "name": "default",
+      "status": "Active"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

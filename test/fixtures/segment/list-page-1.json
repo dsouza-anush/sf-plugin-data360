@@ -1,0 +1,15 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "segments": [
+    {
+      "marketSegmentId": "0SG000000000001AAA",
+      "segmentApiName": "High_Value",
+      "displayName": "High Value",
+      "segmentType": "STANDARD",
+      "publishStatus": "PUBLISHED",
+      "lastPublishedDate": "2026-07-10T12:00:00Z"
+    }
+  ],
+  "totalSize": 2
+}

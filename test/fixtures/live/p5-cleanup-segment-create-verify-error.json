@@ -1,0 +1,13 @@
+{
+  "0": {
+    "errorCode": "ITEM_NOT_FOUND",
+    "message": "Segment not found: lv_p5_20260729061217_b25ae7_seg"
+  },
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 api request",
+    "outcome": "error",
+    "expectedFailure": true
+  }
+}

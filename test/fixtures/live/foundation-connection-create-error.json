@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 connection create",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "Invalid value for Streaming App Connector type: IngestApi",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "ConnectionCreate",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "POST_BODY_PARSE_ERROR",
+    "message": "Invalid value for Streaming App Connector type: IngestApi",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/connections"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "ConnectionCreate"
+}

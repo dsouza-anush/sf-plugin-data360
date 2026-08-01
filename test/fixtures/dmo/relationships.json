@@ -1,0 +1,14 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "relationships": [
+    {
+      "name": "OrderContact",
+      "label": "Order Contact",
+      "type": "Lookup",
+      "status": "Active"
+    }
+  ]
+}

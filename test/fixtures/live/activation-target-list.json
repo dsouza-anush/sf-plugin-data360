@@ -1,0 +1,169 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 activation-target list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T23:36:17.000Z",
+        "dataSpaceName": "default",
+        "description": "CS-1 Casey&#39;s scenario: activation target for repeat-engager offers",
+        "id": "LIVE_ID_79c2fbc2eec7",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T23:36:33.000Z",
+        "name": "cs24_ad_0704_target",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T22:54:22.000Z",
+        "dataSpaceName": "default",
+        "description": "Test pack B2: activation target create",
+        "id": "LIVE_ID_aac1b9f51d59",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T22:54:37.000Z",
+        "name": "t22_ad_0704_target",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T22:36:06.000Z",
+        "dataSpaceName": "default",
+        "description": "Target to test delete",
+        "id": "LIVE_ID_5f962a254140",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T22:36:06.000Z",
+        "name": "Delete Test Target Jul4",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T22:29:59.000Z",
+        "dataSpaceName": "default",
+        "description": "Full test run Jul4: DataCloud activation target",
+        "id": "LIVE_ID_a4cbf91c574d",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T22:30:25.000Z",
+        "name": "Full Test DataCloud Target Jul4",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T12:05:30.000Z",
+        "dataSpaceName": "default",
+        "description": "Activation target for S3 at DataCloudQ3/LIVE_ID_40ff52635a5e/e2e/MCP",
+        "id": "LIVE_ID_1c24e299f76c",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T12:05:44.000Z",
+        "name": "eval_42ybjb_6b1yem_target",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T01:57:11.000Z",
+        "dataSpaceName": "default",
+        "description": "Retail accelerator test: activation target for segment push",
+        "id": "LIVE_ID_9bbc3e871d87",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T01:57:56.000Z",
+        "name": "Retail Test DataCloud Target",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-03T23:17:29.000Z",
+        "dataSpaceName": "default",
+        "description": "Customer scenario test: Marketing platform activation target for segment push",
+        "id": "LIVE_ID_2fd5d6791723",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-03T23:17:47.000Z",
+        "name": "Scenario Test Marketing Target",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-03T22:46:37.000Z",
+        "dataSpaceName": "default",
+        "description": "Updated via MCP smoke test - Jul3",
+        "id": "LIVE_ID_3de8bf954130",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-03T22:49:16.000Z",
+        "name": "MCP Test DataCloud Target",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-06-29T14:39:59.000Z",
+        "dataSpaceName": "default",
+        "description": "Safe test activation target - DataCloud local, no external egress",
+        "id": "LIVE_ID_97f2ed080ebc",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-06-29T14:40:35.000Z",
+        "name": "codex_ready_20260629_activation_target",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

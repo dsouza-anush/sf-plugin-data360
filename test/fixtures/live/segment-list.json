@@ -1,0 +1,507 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 segment list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "apiName": "codex_live_20260629_segment_Lapsed_Buyers",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-06-29T10:47:17.000Z",
+        "dataSpace": "default",
+        "description": "Test segment for lapsed buyers - live mutation probe",
+        "displayName": "codex_live_20260629_segment Lapsed Buyers",
+        "includeCriteria": "&lt;DbtPipeline xmlns=&quot;&quot;&gt;&lt;models&gt;&lt;model&gt;&lt;name&gt;codex_live_20260629_segment_lapsed&lt;/name&gt;&lt;sql&gt;SELECT DISTINCT ssot__Individual__dlm.ssot__Id__c, ssot__Individual__dlm.KQ_Id__c FROM ssot__Individual__dlm WHERE trim(cast(ssot__Individual__dlm.ssot__Id__c as varchar(255))) &amp;lt;&amp;gt; &#39;&#39;&lt;/sql&gt;&lt;/model&gt;&lt;/models&gt;&lt;/DbtPipeline&gt;",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-06-29T10:48:13.000Z",
+        "lastSegmentMemberCount": 0,
+        "lookbackPeriod": "P90D",
+        "marketSegmentDefinitionId": "LIVE_ID_77b35c96e171",
+        "marketSegmentId": "LIVE_ID_d0da06b86bb8",
+        "parameters": [],
+        "publishInterval": "NO_REFRESH",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "DBT"
+      },
+      {
+        "apiName": "cs24_ad_0704_dormant",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T23:38:40.000Z",
+        "dataSpace": "default",
+        "description": "Dormant individuals: exist in CRM but have zero email AND zero phone contact points (reactivation campaign target)",
+        "displayName": "cs24_ad_0704_dormant",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-28T14:04:02.000Z",
+        "lastPublishedEndDateTime": "2026-07-28T14:04:00.000Z",
+        "lastSegmentMemberCount": 77,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_9e8dcf580d40",
+        "marketSegmentId": "LIVE_ID_909561be9f95",
+        "nextPublishDateTime": "2026-07-29T14:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-05T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-05T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-05T14:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "cs24_ad_0704_high_value",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T23:32:44.000Z",
+        "dataSpace": "default",
+        "description": "High-value customers: individuals with both email AND phone touchpoints (LTV proxy &gt;= 2)",
+        "displayName": "cs24_ad_0704_high_value",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-28T14:04:02.000Z",
+        "lastPublishedEndDateTime": "2026-07-28T14:04:00.000Z",
+        "lastSegmentMemberCount": 77,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_25b5c3c61dde",
+        "marketSegmentId": "LIVE_ID_0f2f4c30dde7",
+        "nextPublishDateTime": "2026-07-29T14:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-05T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-05T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-05T14:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "cs24_ad_0704_niche",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-05T03:20:13.000Z",
+        "dataSpace": "default",
+        "description": "Williams-Sonoma niche: individuals with valid email AND phone AND created recently (since 2025)",
+        "displayName": "cs24_ad_0704_niche",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-28T12:03:07.000Z",
+        "lastPublishedEndDateTime": "2026-07-28T12:03:04.000Z",
+        "lastSegmentMemberCount": 77,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_d6ff6bddb743",
+        "marketSegmentId": "LIVE_ID_c31b971a5fc8",
+        "nextPublishDateTime": "2026-07-29T12:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-05T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-05T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-05T12:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "cs24_ad_0704_referral_gap",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-05T03:26:28.000Z",
+        "dataSpace": "default",
+        "description": "BofA referral-gap re-engagement audience: individuals who were referred/engaged but never followed through (only generic placeholder email, no personalized conversion)",
+        "displayName": "cs24_ad_0704_referral_gap",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-28T12:02:50.000Z",
+        "lastPublishedEndDateTime": "2026-07-28T12:02:48.000Z",
+        "lastSegmentMemberCount": 77,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_4a6705b14b76",
+        "marketSegmentId": "LIVE_ID_0ec02b96f053",
+        "nextPublishDateTime": "2026-07-29T12:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-05T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-05T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-05T12:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "cs24_ad_0704_repeat_engagers",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T23:34:37.000Z",
+        "dataSpace": "default",
+        "description": "Repeat engagers: individuals with 2+ contact points of any type (email, phone, address)",
+        "displayName": "cs24_ad_0704_repeat_engagers",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-28T14:03:48.000Z",
+        "lastPublishedEndDateTime": "2026-07-28T14:03:46.000Z",
+        "lastSegmentMemberCount": 77,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_22d0924b6392",
+        "marketSegmentId": "LIVE_ID_35604ca5faec",
+        "nextPublishDateTime": "2026-07-29T14:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-05T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-05T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-05T14:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "Eval_Shared_Email_Contacts",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T19:57:59.000Z",
+        "dataSpace": "default",
+        "description": "Scenario C: Identifies individuals sharing a generic email - represents BofA referral gap detection / Under Armour profile dedup target",
+        "displayName": "Eval - Shared Email Contacts",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T20:01:49.000Z",
+        "lastPublishedEndDateTime": "2026-07-04T20:01:46.000Z",
+        "lastSegmentMemberCount": 8,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_5a353d3cc240",
+        "marketSegmentId": "LIVE_ID_05c5287ee40a",
+        "parameters": [],
+        "publishInterval": "NO_REFRESH",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "Full_Test_DBT_Segment_Jul4",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T22:29:12.000Z",
+        "dataSpace": "default",
+        "description": "Full test run: DBT segment selecting all individuals",
+        "displayName": "Full Test DBT Segment Jul4",
+        "includeCriteria": "&lt;DbtPipeline xmlns=&quot;&quot;&gt;&lt;models&gt;&lt;model&gt;&lt;name&gt;full_test_dbt_jul4&lt;/name&gt;&lt;sql&gt;SELECT DISTINCT ssot__Individual__dlm.ssot__Id__c, ssot__Individual__dlm.KQ_Id__c FROM ssot__Individual__dlm WHERE trim(cast(ssot__Individual__dlm.ssot__Id__c as varchar(255))) &amp;lt;&amp;gt; &#39;&#39;&lt;/sql&gt;&lt;/model&gt;&lt;/models&gt;&lt;/DbtPipeline&gt;",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T22:41:25.000Z",
+        "lastPublishedEndDateTime": "2026-07-04T22:41:24.000Z",
+        "lastSegmentMemberCount": 8,
+        "lookbackPeriod": "P90D",
+        "marketSegmentDefinitionId": "LIVE_ID_aab3b70bac89",
+        "marketSegmentId": "LIVE_ID_1bce8e6aa11d",
+        "parameters": [],
+        "publishInterval": "NO_REFRESH",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "DBT"
+      },
+      {
+        "apiName": "MCP_Test_Jones_Household",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T20:29:47.000Z",
+        "dataSpace": "default",
+        "description": "Test: Segment individuals with last name Jones - represents BofA household grouping use case",
+        "displayName": "MCP Test - Jones Household",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T20:32:21.000Z",
+        "lastPublishedEndDateTime": "2026-07-04T20:32:19.000Z",
+        "lastSegmentMemberCount": 8,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_d47e510fa6d7",
+        "marketSegmentId": "LIVE_ID_e324d6e83893",
+        "parameters": [],
+        "publishInterval": "NO_REFRESH",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "Retail_Test_High_Value_Customers",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T01:56:53.000Z",
+        "dataSpace": "default",
+        "description": "Retail accelerator test: customers segmented for recall campaign activation",
+        "displayName": "Retail Test - High Value Customers",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-29T00:18:11.000Z",
+        "lastPublishedEndDateTime": "2026-07-29T00:18:07.000Z",
+        "lastSegmentMemberCount": 2,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_3b069154560f",
+        "marketSegmentId": "LIVE_ID_361f91532bde",
+        "nextPublishDateTime": "2026-07-30T00:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-05T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-05T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-05T00:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_Unified_SMH_1783130220309__dlm",
+        "segmentOnApiName": "UnifiedIndividual__dlm",
+        "segmentOnId": "LIVE_ID_a6e063b1348f",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "t22_ad_0704_seg",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T23:11:49.000Z",
+        "dataSpace": "default",
+        "description": "Individuals with at least one contact-point email",
+        "displayName": "t22_ad_0704_seg",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-28T12:02:52.000Z",
+        "lastPublishedEndDateTime": "2026-07-28T12:02:48.000Z",
+        "lastSegmentMemberCount": 77,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_62faa58a31f3",
+        "marketSegmentId": "LIVE_ID_ac0a9a1928e7",
+        "nextPublishDateTime": "2026-07-29T12:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-05T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-05T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-05T12:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "Test_UI_CI_Segment_Tier_1",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-13T02:33:02.000Z",
+        "dataSpace": "default",
+        "description": "Test: UI segment referencing CI via join",
+        "displayName": "Test UI CI Segment - Tier 1",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-29T00:18:57.000Z",
+        "lastPublishedEndDateTime": "2026-07-29T00:18:56.000Z",
+        "lastSegmentMemberCount": 77,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_ba7f378f347b",
+        "marketSegmentId": "LIVE_ID_a09ead00e93b",
+        "nextPublishDateTime": "2026-07-30T00:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-14T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-14T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-14T00:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

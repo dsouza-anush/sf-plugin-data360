@@ -1,0 +1,26 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 dmo relationship delete",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "FieldSrcTrgtRelationship not found for the given name : lv_p4_20260712001815_217920_event_event_id_map_ssot_Individual_ssot_Id_1783815831514 ",
+  "exitCode": 1,
+  "actions": ["Re-run with --verbose to inspect the raw API response."],
+  "context": "DmoRelationshipDelete",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "NOT_FOUND",
+    "message": "FieldSrcTrgtRelationship not found for the given name : lv_p4_20260712001815_217920_event_event_id_map_ssot_Individual_ssot_Id_1783815831514 ",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/data-model-objects/relationships/lv_p4_20260712001815_217920_event_event_id_map_ssot_Individual_ssot_Id_1783815831514"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "DmoRelationshipDelete"
+}

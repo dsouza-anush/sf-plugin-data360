@@ -1,0 +1,20 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 calculated-insight get",
+    "outcome": "error",
+    "expectedFailure": false
+  },
+  "name": "D360_NAME_NOT_FOUND",
+  "message": "No resource matches \"lv_p5_20260712010601_6c3_ci__cio\".",
+  "exitCode": 1,
+  "actions": ["List the resources and retry with an exact name or ID."],
+  "context": "RegistryLeaf",
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_NAME_NOT_FOUND",
+  "status": 1,
+  "commandName": "RegistryLeaf"
+}

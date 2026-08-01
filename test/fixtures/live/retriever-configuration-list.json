@@ -1,0 +1,31 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 retriever configuration list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "createdDate": "2024-09-14T00:10:57.370Z",
+        "dataSpace": {
+          "name": "Help_Content"
+        },
+        "isActive": true,
+        "label": "SalesforceHelpContentRetriever 1.0",
+        "lastModifiedDate": "2024-11-20T11:28:51.418Z",
+        "name": "SalesforceHelpContentRetrieverVersion1",
+        "namespace": "sfdc_ai",
+        "retrievalMode": "Basic",
+        "sourceDmo": {},
+        "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations/sfdc_ai__SalesforceHelpContentRetrieverVersion1",
+        "version": 1
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

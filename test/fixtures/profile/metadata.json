@@ -1,0 +1,5 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "models": [{ "name": "Individual__dlm", "fields": ["Id", "Name"] }]
+}

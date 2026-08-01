@@ -1,0 +1,19 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 data-kit component dependencies",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "Error",
+  "message": "The following errors occurred:\n  Missing required flag component\n  Missing required flag component-type\n  Missing required flag name\nSee more help with --help",
+  "exitCode": 2,
+  "context": "DataKitComponentDependencies",
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "2",
+  "status": 2,
+  "commandName": "DataKitComponentDependencies"
+}

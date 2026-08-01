@@ -1,0 +1,26 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 dmo relationship create",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "No ObjectSourceTargetMap is ACTIVE for the DMO: lv_p4_20260711231022_4cbbc6_event__dlm. Check that the mapping is active for the DMO in Data Streams.",
+  "exitCode": 1,
+  "actions": ["Re-run with --verbose to inspect the raw API response."],
+  "context": "DmoRelationshipCreate",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "INVALID_INPUT",
+    "message": "No ObjectSourceTargetMap is ACTIVE for the DMO: lv_p4_20260711231022_4cbbc6_event__dlm. Check that the mapping is active for the DMO in Data Streams.",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/data-model-objects/lv_p4_20260711231022_4cbbc6_event__dlm/relationships"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "DmoRelationshipCreate"
+}

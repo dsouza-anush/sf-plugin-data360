@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-13",
+    "command": "data360 api request",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "timestamp": "2026-07-13T02:19:58.988258768Z",
+  "error": "404 NOT_FOUND",
+  "message": "The requested resource doesn't exist.",
+  "path": "uri=/api/v1/ingest/jobs/LIVE_UUID_4fdbe7336631",
+  "tenantId": "LIVE_ID_323fef56d87b",
+  "internalErrorCode": "COMMON_ERROR_GENERIC",
+  "details": {}
+}

@@ -1,0 +1,19 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "capturedAt": "2026-07-10",
+    "apiVersion": "67.0"
+  },
+  "synthetic": true,
+  "currentPageUrl": "/services/data/v67.0/ssot/data-spaces",
+  "dataSpaces": [
+    {
+      "description": "Default data space",
+      "id": "0Uv000000000001",
+      "label": "Default",
+      "name": "default",
+      "status": "Active"
+    }
+  ],
+  "totalSize": 1
+}

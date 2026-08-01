@@ -1,0 +1,76 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit available",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "info": {
+          "name": "codex_ready_20260629_rag__dll"
+        },
+        "type": "DataLakeObject"
+      },
+      {
+        "info": {
+          "name": "lv_p5_2026072906_7c2b62_kit_source__dll"
+        },
+        "type": "DataLakeObject"
+      },
+      {
+        "info": {
+          "name": "mcp_test_xform_output__dll"
+        },
+        "type": "DataLakeObject"
+      },
+      {
+        "info": {
+          "name": "Scenario6_Customer_Events__dll"
+        },
+        "type": "DataLakeObject"
+      },
+      {
+        "info": {
+          "name": "Scenario7AccountSummary__dll"
+        },
+        "type": "DataLakeObject"
+      },
+      {
+        "info": {
+          "name": "StaticCurrencyRates_Home__dll"
+        },
+        "type": "DataLakeObject"
+      },
+      {
+        "info": {
+          "name": "TenantDailyEntitlementConsumption__dll"
+        },
+        "type": "DataLakeObject"
+      },
+      {
+        "info": {
+          "name": "TenantEnrichedUsageEvent__dll"
+        },
+        "type": "DataLakeObject"
+      },
+      {
+        "info": {
+          "name": "TenantHourlyEntitlementConsumption__dll"
+        },
+        "type": "DataLakeObject"
+      },
+      {
+        "info": {
+          "name": "TenantUsageAttrDetail__dll"
+        },
+        "type": "DataLakeObject"
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

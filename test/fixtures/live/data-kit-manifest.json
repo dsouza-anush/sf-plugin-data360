@@ -1,0 +1,52 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit manifest",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "developerName": [
+          "lv_p5_20260729061343_7c2b62_kit"
+        ],
+        "entityName": "DataPackageKitDefinition",
+        "id": [
+          "LIVE_ID_2d6a26df2182"
+        ]
+      },
+      {
+        "developerName": [
+          "lv_p5_20260729061343_7c2b62_kit_1785305655560"
+        ],
+        "entityName": "DataPackageKitObject",
+        "id": [
+          "LIVE_ID_8651d86fefc9"
+        ]
+      },
+      {
+        "developerName": [
+          "lv_p5_2026072906_7c2b62_kit_source"
+        ],
+        "entityName": "DataSource",
+        "id": [
+          "LIVE_ID_6e382cafdf00"
+        ]
+      },
+      {
+        "developerName": [
+          "lv_p5_2026072906_7c2b62_kit_source"
+        ],
+        "entityName": "DataSourceObject",
+        "id": [
+          "LIVE_ID_3f8585eb59a3"
+        ]
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

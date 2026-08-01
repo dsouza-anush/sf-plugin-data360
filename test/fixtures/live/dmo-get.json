@@ -1,0 +1,79 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 dmo get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "category": "PROFILE",
+      "creationType": "Custom",
+      "dataSpaceName": "default",
+      "description": "Disposable empty P5 live verification model",
+      "fields": [
+        {
+          "creationType": "System",
+          "isDistinct": false,
+          "label": "Data Source",
+          "name": "DataSource__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "System",
+          "isDistinct": false,
+          "label": "Data Source Object",
+          "name": "DataSourceObject__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "Display Name",
+          "name": "display_name__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "System",
+          "isDistinct": false,
+          "label": "Internal Organization",
+          "name": "InternalOrganization__c",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "System",
+          "isDistinct": false,
+          "label": "Key Qualifier Record ID",
+          "name": "KQ_record_id__c",
+          "type": "Text",
+          "usageTag": "KeyQualifier"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "isPrimaryKey": true,
+          "keyQualifierName": "KQ_record_id",
+          "label": "Record ID",
+          "name": "record_id__c",
+          "type": "Text",
+          "usageTag": "None"
+        }
+      ],
+      "hasExternalDataLakeObjectMappings": false,
+      "id": "LIVE_ID_6e0fb5bc9e58",
+      "isEditable": true,
+      "isEnabled": false,
+      "isSegmentable": false,
+      "label": "lv_p5_20260729061217_b25ae7 model",
+      "name": "lv_p5_20260729061217_b25ae7_model__dlm"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

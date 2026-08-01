@@ -1,0 +1,46 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 dmo relationship create",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "relationships": [
+        {
+          "cardinality": "ManyToOne",
+          "creationType": "Custom",
+          "id": "LIVE_ID_73d4eb5b2a30",
+          "name": "lv_p4_20260726092424_c00316_event_Id_map_ssot_Individual_ssot_Id_1785058129142",
+          "owner": "DataCloud",
+          "sourceField": {
+            "label": "AI Agent Tag Association Id",
+            "name": "Id__c",
+            "type": "MktDataModelField"
+          },
+          "sourceObject": {
+            "keyQualifierField": null,
+            "label": "lv_p4_20260726092424_c00316 DMO updated",
+            "name": "lv_p4_20260726092424_c00316_event__dlm"
+          },
+          "status": "CREATING",
+          "targetField": {
+            "label": "Individual Id",
+            "name": "ssot__Id__c",
+            "type": "MktDataModelField"
+          },
+          "targetObject": {
+            "keyQualifierField": null,
+            "label": "Individual",
+            "name": "ssot__Individual__dlm"
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

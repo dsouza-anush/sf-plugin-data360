@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 open",
+    "expectedFailure": true
+  },
+  "name": "ERROR_HTTP_403",
+  "message": "Invalid_Scope",
+  "exitCode": 1,
+  "context": "Open",
+  "data": {
+    "errorCode": "ERROR_HTTP_403",
+    "message": "Invalid_Scope"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "1",
+  "status": 1,
+  "commandName": "Open"
+}

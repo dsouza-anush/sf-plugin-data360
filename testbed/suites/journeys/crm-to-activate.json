@@ -1,0 +1,35 @@
+{
+  "name": "journeys/crm-to-activate",
+  "mode": "mock",
+  "description": "Read-only discovery spine for the CRM ingestion-to-activation journey. Mutation success remains a separate gated scenario.",
+  "steps": [
+    {
+      "id": "01-foundation-discovery",
+      "title": "Discover connection, stream, model, and mapping prerequisites",
+      "tags": ["journey", "L1"],
+      "commands": [
+        {
+          "argv": ["data360", "connection", "list", "--limit", "1", "--json"],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.items": { "exists": true } } }
+        },
+        { "argv": ["data360", "data-stream", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "dmo", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        {
+          "argv": ["data360", "mapping", "list", "--dmo", "Order", "--limit", "1", "--json"],
+          "expect": { "exitCode": 0 }
+        }
+      ]
+    },
+    {
+      "id": "02-audience-discovery",
+      "title": "Discover segment, activation target, and activation prerequisites",
+      "tags": ["journey", "L1"],
+      "commands": [
+        { "argv": ["data360", "segment", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "activation-target", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "activation", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "activation", "platforms", "--json"], "expect": { "exitCode": 0 } }
+      ]
+    }
+  ]
+}

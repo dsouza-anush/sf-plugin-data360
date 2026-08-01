@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-17",
+    "command": "data360 connection create",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "connectorType": "IngestApi",
+      "id": "LIVE_ID_77fe3d9dba6f",
+      "label": "lv_20260717084534_36052b connection",
+      "name": "lv_20260717084534_36052b_connection_5df65a0f_cd5b_42e4_ae8f_71d97143c32e",
+      "status": "CONNECTED",
+      "tenantSpecificEndpoint": "mock.c360a.example"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

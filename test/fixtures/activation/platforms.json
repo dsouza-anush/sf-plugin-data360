@@ -1,0 +1,5 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "activationExternalPlatforms": [{ "name": "MarketingCloud", "label": "Marketing Cloud" }]
+}

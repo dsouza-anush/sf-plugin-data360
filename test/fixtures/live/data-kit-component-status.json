@@ -1,0 +1,17 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit component status",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "componentDetails": []
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

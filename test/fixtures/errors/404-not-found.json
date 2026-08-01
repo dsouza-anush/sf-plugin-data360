@@ -1,0 +1,13 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "basedOn": "Salesforce REST error format"
+  },
+  "statusCode": 404,
+  "body": [
+    {
+      "errorCode": "NOT_FOUND",
+      "message": "The requested Data 360 resource was not found."
+    }
+  ]
+}

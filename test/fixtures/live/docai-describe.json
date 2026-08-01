@@ -1,0 +1,135 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 docai describe",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "supportedContentTypes": [
+        {
+          "isDefault": false,
+          "label": "PDF",
+          "maxFileSizeInMB": 10,
+          "type": "application/pdf"
+        },
+        {
+          "isDefault": false,
+          "label": "PNG",
+          "maxFileSizeInMB": 10,
+          "type": "image/png"
+        },
+        {
+          "isDefault": false,
+          "label": "JPG",
+          "maxFileSizeInMB": 10,
+          "type": "image/jpg"
+        },
+        {
+          "isDefault": false,
+          "label": "JPEG",
+          "maxFileSizeInMB": 10,
+          "type": "image/jpeg"
+        },
+        {
+          "isDefault": false,
+          "label": "XLSX",
+          "maxFileSizeInMB": 10,
+          "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "isDefault": false,
+          "label": "TXT",
+          "maxFileSizeInMB": 1,
+          "type": "text/plain"
+        },
+        {
+          "isDefault": false,
+          "label": "DOCX",
+          "maxFileSizeInMB": 10,
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "isDefault": false,
+          "label": "PPTX",
+          "maxFileSizeInMB": 10,
+          "type": "application/vnd.[REDACTED]"
+        },
+        {
+          "isDefault": false,
+          "label": "XML",
+          "maxFileSizeInMB": 1,
+          "type": "application/xml"
+        },
+        {
+          "isDefault": false,
+          "label": "XML",
+          "maxFileSizeInMB": 1,
+          "type": "text/xml"
+        },
+        {
+          "isDefault": false,
+          "label": "Markdown",
+          "maxFileSizeInMB": 1,
+          "type": "text/markdown"
+        },
+        {
+          "isDefault": false,
+          "label": "JSON",
+          "maxFileSizeInMB": 1,
+          "type": "application/json"
+        }
+      ],
+      "supportedModels": [
+        {
+          "id": "LIVE_ID_47026a794707",
+          "isDefault": false,
+          "label": "Gemini 3.5 Flash",
+          "provider": "Vertex AI (Google)",
+          "status": "ENABLED"
+        },
+        {
+          "id": "LIVE_ID_c4725f95f477",
+          "isDefault": false,
+          "label": "Claude Sonnet 4.6",
+          "provider": "AWS Bedrock",
+          "status": "ENABLED"
+        },
+        {
+          "id": "LIVE_ID_57797d87b5d0",
+          "isDefault": false,
+          "label": "GPT 5.4",
+          "provider": "OpenAI",
+          "status": "ENABLED"
+        },
+        {
+          "id": "LIVE_ID_2226757e4629",
+          "isDefault": false,
+          "label": "GPT 5.1",
+          "provider": "OpenAI",
+          "status": "ENABLED"
+        },
+        {
+          "id": "LIVE_ID_76000f86e9d3",
+          "isDefault": false,
+          "label": "Gemini 2.5 Flash",
+          "provider": "Vertex AI (Google)",
+          "status": "ENABLED"
+        },
+        {
+          "id": "LIVE_ID_8be00f964441",
+          "isDefault": false,
+          "label": "OpenAI GPT-4o",
+          "provider": "OpenAI",
+          "status": "ENABLED"
+        }
+      ],
+      "version": "2.0"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

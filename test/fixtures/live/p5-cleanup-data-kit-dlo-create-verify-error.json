@@ -1,0 +1,13 @@
+{
+  "0": {
+    "errorCode": "INVALID_INPUT",
+    "message": "A data lake object instance with Id: LIVE_ID_ba424c6ba6e1 does not exists."
+  },
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 api request",
+    "outcome": "error",
+    "expectedFailure": true
+  }
+}

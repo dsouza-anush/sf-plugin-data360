@@ -1,0 +1,11 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "members": [
+    {
+      "name": "Order"
+    }
+  ]
+}

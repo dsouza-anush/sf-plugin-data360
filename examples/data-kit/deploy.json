@@ -1,0 +1,14 @@
+{
+  "components": [
+    {
+      "type": "DataStreamBundle",
+      "config": {
+        "connectorType": "COMMERCE",
+        "bundleName": "commercebundle1",
+        "bundleConfig": {
+          "instanceId": "replace-with-instance-id"
+        }
+      }
+    }
+  ]
+}

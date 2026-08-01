@@ -1,0 +1,8 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "basedOn": "Data 360 Query SQL omitSchema documentation"
+  },
+  "data": [["001000000000001"]],
+  "returnedRows": 1
+}

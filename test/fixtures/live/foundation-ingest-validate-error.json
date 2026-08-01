@@ -1,0 +1,54 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 ingest validate",
+    "expectedFailure": true
+  },
+  "name": "D360_INVALID_DEFINITION",
+  "message": "Bad Request: JSON is properly formatted but has a mismatch with Schema.",
+  "exitCode": 1,
+  "actions": [
+    "Correct every field listed in validationReport and run sf data360 ingest validate again.",
+    "Compare the sample payload with the ingestion connector object schema."
+  ],
+  "context": "IngestValidate",
+  "data": {
+    "httpStatus": 400,
+    "apiCode": "",
+    "message": "Bad Request: JSON is properly formatted but has a mismatch with Schema.",
+    "detail": "{\"timestamp\":\"2026-07-11T22:47:38.71217094Z\",\"error\":\"400 BAD_REQUEST\",\"message\":\"Bad Request: JSON is properly formatted but has a mismatch with Schema.\",\"path\":\"uri=/api/v1/ingest/sources/Fixture_Ingest_Source/fixture_event/actions/test\",\"tenantId\":\"a360/[REDACTED_TENANT]\",\"internalErrorCode\":\"COMMON_ERROR_GENERIC\",\"details\":{\"validationReport\":[{\"record\":\"{\\\"Value\\\":1,\\\"Id\\\":\\\"lv_20260711224737_890d2a_1\\\",\\\"Timestamp\\\":\\\"2026-01-01T00:00:00.000Z\\\",\\\"Name\\\":\\\"Foundation one\\\"}\",\"causingExceptions\":[\"#: required key [event_id] not found\",\"#: required key [name] not found\",\"#: required key [value] not found\",\"#: required key [event_time] not found\",\"#: extraneous key [Value] is not permitted\",\"#: extraneous key [Id] is not permitted\",\"#: extraneous key [Timestamp] is not permitted\",\"#: extraneous key [Name] is not permitted\"]}]}}",
+    "endpoint": "https://mock.c360a.example/api/v1/ingest/sources/Fixture_Ingest_Source/fixture_event/actions/test",
+    "validationReport": {
+      "timestamp": "2026-07-11T22:47:38.71217094Z",
+      "error": "400 BAD_REQUEST",
+      "message": "Bad Request: JSON is properly formatted but has a mismatch with Schema.",
+      "path": "uri=/api/v1/ingest/sources/Fixture_Ingest_Source/fixture_event/actions/test",
+      "tenantId": "LIVE_ID_2aaf7c571c6f",
+      "internalErrorCode": "COMMON_ERROR_GENERIC",
+      "details": {
+        "validationReport": [
+          {
+            "record": "{\"Value\":1,\"Id\":\"lv_20260711224737_890d2a_1\",\"Timestamp\":\"2026-01-01T00:00:00.000Z\",\"Name\":\"Foundation one\"}",
+            "causingExceptions": [
+              "#: required key [event_id] not found",
+              "#: required key [name] not found",
+              "#: required key [value] not found",
+              "#: required key [event_time] not found",
+              "#: extraneous key [Value] is not permitted",
+              "#: extraneous key [Id] is not permitted",
+              "#: extraneous key [Timestamp] is not permitted",
+              "#: extraneous key [Name] is not permitted"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_INVALID_DEFINITION",
+  "status": 1,
+  "commandName": "IngestValidate"
+}

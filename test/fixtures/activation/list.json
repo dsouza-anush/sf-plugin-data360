@@ -1,0 +1,15 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "activations": [
+    {
+      "id": "0AC000000000001AAA",
+      "activationId": "0AC000000000001AAA",
+      "activationName": "Email_Activation",
+      "displayName": "Email Activation",
+      "status": "DRAFT",
+      "activationTargetName": "MarketingCloud"
+    }
+  ],
+  "totalSize": 1
+}

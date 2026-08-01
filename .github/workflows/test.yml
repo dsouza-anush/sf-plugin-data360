@@ -1,0 +1,81 @@
+name: test
+permissions:
+  contents: read
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    name: Node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        # @jsforce/jsforce-node 3.10.17+ and its Undici runtime require Node 22.19 or newer.
+        node: ['22.19.0', '22', '24']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Activate pinned Yarn
+        run: corepack enable && corepack prepare yarn@1.22.22 --activate
+      - run: yarn install --frozen-lockfile
+      - name: Reject tracked or historical credentials
+        run: yarn secrets:scan
+      - run: yarn clean
+      - run: yarn compile
+      - name: Reject stale generated artifacts
+        run: yarn contract:check
+      - run: yarn build
+      - name: Verify generators are deterministic
+        run: git diff --exit-code
+      - run: yarn lint
+      - run: yarn format:check
+      - run: yarn test:t1
+      - run: yarn test:t2
+      - run: yarn test:t3
+      - run: yarn test:eval
+      - if: matrix.node == '22'
+        run: yarn test:coverage
+      - if: matrix.node == '22'
+        run: yarn test:t6
+      - if: matrix.node == '22'
+        run: yarn test:t7
+      - run: yarn help:smoke
+      - run: yarn pack --filename sf-plugin-data360.tgz
+      - name: Install stable Salesforce CLI
+        run: npm install --global @salesforce/cli@2.144.6
+      - run: yarn test:package sf-plugin-data360.tgz
+      - if: matrix.node == '22'
+        name: Latest Salesforce CLI RC canary
+        continue-on-error: true
+        run: |
+          npm install --global @salesforce/cli@latest-rc
+          yarn test:package sf-plugin-data360.tgz
+  portability:
+    name: Node 22 (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: corepack enable
+      - run: corepack prepare yarn@1.22.22 --activate
+      - run: yarn install --frozen-lockfile
+      - run: yarn clean
+      - run: yarn compile
+      - run: yarn test:t1

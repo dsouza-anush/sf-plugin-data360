@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 mapping create",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "DLO not found for the given developer name : lv_20260711210913_5d2def_registry in the data space : default  ",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "MappingCreate",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "INTERNAL_ERROR",
+    "message": "DLO not found for the given developer name : lv_20260711210913_5d2def_registry in the data space : default  ",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/data-model-object-mappings"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "MappingCreate"
+}

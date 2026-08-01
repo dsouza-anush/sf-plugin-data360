@@ -1,0 +1,20 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "connectors": [
+    {
+      "name": "MarketingCloud",
+      "label": "Marketing Cloud",
+      "category": "Engagement",
+      "ingestType": "Batch"
+    },
+    {
+      "name": "Web",
+      "label": "Web",
+      "category": "Web",
+      "ingestType": "Streaming"
+    }
+  ]
+}

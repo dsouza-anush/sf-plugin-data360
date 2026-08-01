@@ -1,0 +1,10 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 data-action list"
+  },
+  "currentPageUrl": null,
+  "dataActions": [],
+  "nextPageUrl": null
+}

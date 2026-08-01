@@ -1,0 +1,56 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 doctor"
+  },
+  "status": 0,
+  "result": {
+    "checks": [
+      {
+        "name": "Org authentication",
+        "status": "pass",
+        "detail": "user@example.invalid"
+      },
+      {
+        "name": "API version alignment",
+        "status": "pass",
+        "detail": "Requested v67.0; org supports v67.0."
+      },
+      {
+        "name": "Data 360 provisioning",
+        "status": "pass",
+        "detail": "Metadata endpoint is available."
+      },
+      {
+        "name": "Data spaces",
+        "status": "pass",
+        "detail": "1 data space(s) available."
+      },
+      {
+        "name": "Direct API token exchange",
+        "status": "pass",
+        "detail": "Token exchange succeeded; token expires at 2026-07-12T02:58:23.624Z."
+      },
+      {
+        "name": "Direct API ping",
+        "status": "pass",
+        "detail": "Direct metadata endpoint is available."
+      },
+      {
+        "name": "Direct API scopes",
+        "status": "warn",
+        "detail": "Token exchange did not report a scope inventory; the successful Direct metadata ping verifies cdp_api only.",
+        "action": "Verify cdp_query_api, cdp_profile_api, and cdp_ingest_api before using those Direct APIs."
+      },
+      {
+        "name": "Configured data space",
+        "status": "pass",
+        "detail": "\"default\" exists."
+      }
+    ]
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

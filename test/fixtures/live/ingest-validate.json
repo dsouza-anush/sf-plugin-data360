@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-13",
+    "command": "data360 ingest validate",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "valid": true,
+    "records": 1
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "name": "smoke",
+  "mode": "mock",
+  "description": "First-contact suite: help renders, doctor works, query happy path, canonical error paths. Any agent should complete this unaided.",
+  "steps": [
+    {
+      "id": "01-help-topic",
+      "title": "Topic help renders with descriptions",
+      "tags": ["U1"],
+      "commands": [
+        {
+          "argv": ["data360", "--help"],
+          "expect": { "exitCode": 0, "stdoutIncludes": ["TOPICS", "data360 query", "doctor"] }
+        },
+        {
+          "argv": ["data360", "query", "--help"],
+          "expect": { "exitCode": 0, "stdoutIncludes": ["EXAMPLES", "--query", "--result-format"] }
+        }
+      ]
+    },
+    {
+      "id": "02-unknown-flag",
+      "title": "Unknown flag rejected with parse exit code",
+      "tags": ["U2"],
+      "commands": [
+        {
+          "argv": ["data360", "metadata", "list", "--definitely-not-a-flag"],
+          "expect": { "exitCode": 2, "stderrIncludes": ["Nonexistent flag", "--definitely-not-a-flag"] }
+        }
+      ]
+    },
+    {
+      "id": "03-doctor-json",
+      "title": "Doctor returns envelope with checks array",
+      "tags": ["U5"],
+      "commands": [
+        {
+          "argv": ["data360", "doctor", "--json"],
+          "expect": {
+            "exitCode": 0,
+            "jsonPath": { "$.status": { "equals": 0 }, "$.result.checks": { "exists": true } }
+          }
+        }
+      ]
+    },
+    {
+      "id": "04-query-happy",
+      "title": "Query one-shot returns rows and cache hint",
+      "tags": ["query", "J1"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "-q", "SELECT 1", "--json"],
+          "expect": {
+            "exitCode": 0,
+            "jsonPath": { "$.result.done": { "equals": true }, "$.result.queryId": { "exists": true } }
+          }
+        }
+      ]
+    },
+    {
+      "id": "05-query-async-resume",
+      "title": "Async submit prints resume hint; resume -r completes",
+      "tags": ["J3", "J4"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "-q", "SELECT 1 /* testbed:running */", "--async"],
+          "expect": { "exitCode": 0, "stderrIncludes": ["query resume"] }
+        },
+        {
+          "argv": ["data360", "query", "resume", "-r", "--json"],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.done": { "equals": true } } }
+        }
+      ]
+    },
+    {
+      "id": "06-query-syntax-error",
+      "title": "Bad SQL maps to D360_QUERY_SYNTAX with action",
+      "tags": ["U9", "U10"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "-q", "SELEKT broken FROM", "--json"],
+          "expect": { "exitCode": 1, "jsonPath": { "$.name": { "matches": "D360_QUERY_SYNTAX|QUERY" } } }
+        }
+      ]
+    },
+    {
+      "id": "07-destructive-guard",
+      "title": "Destructive command refuses without --no-prompt in non-TTY",
+      "tags": ["D1"],
+      "commands": [
+        {
+          "argv": ["data360", "data-stream", "delete", "-n", "Smoke_Stream", "--json"],
+          "expect": { "exitCodeOneOf": [1], "jsonPath": { "$.name": { "matches": "CONFIRMATION" } } }
+        }
+      ]
+    },
+    {
+      "id": "08-results-cache-reuse",
+      "title": "query results re-reads without re-submitting",
+      "tags": ["query", "no-surprise-costs"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "results", "-r", "--json"],
+          "expect": { "exitCode": 0 },
+          "httpExpect": { "path": "/ssot/query-sql", "method": "POST", "count": 0 }
+        }
+      ]
+    },
+    {
+      "id": "09-timing-stderr",
+      "title": "--timing emits to stderr only",
+      "tags": ["U15", "U6"],
+      "commands": [
+        {
+          "argv": ["data360", "metadata", "list", "--limit", "1", "--timing"],
+          "expect": { "exitCode": 0, "stderrIncludes": ["total"], "stdoutExcludes": ["parse"] }
+        }
+      ]
+    }
+  ]
+}

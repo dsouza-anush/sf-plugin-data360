@@ -1,0 +1,27 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 calculated-insight create",
+    "outcome": "error",
+    "expectedFailure": false
+  },
+  "name": "D360_API_ERROR",
+  "message": "MktCalculatedInsightObjectDefinitionRepresentation MasterLabel can not be over length limit 40",
+  "exitCode": 1,
+  "actions": ["Re-run with --verbose to inspect the raw API response."],
+  "context": "RegistryLeaf",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "ENTITY_SAVE_ERROR",
+    "message": "MktCalculatedInsightObjectDefinitionRepresentation MasterLabel can not be over length limit 40",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/calculated-insights"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "RegistryLeaf"
+}

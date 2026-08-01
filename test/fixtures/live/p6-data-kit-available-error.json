@@ -1,0 +1,29 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 data-kit available",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "An unexpected error occurred. Please include this ErrorId LIVE_ERROR_ID",
+  "exitCode": 20,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "DataKitAvailable",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "UNKNOWN_EXCEPTION",
+    "message": "An unexpected error occurred. Please include this ErrorId LIVE_ERROR_ID",
+    "detail": "{\"message\":\"An unexpected error occurred. Please include this ErrorId LIVE_ERROR_ID\",\"errorCode\":\"UNKNOWN_EXCEPTION\"}",
+    "endpoint": "/services/data/v67.0/ssot/data-kits/available-components?limit=200&offset=0"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 20,
+  "commandName": "DataKitAvailable"
+}

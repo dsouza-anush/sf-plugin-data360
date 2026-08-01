@@ -1,0 +1,15 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 open",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "url": "https://mock.salesforce.example/secur/frontdoor.jsp?otp=REDACTED_FRONTDOOR_OTP&startURL=%2Flightning%2Fpage%2FdataCloudHome&cshc=REDACTED"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

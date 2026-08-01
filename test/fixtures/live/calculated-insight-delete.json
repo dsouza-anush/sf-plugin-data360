@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-13",
+    "command": "data360 calculated-insight delete",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "deleted": true,
+    "key": "lv_p5_20260713231957_6841d5_ci__cio"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

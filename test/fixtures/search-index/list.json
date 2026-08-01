@@ -1,0 +1,15 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "semanticSearchDefinitionDetails": [
+    {
+      "id": "0SI000000000001AAA",
+      "developerName": "Knowledge_Index",
+      "displayName": "Knowledge Index",
+      "runtimeStatus": "ACTIVE",
+      "searchType": "HYBRID",
+      "sourceDmoDeveloperName": "Knowledge__dlm"
+    }
+  ],
+  "totalSize": 1
+}

@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 mapping delete",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "Object Source Target Map not found for the given name : lv_20260711195226_65e1d0_registry_mapping ",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "MappingDelete",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "NOT_FOUND",
+    "message": "Object Source Target Map not found for the given name : lv_20260711195226_65e1d0_registry_mapping ",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/data-model-object-mappings/lv_20260711195226_65e1d0_registry_mapping"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "MappingDelete"
+}

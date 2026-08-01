@@ -1,0 +1,7 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "id": "0AT000000000001AAA",
+  "activationTargetName": "S3_Target",
+  "maxFileSize": 100
+}

@@ -1,0 +1,8 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "reference": "Data 360 Ingestion API documentation"
+  },
+  "synthetic": true,
+  "accepted": true
+}

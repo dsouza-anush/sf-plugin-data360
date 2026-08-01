@@ -1,0 +1,14 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "capturedAt": "2026-07-11",
+    "recordedAt": "2026-07-11",
+    "command": "data360 token display",
+    "apiVersion": "67.0"
+  },
+  "access_token": "tenant-jwt-secret",
+  "expires_in": 3600,
+  "instance_url": "mock.c360a.salesforce.com",
+  "issued_token_type": "urn:ietf:params:oauth:token-type:access_token",
+  "token_type": "Bearer"
+}

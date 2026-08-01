@@ -1,0 +1,13 @@
+{
+  "0": {
+    "errorCode": "ITEM_NOT_FOUND",
+    "message": "The specified Search Index LIVE_ID_310629ab2840 does not exist. Verify the apiName/Id and retry."
+  },
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 api request",
+    "outcome": "error",
+    "expectedFailure": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "0": {
+    "errorCode": "INTERNAL_ERROR",
+    "message": "Data Graph not found with name lv_p5_20260729060636_077397_dg"
+  },
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 api request",
+    "outcome": "error",
+    "expectedFailure": true
+  }
+}

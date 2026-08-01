@@ -1,0 +1,812 @@
+[
+  {
+    "command": "data360 activation create",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 activation delete",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 activation get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 activation list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 activation platforms",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 activation results",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 activation update",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 activation-target create",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 activation-target get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 activation-target list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 activation-target update",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 api request",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 calculated-insight create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 calculated-insight delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 calculated-insight get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 calculated-insight list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 calculated-insight query",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 calculated-insight run",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 calculated-insight update",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 connection create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-17"
+  },
+  {
+    "command": "data360 connection delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-17"
+  },
+  {
+    "command": "data360 connection describe",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 connection get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 connection list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 connection update",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 connection validate",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 connector get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 connector list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-action list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-action-target list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-graph create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-graph delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 data-graph get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-graph list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-graph query",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 data-graph refresh",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-kit available",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-kit component dependencies",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 data-kit component status",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-kit create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-kit delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-kit deploy",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 data-kit list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-kit manifest",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-kit undeploy",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 data-kit update",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-space create",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 data-space get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-space list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-space member list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-space member set",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-14"
+  },
+  {
+    "command": "data360 data-space update",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-14"
+  },
+  {
+    "command": "data360 data-stream create",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 data-stream delete",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 data-stream get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-stream list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 data-stream run",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 data-stream update",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 dlo create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 dlo delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 dlo get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 dlo list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 dlo update",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 dmo create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 dmo delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 dmo get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 dmo list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 dmo relationship create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 dmo relationship delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 dmo relationship list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 dmo update",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 docai config list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 docai describe",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 doctor",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-11"
+  },
+  {
+    "command": "data360 identity-resolution create",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 identity-resolution delete",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 identity-resolution get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 identity-resolution list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 identity-resolution run",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 identity-resolution update",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 ingest",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 ingest bulk",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 ingest cancel",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 ingest delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-11"
+  },
+  {
+    "command": "data360 ingest report",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 ingest resume",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 ingest validate",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 mapping create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 mapping delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 mapping get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 mapping list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 mapping update",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 metadata get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 metadata list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 open",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-12"
+  },
+  {
+    "command": "data360 profile describe",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 profile get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 profile lookup",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 query",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 query cancel",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 query hybrid",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-28"
+  },
+  {
+    "command": "data360 query results",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-11"
+  },
+  {
+    "command": "data360 query resume",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-11"
+  },
+  {
+    "command": "data360 query vector",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-28"
+  },
+  {
+    "command": "data360 retriever configuration list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 retriever get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 retriever list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 search-index create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 search-index delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 search-index describe",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 search-index get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 search-index list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 search-index update",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-26"
+  },
+  {
+    "command": "data360 segment create",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 segment deactivate",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 segment delete",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-13"
+  },
+  {
+    "command": "data360 segment get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 segment list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 segment publish",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 segment update",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-19"
+  },
+  {
+    "command": "data360 semantic model list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 setup eca",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-12"
+  },
+  {
+    "command": "data360 token display",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-11"
+  },
+  {
+    "command": "data360 transform cancel",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 transform create",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 transform delete",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 transform get",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 transform list",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 transform report",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 transform retry",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 transform run",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 transform schedule display",
+    "unit": true,
+    "mock": true,
+    "live": "2026-07-29"
+  },
+  {
+    "command": "data360 transform schedule set",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 transform update",
+    "unit": true,
+    "mock": true,
+    "live": null
+  },
+  {
+    "command": "data360 transform validate",
+    "unit": true,
+    "mock": true,
+    "live": null
+  }
+]

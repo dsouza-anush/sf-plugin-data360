@@ -1,0 +1,281 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 dlo get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "dataLakeObjects": [
+        {
+          "capabilities": {},
+          "category": "Engagement",
+          "createdDate": "2026-06-24T08:05:38.000Z",
+          "dataLakeFieldInfoRepresentation": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "KQ_id",
+              "name": "KQ_id__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "traceId",
+              "name": "traceId__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "queryText",
+              "name": "queryText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "requestInfoText",
+              "name": "requestInfoText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "sourceAssetTypeText",
+              "name": "sourceAssetTypeText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "requestReferenceId",
+              "name": "requestReferenceId__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "Internal Organization",
+              "name": "InternalOrganization__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "spanId",
+              "name": "spanId__c"
+            },
+            {
+              "dataType": "DateTime",
+              "isPrimaryKey": false,
+              "label": "requestTimestamp",
+              "name": "requestTimestamp__c"
+            },
+            {
+              "dataType": "DateTime",
+              "isPrimaryKey": false,
+              "label": "cdp_sys_PartitionDate",
+              "name": "cdp_sys_PartitionDate__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": true,
+              "label": "id",
+              "name": "id__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "retrieverApiName",
+              "name": "retrieverApiName__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "orgId",
+              "name": "orgId__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "sourceAssetVersionName",
+              "name": "sourceAssetVersionName__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "Data Source Object",
+              "name": "DataSourceObject__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "sourceAssetApiName",
+              "name": "sourceAssetApiName__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "featureText",
+              "name": "featureText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "Data Source",
+              "name": "DataSource__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "sourceAdditionalInfoText",
+              "name": "sourceAdditionalInfoText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "cdp_sys_SourceVersion",
+              "name": "cdp_sys_SourceVersion__c"
+            }
+          ],
+          "dataSpaceInfo": [
+            {
+              "label": "default",
+              "name": "default"
+            }
+          ],
+          "eventDateTimeFieldName": "requestTimestamp__c",
+          "fields": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "KQ_id",
+              "name": "KQ_id__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "traceId",
+              "name": "traceId__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "queryText",
+              "name": "queryText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "requestInfoText",
+              "name": "requestInfoText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "sourceAssetTypeText",
+              "name": "sourceAssetTypeText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "requestReferenceId",
+              "name": "requestReferenceId__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "Internal Organization",
+              "name": "InternalOrganization__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "spanId",
+              "name": "spanId__c"
+            },
+            {
+              "dataType": "DateTime",
+              "isPrimaryKey": false,
+              "label": "requestTimestamp",
+              "name": "requestTimestamp__c"
+            },
+            {
+              "dataType": "DateTime",
+              "isPrimaryKey": false,
+              "label": "cdp_sys_PartitionDate",
+              "name": "cdp_sys_PartitionDate__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": true,
+              "label": "id",
+              "name": "id__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "retrieverApiName",
+              "name": "retrieverApiName__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "orgId",
+              "name": "orgId__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "sourceAssetVersionName",
+              "name": "sourceAssetVersionName__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "Data Source Object",
+              "name": "DataSourceObject__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "sourceAssetApiName",
+              "name": "sourceAssetApiName__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "featureText",
+              "name": "featureText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "Data Source",
+              "name": "DataSource__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "sourceAdditionalInfoText",
+              "name": "sourceAdditionalInfoText__c"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "cdp_sys_SourceVersion",
+              "name": "cdp_sys_SourceVersion__c"
+            }
+          ],
+          "id": "LIVE_ID_a8c27f6c3ee0",
+          "label": "AIRetrieverRequest",
+          "lastRefreshedDate": "2026-07-28T23:59:08.000Z",
+          "name": "AIRetrieverRequest__dll",
+          "namespace": "",
+          "status": "ACTIVE",
+          "totalRecords": 0
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

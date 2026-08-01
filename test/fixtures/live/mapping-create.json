@@ -1,0 +1,270 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 mapping create",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "mappings": [
+      {
+        "sourceFieldDeveloperName": "KQ_Id__c",
+        "targetFieldDeveloperName": "KQ_Id__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "AssociationReasonText__c",
+        "targetFieldDeveloperName": "AssociationReasonText__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "AiAgentTagDefinitionAssociationId__c",
+        "targetFieldDeveloperName": "AiAgentTagDefinitionAssociationId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "AiAgentInteractionId__c",
+        "targetFieldDeveloperName": "AiAgentInteractionId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "CreatedByUserId__c",
+        "targetFieldDeveloperName": "CreatedByUserId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "IsPassed__c",
+        "targetFieldDeveloperName": "IsPassed__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "ValueText__c",
+        "targetFieldDeveloperName": "ValueText__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "Id__c",
+        "targetFieldDeveloperName": "Id__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "DataSourceObject__c",
+        "targetFieldDeveloperName": "DataSourceObject__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "CreatedDate__c",
+        "targetFieldDeveloperName": "CreatedDate__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "OrgId__c",
+        "targetFieldDeveloperName": "OrgId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "AiAgentTagId__c",
+        "targetFieldDeveloperName": "AiAgentTagId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "AttributeText__c",
+        "targetFieldDeveloperName": "AttributeText__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "SourceType__c",
+        "targetFieldDeveloperName": "SourceType__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "AiAgentSessionId__c",
+        "targetFieldDeveloperName": "AiAgentSessionId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "DataSource__c",
+        "targetFieldDeveloperName": "DataSource__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "AiAgentMomentId__c",
+        "targetFieldDeveloperName": "AiAgentMomentId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "KQ_AiAgentSessionId__c",
+        "targetFieldDeveloperName": "AiAgentSessionId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "KQ_AiAgentTagId__c",
+        "targetFieldDeveloperName": "AiAgentTagId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "KQ_AiAgentMomentId__c",
+        "targetFieldDeveloperName": "AiAgentMomentId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "KQ_AiAgentInteractionId__c",
+        "targetFieldDeveloperName": "AiAgentInteractionId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "KQ_AiAgentTagDefinitionAssociationId__c",
+        "targetFieldDeveloperName": "AiAgentTagDefinitionAssociationId__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "SessionStartTimestamp__c",
+        "targetFieldDeveloperName": "SessionStartTimestamp__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "OutcomeType__c",
+        "targetFieldDeveloperName": "OutcomeType__c",
+        "matchType": "exact"
+      }
+    ],
+    "unmapped": [
+      "cdp_sys_PartitionDate__c",
+      "cdp_sys_SourceVersion__c"
+    ],
+    "ambiguous": [],
+    "created": true,
+    "item": {
+      "developerName": "AgentOpt_Tag_Association_BCF18D32_map_lv_p4_20260726092424_c00316_event_1785058099879",
+      "fieldMappings": [
+        {
+          "developerName": "ValueText__c_fieldmap_ValueText__c",
+          "sourceFieldDeveloperName": "ValueText__c",
+          "targetFieldDeveloperName": "ValueText__c"
+        },
+        {
+          "developerName": "AiAgentSessionId__c_fieldmap_AiAgentSessionId__c",
+          "sourceFieldDeveloperName": "AiAgentSessionId__c",
+          "targetFieldDeveloperName": "AiAgentSessionId__c"
+        },
+        {
+          "developerName": "OutcomeType__c_fieldmap_OutcomeType__c",
+          "sourceFieldDeveloperName": "OutcomeType__c",
+          "targetFieldDeveloperName": "OutcomeType__c"
+        },
+        {
+          "developerName": "KQ_AiAgentMomentId__c_fieldmap_AiAgentMomentId__c",
+          "sourceFieldDeveloperName": "KQ_AiAgentMomentId__c",
+          "targetFieldDeveloperName": "AiAgentMomentId__c"
+        },
+        {
+          "developerName": "SourceType__c_fieldmap_SourceType__c",
+          "sourceFieldDeveloperName": "SourceType__c",
+          "targetFieldDeveloperName": "SourceType__c"
+        },
+        {
+          "developerName": "AiAgentTagId__c_fieldmap_AiAgentTagId__c",
+          "sourceFieldDeveloperName": "AiAgentTagId__c",
+          "targetFieldDeveloperName": "AiAgentTagId__c"
+        },
+        {
+          "developerName": "CreatedByUserId__c_fieldmap_CreatedByUserId__c",
+          "sourceFieldDeveloperName": "CreatedByUserId__c",
+          "targetFieldDeveloperName": "CreatedByUserId__c"
+        },
+        {
+          "developerName": "AiAgentMomentId__c_fieldmap_AiAgentMomentId__c",
+          "sourceFieldDeveloperName": "AiAgentMomentId__c",
+          "targetFieldDeveloperName": "AiAgentMomentId__c"
+        },
+        {
+          "developerName": "AiAgentInteractionId__c_fieldmap_AiAgentInteractionId__c",
+          "sourceFieldDeveloperName": "AiAgentInteractionId__c",
+          "targetFieldDeveloperName": "AiAgentInteractionId__c"
+        },
+        {
+          "developerName": "KQ_AiAgentTagDefinitionAssociationId__c_fieldmap_AiAgentTagDefinitionAssociationId__c",
+          "sourceFieldDeveloperName": "KQ_AiAgentTagDefinitionAssociationId__c",
+          "targetFieldDeveloperName": "AiAgentTagDefinitionAssociationId__c"
+        },
+        {
+          "developerName": "AttributeText__c_fieldmap_AttributeText__c",
+          "sourceFieldDeveloperName": "AttributeText__c",
+          "targetFieldDeveloperName": "AttributeText__c"
+        },
+        {
+          "developerName": "CreatedDate__c_fieldmap_CreatedDate__c",
+          "sourceFieldDeveloperName": "CreatedDate__c",
+          "targetFieldDeveloperName": "CreatedDate__c"
+        },
+        {
+          "developerName": "AssociationReasonText__c_fieldmap_AssociationReasonText__c",
+          "sourceFieldDeveloperName": "AssociationReasonText__c",
+          "targetFieldDeveloperName": "AssociationReasonText__c"
+        },
+        {
+          "developerName": "DataSource__c_fieldmap_DataSource__c",
+          "sourceFieldDeveloperName": "DataSource__c",
+          "targetFieldDeveloperName": "DataSource__c"
+        },
+        {
+          "developerName": "SessionStartTimestamp__c_fieldmap_SessionStartTimestamp__c",
+          "sourceFieldDeveloperName": "SessionStartTimestamp__c",
+          "targetFieldDeveloperName": "SessionStartTimestamp__c"
+        },
+        {
+          "developerName": "KQ_AiAgentInteractionId__c_fieldmap_AiAgentInteractionId__c",
+          "sourceFieldDeveloperName": "KQ_AiAgentInteractionId__c",
+          "targetFieldDeveloperName": "AiAgentInteractionId__c"
+        },
+        {
+          "developerName": "IsPassed__c_fieldmap_IsPassed__c",
+          "sourceFieldDeveloperName": "IsPassed__c",
+          "targetFieldDeveloperName": "IsPassed__c"
+        },
+        {
+          "developerName": "KQ_AiAgentTagId__c_fieldmap_AiAgentTagId__c",
+          "sourceFieldDeveloperName": "KQ_AiAgentTagId__c",
+          "targetFieldDeveloperName": "AiAgentTagId__c"
+        },
+        {
+          "developerName": "KQ_AiAgentSessionId__c_fieldmap_AiAgentSessionId__c",
+          "sourceFieldDeveloperName": "KQ_AiAgentSessionId__c",
+          "targetFieldDeveloperName": "AiAgentSessionId__c"
+        },
+        {
+          "developerName": "DataSourceObject__c_fieldmap_DataSourceObject__c",
+          "sourceFieldDeveloperName": "DataSourceObject__c",
+          "targetFieldDeveloperName": "DataSourceObject__c"
+        },
+        {
+          "developerName": "Id__c_fieldmap_Id__c",
+          "sourceFieldDeveloperName": "Id__c",
+          "targetFieldDeveloperName": "Id__c"
+        },
+        {
+          "developerName": "OrgId__c_fieldmap_OrgId__c",
+          "sourceFieldDeveloperName": "OrgId__c",
+          "targetFieldDeveloperName": "OrgId__c"
+        },
+        {
+          "developerName": "AiAgentTagDefinitionAssociationId__c_fieldmap_AiAgentTagDefinitionAssociationId__c",
+          "sourceFieldDeveloperName": "AiAgentTagDefinitionAssociationId__c",
+          "targetFieldDeveloperName": "AiAgentTagDefinitionAssociationId__c"
+        },
+        {
+          "developerName": "KQ_Id__c_fieldmap_KQ_Id__c",
+          "sourceFieldDeveloperName": "KQ_Id__c",
+          "targetFieldDeveloperName": "KQ_Id__c"
+        }
+      ],
+      "sourceEntityDeveloperName": "AgentOpt_Tag_Association_BCF18D32__dll",
+      "status": "CREATING",
+      "targetEntityDeveloperName": "lv_p4_20260726092424_c00316_event__dlm"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

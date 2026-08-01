@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:sf-plugin-data360:testbed:event",
+  "title": "Testbed trace event (one per JSONL line)",
+  "type": "object",
+  "required": ["ts", "seq", "sid", "type"],
+  "properties": {
+    "ts": { "type": "string", "format": "date-time" },
+    "seq": { "type": "integer", "minimum": 0 },
+    "sid": { "type": "string", "minLength": 8 },
+    "type": {
+      "enum": [
+        "session.start",
+        "session.end",
+        "scenario.start",
+        "scenario.end",
+        "command.exec",
+        "command.result",
+        "http.request",
+        "http.response",
+        "assertion",
+        "note"
+      ]
+    },
+    "manifest": { "type": "object" },
+    "totals": {
+      "type": "object",
+      "required": ["steps", "passed", "failed", "blocked", "skipped", "notes", "assertions", "httpEvents"],
+      "properties": {
+        "steps": { "type": "integer", "minimum": 0 },
+        "passed": { "type": "integer", "minimum": 0 },
+        "failed": { "type": "integer", "minimum": 0 },
+        "blocked": { "type": "integer", "minimum": 0 },
+        "skipped": { "type": "integer", "minimum": 0 },
+        "notes": { "type": "integer", "minimum": 0 },
+        "assertions": { "type": "integer", "minimum": 0 },
+        "httpEvents": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "scenario": { "type": "string" },
+    "suite": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "outcome": { "enum": ["pass", "fail", "blocked", "skipped"] },
+    "durationMs": { "type": "number", "minimum": 0 },
+    "timedOut": { "type": "boolean" },
+    "outputLimitExceeded": { "type": "boolean" },
+    "argv": { "type": "array", "items": { "type": "string" } },
+    "displayArgv": { "type": "array", "items": { "type": "string" } },
+    "executable": { "type": "string" },
+    "cwd": { "type": "string" },
+    "envAllowlist": { "type": "object" },
+    "stdin": { "$ref": "#/definitions/payloadRef" },
+    "exitCode": { "type": "integer" },
+    "stdout": { "$ref": "#/definitions/payloadRef" },
+    "stderr": { "type": "object", "properties": { "full": { "type": "string" } } },
+    "jsonEnvelope": { "type": "object" },
+    "timing": {
+      "type": "object",
+      "properties": {
+        "parseMs": { "type": "number" },
+        "connMs": { "type": "number" },
+        "reqMs": { "type": "number" },
+        "totalMs": { "type": "number" }
+      }
+    },
+    "seqRef": { "type": "integer", "description": "command.exec seq this http event belongs to" },
+    "requestRef": { "type": "integer", "description": "exact http.request seq this response belongs to" },
+    "method": { "enum": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD"] },
+    "url": { "type": "string", "description": "REDACTED url" },
+    "root": { "enum": ["ssot", "core", "direct", "mock"] },
+    "status": { "type": "integer" },
+    "statusInferred": { "type": "boolean" },
+    "retryAttempt": { "type": "integer", "minimum": 0 },
+    "headers": { "type": "object" },
+    "bodyDigest": { "type": "string" },
+    "bodyBytes": { "type": "integer" },
+    "id": { "type": "string", "description": "assertion id" },
+    "criterion": { "type": "string", "description": "release-criteria ref (U11, J2, suite:query/03…)" },
+    "pass": { "type": "boolean" },
+    "expected": {},
+    "actual": {},
+    "evidence": { "type": "array", "minItems": 1, "items": { "type": "integer", "minimum": 0 } },
+    "taxonomy": { "enum": ["suspected-bug", "suspected-misuse", "docs-gap", "dx-friction", "question"] },
+    "severity": { "enum": ["info", "minor", "major"] },
+    "text": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "session.start" } } },
+      "then": { "required": ["manifest"] }
+    },
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "session.end" } } },
+      "then": { "required": ["totals"] }
+    },
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "scenario.start" } } },
+      "then": { "required": ["scenario", "suite", "tags"] }
+    },
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "scenario.end" } } },
+      "then": { "required": ["scenario", "suite", "outcome", "durationMs"] }
+    },
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "command.exec" } } },
+      "then": { "required": ["argv", "cwd", "envAllowlist", "executable"] }
+    },
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "assertion" } } },
+      "then": { "required": ["id", "criterion", "pass", "evidence"] }
+    },
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "note" } } },
+      "then": { "required": ["taxonomy", "severity", "text", "evidence"] }
+    },
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "command.result" } } },
+      "then": { "required": ["exitCode", "durationMs", "seqRef"] }
+    },
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "http.request" } } },
+      "then": { "required": ["method", "url", "root", "seqRef", "retryAttempt"] }
+    },
+    {
+      "if": { "required": ["type"], "properties": { "type": { "const": "http.response" } } },
+      "then": {
+        "required": ["status", "statusInferred", "durationMs", "seqRef", "requestRef", "root", "retryAttempt"]
+      }
+    }
+  ],
+  "definitions": {
+    "payloadRef": {
+      "type": "object",
+      "required": ["digest", "bytes"],
+      "properties": {
+        "digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+        "bytes": { "type": "integer", "minimum": 0 },
+        "preview256": { "type": "string" },
+        "preview4k": { "type": "string" },
+        "rawFile": { "type": "string", "description": "raw/<digest> when payload exceeded inline cap" }
+      }
+    }
+  }
+}

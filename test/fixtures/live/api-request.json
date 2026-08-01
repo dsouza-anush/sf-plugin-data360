@@ -1,0 +1,34 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 api request",
+    "outcome": "success"
+  },
+  "currentPageUrl": "/services/data/v67.0/ssot/data-spaces?batchSize=50&offset=0",
+  "dataSpaces": [
+    {
+      "description": "Demo dataspace for end-to-end D360 live mutation probe",
+      "id": "LIVE_ID_dd3978e9f889",
+      "label": "codex_live_20260629_demo",
+      "name": "codex_live_20260629_demo",
+      "prefix": "cdx",
+      "status": "Active"
+    },
+    {
+      "description": "Your org’s default data space. It can be renamed, but not deleted.",
+      "id": "LIVE_ID_374ecf25bc09",
+      "label": "default",
+      "name": "default",
+      "status": "Active"
+    },
+    {
+      "id": "LIVE_ID_c6938b6d226b",
+      "label": "MCP Smoke Test Jul 3 (updated)",
+      "name": "mcp_smoke_test_jul3",
+      "prefix": "tst",
+      "status": "Active"
+    }
+  ],
+  "totalSize": 3
+}

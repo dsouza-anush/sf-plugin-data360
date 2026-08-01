@@ -1,0 +1,95 @@
+name: Feature request
+description: Propose a user workflow, command, API gap, or developer-experience improvement.
+title: '[feature] '
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the user outcome before prescribing an implementation. Requests for new API coverage should link to a current authoritative Salesforce contract or provide scrubbed, authorized live evidence; a successful raw request is not automatically a safe CLI design.
+
+        **Never paste credentials, auth URLs, tenant or org identifiers, customer data, raw live captures, or unredacted doctor/command output.** Report vulnerabilities through `SECURITY.md`, not this form.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who is blocked, what are they trying to accomplish, and why do existing commands or workflows fall short?
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Desired CLI workflow
+      description: Show the smallest useful command sequence, including expected input and output modes. Use placeholders and synthetic names.
+      render: shell
+    validations:
+      required: true
+
+  - type: dropdown
+    id: use_case
+    attributes:
+      label: Primary use case
+      options:
+        - Interactive administration
+        - CI or scripted automation
+        - Read-only discovery or diagnostics
+        - Resource lifecycle management
+        - Data ingestion or query
+        - Documentation or developer experience
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Contract or source evidence
+      description: Link to the authoritative Salesforce API/CLI documentation, API version, schema, or other current source. If the request comes from observed live behavior, include the observation date and a scrubbed shape summary rather than tenant data.
+    validations:
+      required: true
+
+  - type: textarea
+    id: json_contract
+    attributes:
+      label: Proposed JSON contract
+      description: Describe fields, stable identifiers, pagination, exit codes, and failure behavior needed by scripts. Mark unknowns instead of guessing.
+      render: json
+
+  - type: textarea
+    id: safety_model
+    attributes:
+      label: Safety and operational constraints
+      description: Explain destructive behavior, billing/credit use, confirmation and `--no-prompt` semantics, cleanup, retry/idempotency, data sensitivity, and required permissions.
+
+  - type: textarea
+    id: existing_evidence
+    attributes:
+      label: Scrubbed current-command evidence
+      description: If an existing command or live API gap motivates the request, provide scrubbed `sf data360 doctor --target-org <org-alias> --json` and command `--json` evidence with exit codes. Otherwise write “Not applicable.”
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Note current workarounds, raw API calls, or existing Salesforce CLI commands and why they are insufficient.
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable outcomes, including human output, JSON output, help/examples, error handling, tests, and documentation.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Submission confirmation
+      options:
+        - label: I removed credentials, tenant and org identifiers, customer data, and sensitive Salesforce metadata from this request.
+          required: true
+        - label: Any live evidence came from an org and data that I am authorized to test.
+          required: true

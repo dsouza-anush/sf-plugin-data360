@@ -1,0 +1,113 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 dlo create",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "capabilities": {},
+      "category": "Profile",
+      "createdDate": "2026-07-29T06:13:55.000Z",
+      "dataLakeFieldInfoRepresentation": [
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "KQ_record_id",
+          "name": "KQ_record_id__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": true,
+          "label": "Record ID",
+          "name": "record_id__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "Display Name",
+          "name": "display_name__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "cdp_sys_SourceVersion",
+          "name": "cdp_sys_SourceVersion__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "Data Source",
+          "name": "DataSource__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "Data Source Object",
+          "name": "DataSourceObject__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "Internal Organization",
+          "name": "InternalOrganization__c"
+        }
+      ],
+      "dataSpaceInfo": [],
+      "fields": [
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "KQ_record_id",
+          "name": "KQ_record_id__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": true,
+          "label": "Record ID",
+          "name": "record_id__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "Display Name",
+          "name": "display_name__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "cdp_sys_SourceVersion",
+          "name": "cdp_sys_SourceVersion__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "Data Source",
+          "name": "DataSource__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "Data Source Object",
+          "name": "DataSourceObject__c"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "Internal Organization",
+          "name": "InternalOrganization__c"
+        }
+      ],
+      "id": "LIVE_ID_ba424c6ba6e1",
+      "label": "lv_p5_20260729061343_7c2b62 Kit Source",
+      "name": "lv_p5_2026072906_7c2b62_kit_source__dll",
+      "namespace": "",
+      "status": "PROCESSING"
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

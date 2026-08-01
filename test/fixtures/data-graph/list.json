@@ -1,0 +1,14 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "dataGraphs": [
+    {
+      "dataGraphName": "Customer_Graph",
+      "displayName": "Customer Graph",
+      "dataGraphEntityName": "UnifiedIndividual__dlm",
+      "status": "ACTIVE",
+      "lastRefreshDate": "2026-07-10T12:00:00Z"
+    }
+  ],
+  "totalSize": 1
+}

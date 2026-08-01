@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.token.display",
+  "title": "data360.token.display JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accessToken", "instanceUrl", "expiresAt", "scopes"],
+      "properties": {
+        "accessToken": { "type": "string" },
+        "instanceUrl": { "type": "string", "format": "uri" },
+        "expiresAt": { "type": "string", "format": "date-time" },
+        "scopes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 search-index get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "attachmentDmoDeveloperName": null,
+      "attachmentDmoId": null,
+      "attachmentDmoName": null,
+      "chunkDmoDeveloperName": "codex_ready_rag_idx_chunk_dlm__dlm",
+      "chunkDmoId": "LIVE_ID_707f80d8c5ec",
+      "chunkDmoName": "codex ready rag idx Chunk",
+      "chunkingConfiguration": {
+        "fieldLevelConfigurations": [
+          {
+            "config": {
+              "conversationFields": null,
+              "id": "LIVE_ID_baa99b286cb2",
+              "userValues": [
+                {
+                  "id": "LIVE_ID_3b080b0ffcf3",
+                  "value": "true"
+                },
+                {
+                  "id": "LIVE_ID_c5225b8e0182",
+                  "value": "512"
+                }
+              ]
+            },
+            "decorators": [],
+            "sourceDmoDeveloperName": "codex_ready_20260629_rag_dlm__dlm",
+            "sourceDmoFieldDeveloperName": "Body__c",
+            "sourceDmoFieldName": "Body",
+            "sourceDmoName": "Codex Ready 20260629 RAG"
+          }
+        ],
+        "perFileExtension": []
+      },
+      "dataspace": "default",
+      "description": "Hybrid search index for unstructured RAG content",
+      "developerName": "codex_ready_20260629_rag_idx",
+      "id": "LIVE_ID_a19423e0e427",
+      "indexConfiguration": {
+        "contextFieldConfiguration": [
+          {
+            "aliasName": null,
+            "dmoDeveloperName": "codex_ready_20260629_rag_dlm__dlm",
+            "dmoFieldDeveloperName": "Title__c",
+            "relationships": []
+          },
+          {
+            "aliasName": null,
+            "dmoDeveloperName": "codex_ready_20260629_rag_dlm__dlm",
+            "dmoFieldDeveloperName": "Url__c",
+            "relationships": []
+          }
+        ],
+        "recordFieldConfiguration": [
+          {
+            "aliasName": null,
+            "dmoDeveloperName": "codex_ready_20260629_rag_dlm__dlm",
+            "dmoFieldDeveloperName": "Body__c",
+            "relationships": [],
+            "tokenizations": []
+          }
+        ],
+        "shouldVectorizeSearchableFields": true
+      },
+      "indexRefreshedOn": null,
+      "label": "Codex Ready 20260629 RAG Index",
+      "parsingConfigurations": [],
+      "postProcessingConfigurations": [],
+      "preProcessingConfigurations": [],
+      "processingType": "NEAR_REALTIME",
+      "rankingConfigurations": [],
+      "ruleConfiguration": null,
+      "runtimeStatus": null,
+      "searchType": "HYBRID",
+      "semanticSearchRankingConfigurations": [],
+      "sourceDmoDeveloperName": "codex_ready_20260629_rag_dlm__dlm",
+      "sourceDmoId": "LIVE_ID_f8ce2cfdae1e",
+      "sourceRecordLastModifiedField": null,
+      "transcribeDmoDeveloperName": null,
+      "transcribeDmoId": null,
+      "transcribeDmoName": null,
+      "transformConfigurations": [],
+      "vectorDmoDeveloperName": "codex_ready_rag_idx_vector_dlm__dlm",
+      "vectorDmoId": "LIVE_ID_23d2bea6bb3b",
+      "vectorDmoName": "codex ready rag idx Vector",
+      "vectorEmbedding": {
+        "developerName": "codex_ready_20260629_rag_idxVectorEmbedding",
+        "id": "LIVE_ID_17172ab3c89a",
+        "sourceDmoDeveloperName": "codex_ready_rag_idx_chunk_dlm__dlm",
+        "sourceDmoFieldDeveloperName": "Chunk__c",
+        "sourceDmoFieldId": "LIVE_ID_fdf51942351b",
+        "sourceDmoId": "LIVE_ID_707f80d8c5ec",
+        "vectorDmoDeveloperName": "codex_ready_rag_idx_vector_dlm__dlm",
+        "vectorDmoFieldDeveloperName": "VectorEmbedding__c",
+        "vectorDmoFieldId": "LIVE_ID_992c904bc8cf",
+        "vectorDmoId": "LIVE_ID_23d2bea6bb3b",
+        "vectorEmbeddingRelatedFields": [
+          {
+            "aliasName": null,
+            "fieldRelationshipPathId": null,
+            "id": "LIVE_ID_39232f7431ad",
+            "relatedDmoDeveloperName": "codex_ready_20260629_rag_dlm__dlm",
+            "relatedDmoFieldDeveloperName": "Body__c",
+            "relatedDmoFieldId": "LIVE_ID_da9507cd0d75",
+            "relatedDmoFieldName": "Body",
+            "relatedDmoId": "LIVE_ID_f8ce2cfdae1e",
+            "relatedDmoName": "Codex Ready 20260629 RAG",
+            "relationships": []
+          },
+          {
+            "aliasName": null,
+            "fieldRelationshipPathId": null,
+            "id": "LIVE_ID_466d2ae48089",
+            "relatedDmoDeveloperName": "codex_ready_rag_idx_vector_dlm__dlm",
+            "relatedDmoFieldDeveloperName": "DataSource__c",
+            "relatedDmoFieldId": "LIVE_ID_83bcf8f60c2b",
+            "relatedDmoFieldName": "Data Source",
+            "relatedDmoId": "LIVE_ID_23d2bea6bb3b",
+            "relatedDmoName": "codex ready rag idx Vector",
+            "relationships": []
+          }
+        ]
+      },
+      "vectorEmbeddingConfiguration": {
+        "embeddingModel": {
+          "id": "LIVE_ID_21c30dc13a35",
+          "userValues": [
+            {
+              "id": "LIVE_ID_48eb632fe16a",
+              "value": "1024"
+            },
+            {
+              "id": "LIVE_ID_311ffef11d6a",
+              "value": "512"
+            }
+          ]
+        },
+        "index": {
+          "id": "LIVE_ID_78c96b10da25",
+          "userValues": [
+            {
+              "id": "LIVE_ID_5b5b8c2b1b8c",
+              "value": "2000"
+            },
+            {
+              "id": "LIVE_ID_08f271887ce9",
+              "value": "64"
+            }
+          ]
+        },
+        "similarityMetric": "COSINE"
+      },
+      "version": null
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-19",
+    "command": "data360 calculated-insight query",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "redacted": true
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

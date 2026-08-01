@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 dmo delete",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "No record exists or User might not have access to DMO with Developer name : 0gjWt000001QxzxIAC",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "RegistryLeaf",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "ITEM_NOT_FOUND",
+    "message": "No record exists or User might not have access to DMO with Developer name : 0gjWt000001QxzxIAC",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/data-model-objects/0gjWt000001QxzxIAC"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "RegistryLeaf"
+}

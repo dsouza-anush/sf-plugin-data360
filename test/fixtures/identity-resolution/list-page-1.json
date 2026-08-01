@@ -1,0 +1,15 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "identityResolutions": [
+    {
+      "id": "0IR000000000001AAA",
+      "name": "Main",
+      "label": "Main Ruleset",
+      "status": "ACTIVE",
+      "lastRunStatus": "SUCCEEDED",
+      "matchedRate": 0.84
+    }
+  ],
+  "totalSize": 2
+}

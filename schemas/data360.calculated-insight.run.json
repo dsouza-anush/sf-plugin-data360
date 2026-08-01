@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.calculated-insight.run",
+  "title": "data360.calculated-insight.run JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["item"],
+      "properties": {
+        "item": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": true,
+              "required": ["status"],
+              "properties": { "status": { "type": "string" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": true,
+              "required": ["success", "errors"],
+              "properties": { "success": { "type": "boolean" }, "errors": { "type": "array", "items": {} } }
+            }
+          ]
+        }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

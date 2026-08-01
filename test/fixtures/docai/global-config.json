@@ -1,0 +1,69 @@
+{
+  "supportedContentTypes": [
+    {
+      "isDefault": false,
+      "label": "PDF",
+      "maxFileSizeInMB": 10,
+      "type": "application/pdf"
+    },
+    {
+      "isDefault": false,
+      "label": "PNG",
+      "maxFileSizeInMB": 10,
+      "type": "image/png"
+    },
+    {
+      "isDefault": false,
+      "label": "JPG",
+      "maxFileSizeInMB": 10,
+      "type": "image/jpg"
+    },
+    {
+      "isDefault": false,
+      "label": "JPEG",
+      "maxFileSizeInMB": 10,
+      "type": "image/jpeg"
+    }
+  ],
+  "supportedModels": [
+    {
+      "id": "VertexAIGemini25Flash",
+      "isDefault": false,
+      "label": "Gemini 2.5 Flash",
+      "provider": "Vertex AI (Google)",
+      "status": "ENABLED"
+    },
+    {
+      "id": "OpenAIGPT4Omni",
+      "isDefault": false,
+      "label": "OpenAI GPT-4o",
+      "provider": "OpenAI",
+      "status": "ENABLED"
+    },
+    {
+      "id": "sfdc_ai__DefaultGPT54",
+      "isDefault": false,
+      "label": "GPT 5.4",
+      "provider": "OpenAI",
+      "status": "ENABLED"
+    },
+    {
+      "id": "llmgateway__VertexAIGemini30Flash",
+      "isDefault": false,
+      "label": "Gemini 3 Flash",
+      "provider": "Vertex AI (Google)",
+      "status": "ENABLED"
+    },
+    {
+      "id": "llmgateway__BedrockAnthropicClaude46Sonnet",
+      "isDefault": false,
+      "label": "Claude Sonnet 4.6",
+      "provider": "AWS Bedrock",
+      "status": "ENABLED"
+    }
+  ],
+  "version": "2.0",
+  "__fixture": {
+    "source": "live-scrubbed"
+  }
+}

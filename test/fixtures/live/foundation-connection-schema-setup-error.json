@@ -1,0 +1,12 @@
+{
+  "0": {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "message": "Failed to upsert schema for connection '1WMWt0000008N7VOAU'. Error: class sfdc.cdp.connect.api.input.connections.StreamingAppConnectionSchemaInputRepresentation cannot be cast to class sfdc.cdp.connect.api.input.connections.IngestApiConnectionSchemaInputRepresentation (sfdc.cdp.connect.api.input.connections.StreamingAppConnectionSchemaInputRepresentation and sfdc.cdp.connect.api.input.connections.IngestApiConnectionSchemaInputRepresentation are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @1556f2dd)"
+  },
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 api request",
+    "expectedFailure": true
+  }
+}

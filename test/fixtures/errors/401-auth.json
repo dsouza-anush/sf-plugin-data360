@@ -1,0 +1,13 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "basedOn": "Salesforce REST error format"
+  },
+  "statusCode": 401,
+  "body": [
+    {
+      "errorCode": "INVALID_SESSION_ID",
+      "message": "Session expired or invalid."
+    }
+  ]
+}

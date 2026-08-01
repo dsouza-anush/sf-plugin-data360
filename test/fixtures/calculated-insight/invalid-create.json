@@ -1,0 +1,6 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "errorCode": "INVALID_INPUT",
+  "message": "Calculated insight API name must end with __cio"
+}

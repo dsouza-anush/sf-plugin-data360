@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 connection validate",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "fetch failed",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "ConnectionValidate",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "",
+    "message": "fetch failed",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/connections/1WMWt0000008MrNOAU/actions/test"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "ConnectionValidate"
+}

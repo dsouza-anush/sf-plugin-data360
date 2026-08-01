@@ -1,0 +1,832 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-stream get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "advancedAttributes": {},
+      "capabilities": {},
+      "connectorInfo": {
+        "connectorDetails": {
+          "name": "SalesforceDotCom_Home",
+          "sourceObject": "Opportunity",
+          "type": "SalesforceDotCom"
+        },
+        "connectorType": "SalesforceDotCom"
+      },
+      "dataAccessMode": "INGEST",
+      "dataLakeObjectInfo": {
+        "capabilities": {},
+        "category": "Engagement",
+        "dataLakeFieldInfoRepresentation": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "KQ_Id",
+            "name": "KQ_Id"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Forecast Category",
+            "name": "ForecastCategory"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Stage Change Date",
+            "name": "LastStageChangeDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Description",
+            "name": "Description"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Contact ID",
+            "name": "ContactId"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Has Overdue Task",
+            "name": "HasOverdueTask"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Opportunity Type",
+            "name": "Type"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Deleted",
+            "name": "IsDeleted"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Close Date",
+            "name": "CloseDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Opportunity History ID",
+            "name": "LastAmountChangedHistoryId"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Contract ID",
+            "name": "ContractId"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Next Step",
+            "name": "NextStep"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Created Date",
+            "name": "CreatedDate"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "cdp_sys_PartitionDate",
+            "name": "cdp_sys_PartitionDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Data Source",
+            "name": "DataSource"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Has Line Item",
+            "name": "HasOpportunityLineItem"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Viewed Date",
+            "name": "LastViewedDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Has Open Activity",
+            "name": "HasOpenActivity"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Expected Amount",
+            "name": "ExpectedRevenue"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Closed",
+            "name": "IsClosed"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Private",
+            "name": "IsPrivate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Won",
+            "name": "IsWon"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Stage",
+            "name": "StageName"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Price Book ID",
+            "name": "Pricebook2Id"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "SfdcOrganizationId",
+            "name": "SfdcOrganizationId"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Modified Date",
+            "name": "LastModifiedDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Owner ID",
+            "name": "OwnerId"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Referenced Date",
+            "name": "LastReferencedDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Last Modified By ID",
+            "name": "LastModifiedById"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Data Source Object",
+            "name": "DataSourceObject"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Campaign ID",
+            "name": "CampaignId"
+          },
+          {
+            "dataType": "Percent",
+            "isPrimaryKey": false,
+            "label": "Probability (%)",
+            "name": "Probability"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Forecast Category",
+            "name": "ForecastCategoryName"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Quantity",
+            "name": "TotalOpportunityQuantity"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Opportunity History ID",
+            "name": "LastCloseDateChangedHistoryId"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Push Count",
+            "name": "PushCount"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Created By ID",
+            "name": "CreatedById"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Name",
+            "name": "Name"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Amount",
+            "name": "Amount"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Lead Source",
+            "name": "LeadSource"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": true,
+            "label": "Opportunity ID",
+            "name": "Id"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Fiscal Quarter",
+            "name": "FiscalQuarter"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Fiscal Year",
+            "name": "FiscalYear"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Activity",
+            "name": "LastActivityDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Fiscal Period",
+            "name": "Fiscal"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "System Modstamp",
+            "name": "SystemModstamp"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Account ID",
+            "name": "AccountId"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "cdp_sys_SourceVersion",
+            "name": "cdp_sys_SourceVersion"
+          }
+        ],
+        "dataSpaceInfo": [
+          {
+            "label": "default",
+            "name": "default"
+          }
+        ],
+        "eventDateTimeFieldName": "CreatedDate",
+        "fields": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "KQ_Id",
+            "name": "KQ_Id"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Forecast Category",
+            "name": "ForecastCategory"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Stage Change Date",
+            "name": "LastStageChangeDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Description",
+            "name": "Description"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Contact ID",
+            "name": "ContactId"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Has Overdue Task",
+            "name": "HasOverdueTask"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Opportunity Type",
+            "name": "Type"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Deleted",
+            "name": "IsDeleted"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Close Date",
+            "name": "CloseDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Opportunity History ID",
+            "name": "LastAmountChangedHistoryId"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Contract ID",
+            "name": "ContractId"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Next Step",
+            "name": "NextStep"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Created Date",
+            "name": "CreatedDate"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "cdp_sys_PartitionDate",
+            "name": "cdp_sys_PartitionDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Data Source",
+            "name": "DataSource"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Has Line Item",
+            "name": "HasOpportunityLineItem"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Viewed Date",
+            "name": "LastViewedDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Has Open Activity",
+            "name": "HasOpenActivity"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Expected Amount",
+            "name": "ExpectedRevenue"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Closed",
+            "name": "IsClosed"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Private",
+            "name": "IsPrivate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Won",
+            "name": "IsWon"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Stage",
+            "name": "StageName"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Price Book ID",
+            "name": "Pricebook2Id"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "SfdcOrganizationId",
+            "name": "SfdcOrganizationId"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Modified Date",
+            "name": "LastModifiedDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Owner ID",
+            "name": "OwnerId"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Referenced Date",
+            "name": "LastReferencedDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Last Modified By ID",
+            "name": "LastModifiedById"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Data Source Object",
+            "name": "DataSourceObject"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Campaign ID",
+            "name": "CampaignId"
+          },
+          {
+            "dataType": "Percent",
+            "isPrimaryKey": false,
+            "label": "Probability (%)",
+            "name": "Probability"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Forecast Category",
+            "name": "ForecastCategoryName"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Quantity",
+            "name": "TotalOpportunityQuantity"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Opportunity History ID",
+            "name": "LastCloseDateChangedHistoryId"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Push Count",
+            "name": "PushCount"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Created By ID",
+            "name": "CreatedById"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Name",
+            "name": "Name"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Amount",
+            "name": "Amount"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Lead Source",
+            "name": "LeadSource"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": true,
+            "label": "Opportunity ID",
+            "name": "Id"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Fiscal Quarter",
+            "name": "FiscalQuarter"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "Fiscal Year",
+            "name": "FiscalYear"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "Last Activity",
+            "name": "LastActivityDate"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Fiscal Period",
+            "name": "Fiscal"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "System Modstamp",
+            "name": "SystemModstamp"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "Account ID",
+            "name": "AccountId"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "cdp_sys_SourceVersion",
+            "name": "cdp_sys_SourceVersion"
+          }
+        ],
+        "id": "LIVE_ID_f101d985f287",
+        "label": "Opportunity_Home",
+        "name": "Opportunity_Home__dll",
+        "recordModifiedFieldName": "SystemModstamp",
+        "status": "ACTIVE"
+      },
+      "dataSource": "Salesforce_Home",
+      "dataStreamType": "SFDC",
+      "extractionTime": "2026-07-29T05:47:26.000Z",
+      "isEnabled": true,
+      "label": "Opportunity_Home",
+      "lastAddedRecords": 0,
+      "lastProcessedRecords": 0,
+      "lastRefreshDate": "2026-07-29T05:52:26.000Z",
+      "lastRunStatus": "SUCCESS",
+      "mappings": [],
+      "name": "Opportunity_Home",
+      "recordId": "LIVE_ID_1ad5a78e6b08",
+      "refreshConfig": {
+        "frequency": {
+          "frequencyType": "BATCH",
+          "hours": [],
+          "refreshDayOfMonth": []
+        },
+        "fullRefreshIntervalDays": "NONE",
+        "hasHeaders": false,
+        "isAccelerationEnabled": false,
+        "refreshMode": "UPSERT",
+        "shouldFetchImmediately": false,
+        "shouldTreatMissingFilesAsFailures": false
+      },
+      "sourceFields": [
+        {
+          "datatype": "Text",
+          "name": "Id"
+        },
+        {
+          "datatype": "Text",
+          "name": "IsDeleted"
+        },
+        {
+          "datatype": "Text",
+          "name": "AccountId"
+        },
+        {
+          "datatype": "Text",
+          "name": "IsPrivate"
+        },
+        {
+          "datatype": "Text",
+          "name": "Name"
+        },
+        {
+          "datatype": "Text",
+          "name": "Description"
+        },
+        {
+          "datatype": "Text",
+          "name": "StageName"
+        },
+        {
+          "datatype": "Number",
+          "name": "Amount"
+        },
+        {
+          "datatype": "Percent",
+          "name": "Probability"
+        },
+        {
+          "datatype": "Number",
+          "name": "ExpectedRevenue"
+        },
+        {
+          "datatype": "Number",
+          "name": "TotalOpportunityQuantity"
+        },
+        {
+          "datatype": "DateTime",
+          "format": "yyyy-MM-dd",
+          "name": "CloseDate"
+        },
+        {
+          "datatype": "Text",
+          "name": "Type"
+        },
+        {
+          "datatype": "Text",
+          "name": "NextStep"
+        },
+        {
+          "datatype": "Text",
+          "name": "LeadSource"
+        },
+        {
+          "datatype": "Text",
+          "name": "IsClosed"
+        },
+        {
+          "datatype": "Text",
+          "name": "IsWon"
+        },
+        {
+          "datatype": "Text",
+          "name": "ForecastCategory"
+        },
+        {
+          "datatype": "Text",
+          "name": "ForecastCategoryName"
+        },
+        {
+          "datatype": "Text",
+          "name": "CampaignId"
+        },
+        {
+          "datatype": "Text",
+          "name": "HasOpportunityLineItem"
+        },
+        {
+          "datatype": "Text",
+          "name": "Pricebook2Id"
+        },
+        {
+          "datatype": "Text",
+          "name": "OwnerId"
+        },
+        {
+          "datatype": "DateTime",
+          "format": "yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;",
+          "name": "CreatedDate"
+        },
+        {
+          "datatype": "Text",
+          "name": "CreatedById"
+        },
+        {
+          "datatype": "DateTime",
+          "format": "yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;",
+          "name": "LastModifiedDate"
+        },
+        {
+          "datatype": "Text",
+          "name": "LastModifiedById"
+        },
+        {
+          "datatype": "DateTime",
+          "format": "yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;",
+          "name": "SystemModstamp"
+        },
+        {
+          "datatype": "DateTime",
+          "format": "yyyy-MM-dd",
+          "name": "LastActivityDate"
+        },
+        {
+          "datatype": "Number",
+          "name": "PushCount"
+        },
+        {
+          "datatype": "DateTime",
+          "format": "yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;",
+          "name": "LastStageChangeDate"
+        },
+        {
+          "datatype": "Number",
+          "name": "FiscalQuarter"
+        },
+        {
+          "datatype": "Number",
+          "name": "FiscalYear"
+        },
+        {
+          "datatype": "Text",
+          "name": "Fiscal"
+        },
+        {
+          "datatype": "Text",
+          "name": "ContactId"
+        },
+        {
+          "datatype": "DateTime",
+          "format": "yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;",
+          "name": "LastViewedDate"
+        },
+        {
+          "datatype": "DateTime",
+          "format": "yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;",
+          "name": "LastReferencedDate"
+        },
+        {
+          "datatype": "Text",
+          "name": "ContractId"
+        },
+        {
+          "datatype": "Text",
+          "name": "HasOpenActivity"
+        },
+        {
+          "datatype": "Text",
+          "name": "HasOverdueTask"
+        },
+        {
+          "datatype": "Text",
+          "name": "LastAmountChangedHistoryId"
+        },
+        {
+          "datatype": "Text",
+          "name": "LastCloseDateChangedHistoryId"
+        },
+        {
+          "datatype": "Text",
+          "name": "SfdcOrganizationId"
+        }
+      ],
+      "status": "ACTIVE",
+      "totalRecords": 20
+    }
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 profile lookup",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "D360_API_ERROR",
+  "message": "{\"timestamp\":\"2026-07-12T01:06:10.198Z\",\"error\":\"400 BAD_REQUEST\",\"message\":\"Invalid filter field null\",\"tenantId\":\"a360/[REDACTED_TENANT]\",\"internalErrorCode\":\"PROFILE_API_ERROR_ENTITY_NOTFOUND\",\"details\":{}}",
+  "exitCode": 1,
+  "actions": ["Re-run with --verbose to inspect the raw API response."],
+  "context": "ProfileLookup",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "INTERNAL_ERROR",
+    "message": "{\"timestamp\":\"2026-07-12T01:06:10.198Z\",\"error\":\"400 BAD_REQUEST\",\"message\":\"Invalid filter field null\",\"tenantId\":\"a360/[REDACTED_TENANT]\",\"internalErrorCode\":\"PROFILE_API_ERROR_ENTITY_NOTFOUND\",\"details\":{}}",
+    "detail": "",
+    "endpoint": "/services/data/v67.0/ssot/universalIdLookup/ssot__Account__dlm/Salesforce_Home/Account/001Wt00001ANcssIAD"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "ProfileLookup"
+}
