@@ -20,7 +20,7 @@ Use a non-production Data 360 org. Parser, formatting, history, file-output, and
 
 ## One approved live-query check
 
-1. Restart the REPL, set `\f csv`, `\o /tmp/data360-repl.csv`, and `\timing`.
+1. Restart the REPL with `--no-prompt` after recording credit approval, then set `\f csv`, `\o /tmp/data360-repl.csv`, and `\timing`. The startup flag is the one approved acknowledgement for this query-enabled session and avoids nesting a confirmation UI inside the REPL readline loop.
 2. Run `\i /tmp/data360-repl.sql` exactly once. Confirm the bounded result is written to the file and timing is written to stderr; don't copy the result into test evidence.
 3. Run `\last` and confirm it prints the latest query ID without exposing a token. Then run `\o` to restore stdout and `\q` to exit.
 4. Delete `/tmp/data360-repl.sql` and `/tmp/data360-repl.csv`. Record pass/fail by checklist item, the query's bounded shape, and the single submission count—never its rows.

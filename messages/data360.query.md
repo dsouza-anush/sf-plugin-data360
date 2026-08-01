@@ -18,6 +18,8 @@ Submit SQL to the Data 360 Query SQL API, or start the interactive REPL when no 
   <%= config.bin %> <%= command.id %> --query 'SELECT * FROM "FlightSeat__dll" WHERE "boardingstatus__c" = :status' --query-options-file query-options.json --workload-name nightly-seat-audit --target-org my-org
 - Start the interactive SQL REPL with persistent history:
   <%= config.bin %> <%= command.id %> --target-org my-org
+- Start a query-enabled REPL after approving Data 360 Query credit usage:
+  <%= config.bin %> <%= command.id %> --target-org my-org --no-prompt
 
 # flags.query.summary
 
@@ -82,6 +84,14 @@ Unable to resolve the target org username.
 # error.D360_AUTH_EXPIRED.2.actions.1
 
 Authenticate again with sf org login web -o <alias>.
+
+# error.D360_CONFIRMATION_REQUIRED.6
+
+Interactive REPL query execution requires explicit credit approval.
+
+# error.D360_CONFIRMATION_REQUIRED.6.actions.1
+
+Exit and restart with --no-prompt only after approving Data 360 Query credit usage; metadata-only REPL commands remain available without it.
 
 # runtime.status.3
 

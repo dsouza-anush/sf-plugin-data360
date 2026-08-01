@@ -8953,7 +8953,8 @@
         "Pipe SQL and write RFC-4180 CSV:\n<%= config.bin %> <%= command.id %> --file - --result-format csv --output-file rows.csv --target-org my-org < query.sql",
         "Submit asynchronously and resume later:\n<%= config.bin %> <%= command.id %> --query 'SELECT COUNT(*) FROM \"ssot__Individual__dlm\"' --async --target-org my-org",
         "Run parameterized SQL with support-visible workload metadata and execution settings:\n<%= config.bin %> <%= command.id %> --query 'SELECT * FROM \"FlightSeat__dll\" WHERE \"boardingstatus__c\" = :status' --query-options-file query-options.json --workload-name nightly-seat-audit --target-org my-org",
-        "Start the interactive SQL REPL with persistent history:\n<%= config.bin %> <%= command.id %> --target-org my-org"
+        "Start the interactive SQL REPL with persistent history:\n<%= config.bin %> <%= command.id %> --target-org my-org",
+        "Start a query-enabled REPL after approving Data 360 Query credit usage:\n<%= config.bin %> <%= command.id %> --target-org my-org --no-prompt"
       ],
       "flags": {
         "api-version": {

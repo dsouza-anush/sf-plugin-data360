@@ -1124,6 +1124,17 @@ export const plannedCleanupArgsFor = (current) => {
   return [...current.cleanup];
 };
 
+export const rawCleanupArgsFor = (family, key, direct = false) => [
+  'data360',
+  'api',
+  'request',
+  `${family}/${encodeURIComponent(key)}`,
+  ...(direct ? ['--direct'] : []),
+  '--method',
+  'DELETE',
+  '--no-prompt',
+];
+
 const runFoundationMain = async (options) => {
   const date = new Date().toISOString().slice(0, 10);
   const stateDirectory = resolve(root, '.tmp', 'live-verify', 'foundation');
@@ -1337,15 +1348,7 @@ const runFoundationMain = async (options) => {
         };
       }
       const cleanupArgs = current.cleanupRawFamily
-        ? [
-            'data360',
-            'api',
-            'request',
-            `${current.cleanupRawFamily}/${encodeURIComponent(cleanupKey)}`,
-            ...(current.cleanupDirect ? ['--direct'] : []),
-            '--method',
-            'DELETE',
-          ]
+        ? rawCleanupArgsFor(current.cleanupRawFamily, cleanupKey, current.cleanupDirect)
         : [...current.cleanup];
       for (const flag of ['--name', '--relationship-name']) {
         const index = cleanupArgs.indexOf(flag);
@@ -1772,14 +1775,7 @@ const runP4Main = async (options) => {
         };
       }
       const cleanupArgs = current.cleanupRawFamily
-        ? [
-            'data360',
-            'api',
-            'request',
-            `${current.cleanupRawFamily}/${encodeURIComponent(cleanupKey)}`,
-            '--method',
-            'DELETE',
-          ]
+        ? rawCleanupArgsFor(current.cleanupRawFamily, cleanupKey)
         : [...current.cleanup];
       for (const flag of ['--name', '--relationship-name']) {
         const index = cleanupArgs.indexOf(flag);

@@ -22,7 +22,7 @@ import { PassThrough, Readable } from 'node:stream';
 import { chmod, mkdtemp, readFile, stat, symlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
-import { replExecutionOptions, shouldEnterRepl } from '../src/commands/data360/query.js';
+import { replExecutionOptions, requireReplQueryApproval, shouldEnterRepl } from '../src/commands/data360/query.js';
 
 const success = loadFixture<{
   access_token: string;
@@ -625,6 +625,8 @@ describe('P2 direct authentication', () => {
       format: 'csv',
       outputFile: 'rows.csv',
     });
+    expect(() => requireReplQueryApproval(true)).not.to.throw();
+    expect(() => requireReplQueryApproval(false)).to.throw('requires explicit credit approval');
   });
 
   it('runs an injected REPL session, persists XDG history, and exits without hanging', async () => {

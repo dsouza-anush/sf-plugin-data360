@@ -511,6 +511,7 @@ describe('P1 contracts', () => {
       '`\\dataspace <known-space>`',
       '`\\dt dmo`',
       '`\\i /tmp/data360-repl.sql` exactly once',
+      '`--no-prompt`',
       '`\\last`',
       'exit code 130',
       'exit code 0',

@@ -3256,6 +3256,12 @@ Submit SQL to the Data 360 Query SQL API, or start the interactive REPL when no 
   sf data360 query --target-org my-org
   ```
 
+- Start a query-enabled REPL after approving Data 360 Query credit usage:
+
+  ```shell
+  sf data360 query --target-org my-org --no-prompt
+  ```
+
 ## `sf data360 query cancel`
 
 Cancel a Data 360 SQL query.

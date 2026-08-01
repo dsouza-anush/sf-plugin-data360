@@ -97,6 +97,7 @@ type Orchestrator = {
     cleanup?: string[];
     ownershipProof?: { name: string; status: string };
   }) => string[] | null;
+  rawCleanupArgsFor: (family: string, key: string, direct?: boolean) => string[];
   redactSecrets: (value: unknown) => unknown;
   serializeLiveSummary: (value: unknown, org?: string) => string;
   scrubFixture: (value: unknown, key?: string) => unknown;
@@ -467,6 +468,29 @@ describe('live verification orchestrator', () => {
         ownershipProof: { name: 'Other__dll', status: 'absent' },
       })
     ).to.equal(null);
+  });
+
+  it('makes raw mutation cleanup explicitly noninteractive', async () => {
+    const { rawCleanupArgsFor } = await loadOrchestrator();
+    expect(rawCleanupArgsFor('data-lake-objects', 'Disposable Name')).to.deep.equal([
+      'data360',
+      'api',
+      'request',
+      'data-lake-objects/Disposable%20Name',
+      '--method',
+      'DELETE',
+      '--no-prompt',
+    ]);
+    expect(rawCleanupArgsFor('/api/v1/ingest/jobs', 'job/id', true)).to.deep.equal([
+      'data360',
+      'api',
+      'request',
+      '/api/v1/ingest/jobs/job%2Fid',
+      '--direct',
+      '--method',
+      'DELETE',
+      '--no-prompt',
+    ]);
   });
 
   it('propagates the explicit P5 demo-org shared-data gate into execution options', async () => {

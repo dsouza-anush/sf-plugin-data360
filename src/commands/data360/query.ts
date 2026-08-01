@@ -53,6 +53,13 @@ export const replExecutionOptions = (flags: {
   outputFile: flags.outputFile,
 });
 
+export const requireReplQueryApproval = (noPrompt: boolean): void => {
+  if (noPrompt) return;
+  throw new SfError(commandMessages.getMessage('error.D360_CONFIRMATION_REQUIRED.6'), 'D360_CONFIRMATION_REQUIRED', [
+    commandMessages.getMessage('error.D360_CONFIRMATION_REQUIRED.6.actions.1'),
+  ]);
+};
+
 // eslint-disable-next-line sf-plugin/only-extend-SfCommand -- Shared typed command bases centralize Salesforce CLI behavior.
 export default class Query extends Data360Command<QueryCommandResult> {
   public static readonly summary = commandMessages.getMessage('summary');
@@ -143,6 +150,9 @@ export default class Query extends Data360Command<QueryCommandResult> {
         initialOutputFile: replOptions.outputFile,
         initialTiming: Boolean(flags.timing),
         execute: async (sql, context) => {
+          // A nested interactive confirmation competes with the REPL's readline interface and can
+          // strand oclif's top-level await. Require one explicit approval when the REPL starts.
+          requireReplQueryApproval(Boolean(flags['no-prompt']));
           const replClient = new SsotClient(initialized.connection, apiVersion, {
             ...initialized.requestTiming,
             onTiming: context.timing ? (timing): void => this.logToStderr(formatTiming(timing)) : undefined,
