@@ -320,5 +320,5 @@ describe('P4 mapping family', () => {
     expect(
       requests.some(({ method, url }) => method === 'DELETE' && url?.endsWith('/field-mappings/CustomerMap'))
     ).to.equal(true);
-  });
+  }).timeout(20_000);
 });

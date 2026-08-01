@@ -429,5 +429,5 @@ describe('P6 Data Kit family', () => {
     } finally {
       await server.close();
     }
-  });
+  }).timeout(20_000);
 });

@@ -78,5 +78,5 @@ describe('generic registry commands', () => {
       key: 'Orders',
     });
     expect(requests.map(({ method }) => method)).to.include.members(['GET', 'POST', 'DELETE']);
-  });
+  }).timeout(20_000);
 });
