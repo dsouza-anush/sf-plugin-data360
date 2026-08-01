@@ -37,6 +37,7 @@
 - Keep noninteractive Query SQL examples and subprocess verification explicit about billable-operation confirmation.
 - Preserve encoded opaque query IDs containing literal percent signs while retaining multi-layer traversal rejection.
 - Make the release test suite portable across Windows path, permission, line-ending, and runner-performance semantics.
+- Move GitHub workflows to the current Node 24-based official action majors.
 
 ### Known limitations
 
