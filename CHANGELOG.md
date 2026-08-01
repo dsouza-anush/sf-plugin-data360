@@ -39,6 +39,7 @@
 - Make the release test suite portable across Windows path, permission, line-ending, and runner-performance semantics.
 - Move GitHub workflows to the current Node 24-based official action majors.
 - Document the one-time npm prerelease bootstrap required before OIDC trusted publishing can be configured.
+- Await streamed query-output file closure before atomic rename or failure cleanup.
 
 ### Known limitations
 

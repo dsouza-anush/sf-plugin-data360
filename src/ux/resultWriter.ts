@@ -1,5 +1,5 @@
 import { rename, rm } from 'node:fs/promises';
-import { createWriteStream } from 'node:fs';
+import { createWriteStream, type WriteStream } from 'node:fs';
 import { once } from 'node:events';
 import type { QueryRowsPageResponse, QueryRowsResponse } from '../run/types.js';
 import { atomicTemporaryPath, writeFileAtomic } from '../shared/atomicFile.js';
@@ -64,14 +64,21 @@ export const writeQueryPages = async (
     }
     if (format === 'json') await writeChunk(stream, '\n]\n');
     if (temporary) {
-      (stream as NodeJS.WritableStream & { end(): void }).end();
-      await once(stream, 'finish');
+      const fileStream = stream as WriteStream;
+      const closed = once(fileStream, 'close');
+      fileStream.end();
+      await closed;
       await rename(temporary, outputFile!);
     }
     return rows;
   } catch (error) {
     if (temporary) {
-      (stream as NodeJS.WritableStream & { destroy(error?: Error): void }).destroy();
+      const fileStream = stream as WriteStream;
+      if (!fileStream.closed) {
+        const closed = once(fileStream, 'close');
+        fileStream.destroy();
+        await closed.catch(() => undefined);
+      }
       await rm(temporary, { force: true });
     }
     throw error;
