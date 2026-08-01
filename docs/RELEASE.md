@@ -5,14 +5,24 @@ A release is publishable only when every applicable item below passes on the exa
 ## One-time owner setup
 
 - [ ] Make `dsouza-anush/sf-plugin-data360` public only after the private review is approved.
-- [ ] Confirm that `sf-plugin-data360` is still available on npm, claim it with the intended npm account, and require two-factor authentication for account changes.
-- [ ] Create a GitHub environment named `npm` and require owner approval for deployments from `.github/workflows/publish.yml`.
+- [ ] Confirm that `sf-plugin-data360` is still available on npm, complete the bootstrap prerelease below with the intended npm account, and require two-factor authentication for account changes.
+- [ ] Add owner approval protection to the existing GitHub environment named `npm` for deployments from `.github/workflows/publish.yml`.
 - [ ] Configure npm trusted publishing for GitHub Actions with owner `dsouza-anush`, repository `sf-plugin-data360`, workflow `publish.yml`, environment `npm`, and `npm publish` permission. Do not add a long-lived npm write token to GitHub.
 - [ ] Enable GitHub private vulnerability reporting and update [SECURITY.md](../SECURITY.md) if the approved route differs.
 - [ ] Add branch or repository rules that require the `test` workflow on `main`, block force pushes, and require the branch to be current before merge.
 - [ ] Set the repository description, website, and topics, and confirm Issues are enabled.
 
 The publish workflow uses npm's OIDC trusted-publisher flow and publishes only the tarball produced from the GitHub release tag. npm provenance is generated when both the repository and package are public.
+
+### Bootstrap the unpublished package once
+
+npm requires a package to exist before a trusted publisher can be registered. For this repository's first publication only:
+
+1. After the repository is public, create a reviewed `0.1.0-beta.0` commit and matching tag, run `yarn release:check`, and pack the exact candidate.
+2. From an npm-authenticated owner session with two-factor authentication, publish that reviewed tarball with `npm publish ./sf-plugin-data360.tgz --access public --tag beta`. This must be a real usable prerelease, not a placeholder package.
+3. With npm 11.15 or newer, register the trusted publisher with `npm trust github sf-plugin-data360 --file publish.yml --repo dsouza-anush/sf-plugin-data360 --env npm --allow-publish`, or enter the same values in the package settings on npmjs.com.
+4. Restrict traditional publishing tokens after the trusted relationship is verified. Do not create a GitHub release for the bootstrap tag because the release workflow is the post-bootstrap OIDC path.
+5. Bump the reviewed candidate to `0.1.0` and use the normal GitHub release sequence below. All later releases publish only through OIDC.
 
 ## Repository boundary
 
