@@ -377,6 +377,10 @@ describe('P1 contracts', () => {
     expect(packageContents).to.include("'LIVE_TESTING.md'");
     const workflow = await readFile(resolve(root, '.github', 'workflows', 'test.yml'), 'utf8');
     expect(workflow.indexOf('yarn clean')).to.be.lessThan(workflow.indexOf('yarn compile'));
+    const manifest = JSON.parse(await readFile(resolve(root, 'package.json'), 'utf8')) as {
+      scripts?: Record<string, string>;
+    };
+    expect(manifest.scripts?.postpack).to.include('node scripts/sync-oclif-lock.mjs');
   });
 
   it('keeps the Yarn and packaged oclif dependency locks identical', async () => {

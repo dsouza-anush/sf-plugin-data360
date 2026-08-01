@@ -276,7 +276,7 @@
     "verify:all": "node scripts/verify-all.mjs",
     "verify:command": "node scripts/verify-command.mjs",
     "prepack": "sf-prepack",
-    "postpack": "sf-clean --ignore-signing-artifacts && node scripts/normalize-manifest.mjs"
+    "postpack": "sf-clean --ignore-signing-artifacts && node scripts/normalize-manifest.mjs && node scripts/sync-oclif-lock.mjs"
   },
   "dependencies": {
     "@oclif/core": "4.13.0",
