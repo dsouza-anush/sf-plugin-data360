@@ -9,7 +9,7 @@ import ComponentDependencies from '../src/commands/data360/data-kit/component/de
 import ComponentStatus from '../src/commands/data360/data-kit/component/status.js';
 import Create from '../src/commands/data360/data-kit/create.js';
 import Delete from '../src/commands/data360/data-kit/delete.js';
-import Deploy from '../src/commands/data360/data-kit/deploy.js';
+import Deploy, { validateDeployDefinition } from '../src/commands/data360/data-kit/deploy.js';
 import List from '../src/commands/data360/data-kit/list.js';
 import Manifest from '../src/commands/data360/data-kit/manifest.js';
 import Undeploy from '../src/commands/data360/data-kit/undeploy.js';
@@ -73,22 +73,22 @@ describe('P6 Data Kit family', () => {
     }>;
     const rows = verification.filter(({ command }) => command.startsWith('data360 data-kit'));
     expect(rows).to.have.length(10);
-    const liveReadCommands = new Set([
+    const liveCommands = new Set([
       'data360 data-kit available',
+      'data360 data-kit component dependencies',
       'data360 data-kit component status',
       'data360 data-kit create',
       'data360 data-kit delete',
+      'data360 data-kit deploy',
       'data360 data-kit list',
       'data360 data-kit manifest',
       'data360 data-kit undeploy',
       'data360 data-kit update',
     ]);
-    const liveRows = rows.filter(({ command }) => liveReadCommands.has(command));
-    expect(liveRows).to.have.length(8);
+    const liveRows = rows.filter(({ command }) => liveCommands.has(command));
+    expect(liveRows).to.have.length(10);
     expect(liveRows.every(({ live }) => live !== null)).to.equal(true);
-    const undatedRows = rows.filter(({ command }) => !liveReadCommands.has(command));
-    expect(undatedRows).to.have.length(2);
-    expect(undatedRows.every(({ live }) => live === null)).to.equal(true);
+    expect(rows.filter(({ live }) => live === null)).to.have.length(0);
   });
 
   it('normalizes official list, component, and manifest response shapes for human tables', () => {
@@ -120,6 +120,21 @@ describe('P6 Data Kit family', () => {
       code: 'ACTIVE',
       message: 'The status of the component is ACTIVE',
     });
+  });
+
+  it('rejects undeploy-shaped deployment components before making an API request', () => {
+    const valid = {
+      components: [{ type: 'DataLakeObject', config: { apiName: 'Customer', dataSpaceName: 'default' } }],
+    };
+    expect(validateDeployDefinition(valid)).to.equal(valid);
+    for (const invalid of [
+      {},
+      { components: [] },
+      { components: [{ type: 'DataLakeObject', name: 'Customer__dll' }] },
+      { components: [{ config: {} }] },
+    ]) {
+      expect(() => validateDeployDefinition(invalid)).to.throw('Invalid data-kit deployment definition');
+    }
   });
 
   it('executes the exact v67 Data Kit surface through real parsers', async () => {

@@ -11,8 +11,8 @@ This guide covers the shortest safe path from a source checkout to a read-only r
 At the 2026-07-29 review snapshot:
 
 - The manifest and verification ledger contain 135 commands with unit and mock coverage.
-- 102 exact commands have successful, scrubbed, checked-in live-org evidence. A live result for one command does not verify the other commands in its family.
-- Eight Data Kit commands have successful live fixtures: list, available components, component status, manifest, create, update, delete, and undeploy. Deploy and component dependencies remain org- or platform-blocked.
+- 104 exact commands have successful, scrubbed, checked-in live-org evidence. A live result for one command does not verify the other commands in its family.
+- All ten Data Kit commands have successful live fixtures, including disposable deploy/undeploy with verified cleanup.
 - `sf data360 api request` extends raw API reach; it is not equivalent to a dedicated command with typed flags, confirmations, pagination, and command-level verification.
 - This evidence is suitable for a reviewed experimental beta, not a GA support claim.
 
@@ -129,7 +129,7 @@ Use an explicit query ID in shared runners or whenever more than one job can be 
 | Build customer outcomes                | `identity-resolution`, `calculated-insight`, `segment`, `activation`            | Many mutations are only partially live-verified; check the ledger.    |
 | Work with search and graphs            | `search-index`, `data-graph`, `retriever`                                       | Vector and hybrid query builders remain live-dialect-gated.           |
 | Inspect selected AI-adjacent resources | `docai`, `semantic model`, `data-action`                                        | The dedicated surface is primarily live-verified reads.               |
-| Package Data 360 metadata              | `data-kit`                                                                      | Eight commands are live-verified; deploy remains org-gated.           |
+| Package Data 360 metadata              | `data-kit`                                                                      | All ten commands are live-verified.                                   |
 | Reach an unwrapped endpoint            | `sf data360 api request`                                                        | Raw transport has fewer workflow safeguards than a dedicated command. |
 
 Run `sf <command> --help` for the installed version, for example:

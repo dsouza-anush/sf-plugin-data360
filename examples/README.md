@@ -61,7 +61,7 @@ Replace `ExampleEvent__dll` with an existing DLO. Member changes affect data acc
 
 ## Data Kits
 
-The Data Kit samples follow the Salesforce Connect REST API v67 request shapes. Replace the placeholder component names and connector values with components that exist in your org. List, available components, component status, manifest, create, update, and delete have successful command-specific live evidence; deploy, undeploy, and component dependencies remain org- or platform-blocked.
+The Data Kit samples follow the Salesforce Connect REST API v67 request shapes. Replace the placeholder component names and connector values with components that exist in your org. All ten Data Kit commands have successful command-specific live evidence, including disposable deployment and asynchronous cleanup against an eligible external kit.
 
 ```shell
 sf data360 data-kit create \

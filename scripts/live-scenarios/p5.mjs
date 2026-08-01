@@ -265,11 +265,21 @@ export const p5DataKitComponentDefinitions = (component) => {
   if (component?.type !== 'DataLakeObject' || typeof component?.info?.name !== 'string' || !component.info.name) {
     throw new Error('A selected DataLakeObject component name is required');
   }
-  const deploymentComponent = { type: component.type, name: component.info.name };
+  const componentName = component.info.name.replace(/__dll$/u, '');
+  const deploymentComponent = {
+    type: component.type,
+    config: {
+      dataSourceObjectDevName: componentName,
+      apiName: componentName,
+      label: component.info.label ?? componentName,
+      dataSpaceName: 'default',
+    },
+  };
+  const undeploymentComponent = { type: component.type, name: component.info.name };
   return {
     update: { components: [component] },
     deploy: { components: [deploymentComponent] },
-    undeploy: { components: [deploymentComponent] },
+    undeploy: { components: [undeploymentComponent] },
   };
 };
 

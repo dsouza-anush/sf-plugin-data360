@@ -110,16 +110,37 @@ const preferredDataKitIdentity = (payload) => {
   return undefined;
 };
 
-const firstComponent = (payload) => {
+const localDataKitIdentity = (payload) => {
   const items = resultItems(payload) ?? [];
-  for (const item of items) {
-    if (!item || typeof item !== 'object') continue;
-    const name =
-      (typeof item.name === 'string' && item.name) ||
-      (typeof item.developerName === 'string' && item.developerName) ||
-      (typeof item.info?.name === 'string' && item.info.name);
-    const type = typeof item.type === 'string' ? item.type : undefined;
-    if (name) return { name, type };
+  const local = items.find((item) => item?.dataKitType === 'SANDBOX' || item?.dataKitSource !== 'EXTERNAL');
+  if (!local || typeof local !== 'object') return undefined;
+  for (const field of ['devName', 'dataKitDevName', 'developerName', 'name', 'id']) {
+    if (typeof local[field] === 'string' && local[field]) return local[field];
+  }
+  return undefined;
+};
+
+const dependencyComponentTypes = ['DataTransform', 'DataStreamBundle', 'SemanticModel', 'DataLakeObject'];
+
+const preferredDeployedDataKitComponent = (payload) => {
+  const items = resultItems(payload) ?? [];
+  for (const componentType of dependencyComponentTypes) {
+    for (const item of items) {
+      if (!item || typeof item !== 'object' || !Array.isArray(item.components)) continue;
+      const component = item.components.find(
+        (candidate) =>
+          candidate?.componentType === componentType &&
+          typeof candidate.developerName === 'string' &&
+          candidate.developerName
+      );
+      if (!component) continue;
+      const dataKit = ['devName', 'dataKitDevName', 'developerName', 'name', 'id']
+        .map((field) => item[field])
+        .find((value) => typeof value === 'string' && value);
+      if (typeof dataKit === 'string') {
+        return { dataKit, component: { name: component.developerName, type: component.componentType } };
+      }
+    }
   }
   return undefined;
 };
@@ -134,6 +155,9 @@ export const p6DependencyBlocker = (current, evidence) => {
     if (Array.isArray(items) && items.length === 0) {
       return `${dependency} returned an empty list; ${current.operation} payload shape remains unverified`;
     }
+  }
+  if (current.id === 'data-kit-manifest' && !localDataKitIdentity(evidencePayload(evidence, 'data-kit-list'))) {
+    return 'data-kit-list returned no local or sandbox kit; manifest was not invoked against an external package';
   }
   return undefined;
 };
@@ -152,13 +176,14 @@ export const argsForP6Step = (current, evidence = {}) => {
   }
   const dataKit = preferredDataKitIdentity(evidencePayload(evidence, 'data-kit-list'));
   if (current.id === 'data-kit-available' && dataKit) args.push('--data-kit', dataKit);
-  if (['data-kit-manifest', 'data-kit-component-dependencies', 'data-kit-component-status'].includes(current.id)) {
-    if (dataKit) args.push('--name', dataKit);
-    const component = firstComponent(evidencePayload(evidence, 'data-kit-available'));
-    if (component && current.id !== 'data-kit-manifest') {
-      args.push('--component', component.name);
-      if (current.id === 'data-kit-component-dependencies' && component.type) {
-        args.push('--component-type', component.type);
+  const localDataKit = localDataKitIdentity(evidencePayload(evidence, 'data-kit-list'));
+  if (current.id === 'data-kit-manifest' && localDataKit) args.push('--name', localDataKit);
+  if (['data-kit-component-dependencies', 'data-kit-component-status'].includes(current.id)) {
+    const deployed = preferredDeployedDataKitComponent(evidencePayload(evidence, 'data-kit-list'));
+    if (deployed) {
+      args.push('--name', deployed.dataKit, '--component', deployed.component.name);
+      if (current.id === 'data-kit-component-dependencies') {
+        args.push('--component-type', deployed.component.type);
       }
     }
   }
@@ -255,11 +280,11 @@ export const buildP6Plan = (prefix) =>
       args: ['--component-type', 'DataLakeObject'],
     }),
     step('data-kit-manifest', 'data360 data-kit manifest', 'get', { dependsOn: ['data-kit-list'] }),
-    step('data-kit-component-dependencies', 'data360 data-kit component dependencies', 'get', {
-      dependsOn: ['data-kit-list', 'data-kit-available'],
+    step('data-kit-component-dependencies', 'data360 data-kit component dependencies', 'list', {
+      dependsOn: ['data-kit-list'],
     }),
     step('data-kit-component-status', 'data360 data-kit component status', 'get', {
-      dependsOn: ['data-kit-list', 'data-kit-available'],
+      dependsOn: ['data-kit-list'],
     }),
     step('docai-describe', 'data360 docai describe', 'get'),
     step('docai-config-list', 'data360 docai config list', 'list'),

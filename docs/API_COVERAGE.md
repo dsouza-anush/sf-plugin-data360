@@ -5,12 +5,12 @@ This document answers two different questions that must not be collapsed into on
 1. Which workflows have a dedicated, opinionated `sf data360 ...` command?
 2. Which Data 360 HTTP operations can an advanced user call through the raw request escape hatch?
 
-Status snapshot: **2026-07-29 PDT**.
+Status snapshot: **2026-08-01 PDT**.
 
 ## Current result
 
 - The oclif manifest contains **135 dedicated commands**. All 135 have unit metadata, mock integration coverage, schemas, messages, and generated help.
-- **102 of 135** commands have successful, scrubbed, command-specific live-org evidence. An empty live column in [`VERIFICATION.md`](../VERIFICATION.md) means that no qualifying successful public fixture exists for that exact command; it does not prove the command was never attempted.
+- **104 of 135** commands have successful, scrubbed, command-specific live-org evidence. An empty live column in [`VERIFICATION.md`](../VERIFICATION.md) means that no qualifying successful public fixture exists for that exact command; it does not prove the command was never attempted.
 - A point-in-time manual review of the official Data 360 Connect REST API v67 OpenAPI document observed **approximately 201 operations**. The source artifact is not redistributed or pinned in this repository, so that number is context—not a repository-enforced release metric. An API-operation count is not a target command count: one CLI command can make several requests, and several lifecycle commands can correspond to one templated API path.
 - `sf data360 api request` is the raw Core/Connect escape hatch, and `--direct` targets an authorized tenant-plane path. It extends reach while a dedicated wrapper is absent; it does **not** provide the wrapper's typed flags, schema, confirmation policy, pagination, retry/job semantics, or live-verification claim.
 
@@ -40,10 +40,10 @@ Counts below come from the generated oclif manifest. “Mock-verified” means r
 | P5 outcome families                                  |                 46 | Identity resolution, calculated insights, segments, activations and targets, search indexes, data graphs, and profiles. The two P5 query builders are counted in the first row. Query, calculated-insight run, and data-graph refresh now have live evidence; publication and several prerequisite-heavy journeys remain partial. |
 | Retriever and Document AI reads                      |                  4 | Retriever list/get/configuration list and `docai describe` have successful live fixtures.                                                                                                                                                                                                                                         |
 | P6 collection reads                                  |                  4 | Document AI configuration, semantic-model, Data Action, and Data Action target list commands have dedicated live fixtures. Empty collections validate only their list envelopes.                                                                                                                                                  |
-| Data Kit                                             |                 10 | Official v67 contracts and synthetic fixtures cover list, available components, manifest, create, update, delete, deploy, undeploy, component dependencies, and component status. Eight commands are live-verified; two remain org- or platform-blocked.                                                                          |
-| **Total**                                            |            **135** | **135 unit/mock; 102 successful command-specific live fixtures.**                                                                                                                                                                                                                                                                 |
+| Data Kit                                             |                 10 | Official v67 contracts, synthetic fixtures, and successful scrubbed live evidence cover list, available components, manifest, create, update, delete, deploy, undeploy, component dependencies, and component status.                                                                                                             |
+| **Total**                                            |            **135** | **135 unit/mock; 104 successful command-specific live fixtures.**                                                                                                                                                                                                                                                                 |
 
-The remaining 33 undated commands broadly fall into three review dispositions:
+The remaining 31 undated commands broadly fall into three review dispositions:
 
 | Disposition                         | Why no successful public fixture exists                                                                                                                        |
 | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -66,13 +66,13 @@ The dedicated Data Kit family follows the v67 specification rather than the olde
 
 The specification defines neither a get-single Data Kit operation nor a deployment-job status resource. Deploy/undeploy can return a job ID, but continuation is through component status, not an invented job command.
 
-`data-kit list`, `data-kit available`, `data-kit component status`, `data-kit manifest`, `data-kit create`, `data-kit update`, `data-kit delete`, and `data-kit undeploy` have successful scrubbed live fixtures (latest evidence 2026-07-29). Create, update, and delete used an exact-name disposable kit and verified absence after cleanup. Deploy was rejected because a local kit cannot be deployed in the same org, and component dependencies reached a platform error. Those two commands remain undated.
+All ten Data Kit commands have successful scrubbed live fixtures (latest evidence 2026-08-01). Create, update, and delete used an exact-name disposable local kit and verified absence after cleanup. Dependency and status reads used components from deployed external kits. Deploy submitted an official component-specific DLO configuration to an eligible external kit, reached `ACTIVE`, and was undeployed with verified absence after asynchronous cleanup.
 
 ## Live evidence snapshot
 
 | Evidence               | Result                                                                                                                                                         | What it proves                                                                                                                                                                                                                                                              |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Verification matrix    | 102 of 135 commands have successful command-specific live fixtures                                                                                             | Those exact command/response paths ran successfully on an authorized Data 360 org on the recorded date. It does not promote related commands automatically.                                                                                                                 |
+| Verification matrix    | 104 of 135 commands have successful command-specific live fixtures                                                                                             | Those exact command/response paths ran successfully on an authorized Data 360 org on the recorded date. It does not promote related commands automatically.                                                                                                                 |
 | Disposable P4 scenario | 33 passed; 4 intentionally safety-blocked; 0 billable                                                                                                          | The tested foundation reads and disposable DLO/DMO/mapping/relationship lifecycle worked, including mapping update/delete. Safety blocks were expected policy outcomes, not failed API calls.                                                                               |
 | P4 cleanup             | 4 of 4 registered cleanup actions passed                                                                                                                       | Scenario-owned relationship, DMO, DLO, and mapping resources were removed. Retained shared ingestion assets were explicitly outside scenario ownership.                                                                                                                     |
 | Data-stream mutation   | No qualifying successful public fixture is recorded                                                                                                            | Data-stream mutations remain without live-success dates. Detailed attempts and environment evidence are intentionally not published.                                                                                                                                        |
@@ -81,7 +81,7 @@ The specification defines neither a get-single Data Kit operation nor a deployme
 | P6 verified reads      | Semantic-model, Data Action/target, and Document AI collection reads have command-level evidence                                                               | Empty lists validate only their collection envelopes, not detail or mutation shapes.                                                                                                                                                                                        |
 | Disposable P5 scenario | 27 passed; 20 intentionally or prerequisite-blocked; 3 bounded failures; 3 of 4 billable families succeeded                                                    | Query, calculated-insight run, and data-graph refresh succeeded. Segment publication was accepted but exceeded the five-minute wait; search-index config returned not found; one insight read hit an eventual-consistency race. All four registered resources were removed. |
 | Reviewed mutations     | Data-space update/member set; Data Kit create/update/delete; calculated-insight, segment, search-index, and data-graph lifecycle operations have live evidence | These exact metadata operations succeeded with preflight ownership checks and cleanup. Calculated-insight run and data-graph refresh also have command-specific live evidence; segment publication and data-graph record reads remain undated.                              |
-| Data Kit               | Eight commands have successful scrubbed live fixtures (latest evidence 2026-07-29)                                                                             | List, available-component, component-status, manifest, create, update, delete, and undeploy are live-verified. Deploy and dependencies remain undated.                                                                                                                      |
+| Data Kit               | All ten commands have successful scrubbed live fixtures (latest evidence 2026-08-01)                                                                           | List, available-component, dependencies, component-status, manifest, create, update, delete, deploy, and undeploy are live-verified.                                                                                                                                        |
 
 Additional command-specific successes are reflected only in the generated verification matrix. Public documentation intentionally omits raw rows, resource identifiers, failure logs, local journals, and environment-specific details.
 
@@ -113,7 +113,7 @@ The public verification ledger keeps mock and exact command-level live evidence 
 
 - smart mapping has the strongest disposable end-to-end P4 evidence;
 - CRM-to-activation, external-data-to-activation, transforms, identity resolution, profile reads, ad-hoc query, monitoring, and cost controls are partial at the full-journey evidence bar;
-- Eight Data Kit commands are live-verified, but deploy remains contract/mock-only because the reviewed org had no eligible owned promotion target; and
+- all ten Data Kit commands are live-verified, including disposable deployment and cleanup; and
 - ML, lineage, and consent remain explicit gaps or org/platform-gated work.
 
 ## Source and freshness policy
@@ -131,6 +131,8 @@ API contracts in this release were reconciled against primary sources:
 - [Salesforce CLI message-writing guidelines](https://developer.salesforce.com/docs/platform/salesforce-cli-plugin/guide/messages-writing-guidelines.html)
 - [Salesforce CLI plugin testing guidance](https://developer.salesforce.com/docs/platform/salesforce-cli-plugin/guide/test-plugin.html)
 - [Current Salesforce CLI plugin template](https://github.com/salesforcecli/plugin-template-sf)
+
+The current command inventory has no dedicated `code-extension` family. Salesforce documents Data Custom Code as a Data Kit deployment component, so it can be submitted through `data-kit deploy` with an official component-specific `config`; that component type has not been separately live-verified by this release.
 
 ## Release interpretation
 

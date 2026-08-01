@@ -225,7 +225,7 @@
     "command": "data360 data-kit component dependencies",
     "unit": true,
     "mock": true,
-    "live": null
+    "live": "2026-08-01"
   },
   {
     "command": "data360 data-kit component status",
@@ -249,7 +249,7 @@
     "command": "data360 data-kit deploy",
     "unit": true,
     "mock": true,
-    "live": null
+    "live": "2026-08-01"
   },
   {
     "command": "data360 data-kit list",

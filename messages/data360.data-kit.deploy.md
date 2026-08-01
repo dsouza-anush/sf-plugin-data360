@@ -28,3 +28,11 @@ Data space to which the selected components are deployed.
 # runtime.continuation
 
 Continue with: sf data360 data-kit component status --name "%s" --component <component-name> --target-org "%s"
+
+# error.D360_INVALID_DEFINITION
+
+Invalid data-kit deployment definition: %s.
+
+# error.D360_INVALID_DEFINITION.actions
+
+Use the component-specific `config` documented at https://developer.salesforce.com/docs/data/connectapi/guide/deploy-data-kit-payloads.html.

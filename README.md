@@ -20,7 +20,7 @@ $ sf data360 ingest bulk --source-name connector --object-name runner_profiles -
 $ sf data360 segment publish --name HighValueRunners --target-org my-org
 ```
 
-The plugin provides 135 `sf data360` commands with the same org auth, `--json` envelope, help system, and exit-code conventions as the rest of `sf`, plus an interactive SQL REPL. All 135 commands have unit and mocked HTTP coverage; 102 also have successful, scrubbed, command-specific live-org evidence. A missing live date can indicate an org prerequisite, a platform limitation, or an intentionally unrun billable or destructive fixture. [VERIFICATION.md](VERIFICATION.md) is the exact evidence ledger, and [docs/API_COVERAGE.md](docs/API_COVERAGE.md) explains the gaps.
+The plugin provides 135 `sf data360` commands with the same org auth, `--json` envelope, help system, and exit-code conventions as the rest of `sf`, plus an interactive SQL REPL. All 135 commands have unit and mocked HTTP coverage; 104 also have successful, scrubbed, command-specific live-org evidence. A missing live date can indicate an org prerequisite, a platform limitation, or an intentionally unrun billable or destructive fixture. [VERIFICATION.md](VERIFICATION.md) is the exact evidence ledger, and [docs/API_COVERAGE.md](docs/API_COVERAGE.md) explains the gaps.
 
 ## What you can do
 

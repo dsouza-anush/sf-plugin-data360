@@ -118,6 +118,21 @@ describe('verified-contract P6 live scenario', () => {
         'retriever-list': { classification: { status: 'timed-out' } },
       })
     ).to.include('did not produce verified evidence');
+    const dataKitManifest = plan.find(({ id }) => id === 'data-kit-manifest')!;
+    expect(
+      scenario.p6DependencyBlocker(dataKitManifest, {
+        'data-kit-list': {
+          result: { items: [{ developerName: 'ExternalKit', dataKitSource: 'EXTERNAL', dataKitType: 'FILEBASED' }] },
+        },
+      })
+    ).to.include('no local or sandbox kit');
+    expect(
+      scenario.argsForP6Step(dataKitManifest, {
+        'data-kit-list': {
+          result: { items: [{ developerName: 'SandboxKit', dataKitSource: 'LOCAL', dataKitType: 'SANDBOX' }] },
+        },
+      })
+    ).to.deep.equal(['data360', 'data-kit', 'manifest', '--name', 'SandboxKit']);
     expect(
       scenario.argsForP6Step(retrieverGet, {
         'retriever-list': { result: { items: [{ name: 'ExampleRetriever' }] } },
@@ -150,6 +165,54 @@ describe('verified-contract P6 live scenario', () => {
       'DataLakeObject',
       '--data-kit',
       'SandboxKit',
+    ]);
+    const deployedKitEvidence = {
+      'data-kit-list': {
+        result: {
+          items: [
+            {
+              developerName: 'StreamKit',
+              components: [{ developerName: 'StreamBundle', componentType: 'DataStreamBundle' }],
+            },
+            {
+              developerName: 'TransformKit',
+              components: [{ developerName: 'DailyTransform', componentType: 'DataTransform' }],
+            },
+          ],
+        },
+      },
+    };
+    expect(
+      scenario.argsForP6Step(
+        plan.find(({ id }) => id === 'data-kit-component-dependencies')!,
+        deployedKitEvidence
+      )
+    ).to.deep.equal([
+      'data360',
+      'data-kit',
+      'component',
+      'dependencies',
+      '--name',
+      'TransformKit',
+      '--component',
+      'DailyTransform',
+      '--component-type',
+      'DataTransform',
+    ]);
+    expect(
+      scenario.argsForP6Step(
+        plan.find(({ id }) => id === 'data-kit-component-status')!,
+        deployedKitEvidence
+      )
+    ).to.deep.equal([
+      'data360',
+      'data-kit',
+      'component',
+      'status',
+      '--name',
+      'TransformKit',
+      '--component',
+      'DailyTransform',
     ]);
 
     const orchestrator = (await import(

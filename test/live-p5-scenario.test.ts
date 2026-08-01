@@ -472,7 +472,19 @@ describe('disposable Query/P5 live scenario', () => {
       update: {
         components: [{ type: 'DataLakeObject', info: { name: 'OwnedSource__dll', label: 'Owned Source' } }],
       },
-      deploy: { components: [{ type: 'DataLakeObject', name: 'OwnedSource__dll' }] },
+      deploy: {
+        components: [
+          {
+            type: 'DataLakeObject',
+            config: {
+              dataSourceObjectDevName: 'OwnedSource',
+              apiName: 'OwnedSource',
+              label: 'Owned Source',
+              dataSpaceName: 'default',
+            },
+          },
+        ],
+      },
       undeploy: { components: [{ type: 'DataLakeObject', name: 'OwnedSource__dll' }] },
     });
     expect(

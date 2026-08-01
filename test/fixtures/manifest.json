@@ -1350,7 +1350,14 @@
     "method": "POST",
     "path": "/services/data/v67.0/ssot/data-kits/:name",
     "status": 200,
-    "file": "data-kit/deploy.json"
+    "file": "data-kit/deploy.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-kit deploy",
+        "recordedAt": "2026-08-01",
+        "file": "live/data-kit-deploy.json"
+      }
+    ]
   },
   {
     "method": "POST",
@@ -1362,7 +1369,14 @@
     "method": "GET",
     "path": "/services/data/v67.0/ssot/data-kits/:name/components/:component/dependencies",
     "status": 200,
-    "file": "data-kit/dependencies.json"
+    "file": "data-kit/dependencies.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-kit component dependencies",
+        "recordedAt": "2026-08-01",
+        "file": "live/data-kit-component-dependencies.json"
+      }
+    ]
   },
   {
     "method": "GET",

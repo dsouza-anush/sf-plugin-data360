@@ -1,0 +1,18 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-08-01",
+    "command": "data360 data-kit deploy",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "jobId": "LIVE_ID_95f6e6941d5c"
+    },
+    "jobId": "LIVE_ID_95f6e6941d5c"
+  },
+  "warnings": [
+    "This command is currently in beta. Any aspect of this command can change without advanced notice. Don't use beta commands in your scripts."
+  ]
+}

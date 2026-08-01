@@ -45,11 +45,11 @@ An empty live column blocks GA verification of that command, but does not block 
 | `sf data360 data-graph query`                |    ✓ |        ✓ |               |
 | `sf data360 data-graph refresh`              |    ✓ |        ✓ | ✓ 2026-07-29  |
 | `sf data360 data-kit available`              |    ✓ |        ✓ | ✓ 2026-07-29  |
-| `sf data360 data-kit component dependencies` |    ✓ |        ✓ |               |
+| `sf data360 data-kit component dependencies` |    ✓ |        ✓ | ✓ 2026-08-01  |
 | `sf data360 data-kit component status`       |    ✓ |        ✓ | ✓ 2026-07-29  |
 | `sf data360 data-kit create`                 |    ✓ |        ✓ | ✓ 2026-07-29  |
 | `sf data360 data-kit delete`                 |    ✓ |        ✓ | ✓ 2026-07-29  |
-| `sf data360 data-kit deploy`                 |    ✓ |        ✓ |               |
+| `sf data360 data-kit deploy`                 |    ✓ |        ✓ | ✓ 2026-08-01  |
 | `sf data360 data-kit list`                   |    ✓ |        ✓ | ✓ 2026-07-29  |
 | `sf data360 data-kit manifest`               |    ✓ |        ✓ | ✓ 2026-07-29  |
 | `sf data360 data-kit undeploy`               |    ✓ |        ✓ | ✓ 2026-07-26  |
