@@ -30,6 +30,9 @@
 - Add live-verified list commands for Document AI configurations, semantic models, Data Actions, and Data Action targets; keep empty-collection detail and mutation shapes unwrapped.
 - Make contributor Git-hook setup explicit instead of publishing a `prepare` lifecycle, keeping non-interactive npm 11 and Salesforce CLI installs side-effect-free.
 - Add a single `release:check` candidate gate and verify Salesforce-style action-first flexible-taxonomy help alongside canonical command IDs.
+- Add Data 360 branding, a public architecture guide, release badges, and a task-oriented documentation map modeled on established oclif repositories.
+- Add an npm OIDC trusted-publishing workflow with safe stable/prerelease dist-tags and an owner-facing GitHub/npm release checklist.
+- Pin `@oclif/core` to the Salesforce plugin-core version so clean frozen installs compile with one portable oclif type graph.
 
 ### Known limitations
 

@@ -6,6 +6,7 @@ import { isAbsolute, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const exactFiles = new Set([
+  'ARCHITECTURE.md',
   'CHANGELOG.md',
   'LICENSE',
   'NOTICE',
@@ -26,16 +27,19 @@ const exactFiles = new Set([
   'oclif.manifest.json',
   'package.json',
 ]);
-const allowedPrefixes = ['bin/', 'examples/', 'lib/', 'messages/', 'schemas/'];
+const allowedPrefixes = ['assets/', 'bin/', 'examples/', 'lib/', 'messages/', 'schemas/'];
 const forbiddenFiles = new Set(['.env.live.example', 'CONTRIBUTING.md', 'LIVE_TESTING.md', 'TESTING.md']);
 const forbiddenPrefixes = ['docs/evidence/', 'docs/internal/', 'internal/', 'references/', 'scripts/', 'src/', 'test/'];
 const requiredFiles = [
+  'ARCHITECTURE.md',
   'CHANGELOG.md',
   'LICENSE',
   'NOTICE',
   'README.md',
   'SECURITY.md',
   'VERIFICATION.md',
+  'assets/README.md',
+  'assets/data360-mark.svg',
   'bin/run.js',
   'command-snapshot.json',
   'docs/API_COVERAGE.md',

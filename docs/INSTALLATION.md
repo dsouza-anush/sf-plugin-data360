@@ -1,6 +1,6 @@
 # Install and verify the plugin
 
-`sf-plugin-data360` is currently a beta plugin. The npm owner and final published package name are still release decisions, so don't treat an npm install command as available until a release announcement names the package and version.
+`sf-plugin-data360` is currently a beta plugin. This repository uses that package name, but it has not been published to npm, so don't treat an npm install command as available until a release announcement names an exact version.
 
 The supported runtime is Node.js 22.19+ in the 22.x line or Node.js 24, plus a current Salesforce CLI. The installed package declares this engine range and the CI/package smoke uses it.
 
@@ -21,11 +21,11 @@ Run `sf plugins` to confirm that the linked plugin points to this checkout. Re-r
 
 ## Install a published release
 
-After the package owner publishes a release, use the exact package name and a pinned version from the release notes:
+After the package owner publishes a release, install the exact version from the release notes:
 
 ```shell
-sf plugins install <published-package-name>@<version>
-sf plugins inspect <published-package-name>
+sf plugins install sf-plugin-data360@0.1.0
+sf plugins inspect sf-plugin-data360
 sf data360 --help
 sf data360 doctor --target-org my-org
 ```
@@ -44,7 +44,7 @@ An enterprise can instead add the exact published package name to `unsignedPlugi
 
 ```shell
 sf plugins update
-sf plugins uninstall <published-package-name>
+sf plugins uninstall sf-plugin-data360
 sf plugins
 ```
 

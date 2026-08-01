@@ -14,6 +14,10 @@
     "oclif"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "author": "Anush D'Souza",
   "repository": {
     "type": "git",
@@ -45,6 +49,7 @@
     "sf-plugin-data360": "./bin/run.js"
   },
   "files": [
+    "/assets",
     "/bin",
     "/lib",
     "/messages",
@@ -62,6 +67,7 @@
     "/docs/REPL_CHECKLIST.md",
     "/docs/RELEASE.md",
     "/CHANGELOG.md",
+    "/ARCHITECTURE.md",
     "/SECURITY.md",
     "/VERIFICATION.md",
     "/NOTICE",
@@ -273,7 +279,7 @@
     "postpack": "sf-clean --ignore-signing-artifacts && node scripts/normalize-manifest.mjs"
   },
   "dependencies": {
-    "@oclif/core": "^4.13.0",
+    "@oclif/core": "4.13.0",
     "@oclif/multi-stage-output": "^0.8.44",
     "@salesforce/core": "^8.32.2",
     "@salesforce/kit": "^3.2.6",

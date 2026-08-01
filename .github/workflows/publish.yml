@@ -1,0 +1,68 @@
+name: publish
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: npm-publish-${{ github.event.release.tag_name }}
+  cancel-in-progress: false
+
+jobs:
+  npm:
+    name: npm trusted publish
+    runs-on: ubuntu-latest
+    environment: npm
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.release.tag_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org/
+      - name: Activate pinned Yarn
+        run: corepack enable && corepack prepare yarn@1.22.22 --activate
+      - name: Use an npm version that supports trusted publishing
+        run: npm install --global npm@^11.5.1
+      - run: yarn install --frozen-lockfile
+      - name: Verify release tag matches package version
+        id: release
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          node --input-type=module <<'NODE'
+          import { appendFileSync } from 'node:fs';
+          import manifest from './package.json' with { type: 'json' };
+          const expected = `v${manifest.version}`;
+          if (process.env.RELEASE_TAG !== expected) {
+            throw new Error(`Release tag ${process.env.RELEASE_TAG} does not match package version ${expected}.`);
+          }
+          const prerelease = manifest.version.match(/-([0-9A-Za-z-]+)/)?.[1];
+          appendFileSync(process.env.GITHUB_OUTPUT, `dist-tag=${prerelease ?? 'latest'}\n`);
+          NODE
+      - name: Install the pinned Salesforce CLI used by package smoke tests
+        run: npm install --global @salesforce/cli@2.144.6
+      - name: Run the complete release gate
+        run: yarn release:check
+      - name: Pack the reviewed artifact
+        run: |
+          yarn pack --filename sf-plugin-data360.tgz
+          node scripts/package-contents.mjs sf-plugin-data360.tgz
+          shasum -a 256 sf-plugin-data360.tgz | tee sf-plugin-data360.tgz.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sf-plugin-data360-${{ github.event.release.tag_name }}
+          path: |
+            sf-plugin-data360.tgz
+            sf-plugin-data360.tgz.sha256
+          if-no-files-found: error
+          retention-days: 30
+      - name: Publish the exact reviewed artifact
+        run: npm publish ./sf-plugin-data360.tgz --access public --tag "${{ steps.release.outputs.dist-tag }}"

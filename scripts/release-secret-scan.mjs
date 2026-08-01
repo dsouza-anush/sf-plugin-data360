@@ -215,6 +215,8 @@ export const findSensitiveValues = (contents) => {
     detector.pattern.lastIndex = 0;
     for (const match of contents.matchAll(detector.pattern)) {
       const candidate = detector.value ? detector.value(match) : match[0];
+      if (detector.label === 'credential-valued field' && /^id[_-]?token\s*:\s*write$/iu.test(match[0].trim()))
+        continue;
       if (isAllowedPlaceholder(detector.label, candidate)) continue;
       const line = lineAt(starts, match.index ?? 0);
       const key = `${detector.label}:${line}`;

@@ -134,6 +134,7 @@ describe('release secret scan', () => {
       '00D000000000001',
       '005000000000001',
       'client_secret=<client-secret>',
+      'id-token: write',
     ].join('\n');
 
     expect(findSensitiveValues(placeholders)).to.deep.equal([]);
