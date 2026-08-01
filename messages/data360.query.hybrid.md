@@ -15,7 +15,7 @@ live verification.
 - Search an index:
   <%= config.bin %> <%= command.id %> --target-org my-org --index Knowledge --text "weather damage" --top-k 5
 - Add a prefilter:
-  <%= config.bin %> <%= command.id %> --target-org my-org --index Knowledge --text "weather damage" --filter "Type='Home'" --json
+  <%= config.bin %> <%= command.id %> --target-org my-org --index Knowledge --text "weather damage" --filter "Type='Home'" --no-prompt --json
 
 # flags.index.summary
 

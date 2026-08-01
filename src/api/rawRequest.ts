@@ -133,7 +133,8 @@ export const resolveRawPath = (apiVersion: string, endpoint: string): string => 
   let decoded = path;
   try {
     for (let index = 0; index < 10; index += 1) {
-      const next = decodeURIComponent(decoded);
+      const encoded = index === 0 ? decoded : decoded.replace(/%(?![a-f\d]{2})/giu, '%25');
+      const next = decodeURIComponent(encoded);
       if (next === decoded) break;
       decoded = next;
     }

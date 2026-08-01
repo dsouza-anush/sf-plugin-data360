@@ -34,6 +34,8 @@
 - Add an npm OIDC trusted-publishing workflow with safe stable/prerelease dist-tags and an owner-facing GitHub/npm release checklist.
 - Pin `@oclif/core` to the Salesforce plugin-core version so clean frozen installs compile with one portable oclif type graph.
 - Keep the packaged oclif dependency lock synchronized with Yarn after every package lifecycle.
+- Keep noninteractive Query SQL examples and subprocess verification explicit about billable-operation confirmation.
+- Preserve encoded opaque query IDs containing literal percent signs while retaining multi-layer traversal rejection.
 
 ### Known limitations
 

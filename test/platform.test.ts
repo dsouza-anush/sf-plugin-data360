@@ -197,6 +197,10 @@ describe('P1 platform commands', () => {
     expect(() => resolveRawPath('67.0', 'segments/../metadata')).to.throw('traversal');
     expect(() => resolveRawPath('67.0', 'segments/%2e%2e/metadata')).to.throw('traversal');
     expect(() => resolveRawPath('67.0', 'segments/%2E%2e%2fmetadata')).to.throw('traversal');
+    expect(resolveRawPath('67.0', 'query-sql/opaque%2Fid%25value')).to.equal(
+      '/services/data/v67.0/ssot/query-sql/opaque%2Fid%25value'
+    );
+    expect(() => resolveRawPath('67.0', 'segments/%252e%252e/%25literal')).to.throw('traversal');
     expect(() => resolveRawPath('67.0', String.raw`segments\..\metadata`)).to.throw('traversal');
     expect(() => parseHeaders(['Authorization: stolen'])).to.throw('cannot be overridden');
     expect(() => parseHeaders(['Host: evil.example'])).to.throw('cannot be overridden');

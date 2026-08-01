@@ -9,7 +9,7 @@
       "tags": ["query", "J1", "U5"],
       "commands": [
         {
-          "argv": ["data360", "query", "--query", "SELECT 1", "--json"],
+          "argv": ["data360", "query", "--query", "SELECT 1", "--no-prompt", "--json"],
           "expect": {
             "exitCode": 0,
             "jsonPath": {
@@ -27,7 +27,7 @@
       "tags": ["query", "U3"],
       "commands": [
         {
-          "argv": ["data360", "query", "--file", "testbed/fixtures/query.sql", "--json"],
+          "argv": ["data360", "query", "--file", "testbed/fixtures/query.sql", "--no-prompt", "--json"],
           "expect": { "exitCode": 0, "jsonPath": { "$.result.done": { "equals": true } } }
         }
       ]
@@ -38,7 +38,7 @@
       "tags": ["query", "J3", "J4"],
       "commands": [
         {
-          "argv": ["data360", "query", "--query", "SELECT 1 /* testbed:running */", "--async"],
+          "argv": ["data360", "query", "--query", "SELECT 1 /* testbed:running */", "--async", "--no-prompt"],
           "expect": { "exitCode": 0, "stderrIncludes": ["query resume"] }
         },
         {
@@ -92,7 +92,7 @@
       "tags": ["query", "U10"],
       "commands": [
         {
-          "argv": ["data360", "query", "--query", "SELEKT invalid FROM", "--json"],
+          "argv": ["data360", "query", "--query", "SELEKT invalid FROM", "--no-prompt", "--json"],
           "expect": {
             "exitCode": 1,
             "jsonPath": { "$.name": { "equals": "D360_QUERY_SYNTAX" } },

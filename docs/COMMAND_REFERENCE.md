@@ -3333,7 +3333,7 @@ live verification.
 - Add a prefilter:
 
   ```shell
-  sf data360 query hybrid --target-org my-org --index Knowledge --text "weather damage" --filter "Type='Home'" --json
+  sf data360 query hybrid --target-org my-org --index Knowledge --text "weather damage" --filter "Type='Home'" --no-prompt --json
   ```
 
 ## `sf data360 query results`

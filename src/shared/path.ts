@@ -14,7 +14,11 @@ const assertSafeEndpoint = (endpoint: string, rootKind: ApiRoot): void => {
     if (!candidate.includes('%')) return;
     let decoded: string;
     try {
-      decoded = decodeURIComponent(candidate);
+      // After the first valid decode, `%` can be literal opaque-ID data that
+      // originated as `%25`. Escape only malformed percent markers on later
+      // layers so other valid escapes are still decoded and checked.
+      const encoded = depth === 0 ? candidate : candidate.replace(/%(?![a-f\d]{2})/giu, '%25');
+      decoded = decodeURIComponent(encoded);
     } catch {
       throw new Error(runtimeMessages.getMessage('error.RUNTIME_1.1', [String(rootKind), String(endpoint)]));
     }

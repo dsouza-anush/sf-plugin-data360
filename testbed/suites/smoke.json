@@ -49,7 +49,7 @@
       "tags": ["query", "J1"],
       "commands": [
         {
-          "argv": ["data360", "query", "-q", "SELECT 1", "--json"],
+          "argv": ["data360", "query", "-q", "SELECT 1", "--no-prompt", "--json"],
           "expect": {
             "exitCode": 0,
             "jsonPath": { "$.result.done": { "equals": true }, "$.result.queryId": { "exists": true } }
@@ -63,7 +63,7 @@
       "tags": ["J3", "J4"],
       "commands": [
         {
-          "argv": ["data360", "query", "-q", "SELECT 1 /* testbed:running */", "--async"],
+          "argv": ["data360", "query", "-q", "SELECT 1 /* testbed:running */", "--async", "--no-prompt"],
           "expect": { "exitCode": 0, "stderrIncludes": ["query resume"] }
         },
         {
@@ -78,7 +78,7 @@
       "tags": ["U9", "U10"],
       "commands": [
         {
-          "argv": ["data360", "query", "-q", "SELEKT broken FROM", "--json"],
+          "argv": ["data360", "query", "-q", "SELEKT broken FROM", "--no-prompt", "--json"],
           "expect": { "exitCode": 1, "jsonPath": { "$.name": { "matches": "D360_QUERY_SYNTAX|QUERY" } } }
         }
       ]

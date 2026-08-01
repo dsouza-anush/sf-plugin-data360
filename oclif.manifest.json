@@ -9208,7 +9208,7 @@
       "enableJsonFlag": true,
       "examples": [
         "Search an index:\n<%= config.bin %> <%= command.id %> --target-org my-org --index Knowledge --text \"weather damage\" --top-k 5",
-        "Add a prefilter:\n<%= config.bin %> <%= command.id %> --target-org my-org --index Knowledge --text \"weather damage\" --filter \"Type='Home'\" --json"
+        "Add a prefilter:\n<%= config.bin %> <%= command.id %> --target-org my-org --index Knowledge --text \"weather damage\" --filter \"Type='Home'\" --no-prompt --json"
       ],
       "flags": {
         "api-version": {
