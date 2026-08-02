@@ -17,6 +17,18 @@ sf data360 --help
 sf data360 doctor --target-org my-org
 ```
 
+The package declares Salesforce's official `@salesforce/plugin-data-code-extension` as a child plugin. Verify both
+namespaces after installation:
+
+```shell
+sf data360 --help
+sf data-code-extension --help
+```
+
+The child commands use Salesforce's documented namespace and update with this package's pinned dependency. See
+[Data 360 Code Extensions](CODE_EXTENSIONS.md) before installing the additional Python SDK or running Docker-backed
+workflows.
+
 Run `sf plugins` to confirm that the linked plugin points to this checkout. Re-run `yarn build` after changing source or message files.
 
 ## Install a published release

@@ -17,7 +17,12 @@ type SchemaValidator = ((value: unknown) => boolean) & { errors?: unknown };
 const Ajv2020 = require('ajv/dist/2020.js').default as new (options: object) => {
   compile: (schema: object) => SchemaValidator;
 };
-const packageJson = require('../package.json') as { files: string[]; scripts: Record<string, string> };
+const packageJson = require('../package.json') as {
+  dependencies: Record<string, string>;
+  files: string[];
+  oclif: { plugins?: string[] };
+  scripts: Record<string, string>;
+};
 const commands = [
   'data360.query',
   'data360.query.resume',
@@ -173,6 +178,13 @@ describe('P1 contracts', () => {
     await access(resolve(root, 'scripts', 'normalize-manifest.mjs'));
     await access(resolve(root, 'scripts', 'check-manifest.mjs'));
     expect(packageJson.scripts['manifest:generate']).to.include('oclif manifest');
+  });
+
+  it('loads the official Code Extension plugin as a pinned child dependency', async () => {
+    expect(packageJson.dependencies['@salesforce/plugin-data-code-extension']).to.equal('1.3.2');
+    expect(packageJson.oclif.plugins).to.include('@salesforce/plugin-data-code-extension');
+    expect(packageJson.files).to.include('/docs/CODE_EXTENSIONS.md');
+    await access(resolve(root, 'docs', 'CODE_EXTENSIONS.md'));
   });
 
   it('wires the seven release-verification tiers into scripts and non-live CI', async () => {

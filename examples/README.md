@@ -88,6 +88,19 @@ sf data360 data-kit undeploy \
 
 Deploy and undeploy use `asyncMode=true` internally. A local kit cannot be deployed back into the same org; use an eligible promotion target and follow up with `sf data360 data-kit component status`. The v67 API exposes per-component deployment status rather than a deployment-job status endpoint.
 
+## Code Extensions
+
+The packaged Salesforce child plugin scaffolds complete examples rather than this repository maintaining a second copy:
+
+```shell
+sf data-code-extension script init --package-dir ./my-script
+sf data-code-extension function init --package-dir ./my-function
+```
+
+Each generated project includes `payload/entrypoint.py`, `payload/config.json`, requirements files, and examples for its
+execution model. Continue with [Data 360 Code Extensions](../docs/CODE_EXTENSIONS.md) for all ten commands and the
+sandbox-to-DevOps-data-kit workflow.
+
 ## Commands without a curated payload file
 
 Generic filenames such as `activation.json` in command help describe the required file role; they don't imply that an unrelated example is compatible. For these families, start with the exact command entry in the [generated reference](../docs/COMMAND_REFERENCE.md) and validate the request against the [Data 360 Connect REST API specification](https://developer.salesforce.com/docs/data/connectapi/references/spec). Do not infer a mutation body from a response fixture or an example for another family.

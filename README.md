@@ -27,6 +27,7 @@ The plugin provides 135 `sf data360` commands with the same org auth, `--json` e
 - Query Data 360 with SQL, vector, and hybrid search, including asynchronous jobs and a terminal REPL.
 - Stream or bulk ingest data and manage connections, streams, lake objects, model objects, mappings, and transforms.
 - Operate identity resolution, calculated insights, segments, activations, data graphs, search indexes, profiles, and data kits.
+- Develop, scan, run, package, and deploy Python Code Extensions through Salesforce's official child CLI plugin.
 - Script safely with JSON schemas, stable error codes, explicit confirmation boundaries, and deterministic command documentation.
 
 ## Requirements
@@ -59,6 +60,10 @@ After the first npm release, the conventional install will be:
 ```bash
 sf plugins install sf-plugin-data360@0.1.0
 ```
+
+That single installation also exposes Salesforce's maintained `sf data-code-extension` command family. Code Extension
+development has additional Python, Java, Docker, feature, and permission requirements; see
+[Data 360 Code Extensions](docs/CODE_EXTENSIONS.md).
 
 Until that version exists on npm, use the source path above. See [docs/INSTALLATION.md](docs/INSTALLATION.md) for trust prompts, pinned CI installs, updates, and uninstall instructions.
 
@@ -96,7 +101,8 @@ Every command, flag, and example is generated into [docs/COMMAND_REFERENCE.md](d
 | Outcomes          | `identity-resolution`, `calculated-insight`, `segment`, `activation`, `activation-target`    | Run rulesets, publish segments, manage activations and their result data                                     |
 | Graphs & profiles | `data-graph`, `profile`, `search-index`                                                      | Refresh and query data graphs, read unified profiles, manage search indexes                                  |
 | AI & agents       | `retriever`, `docai`, `semantic model`, `data-action`, `data-action-target`                  | Read retrievers, Document AI configs, semantic models, and data actions                                      |
-| Data Kit          | `data-kit`                                                                                   | List, inspect, create, update, delete, deploy, and undeploy data kits; eight commands are live-verified      |
+| Data Kit          | `data-kit`                                                                                   | List, inspect, create, update, delete, deploy, and undeploy data kits; all ten commands are live-verified    |
+| Code Extension    | `data-code-extension`                                                                        | Official Salesforce child plugin for Python script and chunking-function development and sandbox deployment  |
 | Utilities         | `doctor`, `open`, `token`, `api`, `metadata`, `setup`                                        | Diagnostics, open the org UI, token display, raw API escape hatch, org prerequisites                         |
 
 `sf data360 api request` sends raw authenticated requests to Connect or Direct API paths the dedicated commands don't wrap yet. It emits raw response bytes and is the one command that intentionally has no `--json` envelope.
@@ -153,6 +159,7 @@ Example payloads for queries, ingestion, and data kits are under [examples/](exa
 | ------------------------------------ | ------------------------------------------------------------------------------------------- |
 | Install and run a safe first command | [Getting started](docs/GETTING_STARTED.md)                                                  |
 | Find a command or flag               | [Complete command reference](docs/COMMAND_REFERENCE.md)                                     |
+| Develop Python Code Extensions       | [Code Extension guide](docs/CODE_EXTENSIONS.md)                                             |
 | Configure Direct API OAuth           | [External Client App setup](docs/EXTERNAL_CLIENT_APP.md)                                    |
 | Understand API and live-org coverage | [API coverage](docs/API_COVERAGE.md) and [verification ledger](VERIFICATION.md)             |
 | Build or contribute                  | [Architecture](ARCHITECTURE.md), [contributing](CONTRIBUTING.md), and [testing](TESTING.md) |
@@ -168,6 +175,10 @@ Use [GitHub Issues](https://github.com/dsouza-anush/sf-plugin-data360/issues) fo
 ## Acknowledgements
 
 Selected algorithms and UX ideas — pagination dialects, metadata-ordered result columns, name-resolution suggestions — were adapted from the MIT-licensed [Jaganpro/sf-cli-plugin-data360](https://github.com/Jaganpro/sf-cli-plugin-data360). If you're migrating from that plugin: `query async-create` → `query --async`, `query async-status` → `query resume`, `query async-rows` → `query results`.
+
+Code Extension commands are supplied by Salesforce's Apache-2.0-licensed
+[`@salesforce/plugin-data-code-extension`](https://github.com/salesforcecli/plugin-data-code-extension), loaded as a
+separately maintained child CLI plugin.
 
 ## License
 

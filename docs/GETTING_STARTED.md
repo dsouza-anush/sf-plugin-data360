@@ -119,18 +119,19 @@ Use an explicit query ID in shared runners or whenever more than one job can be 
 
 ## Choose the right command family
 
-| Goal                                   | Start with                                                                      | Notes                                                                 |
-| -------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| Validate an environment                | `sf data360 doctor`                                                             | Holistic checks include both core-org and Direct API access.          |
-| Discover objects and fields            | `sf data360 metadata list`                                                      | Read-only; use metadata results to avoid guessing API names.          |
-| Run SQL or use the REPL                | `sf data360 query`                                                              | Omit query input in an interactive terminal to enter the REPL.        |
-| Stream or bulk ingest records          | `sf data360 ingest validate`                                                    | Validate input first; ingestion consumes Data 360 credits.            |
-| Build the data foundation              | `connection`, `data-stream`, `dlo`, `dmo`, `mapping`, `transform`, `data-space` | List and inspect shared resources before creating or changing them.   |
-| Build customer outcomes                | `identity-resolution`, `calculated-insight`, `segment`, `activation`            | Many mutations are only partially live-verified; check the ledger.    |
-| Work with search and graphs            | `search-index`, `data-graph`, `retriever`                                       | Vector and hybrid query builders remain live-dialect-gated.           |
-| Inspect selected AI-adjacent resources | `docai`, `semantic model`, `data-action`                                        | The dedicated surface is primarily live-verified reads.               |
-| Package Data 360 metadata              | `data-kit`                                                                      | All ten commands are live-verified.                                   |
-| Reach an unwrapped endpoint            | `sf data360 api request`                                                        | Raw transport has fewer workflow safeguards than a dedicated command. |
+| Goal                                   | Start with                                                                      | Notes                                                                    |
+| -------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Validate an environment                | `sf data360 doctor`                                                             | Holistic checks include both core-org and Direct API access.             |
+| Discover objects and fields            | `sf data360 metadata list`                                                      | Read-only; use metadata results to avoid guessing API names.             |
+| Run SQL or use the REPL                | `sf data360 query`                                                              | Omit query input in an interactive terminal to enter the REPL.           |
+| Stream or bulk ingest records          | `sf data360 ingest validate`                                                    | Validate input first; ingestion consumes Data 360 credits.               |
+| Build the data foundation              | `connection`, `data-stream`, `dlo`, `dmo`, `mapping`, `transform`, `data-space` | List and inspect shared resources before creating or changing them.      |
+| Build customer outcomes                | `identity-resolution`, `calculated-insight`, `segment`, `activation`            | Many mutations are only partially live-verified; check the ledger.       |
+| Work with search and graphs            | `search-index`, `data-graph`, `retriever`                                       | Vector and hybrid query builders remain live-dialect-gated.              |
+| Inspect selected AI-adjacent resources | `docai`, `semantic model`, `data-action`                                        | The dedicated surface is primarily live-verified reads.                  |
+| Package Data 360 metadata              | `data-kit`                                                                      | All ten commands are live-verified.                                      |
+| Develop Python Code Extensions         | `data-code-extension`                                                           | Official Salesforce child plugin; sandbox and local prerequisites apply. |
+| Reach an unwrapped endpoint            | `sf data360 api request`                                                        | Raw transport has fewer workflow safeguards than a dedicated command.    |
 
 Run `sf <command> --help` for the installed version, for example:
 
@@ -176,6 +177,7 @@ sf config set data360-data-space=default
 ## Continue the review
 
 - [Install and verify the plugin](INSTALLATION.md)
+- [Develop and deploy Code Extensions](CODE_EXTENSIONS.md)
 - [Configure Direct API authentication](EXTERNAL_CLIENT_APP.md)
 - [Generated command reference](COMMAND_REFERENCE.md)
 - [API and workflow coverage](API_COVERAGE.md)

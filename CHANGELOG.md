@@ -40,6 +40,11 @@
 - Move GitHub workflows to the current Node 24-based official action majors.
 - Document the one-time npm prerelease bootstrap required before OIDC trusted publishing can be configured.
 - Await streamed query-output file closure before atomic rename or failure cleanup.
+- Load Salesforce's official `@salesforce/plugin-data-code-extension` 1.3.2 as a pinned child plugin, expose all ten
+  canonical `sf data-code-extension` commands from the same installation, and add prerequisite and workflow documentation.
+- Verify disposable Code Extension init, scan, run, zip, and enabled-org deployment workflows for scripts and functions;
+  document the upstream Python SDK REST-version compatibility boundary.
+- Send the required empty JSON body when starting a Data 360 transform, with command and HTTP regression coverage.
 
 ### Known limitations
 
