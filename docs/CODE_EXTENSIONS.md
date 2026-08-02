@@ -121,9 +121,18 @@ commands. The integration was additionally exercised on macOS with Python 3.11, 
 - script `run` completed read-only against a live test-org DLO; and
 - both deployment paths reached Salesforce authentication and the deployment endpoint.
 
-The available test orgs returned `FUNCTIONALITY_NOT_ENABLED` for `CdpCustomCodeDeployment`, so this release does not
-claim a successful sandbox upload. Enable Code Extension in Feature Manager on a Data 360 sandbox before expecting
-`deploy` to succeed. No deployment resource was created by the rejected probes.
+After Code Extension was enabled, a live test-org verification completed both a script upload and a custom chunking
+function upload through the child plugin. The function reached `Deployed`. The script reached `Deployed` and the SDK
+then created its batch data transform when given a dedicated target DLO in the selected data space. The transform was
+invoked once in the test org; its bounded verification script only read one source DLO and did not write output records.
+
+The same verification exposed an upstream version-compatibility boundary. `salesforce-data-customcode` 6.0.4 pins its
+deployment requests to REST API `v63.0`; the current prerelease test org rejected that request shape, while a disposable
+local SDK probe against the org's `v67.0` endpoint accepted and deployed both package types. `sf-plugin-data360` does
+not rewrite an independently installed Python package or silently select an unsupported API version. If deploy returns
+`JSON_PARSER_ERROR` while init, scan, run, and zip succeed, use an org/API combination supported by the installed SDK
+and report the mismatch to the Salesforce-maintained Code Extension project. Do not edit a shared Python environment
+as a production workaround.
 
 `@salesforce/plugin-data-code-extension` 1.3.2 calls the external `pipreqs` executable when an applied scan regenerates
 `requirements.txt`, but the SDK and generated `requirements-dev.txt` don't currently install it. Install `pipreqs`

@@ -72,6 +72,12 @@ describe('P4 transform family', () => {
     expect(
       requests.some(({ method, url }) => method === 'PUT' && url?.endsWith('/data-transforms/OrdersTransform'))
     ).to.equal(true);
+    expect(
+      requests.some(
+        ({ method, url, body }) =>
+          method === 'POST' && url?.endsWith('/data-transforms/OrdersTransform/actions/run') && body === '{}'
+      )
+    ).to.equal(true);
     expect(requests.some(({ method, url }) => method === 'GET' && url?.endsWith('/run-history'))).to.equal(true);
     expect(requests.some(({ method, url }) => method === 'PUT' && url?.endsWith('/schedule'))).to.equal(true);
   });

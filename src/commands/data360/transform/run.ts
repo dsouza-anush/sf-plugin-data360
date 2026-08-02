@@ -31,6 +31,7 @@ export default class TransformRun extends TransformCommand<{ item: Record<string
     const item = await client.request<Record<string, unknown>>({
       method: 'POST',
       endpoint: `/data-transforms/${encodeURIComponent(key)}/actions/run`,
+      body: {},
       timeoutMs: 120_000,
       errorContext: {
         actionTimeout: {

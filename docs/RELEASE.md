@@ -43,6 +43,9 @@ npm requires a package to exist before a trusted publisher can be registered. Fo
 - Pack the exact candidate and run `yarn test:package <tarball>` through the pinned Salesforce CLI.
 - Inspect the tarball allowlist, file modes, npm shrinkwrap, licenses, notices, examples, and public documentation.
 - Verify install, topic help, representative command help, update, and uninstall instructions from a clean environment.
+- Recheck the pinned Code Extension child plugin and Python SDK against a supported sandbox. Record any REST API
+  compatibility boundary as an upstream limitation; don't patch an independently installed Python SDK during package
+  installation.
 - Record the release commit, package digest, test results, known limitations, and rollback procedure in the restricted release record.
 
 ## Cut a release

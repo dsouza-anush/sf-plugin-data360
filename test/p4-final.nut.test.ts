@@ -15,7 +15,10 @@ describe('P4 transform and data-space Fastify NUT', () => {
   it('runs transform lifecycle and member upsert', async () => {
     const server = Fastify({ logger: false });
     let members: Array<Record<string, unknown>> = [];
-    server.post('/services/data/v67.0/ssot/data-transforms/:name/actions/run', async () => ({ status: 'RUNNING' }));
+    server.post('/services/data/v67.0/ssot/data-transforms/:name/actions/run', async (request) => {
+      expect(request.body).to.deep.equal({});
+      return { status: 'RUNNING' };
+    });
     server.post('/services/data/v67.0/ssot/data-transforms/:name/actions/refresh-status', async () => ({
       status: 'SUCCESS',
     }));
