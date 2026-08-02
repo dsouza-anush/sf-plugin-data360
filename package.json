@@ -1,6 +1,6 @@
 {
   "name": "sf-plugin-data360",
-  "version": "0.1.0",
+  "version": "0.1.0-beta.0",
   "description": "Data 360 commands for Salesforce CLI",
   "keywords": [
     "salesforce",

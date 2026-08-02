@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 - Unreleased
+## 0.1.0-beta.0 - 2026-08-02
 
 - Add the P0 Salesforce CLI plugin foundation, typed Connect transport, retries, pagination, registry skeleton, fixtures, and contract gates.
 - Add P1 Query SQL submit/resume/results/cancel commands.
