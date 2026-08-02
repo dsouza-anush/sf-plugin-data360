@@ -41,7 +41,7 @@ ${body}
 - Data graph plain \`GET /data-graphs\` list — remains unverified (⚠); list uses the verified \`/data-graphs/metadata\` form.
 - Profile child-DMO selector — exact query parameter remains unverified (⚠); profile, record, and calculated-insight variants ship.
 - \`sf data360 metadata search\` — core-root endpoint remains metadata-only verification (⚠); no synthetic fixture or command ships.
-- Data Kit commands ship as beta with synthetic v67 contract fixtures; \`data-kit list\` now has successful scrubbed live evidence. The other nine remain live-blocked until successful command-level evidence is recorded; the current API exposes per-component deployment status, not a deployment-job endpoint.
+- All ten Data Kit commands have successful scrubbed live evidence, including disposable create, update, delete, deploy, and undeploy workflows with cleanup verification. The current API exposes per-component deployment status rather than a deployment-job endpoint.
 - Document AI configuration detail/mutations and extraction — \`docai describe\` and empty \`docai config list\` responses are recorded; detail and request payloads remain unverified.
 - Data Action and Data Action Target detail/mutations — list commands ship from recorded empty responses, which do not establish detail, mutation, or signing-key payloads.
 - Retriever create/update/delete and configuration mutations — only list/get/configuration-list reads have recorded fixtures.

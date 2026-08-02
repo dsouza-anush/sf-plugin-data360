@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.0-beta.1 - 2026-08-02
+
+- Correct the generated verification narrative to reflect successful live-org evidence for all ten Data Kit commands.
+
 ## 0.1.0-beta.0 - 2026-08-02
 
 - Add the P0 Salesforce CLI plugin foundation, typed Connect transport, retries, pagination, registry skeleton, fixtures, and contract gates.
