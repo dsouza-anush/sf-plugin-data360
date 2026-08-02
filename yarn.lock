@@ -1370,7 +1370,7 @@
     strip-ansi "6.0.1"
     ts-retry-promise "^0.8.1"
 
-"@salesforce/core@^8.23.1", "@salesforce/core@^8.31.2", "@salesforce/core@^8.31.4", "@salesforce/core@^8.32.2":
+"@salesforce/core@^8.2.7", "@salesforce/core@^8.23.1", "@salesforce/core@^8.31.2", "@salesforce/core@^8.31.4", "@salesforce/core@^8.32.2":
   version "8.32.2"
   resolved "https://registry.npmjs.org/@salesforce/core/-/core-8.32.2.tgz"
   integrity sha512-IenGtnr68o1Pg8WDA5XUDeuqTmdCbAyLCAU1hdbIcqM3kyEfvyaHgou0/KfEx6EokCxJ4MZFJ6MmjL8dY53XGQ==
@@ -1439,6 +1439,16 @@
   dependencies:
     "@salesforce/ts-types" "^2.0.12"
 
+"@salesforce/plugin-data-code-extension@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.npmjs.org/@salesforce/plugin-data-code-extension/-/plugin-data-code-extension-1.3.2.tgz"
+  integrity sha512-V0rZ/7eOSiBOC8b7sbUTn0jkLF9yLCTLbQPKeNPLqcoKCOyKCz6E6fc7Aggz/WjxzlvSu7W7lTJHYfM+J6VguQ==
+  dependencies:
+    "@oclif/core" "^4"
+    "@salesforce/core" "^8.2.7"
+    "@salesforce/sf-plugins-core" "^12"
+    jszip "^3.10.1"
+
 "@salesforce/plugin-info@^3.4.147":
   version "3.4.148"
   resolved "https://registry.npmjs.org/@salesforce/plugin-info/-/plugin-info-3.4.148.tgz"
@@ -1464,6 +1474,8 @@
 
 "@salesforce/sf-plugins-core@^12", "@salesforce/sf-plugins-core@^12.2.28":
   version "12.2.28"
+  resolved "https://registry.npmjs.org/@salesforce/sf-plugins-core/-/sf-plugins-core-12.2.28.tgz"
+  integrity sha512-amfPBfdlgYoM9LCQewtoLWOe29kY7urLnYH1a5G7QLWN74tJeXEkvc1OyM18n+f2MHmpK0/ICAg5Wq276HwxHQ==
   dependencies:
     "@inquirer/confirm" "^6.1.1"
     "@inquirer/password" "^5.1.1"
@@ -1898,7 +1910,7 @@
     natural-compare "^1.4.0"
     ts-api-utils "^1.3.0"
 
-"@typescript-eslint/parser@^6.0.0 || ^6.0.0-alpha", "@typescript-eslint/parser@^6.21.0":
+"@typescript-eslint/parser@^6.0.0 || ^6.0.0-alpha", "@typescript-eslint/parser@^6.21.0", "@typescript-eslint/parser@^7.0.0":
   version "6.21.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-6.21.0.tgz"
   integrity sha512-tbsV1jPne5CkFQCgPBcDOt30ItF7aJoZL997JSF7MhGQqOeT3svWRYxiqlfA5RUdlHN6Fi+EI9bxqbdyAUZjYQ==
@@ -1907,15 +1919,6 @@
     "@typescript-eslint/types" "6.21.0"
     "@typescript-eslint/typescript-estree" "6.21.0"
     "@typescript-eslint/visitor-keys" "6.21.0"
-    debug "^4.3.4"
-
-"@typescript-eslint/parser@^7.0.0":
-  version "7.18.0"
-  dependencies:
-    "@typescript-eslint/scope-manager" "7.18.0"
-    "@typescript-eslint/types" "7.18.0"
-    "@typescript-eslint/typescript-estree" "7.18.0"
-    "@typescript-eslint/visitor-keys" "7.18.0"
     debug "^4.3.4"
 
 "@typescript-eslint/parser@7.18.0":
@@ -2437,6 +2440,8 @@ brace-expansion@^2.0.1, brace-expansion@^2.0.2:
 
 brace-expansion@^5.0.5:
   version "5.0.8"
+  resolved "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.8.tgz"
+  integrity sha512-JZyDyq3D4AUifKTPOB7DELf6XsB3WdPuNxCtob1vFXPsSXhdAiHBWJ/tJ8HAc9aH84BK+5JFZLNkJKx3G9kzQg==
   dependencies:
     balanced-match "^4.0.2"
 
@@ -2449,6 +2454,8 @@ brace-expansion@^5.0.6:
 
 brace-expansion@5.0.8:
   version "5.0.8"
+  resolved "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.8.tgz"
+  integrity sha512-JZyDyq3D4AUifKTPOB7DELf6XsB3WdPuNxCtob1vFXPsSXhdAiHBWJ/tJ8HAc9aH84BK+5JFZLNkJKx3G9kzQg==
   dependencies:
     balanced-match "^4.0.2"
 
@@ -3311,6 +3318,8 @@ ejs@^3.1.10:
 
 ejs@6.0.1:
   version "6.0.1"
+  resolved "https://registry.npmjs.org/ejs/-/ejs-6.0.1.tgz"
+  integrity sha512-UaaM14yby8U3k02ihS1Bmj5Kz2d7CCQM1scxpgs4Mhkq8F1wR2gl3+Ts4h5Ne4Mnt7M9m4Dw7jsuMr3+xO4vZA==
 
 electron-to-chromium@^1.5.389:
   version "1.5.389"
@@ -5726,11 +5735,6 @@ marked-terminal@^4.2.0:
     cli-table3 "^0.6.0"
     node-emoji "^1.10.0"
     supports-hyperlinks "^2.1.0"
-
-"marked@^1.0.0 || ^2.0.0":
-  version "2.1.3"
-  resolved "https://registry.npmjs.org/marked/-/marked-2.1.3.tgz"
-  integrity sha512-/Q+7MGzaETqifOMWYEA7HVMaZb4XbcRfaOzcSsHZEith83KGlvaSG33u0SKu89Mj5h+T8V2hM+8O45Qc5XTgwA==
 
 marked@^13.0.0:
   version "13.0.3"

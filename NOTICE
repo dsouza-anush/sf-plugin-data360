@@ -29,3 +29,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Salesforce, Data 360, and related marks are trademarks of Salesforce, Inc.
+
+This product declares @salesforce/plugin-data-code-extension as a child CLI
+plugin dependency. That separately maintained package is distributed under the
+Apache License 2.0:
+
+https://github.com/salesforcecli/plugin-data-code-extension

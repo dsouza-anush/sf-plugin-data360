@@ -116,7 +116,32 @@ try {
     }
   }
 
-  process.stdout.write('PASS installed tarball through an isolated Salesforce CLI.\n');
+  const codeExtensionCommands = [
+    ['function', 'deploy'],
+    ['function', 'init'],
+    ['function', 'run'],
+    ['function', 'scan'],
+    ['function', 'zip'],
+    ['script', 'deploy'],
+    ['script', 'init'],
+    ['script', 'run'],
+    ['script', 'scan'],
+    ['script', 'zip'],
+  ];
+  const codeExtensionHelp = await run(sf, ['data-code-extension', '--help'], { env: environment });
+  if (!codeExtensionHelp.stdout.includes('Commands for Data Cloud Code Extension.')) {
+    throw new Error(`Installed topic help is missing the official Code Extension plugin.\n${codeExtensionHelp.stdout}`);
+  }
+  for (const command of codeExtensionCommands) {
+    const help = await run(sf, ['data-code-extension', ...command, '--help'], { env: environment });
+    if (!help.stdout.includes('USAGE')) {
+      throw new Error(`Installed Code Extension command help failed for ${command.join(' ')}.\n${help.stdout}`);
+    }
+  }
+
+  process.stdout.write(
+    'PASS installed tarball and all 10 official Code Extension commands through an isolated Salesforce CLI.\n'
+  );
 } finally {
   const changedLocks = [];
   for (const [path, snapshot] of packLockSnapshots) {

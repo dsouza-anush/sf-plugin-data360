@@ -132,7 +132,12 @@ API contracts in this release were reconciled against primary sources:
 - [Salesforce CLI plugin testing guidance](https://developer.salesforce.com/docs/platform/salesforce-cli-plugin/guide/test-plugin.html)
 - [Current Salesforce CLI plugin template](https://github.com/salesforcecli/plugin-template-sf)
 
-The current command inventory has no dedicated `code-extension` family. Salesforce documents Data Custom Code as a Data Kit deployment component, so it can be submitted through `data-kit deploy` with an official component-specific `config`; that component type has not been separately live-verified by this release.
+Code Extension authoring and sandbox deployment are supplied by the pinned, official
+[`@salesforce/plugin-data-code-extension`](https://github.com/salesforcecli/plugin-data-code-extension) child plugin.
+Its ten `sf data-code-extension` commands cover script and function initialization, scanning, local execution, archive
+creation, and deployment. They remain outside the 135-command `sf data360` inventory and its verification ledger because
+they are maintained and released by Salesforce as a separate plugin. Production promotion uses a DevOps data kit;
+Salesforce's extensibility matrix does not support Code Extension in standard data kits.
 
 ## Release interpretation
 
