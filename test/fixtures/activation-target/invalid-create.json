@@ -1,0 +1,6 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "errorCode": "INVALID_INPUT",
+  "message": "maxFileSize must be between 1 and 500"
+}

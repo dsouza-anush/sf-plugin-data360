@@ -1,0 +1,188 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 calculated-insight list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "apiName": "[REDACTED]",
+        "calculatedInsightStatus": "ERROR",
+        "creationType": "Custom",
+        "dataSpace": "default",
+        "definitionStatus": "IN_USE",
+        "definitionType": "CALCULATED_METRIC",
+        "description": "[REDACTED]",
+        "dimensions": [
+          {
+            "apiName": "[REDACTED]",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Text",
+            "dateGranularity": null,
+            "displayName": "[REDACTED]",
+            "fieldRole": "DIMENSION",
+            "formula": "ssot__Account__dlm.ssot__AccountType__c"
+          }
+        ],
+        "displayName": "[REDACTED]",
+        "expression": "SELECT ssot__Account__dlm.ssot__AccountType__c as account_type__c, COUNT(ssot__Account__dlm.ssot__Id__c) as account_count__c FROM ssot__Account__dlm GROUP BY ssot__Account__dlm.ssot__AccountType__c",
+        "isEnabled": true,
+        "lastCalcInsightStatusDateTime": "2026-07-03T23:26:25.000Z",
+        "lastCalcInsightStatusErrorCode": "CREATE_FAILED",
+        "lastRunDateTime": null,
+        "lastRunStatus": null,
+        "lastRunStatusDateTime": null,
+        "lastRunStatusErrorCode": null,
+        "measures": [
+          {
+            "apiName": "[REDACTED]",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "[REDACTED]",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__Account__dlm.ssot__Id__c)"
+          }
+        ],
+        "publishScheduleEndDate": null,
+        "publishScheduleInterval": "NOT_SCHEDULED",
+        "publishScheduleStartDateTime": null,
+        "queryDialect": "ANSI_SQL",
+        "subType": null
+      },
+      {
+        "apiName": "[REDACTED]",
+        "calculatedInsightStatus": "ACTIVE",
+        "creationType": "Custom",
+        "dataSpace": "default",
+        "definitionStatus": "IN_USE",
+        "definitionType": "CALCULATED_METRIC",
+        "description": "[REDACTED]",
+        "dimensions": [
+          {
+            "apiName": "[REDACTED]",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Text",
+            "dateGranularity": null,
+            "displayName": "[REDACTED]",
+            "fieldRole": "DIMENSION",
+            "formula": "ssot__Individual__dlm.ssot__Id__c"
+          }
+        ],
+        "displayName": "[REDACTED]",
+        "expression": "SELECT ssot__Individual__dlm.ssot__Id__c as individual_id__c, COUNT(ssot__ContactPointEmail__dlm.ssot__Id__c) as email_touchpoints__c, COUNT(ssot__ContactPointPhone__dlm.ssot__Id__c) as phone_touchpoints__c FROM ssot__Individual__dlm LEFT JOIN ssot__ContactPointEmail__dlm ON ssot__Individual__dlm.ssot__Id__c = ssot__ContactPointEmail__dlm.ssot__PartyId__c LEFT JOIN ssot__ContactPointPhone__dlm ON ssot__Individual__dlm.ssot__Id__c = ssot__ContactPointPhone__dlm.ssot__PartyId__c GROUP BY ssot__Individual__dlm.ssot__Id__c",
+        "isEnabled": true,
+        "lastCalcInsightStatusDateTime": "2026-07-04T21:56:09.000Z",
+        "lastCalcInsightStatusErrorCode": null,
+        "lastRunDateTime": null,
+        "lastRunStatus": null,
+        "lastRunStatusDateTime": null,
+        "lastRunStatusErrorCode": null,
+        "measures": [
+          {
+            "apiName": "[REDACTED]",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "[REDACTED]",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__ContactPointPhone__dlm.ssot__Id__c)"
+          },
+          {
+            "apiName": "[REDACTED]",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "[REDACTED]",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__ContactPointEmail__dlm.ssot__Id__c)"
+          }
+        ],
+        "publishScheduleEndDate": null,
+        "publishScheduleInterval": "NOT_SCHEDULED",
+        "publishScheduleStartDateTime": null,
+        "queryDialect": "ANSI_SQL",
+        "subType": null
+      },
+      {
+        "apiName": "[REDACTED]",
+        "calculatedInsightStatus": "ACTIVE",
+        "creationType": "Custom",
+        "dataSpace": "default",
+        "definitionStatus": "IN_USE",
+        "definitionType": "CALCULATED_METRIC",
+        "description": null,
+        "dimensions": [
+          {
+            "apiName": "[REDACTED]",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Text",
+            "dateGranularity": null,
+            "displayName": "[REDACTED]",
+            "fieldRole": "DIMENSION",
+            "formula": "ssot__Account__dlm.ssot__AccountBusinessType__c"
+          }
+        ],
+        "displayName": "[REDACTED]",
+        "expression": "SELECT ssot__Account__dlm.ssot__AccountBusinessType__c as account_type__c, COUNT(ssot__Account__dlm.ssot__Id__c) as account_count__c FROM ssot__Account__dlm GROUP BY ssot__Account__dlm.ssot__AccountBusinessType__c",
+        "isEnabled": true,
+        "lastCalcInsightStatusDateTime": "2026-06-29T10:44:48.000Z",
+        "lastCalcInsightStatusErrorCode": null,
+        "lastRunDateTime": "2026-07-13T02:34:55.000Z",
+        "lastRunStatus": "SUCCESS",
+        "lastRunStatusDateTime": "2026-07-13T02:35:45.000Z",
+        "lastRunStatusErrorCode": null,
+        "measures": [
+          {
+            "apiName": "[REDACTED]",
+            "creationType": "Custom",
+            "dataSource": {
+              "sourceApiName": "ssot__Id__c",
+              "type": "STREAMING_DATA_MODEL"
+            },
+            "dataType": "Number",
+            "displayName": "[REDACTED]",
+            "fieldAggregationType": "AGGREGATABLE",
+            "fieldRole": "MEASURE",
+            "formula": "COUNT(ssot__Account__dlm.ssot__Id__c)"
+          }
+        ],
+        "publishScheduleEndDate": null,
+        "publishScheduleInterval": "NOT_SCHEDULED",
+        "publishScheduleStartDateTime": null,
+        "queryDialect": "ANSI_SQL",
+        "subType": null
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

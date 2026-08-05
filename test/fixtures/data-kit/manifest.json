@@ -1,0 +1,19 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "reference": "Salesforce Connect REST API v67 OpenAPI: GET /ssot/datakit/{dataKitDevName}/manifest"
+  },
+  "synthetic": true,
+  "dataKitMembers": [
+    {
+      "developerName": ["CustomerFoundation"],
+      "entityName": "DataPackageKitDefinition",
+      "id": ["1dk000000000001AAA"]
+    },
+    {
+      "developerName": ["Customer__dll"],
+      "entityName": "DataLakeObject",
+      "id": ["0gO000000000001AAA"]
+    }
+  ]
+}

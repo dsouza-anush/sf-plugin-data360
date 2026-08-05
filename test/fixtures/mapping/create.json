@@ -1,0 +1,14 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "name": "OrdersToIndividual",
+  "sourceObject": "Orders__dll",
+  "targetObject": "Individual__dlm",
+  "fieldMappings": [
+    {
+      "name": "EmailMap"
+    }
+  ]
+}

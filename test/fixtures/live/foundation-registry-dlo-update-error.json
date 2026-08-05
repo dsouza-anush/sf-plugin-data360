@@ -1,0 +1,29 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-13",
+    "command": "data360 dlo update",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 20,
+  "actions": [
+    "Re-run with --json to inspect the structured API error details."
+  ],
+  "context": "[REDACTED]",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "INTERNAL_ERROR",
+    "message": "[REDACTED]",
+    "detail": "[REDACTED]",
+    "endpoint": "[REDACTED]"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "D360_API_ERROR",
+  "status": 20,
+  "commandName": "[REDACTED]"
+}

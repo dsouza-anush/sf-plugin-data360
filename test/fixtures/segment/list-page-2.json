@@ -1,0 +1,15 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "segments": [
+    {
+      "marketSegmentId": "0SG000000000002AAA",
+      "segmentApiName": "New_Customers",
+      "displayName": "New Customers",
+      "segmentType": "STANDARD",
+      "publishStatus": "DRAFT",
+      "lastPublishedDate": null
+    }
+  ],
+  "totalSize": 2
+}

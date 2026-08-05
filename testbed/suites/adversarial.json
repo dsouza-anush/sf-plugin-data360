@@ -1,0 +1,87 @@
+{
+  "name": "adversarial",
+  "mode": "mock",
+  "description": "Parser, input, confirmation, normalized-error, retry, and redaction misuse cases.",
+  "steps": [
+    {
+      "id": "01-unknown-flag",
+      "title": "Unknown flags fail at the parser boundary",
+      "tags": ["U2"],
+      "commands": [
+        {
+          "argv": ["data360", "metadata", "list", "--not-a-real-flag"],
+          "expect": { "exitCode": 2, "stderrIncludes": ["--not-a-real-flag"] }
+        }
+      ]
+    },
+    {
+      "id": "02-missing-required",
+      "title": "Missing explicit required flags fail without prompting",
+      "tags": ["U2"],
+      "commands": [
+        {
+          "argv": ["data360", "ingest", "--object-name", "FixtureObject", "--json"],
+          "stdin": "{\"id\":\"one\"}\n",
+          "expect": { "exitCode": 2, "stdoutIncludes": ["Missing required flag source-name"] }
+        }
+      ]
+    },
+    {
+      "id": "03-exclusive-inputs",
+      "title": "Mutually exclusive query inputs are rejected",
+      "tags": ["U3"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "--query", "SELECT 1", "--file", "testbed/fixtures/query.sql", "--json"],
+          "expect": { "exitCode": 2, "stdoutIncludes": ["cannot also be provided"] }
+        }
+      ]
+    },
+    {
+      "id": "04-malformed-ndjson",
+      "title": "Malformed NDJSON becomes a stable definition error",
+      "tags": ["U10"],
+      "commands": [
+        {
+          "argv": ["data360", "ingest", "--source-name", "FixtureSource", "--object-name", "FixtureObject", "--json"],
+          "stdin": "{not-json}\n",
+          "expect": { "exitCode": 1, "jsonPath": { "$.name": { "matches": "D360_INVALID_DEFINITION" } } }
+        }
+      ]
+    },
+    {
+      "id": "05-nontty-confirmation",
+      "title": "Destructive JSON mode never prompts",
+      "tags": ["D1", "U8"],
+      "commands": [
+        {
+          "argv": ["data360", "data-stream", "delete", "--name", "FixtureStream", "--json"],
+          "expect": { "exitCode": 1, "jsonPath": { "$.name": { "matches": "D360_CONFIRMATION_REQUIRED" } } }
+        }
+      ]
+    },
+    {
+      "id": "06-rate-limit-recovery",
+      "title": "Two injected rate limits are visible and recover automatically",
+      "tags": ["U9", "U10"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "results", "--query-id", "testbed-429", "--json"],
+          "expect": { "exitCode": 0 },
+          "httpExpect": { "path": "/testbed-429/rows", "method": "GET", "count": 3 }
+        }
+      ]
+    },
+    {
+      "id": "07-path-traversal",
+      "title": "Raw API paths cannot escape the approved API root",
+      "tags": ["U10"],
+      "commands": [
+        {
+          "argv": ["data360", "api", "request", "../limits"],
+          "expect": { "exitCode": 1, "stderrIncludes": ["Path traversal"] }
+        }
+      ]
+    }
+  ]
+}

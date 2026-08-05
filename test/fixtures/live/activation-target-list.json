@@ -1,0 +1,67 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 activation-target list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T23:36:17.000Z",
+        "dataSpaceName": "default",
+        "description": "[REDACTED]",
+        "id": "LIVE_ID_79c2fbc2eec7",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T23:36:33.000Z",
+        "name": "[REDACTED]",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T22:54:22.000Z",
+        "dataSpaceName": "default",
+        "description": "[REDACTED]",
+        "id": "LIVE_ID_aac1b9f51d59",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T22:54:37.000Z",
+        "name": "[REDACTED]",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      },
+      {
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T22:36:06.000Z",
+        "dataSpaceName": "default",
+        "description": "[REDACTED]",
+        "id": "LIVE_ID_5f962a254140",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T22:36:06.000Z",
+        "name": "[REDACTED]",
+        "platformName": "Data Cloud",
+        "platformType": "DataCloud",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

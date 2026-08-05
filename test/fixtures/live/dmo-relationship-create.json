@@ -1,0 +1,46 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 dmo relationship create",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "relationships": [
+        {
+          "cardinality": "ManyToOne",
+          "creationType": "Custom",
+          "id": "LIVE_ID_73d4eb5b2a30",
+          "name": "[REDACTED]",
+          "owner": "DataCloud",
+          "sourceField": {
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "MktDataModelField"
+          },
+          "sourceObject": {
+            "keyQualifierField": null,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          "status": "CREATING",
+          "targetField": {
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "MktDataModelField"
+          },
+          "targetObject": {
+            "keyQualifierField": null,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

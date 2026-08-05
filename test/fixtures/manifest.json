@@ -1,0 +1,1432 @@
+[
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/query-sql",
+    "status": 201,
+    "file": "query/submit-results.json",
+    "liveEvidence": [
+      {
+        "command": "data360 query hybrid",
+        "recordedAt": "2026-07-28",
+        "file": "live/query-hybrid.json"
+      },
+      {
+        "command": "data360 query vector",
+        "recordedAt": "2026-07-28",
+        "file": "live/query-vector.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/query-sql/:queryId",
+    "status": 200,
+    "file": "query/status-finished.json",
+    "liveEvidence": [
+      {
+        "command": "data360 query resume",
+        "recordedAt": "2026-07-11",
+        "file": "live/query-resume.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/query-sql/:queryId",
+    "status": 204,
+    "file": "query/status-finished.json",
+    "liveEvidence": [
+      {
+        "command": "data360 query cancel",
+        "recordedAt": "2026-07-26",
+        "file": "live/query-cancel.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/query-sql/:queryId/rows",
+    "status": 200,
+    "file": "query/rows-page-1.json",
+    "liveEvidence": [
+      {
+        "command": "data360 query results",
+        "recordedAt": "2026-07-11",
+        "file": "live/query-results.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/metadata",
+    "status": 200,
+    "file": "metadata/entity.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/metadata-entities",
+    "status": 200,
+    "file": "metadata/entities.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-spaces",
+    "status": 200,
+    "file": "doctor/data-spaces.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-space list",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-space-list.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/a360/token",
+    "status": 200,
+    "file": "token/exchange-success.json"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/metadata",
+    "status": 200,
+    "file": "direct/metadata.json"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/ingest/sources/:source/:object",
+    "status": 202,
+    "file": "ingest/stream-accepted.json"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/v1/ingest/sources/:source/:object",
+    "status": 202,
+    "file": "ingest/stream-accepted.json",
+    "liveEvidence": [
+      {
+        "command": "data360 ingest delete",
+        "recordedAt": "2026-07-11",
+        "file": "live/ingest-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/ingest/sources/:source/:object/actions/test",
+    "status": 400,
+    "file": "ingest/validation-error.json"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/ingest/jobs",
+    "status": 201,
+    "file": "ingest/lifecycle.json"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/v1/ingest/jobs/:jobId/batches",
+    "status": 202,
+    "file": "ingest/lifecycle.json"
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/v1/ingest/jobs/:jobId",
+    "status": 200,
+    "file": "ingest/lifecycle.json"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/ingest/jobs/:jobId",
+    "status": 200,
+    "file": "ingest/lifecycle.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/connections",
+    "status": 200,
+    "file": "connection/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 connection list",
+        "recordedAt": "2026-07-29",
+        "file": "live/connection-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId",
+    "status": 200,
+    "file": "connection/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 connection get",
+        "recordedAt": "2026-07-29",
+        "file": "live/connection-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/connections",
+    "status": 201,
+    "file": "connection/create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 connection create",
+        "recordedAt": "2026-07-17",
+        "file": "live/connection-create.json"
+      }
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId",
+    "status": 200,
+    "file": "connection/get.json"
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId",
+    "status": 204,
+    "file": "connection/delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 connection delete",
+        "recordedAt": "2026-07-17",
+        "file": "live/connection-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId/actions/test",
+    "status": 200,
+    "file": "connection/validate.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/connections/actions/test",
+    "status": 200,
+    "file": "connection/validate.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId/databases",
+    "status": 200,
+    "file": "connection/describe.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId/database-schemas",
+    "status": 200,
+    "file": "connection/describe.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId/objects",
+    "status": 200,
+    "file": "connection/describe.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId/objects/:objectName/fields",
+    "status": 200,
+    "file": "connection/describe.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId/objects/:objectName/preview",
+    "status": 200,
+    "file": "connection/describe.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId/endpoints",
+    "status": 200,
+    "file": "connection/describe.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId/sitemap",
+    "status": 200,
+    "file": "connection/describe.json"
+  },
+  {
+    "method": "PUT",
+    "path": "/services/data/v67.0/ssot/connections/:connectionId/schema",
+    "status": 200,
+    "file": "connection/get.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/connectors",
+    "status": 200,
+    "file": "connector/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 connector list",
+        "recordedAt": "2026-07-29",
+        "file": "live/connector-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/connectors/:connectorType",
+    "status": 200,
+    "file": "connector/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 connector get",
+        "recordedAt": "2026-07-29",
+        "file": "live/connector-get.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-lake-objects",
+    "status": 200,
+    "file": "dlo/list-page-1.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dlo list",
+        "recordedAt": "2026-08-03",
+        "file": "live/dlo-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-lake-objects/:name",
+    "status": 200,
+    "file": "dlo/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dlo get",
+        "recordedAt": "2026-07-29",
+        "file": "live/dlo-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-lake-objects",
+    "status": 201,
+    "file": "dlo/create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dlo create",
+        "recordedAt": "2026-07-29",
+        "file": "live/dlo-create.json"
+      }
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/data-lake-objects/:name",
+    "status": 200,
+    "file": "dlo/get.json"
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/data-lake-objects/:name",
+    "status": 204,
+    "file": "dlo/delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dlo delete",
+        "recordedAt": "2026-07-26",
+        "file": "live/dlo-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-model-objects",
+    "status": 200,
+    "file": "dmo/list-page-1.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dmo list",
+        "recordedAt": "2026-07-29",
+        "file": "live/dmo-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-model-objects/:name",
+    "status": 200,
+    "file": "dmo/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dmo get",
+        "recordedAt": "2026-07-29",
+        "file": "live/dmo-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-model-objects",
+    "status": 201,
+    "file": "dmo/create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dmo create",
+        "recordedAt": "2026-07-29",
+        "file": "live/dmo-create.json"
+      }
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/data-model-objects/:name",
+    "status": 200,
+    "file": "dmo/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dmo update",
+        "recordedAt": "2026-07-26",
+        "file": "live/dmo-update.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/data-model-objects/:name",
+    "status": 204,
+    "file": "dmo/delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dmo delete",
+        "recordedAt": "2026-07-26",
+        "file": "live/dmo-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-model-objects/:name/relationships",
+    "status": 200,
+    "file": "dmo/relationships.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dmo relationship list",
+        "recordedAt": "2026-07-29",
+        "file": "live/dmo-relationship-list.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-model-objects/:name/relationships",
+    "status": 201,
+    "file": "dmo/relationship-create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dmo relationship create",
+        "recordedAt": "2026-07-26",
+        "file": "live/dmo-relationship-create.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/data-model-objects/relationships/:relationshipName",
+    "status": 204,
+    "file": "dmo/relationship-delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 dmo relationship delete",
+        "recordedAt": "2026-07-26",
+        "file": "live/dmo-relationship-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-model-object-mappings",
+    "status": 200,
+    "file": "mapping/list.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-model-object-mappings/:name",
+    "status": 200,
+    "file": "mapping/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 mapping get",
+        "recordedAt": "2026-07-29",
+        "file": "live/mapping-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-model-object-mappings",
+    "status": 201,
+    "file": "mapping/create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 mapping create",
+        "recordedAt": "2026-07-26",
+        "file": "live/mapping-create.json"
+      }
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/data-model-object-mappings/:name/field-mappings/:field",
+    "status": 200,
+    "file": "mapping/update.json",
+    "liveEvidence": [
+      {
+        "command": "data360 mapping update",
+        "recordedAt": "2026-07-26",
+        "file": "live/mapping-update.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/data-model-object-mappings/:name/field-mappings/:field",
+    "status": 204,
+    "file": "mapping/delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 mapping delete",
+        "recordedAt": "2026-07-26",
+        "file": "live/mapping-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/data-model-object-mappings/:name",
+    "status": 204,
+    "file": "mapping/delete.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-streams",
+    "status": 200,
+    "file": "data-stream/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-stream list",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-stream-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-streams/:name",
+    "status": 200,
+    "file": "data-stream/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-stream get",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-stream-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-streams",
+    "status": 201,
+    "file": "data-stream/create.json"
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/data-streams/:name",
+    "status": 200,
+    "file": "data-stream/get.json"
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/data-streams/:name",
+    "status": 204,
+    "file": "data-stream/delete.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-streams/:name/actions/run",
+    "status": 202,
+    "file": "data-stream/run.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-transforms",
+    "status": 200,
+    "file": "transform/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 transform list",
+        "recordedAt": "2026-07-29",
+        "file": "live/transform-list.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-transforms",
+    "status": 201,
+    "file": "transform/create.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-transforms/:name",
+    "status": 200,
+    "file": "transform/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 transform get",
+        "recordedAt": "2026-07-29",
+        "file": "live/transform-get.json"
+      }
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/services/data/v67.0/ssot/data-transforms/:name",
+    "status": 200,
+    "file": "transform/update.json"
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/data-transforms/:name",
+    "status": 204,
+    "file": "transform/delete.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-transforms/:name/actions/:action",
+    "status": 200,
+    "file": "transform/run.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-transforms/:name/run-history",
+    "status": 200,
+    "file": "transform/report.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-transforms/:name/schedule",
+    "status": 200,
+    "file": "transform/schedule-display.json",
+    "liveEvidence": [
+      {
+        "command": "data360 transform schedule display",
+        "recordedAt": "2026-07-29",
+        "file": "live/transform-schedule-display.json"
+      }
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/services/data/v67.0/ssot/data-transforms/:name/schedule",
+    "status": 200,
+    "file": "transform/schedule-set.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-spaces",
+    "status": 201,
+    "file": "data-space/create.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-spaces/:name",
+    "status": 200,
+    "file": "data-space/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-space get",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-space-get.json"
+      }
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/data-spaces/:name",
+    "status": 200,
+    "file": "data-space/update.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-space update",
+        "recordedAt": "2026-07-14",
+        "file": "live/data-space-update.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-spaces/:name/members",
+    "status": 200,
+    "file": "data-space/member-list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-space member list",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-space-member-list.json"
+      }
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/services/data/v67.0/ssot/data-spaces/:name/members",
+    "status": 200,
+    "file": "data-space/member-set.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-space member set",
+        "recordedAt": "2026-07-14",
+        "file": "live/data-space-member-set.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/identity-resolutions",
+    "status": 200,
+    "file": "identity-resolution/list-page-1.json",
+    "liveEvidence": [
+      {
+        "command": "data360 identity-resolution list",
+        "recordedAt": "2026-07-29",
+        "file": "live/identity-resolution-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/identity-resolutions/:name",
+    "status": 200,
+    "file": "identity-resolution/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 identity-resolution get",
+        "recordedAt": "2026-07-29",
+        "file": "live/identity-resolution-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/identity-resolutions",
+    "status": 201,
+    "file": "identity-resolution/create.json"
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/identity-resolutions/:name",
+    "status": 200,
+    "file": "identity-resolution/get.json"
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/identity-resolutions/:name",
+    "status": 204,
+    "file": "identity-resolution/delete.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/identity-resolutions/:id/actions/run-now",
+    "status": 202,
+    "file": "identity-resolution/run.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/calculated-insights",
+    "status": 200,
+    "file": "calculated-insight/list-page-1.json",
+    "liveEvidence": [
+      {
+        "command": "data360 calculated-insight list",
+        "recordedAt": "2026-07-29",
+        "file": "live/calculated-insight-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/calculated-insights/:name",
+    "status": 200,
+    "file": "calculated-insight/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 calculated-insight get",
+        "recordedAt": "2026-07-19",
+        "file": "live/calculated-insight-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/calculated-insights",
+    "status": 201,
+    "file": "calculated-insight/create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 calculated-insight create",
+        "recordedAt": "2026-07-19",
+        "file": "live/calculated-insight-create.json"
+      }
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/calculated-insights/:name",
+    "status": 200,
+    "file": "calculated-insight/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 calculated-insight update",
+        "recordedAt": "2026-07-19",
+        "file": "live/calculated-insight-update.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/calculated-insights/:name",
+    "status": 204,
+    "file": "calculated-insight/delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 calculated-insight delete",
+        "recordedAt": "2026-07-13",
+        "file": "live/calculated-insight-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/calculated-insights/:name/actions/run",
+    "status": 202,
+    "file": "calculated-insight/run.json",
+    "liveEvidence": [
+      {
+        "command": "data360 calculated-insight run",
+        "recordedAt": "2026-07-19",
+        "file": "live/calculated-insight-run.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/insight/calculated-insights/:name",
+    "status": 200,
+    "file": "calculated-insight/values.json",
+    "liveEvidence": [
+      {
+        "command": "data360 calculated-insight query",
+        "recordedAt": "2026-07-13",
+        "file": "live/calculated-insight-query.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/insight/metadata/:name",
+    "status": 200,
+    "file": "calculated-insight/metadata.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/segments",
+    "status": 200,
+    "file": "segment/list-page-1.json",
+    "liveEvidence": [
+      {
+        "command": "data360 segment list",
+        "recordedAt": "2026-07-29",
+        "file": "live/segment-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/segments/:key",
+    "status": 200,
+    "file": "segment/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 segment get",
+        "recordedAt": "2026-07-13",
+        "file": "live/segment-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/segments",
+    "status": 201,
+    "file": "segment/create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 segment create",
+        "recordedAt": "2026-07-19",
+        "file": "live/segment-create.json"
+      }
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/segments/:apiName",
+    "status": 200,
+    "file": "segment/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 segment update",
+        "recordedAt": "2026-07-19",
+        "file": "live/segment-update.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/segments/:apiName",
+    "status": 204,
+    "file": "segment/delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 segment delete",
+        "recordedAt": "2026-07-13",
+        "file": "live/segment-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/segments/:apiName/actions/count",
+    "status": 200,
+    "file": "segment/count.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/segments/:id/actions/publish",
+    "status": 202,
+    "file": "segment/publish.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/segments/:apiName/actions/deactivate",
+    "status": 200,
+    "file": "segment/deactivate.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/activations",
+    "status": 200,
+    "file": "activation/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 activation list",
+        "recordedAt": "2026-07-29",
+        "file": "live/activation-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/activations/:id",
+    "status": 200,
+    "file": "activation/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 activation get",
+        "recordedAt": "2026-07-29",
+        "file": "live/activation-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/activations",
+    "status": 201,
+    "file": "activation/create.json"
+  },
+  {
+    "method": "PUT",
+    "path": "/services/data/v67.0/ssot/activations/:id",
+    "status": 200,
+    "file": "activation/get.json"
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/activations/:id",
+    "status": 204,
+    "file": "activation/delete.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/activations/:id/data",
+    "status": 200,
+    "file": "activation/results.json",
+    "liveEvidence": [
+      {
+        "command": "data360 activation results",
+        "recordedAt": "2026-07-29",
+        "file": "live/activation-results.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/activation-external-platforms",
+    "status": 200,
+    "file": "activation/platforms.json",
+    "liveEvidence": [
+      {
+        "command": "data360 activation platforms",
+        "recordedAt": "2026-07-29",
+        "file": "live/activation-platforms.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/activation-targets",
+    "status": 200,
+    "file": "activation-target/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 activation-target list",
+        "recordedAt": "2026-07-29",
+        "file": "live/activation-target-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/activation-targets/:id",
+    "status": 200,
+    "file": "activation-target/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 activation-target get",
+        "recordedAt": "2026-07-29",
+        "file": "live/activation-target-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/activation-targets",
+    "status": 201,
+    "file": "activation-target/create.json"
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/activation-targets/:id",
+    "status": 200,
+    "file": "activation-target/update.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/search-index",
+    "status": 200,
+    "file": "search-index/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 search-index list",
+        "recordedAt": "2026-07-29",
+        "file": "live/search-index-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/search-index/:key",
+    "status": 200,
+    "file": "search-index/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 search-index describe",
+        "recordedAt": "2026-07-29",
+        "file": "live/search-index-describe.json"
+      },
+      {
+        "command": "data360 search-index get",
+        "recordedAt": "2026-07-29",
+        "file": "live/search-index-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/search-index",
+    "status": 201,
+    "file": "search-index/create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 search-index create",
+        "recordedAt": "2026-07-26",
+        "file": "live/search-index-create.json"
+      }
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/search-index/:key",
+    "status": 200,
+    "file": "search-index/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 search-index update",
+        "recordedAt": "2026-07-26",
+        "file": "live/search-index-update.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/search-index/:key",
+    "status": 204,
+    "file": "search-index/delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 search-index delete",
+        "recordedAt": "2026-07-13",
+        "file": "live/search-index-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/search-index/:id/config",
+    "status": 200,
+    "file": "search-index/config.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-graphs/metadata",
+    "status": 200,
+    "file": "data-graph/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-graph list",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-graph-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-graphs/:name",
+    "status": 200,
+    "file": "data-graph/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-graph get",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-graph-get.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-graphs",
+    "status": 201,
+    "file": "data-graph/create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-graph create",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-graph-create.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/data-graphs/:name",
+    "status": 204,
+    "file": "data-graph/delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-graph delete",
+        "recordedAt": "2026-07-13",
+        "file": "live/data-graph-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-graphs/:name/actions/refresh",
+    "status": 202,
+    "file": "data-graph/refresh.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-graph refresh",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-graph-refresh.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-graphs/data/:entity",
+    "status": 200,
+    "file": "data-graph/query.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-graphs/data/:entity/:id",
+    "status": 200,
+    "file": "data-graph/query.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/profile/:model",
+    "status": 200,
+    "file": "profile/list.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/profile/:model/:id",
+    "status": 200,
+    "file": "profile/get.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/profile/:model/:id/calculated-insights/:ci",
+    "status": 200,
+    "file": "profile/insight.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/profile/metadata/:model",
+    "status": 200,
+    "file": "profile/metadata.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/universalIdLookup/:entity/:source/:object/:record",
+    "status": 200,
+    "file": "profile/lookup.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/machine-learning/retrievers",
+    "status": 200,
+    "file": "retriever/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 retriever list",
+        "recordedAt": "2026-07-29",
+        "file": "live/retriever-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/machine-learning/retrievers/:name",
+    "status": 200,
+    "file": "retriever/get.json",
+    "liveEvidence": [
+      {
+        "command": "data360 retriever get",
+        "recordedAt": "2026-07-29",
+        "file": "live/retriever-get.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/machine-learning/retrievers/:name/configurations",
+    "status": 200,
+    "file": "retriever/configurations.json",
+    "liveEvidence": [
+      {
+        "command": "data360 retriever configuration list",
+        "recordedAt": "2026-07-29",
+        "file": "live/retriever-configuration-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/document-processing/global-config",
+    "status": 200,
+    "file": "docai/global-config.json",
+    "liveEvidence": [
+      {
+        "command": "data360 docai describe",
+        "recordedAt": "2026-07-29",
+        "file": "live/docai-describe.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-kits",
+    "status": 200,
+    "file": "data-kit/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-kit list",
+        "recordedAt": "2026-08-03",
+        "file": "live/data-kit-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-kits/available-components",
+    "status": 200,
+    "file": "data-kit/available.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-kit available",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-kit-available.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/datakit/:name/manifest",
+    "status": 200,
+    "file": "data-kit/manifest.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-kit manifest",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-kit-manifest.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-kits",
+    "status": 200,
+    "file": "data-kit/create.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-kit create",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-kit-create.json"
+      }
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/services/data/v67.0/ssot/data-kits/:name",
+    "status": 200,
+    "file": "data-kit/update.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-kit update",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-kit-update.json"
+      }
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/services/data/v67.0/ssot/data-kits/:name",
+    "status": 200,
+    "file": "data-kit/delete.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-kit delete",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-kit-delete.json"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-kits/:name",
+    "status": 200,
+    "file": "data-kit/deploy.json"
+  },
+  {
+    "method": "POST",
+    "path": "/services/data/v67.0/ssot/data-kits/:name/undeploy",
+    "status": 200,
+    "file": "data-kit/undeploy.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-kits/:name/components/:component/dependencies",
+    "status": 200,
+    "file": "data-kit/dependencies.json"
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-kits/:name/components/:component/deployment-status",
+    "status": 200,
+    "file": "data-kit/status.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-kit component status",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-kit-component-status.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/document-processing/configurations",
+    "status": 200,
+    "file": "docai/configurations.json",
+    "liveEvidence": [
+      {
+        "command": "data360 docai config list",
+        "recordedAt": "2026-07-29",
+        "file": "live/docai-config-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/semantic/models",
+    "status": 200,
+    "file": "semantic/models.json",
+    "liveEvidence": [
+      {
+        "command": "data360 semantic model list",
+        "recordedAt": "2026-07-29",
+        "file": "live/semantic-model-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-actions",
+    "status": 200,
+    "file": "data-action/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-action list",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-action-list.json"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/services/data/v67.0/ssot/data-action-targets",
+    "status": 200,
+    "file": "data-action-target/list.json",
+    "liveEvidence": [
+      {
+        "command": "data360 data-action-target list",
+        "recordedAt": "2026-07-29",
+        "file": "live/data-action-target-list.json"
+      }
+    ]
+  }
+]

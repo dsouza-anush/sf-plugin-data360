@@ -1,0 +1,116 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 metadata list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "entities": [
+      {
+        "fields": [
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "type": "STRING",
+            "businessType": "TEXT"
+          },
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "type": "STRING",
+            "businessType": "TEXT"
+          },
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "type": "STRING",
+            "businessType": "TEXT"
+          }
+        ],
+        "category": "Profile",
+        "name": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "primaryKeys": [
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "indexOrder": "1"
+          }
+        ]
+      },
+      {
+        "fields": [
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "type": "STRING",
+            "keyQualifier": "KQ_AiAgentInteractionId__c",
+            "businessType": "TEXT"
+          },
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "type": "STRING",
+            "keyQualifier": "KQ_AiAgentMomentId__c",
+            "businessType": "TEXT"
+          },
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "type": "STRING",
+            "keyQualifier": "KQ_AiAgentSessionId__c",
+            "businessType": "TEXT"
+          }
+        ],
+        "category": "Engagement",
+        "name": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "primaryKeys": [
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "indexOrder": "1"
+          }
+        ]
+      },
+      {
+        "fields": [
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "type": "STRING",
+            "keyQualifier": "KQ_AiAgentTagDefinitionId__c",
+            "businessType": "TEXT"
+          },
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "type": "STRING",
+            "businessType": "TEXT"
+          },
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "type": "DATE_TIME",
+            "businessType": "DATE_TIME"
+          }
+        ],
+        "category": "Related",
+        "name": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "primaryKeys": [
+          {
+            "name": "[REDACTED]",
+            "displayName": "[REDACTED]",
+            "indexOrder": "1"
+          }
+        ]
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

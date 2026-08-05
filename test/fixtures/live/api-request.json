@@ -1,0 +1,34 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 api request",
+    "outcome": "success"
+  },
+  "currentPageUrl": "/services/data/v67.0/ssot/data-spaces?batchSize=50&offset=0",
+  "dataSpaces": [
+    {
+      "description": "[REDACTED]",
+      "id": "LIVE_ID_dd3978e9f889",
+      "label": "[REDACTED]",
+      "name": "[REDACTED]",
+      "prefix": "cdx",
+      "status": "Active"
+    },
+    {
+      "description": "[REDACTED]",
+      "id": "LIVE_ID_374ecf25bc09",
+      "label": "[REDACTED]",
+      "name": "[REDACTED]",
+      "status": "Active"
+    },
+    {
+      "id": "LIVE_ID_c6938b6d226b",
+      "label": "[REDACTED]",
+      "name": "[REDACTED]",
+      "prefix": "tst",
+      "status": "Active"
+    }
+  ],
+  "totalSize": 3
+}

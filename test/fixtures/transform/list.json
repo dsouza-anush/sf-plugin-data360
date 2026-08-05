@@ -1,0 +1,14 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "dataTransforms": [
+    {
+      "name": "OrdersTransform",
+      "label": "Orders",
+      "type": "BATCH",
+      "status": "ACTIVE"
+    }
+  ]
+}

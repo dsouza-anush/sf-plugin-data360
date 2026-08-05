@@ -1,0 +1,26 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit update",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "components": [
+        {
+          "info": {
+            "name": "[REDACTED]"
+          },
+          "type": "DataLakeObject"
+        }
+      ],
+      "devName": "[REDACTED]",
+      "label": "[REDACTED]"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

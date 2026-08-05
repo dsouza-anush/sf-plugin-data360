@@ -1,0 +1,6 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "data": [{ "Country": "US", "Revenue": 42 }],
+  "metadata": { "dimensions": ["Country"], "measures": ["Revenue"] }
+}

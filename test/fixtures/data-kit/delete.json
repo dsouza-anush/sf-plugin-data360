@@ -1,0 +1,7 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "reference": "Salesforce Connect REST API v67 OpenAPI: DELETE /ssot/data-kits/{dataKitDevName}"
+  },
+  "synthetic": true
+}

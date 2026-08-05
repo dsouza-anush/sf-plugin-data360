@@ -1,0 +1,6 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "records": [{ "Id": "record-1", "Name": "Ada" }],
+  "nextBatchId": null
+}

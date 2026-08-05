@@ -1,0 +1,29 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "capturedAt": "2026-07-10",
+    "apiVersion": "67.0"
+  },
+  "synthetic": true,
+  "done": true,
+  "metadata": [
+    {
+      "category": "Engagement",
+      "displayName": "Sales Order",
+      "name": "ssot__SalesOrder__dlm",
+      "type": "DataModelObject"
+    },
+    {
+      "category": "Profile",
+      "displayName": "Account",
+      "name": "ssot__Account__dlm",
+      "type": "DataModelObject"
+    },
+    {
+      "category": "Engagement",
+      "displayName": "Sales Order DLO",
+      "name": "SalesOrder__dll",
+      "type": "DataLakeObject"
+    }
+  ]
+}

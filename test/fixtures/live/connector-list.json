@@ -1,0 +1,34 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 connector list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "features": [],
+        "label": "[REDACTED]",
+        "name": "[REDACTED]",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "[REDACTED]",
+        "name": "[REDACTED]",
+        "releaseLevel": "BETA"
+      },
+      {
+        "features": [],
+        "label": "[REDACTED]",
+        "name": "[REDACTED]",
+        "releaseLevel": "BETA"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

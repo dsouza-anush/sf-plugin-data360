@@ -1,0 +1,60 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 mapping create",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "mappings": [
+      {
+        "sourceFieldDeveloperName": "KQ_Id__c",
+        "targetFieldDeveloperName": "KQ_Id__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "AssociationReasonText__c",
+        "targetFieldDeveloperName": "AssociationReasonText__c",
+        "matchType": "exact"
+      },
+      {
+        "sourceFieldDeveloperName": "AiAgentTagDefinitionAssociationId__c",
+        "targetFieldDeveloperName": "AiAgentTagDefinitionAssociationId__c",
+        "matchType": "exact"
+      }
+    ],
+    "unmapped": [
+      "cdp_sys_PartitionDate__c",
+      "cdp_sys_SourceVersion__c"
+    ],
+    "ambiguous": [],
+    "created": true,
+    "item": {
+      "developerName": "[REDACTED]",
+      "fieldMappings": [
+        {
+          "developerName": "[REDACTED]",
+          "sourceFieldDeveloperName": "ValueText__c",
+          "targetFieldDeveloperName": "ValueText__c"
+        },
+        {
+          "developerName": "[REDACTED]",
+          "sourceFieldDeveloperName": "AiAgentSessionId__c",
+          "targetFieldDeveloperName": "AiAgentSessionId__c"
+        },
+        {
+          "developerName": "[REDACTED]",
+          "sourceFieldDeveloperName": "OutcomeType__c",
+          "targetFieldDeveloperName": "OutcomeType__c"
+        }
+      ],
+      "sourceEntityDeveloperName": "AgentOpt_Tag_Association_BCF18D32__dll",
+      "status": "CREATING",
+      "targetEntityDeveloperName": "lv_p4_20260726092424_c00316_event__dlm"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

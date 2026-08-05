@@ -1,0 +1,77 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 dlo get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "dataLakeObjects": [
+        {
+          "capabilities": {},
+          "category": "Engagement",
+          "createdDate": "2026-06-24T08:05:38.000Z",
+          "dataLakeFieldInfoRepresentation": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "dataSpaceInfo": [
+            {
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "eventDateTimeFieldName": "requestTimestamp__c",
+          "fields": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "id": "LIVE_ID_a8c27f6c3ee0",
+          "label": "[REDACTED]",
+          "lastRefreshedDate": "2026-07-28T23:59:08.000Z",
+          "name": "[REDACTED]",
+          "namespace": "",
+          "status": "ACTIVE",
+          "totalRecords": 0
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

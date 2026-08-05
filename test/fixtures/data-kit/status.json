@@ -1,0 +1,18 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "reference": "Salesforce Connect REST API v67 OpenAPI: GET /ssot/data-kits/{dataKitName}/components/{componentName}/deployment-status"
+  },
+  "synthetic": true,
+  "componentDetails": [
+    {
+      "componentId": "0gO000000000001AAA",
+      "dataKitName": "CustomerFoundation",
+      "status": "Active"
+    }
+  ],
+  "status": {
+    "code": "ACTIVE",
+    "message": "The status of the component is ACTIVE"
+  }
+}

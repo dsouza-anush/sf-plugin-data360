@@ -1,0 +1,21 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-space get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "description": "[REDACTED]",
+      "id": "LIVE_ID_394fbcb8ac65",
+      "label": "[REDACTED]",
+      "name": "[REDACTED]",
+      "status": "Active"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

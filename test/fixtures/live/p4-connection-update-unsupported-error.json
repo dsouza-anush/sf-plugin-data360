@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 connection update",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 1,
+  "actions": [
+    "Create a replacement connection or update this connector in Data 360 Setup."
+  ],
+  "context": "[REDACTED]",
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "D360_UNSUPPORTED_OP",
+  "status": 1,
+  "commandName": "[REDACTED]"
+}

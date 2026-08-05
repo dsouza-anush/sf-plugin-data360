@@ -1,0 +1,15 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "identityResolutions": [
+    {
+      "id": "0IR000000000002AAA",
+      "name": "Secondary",
+      "label": "Secondary Ruleset",
+      "status": "DRAFT",
+      "lastRunStatus": null,
+      "matchedRate": null
+    }
+  ],
+  "totalSize": 2
+}

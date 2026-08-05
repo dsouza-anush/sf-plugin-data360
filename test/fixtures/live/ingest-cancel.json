@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-13",
+    "command": "data360 ingest cancel",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "id": "LIVE_ID_4fdbe7336631",
+    "operation": "upsert",
+    "sourceName": "[REDACTED]",
+    "createdById": "LIVE_ID_5d70fa419405",
+    "createdDate": "2026-07-13T02:19:54.905370Z",
+    "systemModstamp": "",
+    "state": "Aborted",
+    "contentType": "CSV",
+    "apiVersion": "v1",
+    "contentUrl": null,
+    "retries": null,
+    "totalProcessingTime": null,
+    "object": "live_verify_event",
+    "cancelled": true
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 retriever get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "activeConfiguration": {
+        "citationConfiguration": {
+          "type": "Default"
+        },
+        "createdDate": "2024-09-14T00:10:57.370Z",
+        "dataSpace": {
+          "name": "[REDACTED]"
+        },
+        "fieldPlaceholders": [],
+        "isActive": true,
+        "isAdvancedModeSupported": true,
+        "isCitationSupported": true,
+        "isEnrichedIndexSupported": true,
+        "label": "[REDACTED]",
+        "lastModifiedDate": "2024-11-20T11:28:51.418Z",
+        "name": "[REDACTED]",
+        "namespace": "sfdc_ai",
+        "outputFields": [],
+        "referencedRetrievers": [],
+        "retrievalMode": "Basic",
+        "retrieverQueryTemplateDefinition": {
+          "dataCloudAssets": [],
+          "queryTemplate": "SELECT &quot;chunk&quot;.&quot;Chunk__c&quot;, &quot;chunk&quot;.&quot;RecordId__c&quot;, &quot;chunk&quot;.&quot;SourceRecordId__c&quot;, &quot;chunk&quot;.&quot;DataSource__c&quot;, &quot;chunk&quot;.&quot;DataSourceObject__c&quot;, &quot;dmo&quot;.&quot;title__c&quot;, &quot;dmo&quot;.&quot;dc_id__c&quot;, &quot;dmo&quot;.&quot;dc_lang__c&quot; FROM hybrid_search( TABLE(&quot;hdc_GenAIHelpContent_V1_hdc_A7X4B9_index__dlm&quot;), :&quot;_SEARCH_STRING&quot;, &#39;&#39;, 3 ) AS &quot;search&quot; JOIN &quot;hdc_GenAIHelpContent_V1_hdc_A7X4B9_chunk__dlm&quot; AS &quot;chunk&quot; ON &quot;search&quot;.&quot;RecordId__c&quot; = &quot;chunk&quot;.&quot;RecordId__c&quot; JOIN &quot;hdc_GenAIHelpContent__dlm&quot; AS &quot;dmo&quot; ON &quot;dmo&quot;.&quot;document_id__c&quot; = &quot;chunk&quot;.&quot;SourceRecordId__c&quot;",
+          "queryTemplatePlaceholders": []
+        },
+        "sourceDmo": {},
+        "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations/sfdc_ai__SalesforceHelpContentRetrieverVersion1",
+        "version": 1,
+        "websiteConfigs": []
+      },
+      "configurationsUrl": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations",
+      "dataSourceType": "SearchIndex",
+      "dataSpaces": [],
+      "description": "[REDACTED]",
+      "isDefault": false,
+      "isGlobal": true,
+      "isVirtual": false,
+      "label": "[REDACTED]",
+      "latestConfiguration": {
+        "citationConfiguration": {
+          "type": "Default"
+        },
+        "createdDate": "2024-09-14T00:10:57.370Z",
+        "dataSpace": {
+          "name": "[REDACTED]"
+        },
+        "fieldPlaceholders": [],
+        "isActive": true,
+        "isAdvancedModeSupported": true,
+        "isCitationSupported": true,
+        "isEnrichedIndexSupported": true,
+        "label": "[REDACTED]",
+        "lastModifiedDate": "2024-11-20T11:28:51.418Z",
+        "name": "[REDACTED]",
+        "namespace": "sfdc_ai",
+        "outputFields": [],
+        "referencedRetrievers": [],
+        "retrievalMode": "Basic",
+        "retrieverQueryTemplateDefinition": {
+          "dataCloudAssets": [],
+          "queryTemplate": "SELECT &quot;chunk&quot;.&quot;Chunk__c&quot;, &quot;chunk&quot;.&quot;RecordId__c&quot;, &quot;chunk&quot;.&quot;SourceRecordId__c&quot;, &quot;chunk&quot;.&quot;DataSource__c&quot;, &quot;chunk&quot;.&quot;DataSourceObject__c&quot;, &quot;dmo&quot;.&quot;title__c&quot;, &quot;dmo&quot;.&quot;dc_id__c&quot;, &quot;dmo&quot;.&quot;dc_lang__c&quot; FROM hybrid_search( TABLE(&quot;hdc_GenAIHelpContent_V1_hdc_A7X4B9_index__dlm&quot;), :&quot;_SEARCH_STRING&quot;, &#39;&#39;, 3 ) AS &quot;search&quot; JOIN &quot;hdc_GenAIHelpContent_V1_hdc_A7X4B9_chunk__dlm&quot; AS &quot;chunk&quot; ON &quot;search&quot;.&quot;RecordId__c&quot; = &quot;chunk&quot;.&quot;RecordId__c&quot; JOIN &quot;hdc_GenAIHelpContent__dlm&quot; AS &quot;dmo&quot; ON &quot;dmo&quot;.&quot;document_id__c&quot; = &quot;chunk&quot;.&quot;SourceRecordId__c&quot;",
+          "queryTemplatePlaceholders": []
+        },
+        "sourceDmo": {},
+        "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations/sfdc_ai__SalesforceHelpContentRetrieverVersion1",
+        "version": 1,
+        "websiteConfigs": []
+      },
+      "name": "[REDACTED]",
+      "namespace": "sfdc_ai",
+      "queryType": "ProCode",
+      "references": [],
+      "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "name": "MarketingCloud",
+  "label": "Marketing Cloud",
+  "category": "Engagement",
+  "ingestType": "Batch",
+  "configSchema": {
+    "required": ["endpoint"]
+  }
+}

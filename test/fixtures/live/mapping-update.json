@@ -1,0 +1,20 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 mapping update",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "outcomes": [
+      {
+        "field": "ValueText__c_fieldmap_ValueText__c",
+        "success": true
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

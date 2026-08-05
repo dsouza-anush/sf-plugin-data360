@@ -1,0 +1,15 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "dataLakeObjects": [
+    {
+      "name": "Contacts__dll",
+      "label": "Contacts",
+      "category": "Profile",
+      "storageType": "Internal"
+    }
+  ],
+  "totalSize": 2
+}

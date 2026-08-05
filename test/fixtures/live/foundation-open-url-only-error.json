@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 open",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 1,
+  "context": "[REDACTED]",
+  "data": {
+    "errorCode": "ERROR_HTTP_403",
+    "message": "[REDACTED]"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "1",
+  "status": 1,
+  "commandName": "[REDACTED]"
+}

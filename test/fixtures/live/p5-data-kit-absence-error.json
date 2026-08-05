@@ -1,0 +1,13 @@
+{
+  "0": {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "message": "[REDACTED]"
+  },
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-08-03",
+    "command": "data360 api request",
+    "outcome": "error",
+    "expectedFailure": true
+  }
+}

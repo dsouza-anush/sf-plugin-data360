@@ -1,0 +1,12 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "capturedAt": "2026-07-10",
+    "apiVersion": "67.0"
+  },
+  "synthetic": true,
+  "access_token": "tenant-jwt-secret",
+  "instance_url": "mock.c360a.salesforce.com",
+  "expires_in": 3600,
+  "scope": "cdp_api cdp_query_api cdp_profile_api cdp_ingest_api"
+}

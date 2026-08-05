@@ -1,0 +1,41 @@
+{
+  "name": "live-readonly",
+  "mode": "live",
+  "description": "Safe read-only coverage across P1, P2, P4, P5, and P6. No mutation or billable command is included.",
+  "steps": [
+    {
+      "id": "01-diagnostics",
+      "title": "Core and Direct diagnostics are usable",
+      "tags": ["live", "read-only", "P1", "P2"],
+      "commands": [
+        {
+          "argv": ["data360", "doctor", "--json"],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.checks": { "exists": true } } }
+        },
+        { "argv": ["data360", "metadata", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } }
+      ]
+    },
+    {
+      "id": "02-foundation",
+      "title": "Foundation collections are readable",
+      "tags": ["live", "read-only", "P4"],
+      "commands": [
+        { "argv": ["data360", "connection", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "data-space", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "dlo", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } }
+      ]
+    },
+    {
+      "id": "03-outcomes",
+      "title": "Outcome and long-tail collections are readable",
+      "tags": ["live", "read-only", "P5", "P6"],
+      "commands": [
+        { "argv": ["data360", "identity-resolution", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "retriever", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "docai", "describe", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "data-action", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } },
+        { "argv": ["data360", "semantic", "model", "list", "--limit", "1", "--json"], "expect": { "exitCode": 0 } }
+      ]
+    }
+  ]
+}

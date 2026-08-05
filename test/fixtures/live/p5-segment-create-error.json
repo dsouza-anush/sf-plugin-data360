@@ -1,0 +1,29 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 segment create",
+    "outcome": "error",
+    "expectedFailure": false
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "[REDACTED]",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "ENTITY_SAVE_ERROR",
+    "message": "[REDACTED]",
+    "detail": "[REDACTED]",
+    "endpoint": "[REDACTED]"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "[REDACTED]"
+}

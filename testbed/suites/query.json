@@ -1,0 +1,105 @@
+{
+  "name": "query",
+  "mode": "mock",
+  "description": "Query SQL lifecycle, output, retry, cache, and error contracts through the subprocess and HTTP boundary.",
+  "steps": [
+    {
+      "id": "01-inline-json",
+      "title": "Inline Query SQL returns an oclif envelope and rows",
+      "tags": ["query", "J1", "U5"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "--query", "SELECT 1", "--json"],
+          "expect": {
+            "exitCode": 0,
+            "jsonPath": {
+              "$.status": { "equals": 0 },
+              "$.result.queryId": { "exists": true },
+              "$.result.rows[0][0]": { "exists": true }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "02-file-input",
+      "title": "Query reads SQL from a file",
+      "tags": ["query", "U3"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "--file", "testbed/fixtures/query.sql", "--json"],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.done": { "equals": true } } }
+        }
+      ]
+    },
+    {
+      "id": "03-async-resume-results",
+      "title": "Async submit persists enough context for resume and results",
+      "tags": ["query", "J3", "J4"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "--query", "SELECT 1 /* testbed:running */", "--async"],
+          "expect": { "exitCode": 0, "stderrIncludes": ["query resume"] }
+        },
+        {
+          "argv": ["data360", "query", "resume", "--use-most-recent", "--json"],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.done": { "equals": true } } }
+        },
+        {
+          "argv": ["data360", "query", "results", "--use-most-recent", "--json"],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.rows[0]": { "exists": true } } },
+          "httpExpect": { "path": "/query-sql", "method": "POST", "count": 0 }
+        }
+      ]
+    },
+    {
+      "id": "04-cancel",
+      "title": "Cancel normalizes the server cancellation response",
+      "tags": ["query", "J5"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "cancel", "--query-id", "fixture-query-id", "--json"],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.cancelled": { "equals": true } } }
+        }
+      ]
+    },
+    {
+      "id": "05-csv",
+      "title": "Result retrieval emits CSV without JSON contamination",
+      "tags": ["query", "U6"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "results", "--query-id", "fixture-query-id", "--result-format", "csv"],
+          "expect": { "exitCode": 0, "stdoutIncludes": ["ssot__Id__c"], "stdoutExcludes": ["\"status\":"] }
+        }
+      ]
+    },
+    {
+      "id": "06-get-retry",
+      "title": "Recoverable GET 429 responses retry twice and then succeed",
+      "tags": ["query", "U9", "U10"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "results", "--query-id", "testbed-429", "--json"],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.done": { "equals": true } } },
+          "httpExpect": { "path": "/testbed-429/rows", "method": "GET", "count": 3 }
+        }
+      ]
+    },
+    {
+      "id": "07-syntax-error",
+      "title": "Malformed Data 360 SQL returns the stable syntax code and action",
+      "tags": ["query", "U10"],
+      "commands": [
+        {
+          "argv": ["data360", "query", "--query", "SELEKT invalid FROM", "--json"],
+          "expect": {
+            "exitCode": 1,
+            "jsonPath": { "$.name": { "equals": "D360_QUERY_SYNTAX" } },
+            "stdoutIncludes": ["Correct the SQL syntax"]
+          }
+        }
+      ]
+    }
+  ]
+}

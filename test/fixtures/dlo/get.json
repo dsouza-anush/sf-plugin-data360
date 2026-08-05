@@ -1,0 +1,10 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "name": "Orders__dll",
+  "label": "Orders",
+  "category": "Engagement",
+  "storageType": "Internal"
+}

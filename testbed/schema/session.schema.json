@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:sf-plugin-data360:testbed:session",
+  "title": "Testbed session manifest (session.json)",
+  "type": "object",
+  "required": ["sid", "startedAt", "agent", "model", "mode", "plugin", "environment"],
+  "properties": {
+    "sid": { "type": "string", "minLength": 8 },
+    "label": { "type": "string" },
+    "startedAt": { "type": "string", "format": "date-time" },
+    "endedAt": { "type": "string", "format": "date-time" },
+    "abandonedAt": { "type": "string", "format": "date-time" },
+    "agent": { "type": "string", "description": "harness/persona name, e.g. claude-code, codex, scripted-ci" },
+    "model": { "type": "string", "description": "model id, e.g. claude-fable-5" },
+    "mode": { "enum": ["mock", "live"] },
+    "orgFingerprint": { "type": "string", "description": "stable hash; never the org id/username" },
+    "plugin": {
+      "type": "object",
+      "required": ["version", "commit", "buildHash"],
+      "properties": {
+        "version": { "type": "string" },
+        "commit": { "type": "string" },
+        "dirtyTree": { "type": "boolean" },
+        "buildHash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "required": ["sfVersion", "nodeVersion", "os", "ci", "executionMode"],
+      "properties": {
+        "sfVersion": { "type": "string" },
+        "nodeVersion": { "type": "string" },
+        "os": { "type": "string" },
+        "ci": { "type": "boolean" },
+        "executionMode": { "const": "direct-compiled-plugin" }
+      }
+    },
+    "suites": { "type": "array", "items": { "type": "string" } },
+    "totals": {
+      "type": "object",
+      "required": ["steps", "passed", "failed", "blocked", "skipped", "notes", "assertions", "httpEvents"],
+      "properties": {
+        "steps": { "type": "integer", "minimum": 0 },
+        "passed": { "type": "integer", "minimum": 0 },
+        "failed": { "type": "integer", "minimum": 0 },
+        "blocked": { "type": "integer", "minimum": 0 },
+        "skipped": { "type": "integer", "minimum": 0 },
+        "notes": { "type": "integer", "minimum": 0 },
+        "assertions": { "type": "integer", "minimum": 0 },
+        "httpEvents": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "schemaValid": { "type": "boolean" },
+        "leakScanClean": { "type": "boolean" }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "required": ["endedAt"] },
+      "then": { "required": ["totals", "validation"] }
+    }
+  ]
+}

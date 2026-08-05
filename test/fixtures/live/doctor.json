@@ -1,0 +1,30 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 doctor"
+  },
+  "status": 0,
+  "result": {
+    "checks": [
+      {
+        "name": "[REDACTED]",
+        "status": "pass",
+        "detail": "[REDACTED]"
+      },
+      {
+        "name": "[REDACTED]",
+        "status": "pass",
+        "detail": "[REDACTED]"
+      },
+      {
+        "name": "[REDACTED]",
+        "status": "pass",
+        "detail": "[REDACTED]"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

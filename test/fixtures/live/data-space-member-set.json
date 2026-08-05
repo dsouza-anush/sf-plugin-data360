@@ -1,0 +1,25 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-14",
+    "command": "data360 data-space member set",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "memberName": "Account_Home__dll",
+        "filter": {
+          "conjunctiveOperator": "NoneOperator",
+          "conditions": {
+            "conditions": []
+          }
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

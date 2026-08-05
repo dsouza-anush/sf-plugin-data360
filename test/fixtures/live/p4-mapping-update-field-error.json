@@ -1,0 +1,21 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 mapping update",
+    "expectedFailure": true
+  },
+  "status": 68,
+  "result": {
+    "outcomes": [
+      {
+        "field": "name__c_fieldmap_name__c",
+        "success": false,
+        "reason": "Unrecognized field \"sourceFieldDeveloperName\" at [line:1, column:30]"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

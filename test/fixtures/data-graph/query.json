@@ -1,0 +1,6 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "entity": "UnifiedIndividual__dlm",
+  "records": [{ "id": "record-1", "email": "a@example.com" }]
+}

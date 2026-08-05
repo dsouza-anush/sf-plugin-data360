@@ -1,0 +1,21 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 dlo get",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 1,
+  "actions": [
+    "Retry with the resource ID or a unique API name."
+  ],
+  "context": "[REDACTED]",
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "D360_NAME_AMBIGUOUS",
+  "status": 1,
+  "commandName": "[REDACTED]"
+}

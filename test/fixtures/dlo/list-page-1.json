@@ -1,0 +1,15 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "dataLakeObjects": [
+    {
+      "name": "Orders__dll",
+      "label": "Orders",
+      "category": "Engagement",
+      "storageType": "Internal"
+    }
+  ],
+  "totalSize": 2
+}

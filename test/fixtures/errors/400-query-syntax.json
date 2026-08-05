@@ -1,0 +1,13 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "basedOn": "Salesforce REST error format"
+  },
+  "statusCode": 400,
+  "body": [
+    {
+      "errorCode": "QUERY_SYNTAX",
+      "message": "Syntax error near SELECT."
+    }
+  ]
+}

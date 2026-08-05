@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 dmo relationship delete",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "deleted": true,
+    "relationshipName": "LIVE_ID_RELATIONSHIP_20260726"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

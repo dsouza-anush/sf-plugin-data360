@@ -1,0 +1,10 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 transform list",
+    "expectedFailure": true
+  },
+  "status": 1,
+  "result": {}
+}

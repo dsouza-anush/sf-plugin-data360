@@ -1,0 +1,8 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "marketSegmentId": "0SG000000000003AAA",
+  "segmentApiName": "High_Value",
+  "displayName": "High Value",
+  "publishStatus": "DRAFT"
+}

@@ -1,0 +1,139 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 dmo list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "category": "ACTIVATION_AUDIENCE",
+        "creationType": "Activation_Audience",
+        "dataSpaceName": "default",
+        "fields": [
+          {
+            "creationType": "Activation_Audience",
+            "isDistinct": false,
+            "isMapped": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "Text",
+            "usageTag": "None"
+          },
+          {
+            "creationType": "Activation_Audience",
+            "isDistinct": false,
+            "isMapped": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "Text",
+            "usageTag": "None"
+          },
+          {
+            "creationType": "Activation_Audience",
+            "isDistinct": false,
+            "isMapped": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "Text",
+            "usageTag": "None"
+          }
+        ],
+        "hasExternalDataLakeObjectMappings": false,
+        "id": "LIVE_ID_cfe9e6b5f3d9",
+        "isEditable": true,
+        "isEnabled": true,
+        "isSegmentable": false,
+        "label": "[REDACTED]",
+        "name": "[REDACTED]"
+      },
+      {
+        "category": "ACTIVATION_AUDIENCE",
+        "creationType": "Activation_Audience",
+        "dataSpaceName": "default",
+        "fields": [
+          {
+            "creationType": "Activation_Audience",
+            "isDistinct": false,
+            "isMapped": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "Text",
+            "usageTag": "None"
+          },
+          {
+            "creationType": "Activation_Audience",
+            "isDistinct": false,
+            "isMapped": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "Text",
+            "usageTag": "None"
+          },
+          {
+            "creationType": "Activation_Audience",
+            "isDistinct": false,
+            "isMapped": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "Text",
+            "usageTag": "None"
+          }
+        ],
+        "hasExternalDataLakeObjectMappings": false,
+        "id": "LIVE_ID_73783add56ec",
+        "isEditable": true,
+        "isEnabled": true,
+        "isSegmentable": false,
+        "label": "[REDACTED]",
+        "name": "[REDACTED]"
+      },
+      {
+        "category": "ACTIVATION_AUDIENCE",
+        "creationType": "Activation_Audience",
+        "dataSpaceName": "default",
+        "fields": [
+          {
+            "creationType": "Activation_Audience",
+            "isDistinct": false,
+            "isMapped": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "Text",
+            "usageTag": "None"
+          },
+          {
+            "creationType": "Activation_Audience",
+            "isDistinct": false,
+            "isMapped": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "Text",
+            "usageTag": "None"
+          },
+          {
+            "creationType": "Activation_Audience",
+            "isDistinct": false,
+            "isMapped": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]",
+            "type": "Text",
+            "usageTag": "None"
+          }
+        ],
+        "hasExternalDataLakeObjectMappings": false,
+        "id": "LIVE_ID_6735f0b446d6",
+        "isEditable": true,
+        "isEnabled": true,
+        "isSegmentable": false,
+        "label": "[REDACTED]",
+        "name": "[REDACTED]"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

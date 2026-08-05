@@ -1,0 +1,30 @@
+{
+  "name": "ExampleEvent",
+  "label": "Example Event",
+  "description": "Disposable example event DMO",
+  "dataSpaceName": "default",
+  "category": "ENGAGEMENT",
+  "fields": [
+    {
+      "name": "event_id__c",
+      "label": "Event ID",
+      "dataType": "Text",
+      "isPrimaryKey": true,
+      "isDynamicLookup": false
+    },
+    {
+      "name": "event_time__c",
+      "label": "Event Time",
+      "dataType": "DateTime",
+      "isPrimaryKey": false,
+      "isDynamicLookup": false
+    },
+    {
+      "name": "value__c",
+      "label": "Value",
+      "dataType": "Number",
+      "isPrimaryKey": false,
+      "isDynamicLookup": false
+    }
+  ]
+}

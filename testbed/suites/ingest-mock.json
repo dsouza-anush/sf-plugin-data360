@@ -1,0 +1,184 @@
+{
+  "name": "ingest-mock",
+  "mode": "mock",
+  "description": "Streaming and bulk Ingestion API lifecycle against the stateful synthetic HTTP fixture server.",
+  "steps": [
+    {
+      "id": "01-validate",
+      "title": "Validation accepts a well-formed NDJSON record without writing data",
+      "tags": ["ingest", "U3"],
+      "commands": [
+        {
+          "argv": [
+            "data360",
+            "ingest",
+            "validate",
+            "--source-name",
+            "FixtureSource",
+            "--object-name",
+            "FixtureObject",
+            "--json"
+          ],
+          "stdin": "{\"id\":\"one\"}\n",
+          "expect": {
+            "exitCode": 0,
+            "jsonPath": { "$.result.valid": { "equals": true }, "$.result.records": { "equals": 1 } }
+          }
+        }
+      ]
+    },
+    {
+      "id": "02-invalid-definition",
+      "title": "Validation errors preserve the stable invalid-definition code",
+      "tags": ["ingest", "U10"],
+      "commands": [
+        {
+          "argv": [
+            "data360",
+            "ingest",
+            "validate",
+            "--source-name",
+            "FixtureSource",
+            "--object-name",
+            "FixtureObject",
+            "--json"
+          ],
+          "stdin": "{\"invalid\":true}\n",
+          "expect": { "exitCode": 1, "jsonPath": { "$.name": { "equals": "D360_INVALID_DEFINITION" } } }
+        }
+      ]
+    },
+    {
+      "id": "03-stream",
+      "title": "Streaming ingestion chunks NDJSON and returns accepted counts",
+      "tags": ["ingest", "billable"],
+      "commands": [
+        {
+          "argv": ["data360", "ingest", "--source-name", "FixtureSource", "--object-name", "FixtureObject", "--json"],
+          "stdin": "{\"id\":\"one\"}\n{\"id\":\"two\"}\n",
+          "expect": {
+            "exitCode": 0,
+            "jsonPath": { "$.result.accepted": { "equals": 2 }, "$.result.batches": { "equals": 1 } }
+          }
+        }
+      ]
+    },
+    {
+      "id": "04-bulk-lifecycle",
+      "title": "Bulk create, upload, close, report, and resume share the cached job contract",
+      "tags": ["ingest", "J1", "J3", "J4", "billable"],
+      "commands": [
+        {
+          "argv": [
+            "data360",
+            "ingest",
+            "bulk",
+            "--source-name",
+            "FixtureSource",
+            "--object-name",
+            "FixtureObject",
+            "--file",
+            "testbed/fixtures/records.csv",
+            "--async",
+            "--json"
+          ],
+          "expect": {
+            "exitCode": 0,
+            "jsonPath": {
+              "$.result.id": { "equals": "synthetic-job-id" },
+              "$.result.state": { "equals": "UploadComplete" }
+            }
+          }
+        },
+        {
+          "argv": ["data360", "ingest", "report", "--use-most-recent", "--json"],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.state": { "equals": "JobComplete" } } }
+        },
+        {
+          "argv": [
+            "data360",
+            "ingest",
+            "resume",
+            "--job-id",
+            "synthetic-job-id",
+            "--target-org",
+            "testbed@example.invalid",
+            "--wait",
+            "1",
+            "--json"
+          ],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.state": { "equals": "JobComplete" } } }
+        }
+      ]
+    },
+    {
+      "id": "05-cancel-terminal",
+      "title": "Cancel returns an already terminal job without a mutation",
+      "tags": ["ingest", "J5", "destructive"],
+      "commands": [
+        {
+          "argv": [
+            "data360",
+            "ingest",
+            "cancel",
+            "--job-id",
+            "synthetic-job-id",
+            "--target-org",
+            "testbed@example.invalid",
+            "--no-prompt",
+            "--json"
+          ],
+          "expect": {
+            "exitCode": 0,
+            "jsonPath": { "$.result.cancelled": { "equals": false }, "$.result.state": { "equals": "JobComplete" } }
+          }
+        }
+      ]
+    },
+    {
+      "id": "06-delete-confirmation",
+      "title": "Streaming delete refuses noninteractive JSON execution without explicit consent",
+      "tags": ["ingest", "D1", "destructive"],
+      "commands": [
+        {
+          "argv": [
+            "data360",
+            "ingest",
+            "delete",
+            "--source-name",
+            "FixtureSource",
+            "--object-name",
+            "FixtureObject",
+            "--ids",
+            "one",
+            "--json"
+          ],
+          "expect": { "exitCode": 1, "jsonPath": { "$.name": { "matches": "D360_CONFIRMATION_REQUIRED" } } }
+        }
+      ]
+    },
+    {
+      "id": "07-delete-accepted",
+      "title": "Explicitly confirmed streaming delete reaches the Direct API",
+      "tags": ["ingest", "D2", "destructive", "billable"],
+      "commands": [
+        {
+          "argv": [
+            "data360",
+            "ingest",
+            "delete",
+            "--source-name",
+            "FixtureSource",
+            "--object-name",
+            "FixtureObject",
+            "--ids",
+            "one",
+            "--no-prompt",
+            "--json"
+          ],
+          "expect": { "exitCode": 0, "jsonPath": { "$.result.accepted": { "equals": true } } }
+        }
+      ]
+    }
+  ]
+}

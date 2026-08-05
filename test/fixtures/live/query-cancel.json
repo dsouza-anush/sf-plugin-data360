@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 query cancel",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "queryId": "LIVE_ID_QUERY_20260729",
+    "cancelled": true
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

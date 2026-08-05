@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "basedOn": "Salesforce REST error format"
+  },
+  "statusCode": 429,
+  "headers": {
+    "retry-after": "1"
+  },
+  "body": [
+    {
+      "errorCode": "REQUEST_LIMIT_EXCEEDED",
+      "message": "Too many requests."
+    }
+  ]
+}

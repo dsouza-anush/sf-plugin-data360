@@ -1,0 +1,34 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "capturedAt": "2026-07-10",
+    "apiVersion": "67.0"
+  },
+  "synthetic": true,
+  "metadata": [
+    {
+      "fields": [
+        {
+          "name": "ssot__Id__c",
+          "displayName": "ID",
+          "type": "Text",
+          "businessType": "Text",
+          "keyQualifier": "KQ"
+        }
+      ],
+      "indexes": [],
+      "category": "Related",
+      "name": "ssot__Account__dlm",
+      "displayName": "Account",
+      "relationships": [],
+      "primaryKeys": [
+        {
+          "name": "ssot__Id__c",
+          "displayName": "ID",
+          "indexOrder": 1
+        }
+      ],
+      "referenceModelEntityDeveloperName": "Account"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-08-03",
+    "command": "data360 data-kit list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "components": [
+          {
+            "componentType": "DataGuidanceDef",
+            "developerName": "[REDACTED]",
+            "label": "[REDACTED]"
+          },
+          {
+            "componentType": "DataGuidanceDef",
+            "developerName": "[REDACTED]",
+            "label": "[REDACTED]"
+          }
+        ],
+        "dataKitType": "FILEBASED",
+        "developerName": "[REDACTED]",
+        "label": "[REDACTED]",
+        "publishingSequence": [
+          {
+            "componentType": "DataGuidanceDef",
+            "developerName": "[REDACTED]"
+          },
+          {
+            "componentType": "DataGuidanceDef",
+            "developerName": "[REDACTED]"
+          }
+        ]
+      },
+      {
+        "components": [
+          {
+            "componentType": "DataStreamBundle",
+            "connectorType": "CRM",
+            "developerName": "[REDACTED]",
+            "label": "[REDACTED]",
+            "streams": [
+              {
+                "externalRecordIdentifier": "Employee2",
+                "fieldApiNames": [
+                  "Id",
+                  "Division",
+                  "OwnerId"
+                ],
+                "label": "[REDACTED]",
+                "streamDevName": "sfm_EmployeeSegment_Employee2"
+              },
+              {
+                "externalRecordIdentifier": "Contact",
+                "fieldApiNames": [
+                  "Id",
+                  "Division",
+                  "IsDeleted"
+                ],
+                "label": "[REDACTED]",
+                "streamDevName": "sfm_EmployeeSegment_Contact"
+              },
+              {
+                "externalRecordIdentifier": "Account",
+                "fieldApiNames": [
+                  "Id",
+                  "IsDeleted",
+                  "MasterRecordId"
+                ],
+                "label": "[REDACTED]",
+                "streamDevName": "sfm_EmployeeSegment_Account"
+              }
+            ]
+          }
+        ],
+        "dataKitType": "FILEBASED",
+        "developerName": "[REDACTED]",
+        "label": "[REDACTED]",
+        "publishingSequence": [
+          {
+            "componentType": "DataStreamBundle",
+            "developerName": "[REDACTED]"
+          }
+        ]
+      },
+      {
+        "components": [
+          {
+            "componentType": "DataStreamBundle",
+            "connectorType": "STREAMINGAPP",
+            "developerName": "[REDACTED]",
+            "label": "[REDACTED]",
+            "streams": [
+              {
+                "externalRecordIdentifier": "AgentHealthMonitoring_AiAgentMetricEvent_5BD9A432",
+                "fieldApiNames": [
+                  "AiAgentMetricEvent.agentEventKind",
+                  "AiAgentMetricEvent.agentTemplateApiName",
+                  "AiAgentMetricEvent.agentType"
+                ],
+                "label": "[REDACTED]",
+                "streamDevName": "sfm_AgentHealthMonitoring_AiAgentMe_5BD9A432"
+              }
+            ]
+          }
+        ],
+        "dataKitType": "FILEBASED",
+        "developerName": "[REDACTED]",
+        "label": "[REDACTED]",
+        "publishingSequence": [
+          {
+            "componentType": "DataStreamBundle",
+            "developerName": "[REDACTED]"
+          }
+        ]
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

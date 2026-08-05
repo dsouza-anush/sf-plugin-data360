@@ -1,0 +1,100 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 dmo relationship list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_9fbbd7272fd3",
+        "name": "[REDACTED]",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_c04f871c0e36",
+        "name": "[REDACTED]",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        }
+      },
+      {
+        "cardinality": "ManyToOne",
+        "creationType": "Standard",
+        "id": "LIVE_ID_f6322ed5a7b3",
+        "name": "[REDACTED]",
+        "owner": "DataCloud",
+        "sourceField": {
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "type": "MktDataModelField"
+        },
+        "sourceObject": {
+          "keyQualifierField": null,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        },
+        "status": "INACTIVE",
+        "targetField": {
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "type": "MktDataModelField"
+        },
+        "targetObject": {
+          "keyQualifierField": null,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

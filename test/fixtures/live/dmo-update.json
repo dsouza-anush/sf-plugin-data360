@@ -1,0 +1,53 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 dmo update",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "category": "ENGAGEMENT",
+      "creationType": "Custom",
+      "dataSpaceName": "default",
+      "description": "[REDACTED]",
+      "fields": [
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "type": "Text",
+          "usageTag": "None"
+        },
+        {
+          "creationType": "Custom",
+          "isDistinct": false,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "type": "Text",
+          "usageTag": "None"
+        }
+      ],
+      "hasExternalDataLakeObjectMappings": false,
+      "id": "LIVE_ID_0deaaf747202",
+      "isEditable": true,
+      "isEnabled": false,
+      "isSegmentable": false,
+      "label": "[REDACTED]",
+      "name": "[REDACTED]"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

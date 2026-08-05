@@ -1,0 +1,29 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-08-03",
+    "command": "data360 query cancel",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --json to inspect the structured API error details."
+  ],
+  "context": "[REDACTED]",
+  "data": {
+    "httpStatus": 0,
+    "apiCode": "INTERNAL_ERROR",
+    "message": "[REDACTED]",
+    "detail": "[REDACTED]",
+    "endpoint": "[REDACTED]"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "[REDACTED]"
+}

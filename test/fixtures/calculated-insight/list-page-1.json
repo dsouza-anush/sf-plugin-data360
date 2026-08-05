@@ -1,0 +1,8 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "calculatedInsights": [
+    { "apiName": "Revenue__cio", "displayName": "Revenue", "status": "ACTIVE", "lastRunStatus": "SUCCEEDED" }
+  ],
+  "totalSize": 2
+}

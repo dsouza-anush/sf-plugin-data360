@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 dlo delete",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "deleted": true,
+    "key": "LIVE_ID_DLO_20260726"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

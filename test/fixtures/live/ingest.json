@@ -1,0 +1,16 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-13",
+    "command": "data360 ingest",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "accepted": 1,
+    "batches": 1
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

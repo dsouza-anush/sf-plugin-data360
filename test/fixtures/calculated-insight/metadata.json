@@ -1,0 +1,7 @@
+{
+  "__fixture": { "source": "synthetic" },
+  "synthetic": true,
+  "apiName": "Revenue__cio",
+  "dimensions": [{ "name": "Country", "type": "TEXT" }],
+  "measures": [{ "name": "Revenue", "type": "NUMBER" }]
+}

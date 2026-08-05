@@ -1,0 +1,31 @@
+[
+  {
+    "__fixture": {
+      "source": "synthetic",
+      "basedOn": "Data 360 metadata pagination documentation"
+    },
+    "done": false,
+    "metadata": [
+      {
+        "category": "Profile",
+        "displayName": "Account",
+        "fields": [{ "name": "ssot__Id__c" }],
+        "name": "ssot__Account__dlm",
+        "type": "DataModelObject"
+      }
+    ],
+    "nextPageUrl": "/services/data/v67.0/ssot/metadata?dataspace=default&offset=1"
+  },
+  {
+    "done": true,
+    "metadata": [
+      {
+        "category": "Engagement",
+        "displayName": "Sales Order",
+        "fields": [{ "name": "ssot__Id__c" }, { "name": "ssot__Amount__c" }],
+        "name": "ssot__SalesOrder__dlm",
+        "type": "DataModelObject"
+      }
+    ]
+  }
+]

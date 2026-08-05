@@ -1,0 +1,756 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 transform list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "actionUrls": {
+          "action": "BatchAction",
+          "cancelAction": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents/actions/cancel",
+          "refreshStatusAction": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents/actions/refresh-status",
+          "retryAction": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents/actions/retry",
+          "runAction": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents/actions/run"
+        },
+        "createdBy": {
+          "id": "LIVE_ID_dcd39ee36c1e",
+          "name": "[REDACTED]",
+          "profilePhotoUrl": "https://mock.salesforce.example/profilephoto/005/T"
+        },
+        "createdDate": "2026-05-30T05:37:14.000Z",
+        "creationType": "CUSTOM",
+        "definition": {
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "nodes": {
+            "LOAD_DATASET0": {
+              "action": "load",
+              "parameters": {
+                "dataset": {
+                  "name": "[REDACTED]",
+                  "type": "dataLakeObject"
+                },
+                "fields": [
+                  "MasterLabel__c",
+                  "DeveloperName__c",
+                  "Type__c"
+                ],
+                "sampleDetails": {
+                  "dataspace": "default",
+                  "sortBy": [],
+                  "type": "TopN"
+                }
+              },
+              "sources": []
+            },
+            "FILTER0": {
+              "action": "filter",
+              "parameters": {
+                "filterExpressions": [
+                  {
+                    "field": "Type__c",
+                    "operands": [
+                      "InternalCopilot"
+                    ],
+                    "operator": "EQUAL",
+                    "type": "TEXT"
+                  },
+                  {
+                    "field": "AgentType__c",
+                    "operands": [
+                      "Employee"
+                    ],
+                    "operator": "EQUAL",
+                    "type": "TEXT"
+                  }
+                ]
+              },
+              "sources": [
+                "LOAD_DATASET0"
+              ]
+            },
+            "LOAD_DATASET1": {
+              "action": "load",
+              "parameters": {
+                "dataset": {
+                  "name": "[REDACTED]",
+                  "type": "dataLakeObject"
+                },
+                "fields": [
+                  "orgId__c",
+                  "uuid__c",
+                  "botId__c"
+                ],
+                "sampleDetails": {
+                  "dataspace": "default",
+                  "sortBy": [],
+                  "type": "TopN"
+                }
+              },
+              "sources": []
+            },
+            "JOIN0": {
+              "action": "join",
+              "parameters": {
+                "joinType": "INNER",
+                "leftKeys": [
+                  "Id__c"
+                ],
+                "rightKeys": [
+                  "botId__c"
+                ],
+                "rightQualifier": "CopilotEve"
+              },
+              "schema": {
+                "fields": [],
+                "slice": {
+                  "fields": [
+                    "DeveloperName__c",
+                    "Type__c",
+                    "Id__c"
+                  ],
+                  "ignoreMissingFields": true,
+                  "mode": "DROP"
+                }
+              },
+              "sources": [
+                "FILTER0",
+                "FORMULA2"
+              ]
+            },
+            "LOAD_DATASET2": {
+              "action": "load",
+              "parameters": {
+                "dataset": {
+                  "name": "[REDACTED]",
+                  "type": "dataLakeObject"
+                },
+                "fields": [
+                  "LastName__c",
+                  "Id__c",
+                  "FirstName__c"
+                ],
+                "sampleDetails": {
+                  "dataspace": "default",
+                  "sortBy": [],
+                  "type": "TopN"
+                }
+              },
+              "sources": []
+            },
+            "FORMULA0": {
+              "action": "formula",
+              "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                  {
+                    "businessType": "Text",
+                    "defaultValue": "",
+                    "formulaExpression": "concat(FirstName__c, LastName__c)",
+                    "label": "[REDACTED]",
+                    "name": "[REDACTED]",
+                    "precision": 255,
+                    "type": "TEXT"
+                  }
+                ]
+              },
+              "sources": [
+                "LOAD_DATASET2"
+              ]
+            },
+            "FORMULA1": {
+              "action": "formula",
+              "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                  {
+                    "businessType": "Text",
+                    "defaultValue": "",
+                    "formulaExpression": "substr(Id__c, 1, 15)",
+                    "label": "[REDACTED]",
+                    "name": "[REDACTED]",
+                    "precision": 255,
+                    "type": "TEXT"
+                  }
+                ]
+              },
+              "sources": [
+                "FORMULA0"
+              ]
+            },
+            "JOIN1": {
+              "action": "join",
+              "parameters": {
+                "joinType": "LEFT_OUTER",
+                "leftKeys": [
+                  "CopilotEve.userId__c"
+                ],
+                "rightKeys": [
+                  "id_15"
+                ],
+                "rightQualifier": "Transformu"
+              },
+              "schema": {
+                "fields": [],
+                "slice": {
+                  "fields": [
+                    "Transformu.FirstName__c",
+                    "Transformu.Id__c",
+                    "Transformu.LastName__c"
+                  ],
+                  "ignoreMissingFields": true,
+                  "mode": "DROP"
+                }
+              },
+              "sources": [
+                "JOIN0",
+                "FORMULA1"
+              ]
+            },
+            "FORMULA2": {
+              "action": "formula",
+              "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                  {
+                    "businessType": "Boolean",
+                    "defaultValue": "FALSE",
+                    "formulaExpression": "to_boolean(plannerActionOutput_isSuccess__c)",
+                    "label": "[REDACTED]",
+                    "name": "[REDACTED]",
+                    "type": "BOOLEAN"
+                  }
+                ]
+              },
+              "sources": [
+                "LOAD_DATASET1"
+              ]
+            },
+            "OUTPUT0": {
+              "action": "outputD360",
+              "parameters": {
+                "dedupOrder": [],
+                "fieldsMappings": [
+                  {
+                    "sourceField": "MasterLabel__c",
+                    "targetField": "CopilotName__c"
+                  },
+                  {
+                    "sourceField": "CopilotEve.orgId__c",
+                    "targetField": "OrgId__c"
+                  },
+                  {
+                    "sourceField": "CopilotEve.uuid__c",
+                    "targetField": "uuid__c"
+                  }
+                ],
+                "name": "[REDACTED]",
+                "type": "dataLakeObject",
+                "writeMode": "OVERWRITE"
+              },
+              "sources": [
+                "JOIN1"
+              ]
+            }
+          },
+          "outputDataObjects": [
+            {
+              "category": "Other",
+              "createdDate": "2026-05-30T05:36:56.000Z",
+              "fields": [
+                {
+                  "isPrimaryKey": true,
+                  "keyQualifierField": "KQ_uuid",
+                  "label": "[REDACTED]",
+                  "name": "[REDACTED]",
+                  "type": "Text"
+                },
+                {
+                  "isPrimaryKey": false,
+                  "keyQualifierField": "KQ_OrgId",
+                  "label": "[REDACTED]",
+                  "name": "[REDACTED]",
+                  "type": "Text"
+                },
+                {
+                  "isPrimaryKey": false,
+                  "keyQualifierField": "KQ_CopilotName",
+                  "label": "[REDACTED]",
+                  "name": "[REDACTED]",
+                  "type": "Text"
+                }
+              ],
+              "id": "LIVE_ID_fb2d73909101",
+              "label": "[REDACTED]",
+              "lastModifiedDate": "2026-05-30T05:37:00.000Z",
+              "name": "[REDACTED]",
+              "status": "active",
+              "type": "dataLakeObject"
+            }
+          ],
+          "type": "STL",
+          "ui": {
+            "nodes": {
+              "LOAD_DATASET0": {
+                "label": "[REDACTED]",
+                "type": "LOAD_DATASET",
+                "top": 112,
+                "left": 112,
+                "parameters": {
+                  "sampleSize": 2000
+                }
+              },
+              "FILTER0": {
+                "label": "[REDACTED]",
+                "description": "[REDACTED]",
+                "type": "FILTER",
+                "top": 112,
+                "left": 252
+              },
+              "LOAD_DATASET1": {
+                "label": "[REDACTED]",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 112,
+                "parameters": {
+                  "sampleSize": 2000
+                }
+              },
+              "JOIN0": {
+                "label": "[REDACTED]",
+                "description": "[REDACTED]",
+                "type": "JOIN",
+                "top": 112,
+                "left": 392.4
+              },
+              "LOAD_DATASET2": {
+                "label": "[REDACTED]",
+                "type": "LOAD_DATASET",
+                "top": 392,
+                "left": 112,
+                "parameters": {
+                  "sampleSize": 2000
+                }
+              },
+              "TRANSFORM0": {
+                "label": "[REDACTED]",
+                "description": "[REDACTED]",
+                "type": "TRANSFORM",
+                "top": 392,
+                "left": 252,
+                "graph": {
+                  "FORMULA0": {
+                    "parameters": {
+                      "type": "BASE_FORMULA_UI"
+                    },
+                    "label": "[REDACTED]"
+                  },
+                  "FORMULA1": {
+                    "parameters": {
+                      "type": "BASE_FORMULA_UI"
+                    },
+                    "label": "[REDACTED]"
+                  }
+                },
+                "connectors": [
+                  {
+                    "source": "FORMULA0",
+                    "target": "FORMULA1"
+                  }
+                ]
+              },
+              "JOIN1": {
+                "label": "[REDACTED]",
+                "description": "[REDACTED]",
+                "type": "JOIN",
+                "top": 112,
+                "left": 532
+              },
+              "TRANSFORM1": {
+                "label": "[REDACTED]",
+                "type": "TRANSFORM",
+                "top": 252,
+                "left": 252,
+                "graph": {
+                  "FORMULA2": {
+                    "parameters": {
+                      "type": "BASE_FORMULA_UI"
+                    },
+                    "label": "[REDACTED]"
+                  }
+                },
+                "connectors": []
+              },
+              "OUTPUT0": {
+                "label": "[REDACTED]",
+                "description": "[REDACTED]",
+                "type": "OUTPUT",
+                "top": 112,
+                "left": 672
+              }
+            },
+            "connectors": [
+              {
+                "source": "LOAD_DATASET0",
+                "target": "FILTER0"
+              },
+              {
+                "source": "FILTER0",
+                "target": "JOIN0"
+              },
+              {
+                "source": "LOAD_DATASET2",
+                "target": "TRANSFORM0"
+              }
+            ],
+            "hiddenColumns": []
+          },
+          "version": "66.0"
+        },
+        "fullRunFrequency": "DAILY",
+        "id": "LIVE_ID_c66d3390abff",
+        "label": "[REDACTED]",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_ccb8797279ca",
+          "name": "[REDACTED]",
+          "profilePhotoUrl": "https://mock.salesforce.example/profilephoto/005/T"
+        },
+        "lastModifiedDate": "2026-07-29T05:51:06.000Z",
+        "lastRunStatus": "NONE",
+        "name": "[REDACTED]",
+        "status": "ACTIVE",
+        "type": "BATCH",
+        "url": "/services/data/v67.0/ssot/data-transforms/CopilotForSalesforceAppsEvents"
+      },
+      {
+        "actionUrls": {
+          "action": "BatchAction",
+          "cancelAction": "/services/data/v67.0/ssot/data-transforms/StaticCurrencyRatesTransform_Home/actions/cancel",
+          "refreshStatusAction": "/services/data/v67.0/ssot/data-transforms/StaticCurrencyRatesTransform_Home/actions/refresh-status",
+          "retryAction": "/services/data/v67.0/ssot/data-transforms/StaticCurrencyRatesTransform_Home/actions/retry",
+          "runAction": "/services/data/v67.0/ssot/data-transforms/StaticCurrencyRatesTransform_Home/actions/run"
+        },
+        "createdBy": {
+          "id": "LIVE_ID_dcd39ee36c1e",
+          "name": "[REDACTED]",
+          "profilePhotoUrl": "https://mock.salesforce.example/profilephoto/005/T"
+        },
+        "createdDate": "2026-05-27T19:54:45.000Z",
+        "creationType": "SYSTEM",
+        "definition": {
+          "type": "STL_HIDDEN",
+          "version": "66.0"
+        },
+        "fullRunFrequency": "DAILY",
+        "id": "LIVE_ID_7502150bc6c9",
+        "label": "[REDACTED]",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_ccb8797279ca",
+          "name": "[REDACTED]",
+          "profilePhotoUrl": "https://mock.salesforce.example/profilephoto/005/T"
+        },
+        "lastModifiedDate": "2026-07-29T05:52:07.000Z",
+        "lastRunDate": "2026-05-28T16:38:59.000Z",
+        "lastRunStatus": "SUCCESS",
+        "name": "[REDACTED]",
+        "status": "ACTIVE",
+        "type": "BATCH",
+        "url": "/services/data/v67.0/ssot/data-transforms/StaticCurrencyRatesTransform_Home"
+      },
+      {
+        "actionUrls": {
+          "action": "BatchAction",
+          "cancelAction": "/services/data/v67.0/ssot/data-transforms/ServiceAgentCopilotEvents/actions/cancel",
+          "refreshStatusAction": "/services/data/v67.0/ssot/data-transforms/ServiceAgentCopilotEvents/actions/refresh-status",
+          "retryAction": "/services/data/v67.0/ssot/data-transforms/ServiceAgentCopilotEvents/actions/retry",
+          "runAction": "/services/data/v67.0/ssot/data-transforms/ServiceAgentCopilotEvents/actions/run"
+        },
+        "createdBy": {
+          "id": "LIVE_ID_dcd39ee36c1e",
+          "name": "[REDACTED]",
+          "profilePhotoUrl": "https://mock.salesforce.example/profilephoto/005/T"
+        },
+        "createdDate": "2026-05-30T05:37:29.000Z",
+        "creationType": "CUSTOM",
+        "definition": {
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "nodes": {
+            "LOAD_DATASET0": {
+              "action": "load",
+              "parameters": {
+                "dataset": {
+                  "name": "[REDACTED]",
+                  "type": "dataLakeObject"
+                },
+                "fields": [
+                  "MasterLabel__c",
+                  "DeveloperName__c",
+                  "Type__c"
+                ],
+                "sampleDetails": {
+                  "dataspace": "default",
+                  "sortBy": [],
+                  "type": "TopN"
+                }
+              },
+              "sources": []
+            },
+            "FILTER0": {
+              "action": "filter",
+              "parameters": {
+                "filterExpressions": [
+                  {
+                    "field": "Type__c",
+                    "operands": [
+                      "ExternalCopilot"
+                    ],
+                    "operator": "EQUAL",
+                    "type": "TEXT"
+                  },
+                  {
+                    "field": "AgentType__c",
+                    "operands": [
+                      "EinsteinServiceAgent"
+                    ],
+                    "operator": "EQUAL",
+                    "type": "TEXT"
+                  }
+                ]
+              },
+              "sources": [
+                "LOAD_DATASET0"
+              ]
+            },
+            "LOAD_DATASET1": {
+              "action": "load",
+              "parameters": {
+                "dataset": {
+                  "name": "[REDACTED]",
+                  "type": "dataLakeObject"
+                },
+                "fields": [
+                  "orgId__c",
+                  "uuid__c",
+                  "conversationEventLogType__c"
+                ],
+                "sampleDetails": {
+                  "dataspace": "default",
+                  "sortBy": [],
+                  "type": "TopN"
+                }
+              },
+              "sources": []
+            },
+            "JOIN0": {
+              "action": "join",
+              "parameters": {
+                "joinType": "LEFT_OUTER",
+                "leftKeys": [
+                  "Id__c"
+                ],
+                "rightKeys": [
+                  "botId__c"
+                ],
+                "rightQualifier": "CopilotEve"
+              },
+              "schema": {
+                "fields": [],
+                "slice": {
+                  "fields": [
+                    "Type__c",
+                    "Id__c",
+                    "DeveloperName__c"
+                  ],
+                  "ignoreMissingFields": true,
+                  "mode": "DROP"
+                }
+              },
+              "sources": [
+                "FILTER0",
+                "FORMULA0"
+              ]
+            },
+            "OUTPUT0": {
+              "action": "outputD360",
+              "parameters": {
+                "dedupOrder": [],
+                "fieldsMappings": [
+                  {
+                    "sourceField": "MasterLabel__c",
+                    "targetField": "CopilotName__c"
+                  },
+                  {
+                    "sourceField": "CopilotEve.orgId__c",
+                    "targetField": "OrgId__c"
+                  },
+                  {
+                    "sourceField": "CopilotEve.uuid__c",
+                    "targetField": "uuid__c"
+                  }
+                ],
+                "name": "[REDACTED]",
+                "type": "dataLakeObject",
+                "writeMode": "OVERWRITE"
+              },
+              "sources": [
+                "JOIN0"
+              ]
+            },
+            "FORMULA0": {
+              "action": "formula",
+              "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                  {
+                    "businessType": "Boolean",
+                    "defaultValue": "FALSE",
+                    "formulaExpression": "to_boolean(plannerActionOutput_isSuccess__c)",
+                    "label": "[REDACTED]",
+                    "name": "[REDACTED]",
+                    "type": "BOOLEAN"
+                  }
+                ]
+              },
+              "sources": [
+                "LOAD_DATASET1"
+              ]
+            }
+          },
+          "outputDataObjects": [
+            {
+              "category": "Other",
+              "createdDate": "2026-05-30T05:36:41.000Z",
+              "fields": [
+                {
+                  "isPrimaryKey": true,
+                  "keyQualifierField": "KQ_uuid",
+                  "label": "[REDACTED]",
+                  "name": "[REDACTED]",
+                  "type": "Text"
+                },
+                {
+                  "isPrimaryKey": false,
+                  "keyQualifierField": "KQ_OrgId",
+                  "label": "[REDACTED]",
+                  "name": "[REDACTED]",
+                  "type": "Text"
+                },
+                {
+                  "isPrimaryKey": false,
+                  "keyQualifierField": "KQ_CopilotName",
+                  "label": "[REDACTED]",
+                  "name": "[REDACTED]",
+                  "type": "Text"
+                }
+              ],
+              "id": "LIVE_ID_349cb1fb440f",
+              "label": "[REDACTED]",
+              "lastModifiedDate": "2026-05-30T05:36:45.000Z",
+              "name": "[REDACTED]",
+              "status": "active",
+              "type": "dataLakeObject"
+            }
+          ],
+          "type": "STL",
+          "ui": {
+            "nodes": {
+              "LOAD_DATASET0": {
+                "label": "[REDACTED]",
+                "type": "LOAD_DATASET",
+                "top": 112,
+                "left": 112,
+                "parameters": {
+                  "sampleSize": 2000
+                }
+              },
+              "FILTER0": {
+                "label": "[REDACTED]",
+                "description": "[REDACTED]",
+                "type": "FILTER",
+                "top": 112,
+                "left": 252
+              },
+              "LOAD_DATASET1": {
+                "label": "[REDACTED]",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 112,
+                "parameters": {
+                  "sampleSize": 2000
+                }
+              },
+              "JOIN0": {
+                "label": "[REDACTED]",
+                "description": "[REDACTED]",
+                "type": "JOIN",
+                "top": 112,
+                "left": 392.4
+              },
+              "OUTPUT0": {
+                "label": "[REDACTED]",
+                "description": "[REDACTED]",
+                "type": "OUTPUT",
+                "top": 112,
+                "left": 532
+              },
+              "TRANSFORM0": {
+                "label": "[REDACTED]",
+                "description": "[REDACTED]",
+                "type": "TRANSFORM",
+                "top": 252,
+                "left": 252,
+                "graph": {
+                  "FORMULA0": {
+                    "parameters": {
+                      "type": "BASE_FORMULA_UI"
+                    },
+                    "label": "[REDACTED]"
+                  }
+                },
+                "connectors": []
+              }
+            },
+            "connectors": [
+              {
+                "source": "LOAD_DATASET0",
+                "target": "FILTER0"
+              },
+              {
+                "source": "FILTER0",
+                "target": "JOIN0"
+              },
+              {
+                "source": "TRANSFORM0",
+                "target": "JOIN0"
+              }
+            ],
+            "hiddenColumns": []
+          },
+          "version": "66.0"
+        },
+        "fullRunFrequency": "DAILY",
+        "id": "LIVE_ID_6f8eefb40021",
+        "label": "[REDACTED]",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_ccb8797279ca",
+          "name": "[REDACTED]",
+          "profilePhotoUrl": "https://mock.salesforce.example/profilephoto/005/T"
+        },
+        "lastModifiedDate": "2026-07-29T05:51:37.000Z",
+        "lastRunStatus": "NONE",
+        "name": "[REDACTED]",
+        "status": "ACTIVE",
+        "type": "BATCH",
+        "url": "/services/data/v67.0/ssot/data-transforms/ServiceAgentCopilotEvents"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.setup.eca",
+  "title": "data360.setup.eca JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["appName", "consumerKey", "instanceUrl", "scopes", "created", "reauthorizeCommand"],
+      "properties": {
+        "appName": { "type": "string" },
+        "consumerKey": { "type": ["string", "null"] },
+        "instanceUrl": { "type": "string", "format": "uri" },
+        "scopes": { "type": "array", "items": { "type": "string" } },
+        "created": { "type": "boolean" },
+        "reauthorizeCommand": { "type": "string" }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

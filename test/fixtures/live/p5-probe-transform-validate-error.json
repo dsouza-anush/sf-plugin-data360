@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-08-03",
+    "command": "data360 transform validate",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 1,
+  "actions": [
+    "List the resources and retry with an exact name or ID."
+  ],
+  "context": "[REDACTED]",
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "D360_NAME_NOT_FOUND",
+  "status": 1,
+  "commandName": "[REDACTED]"
+}

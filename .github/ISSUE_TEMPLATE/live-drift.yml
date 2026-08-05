@@ -1,0 +1,134 @@
+name: Live API drift
+description: Report an authorized Salesforce response that no longer matches a verified CLI contract.
+title: '[live-drift] '
+labels:
+  - live-drift
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for endpoint, payload, pagination, status-code, permission, or provisioning behavior that differs from the plugin's checked-in fixtures or documentation.
+
+        **Do not disclose the org.** Remove usernames, email addresses, org aliases, org and tenant IDs, instance and tenant domains, Salesforce record/resource IDs, customer data, credentials, auth URLs, authorization headers, and correlation IDs that your organization treats as sensitive. Do not attach raw live captures, auth files, debug logs, or ignored verification ledgers.
+
+        Do not repeat a mutation or credit-consuming operation just to collect evidence. Stop and follow `SECURITY.md` if the drift exposes data across an authorization boundary.
+
+  - type: input
+    id: command
+    attributes:
+      label: Command and API family
+      description: Give the command ID and whether it uses Core/Connect API or Direct Data 360 API, if known.
+      placeholder: data360 <topic> <command> — Connect API
+    validations:
+      required: true
+
+  - type: input
+    id: observed_at
+    attributes:
+      label: Observation time
+      description: Give an ISO 8601 date/time with timezone so maintainers can distinguish drift from an older capture.
+      placeholder: 2026-07-12T09:30:00-07:00
+    validations:
+      required: true
+
+  - type: dropdown
+    id: org_type
+    attributes:
+      label: Environment class
+      description: Do not include the org alias, username, domain, org ID, or tenant ID.
+      options:
+        - Dedicated test or trial org
+        - Scratch org
+        - Sandbox
+        - Production org (read-only observation only)
+        - Other authorized environment
+    validations:
+      required: true
+
+  - type: input
+    id: api_version
+    attributes:
+      label: API and plugin versions
+      description: Include the requested Salesforce API version and exact plugin version or commit. Write “server-selected” if the endpoint has no client-selected version.
+      placeholder: API v67.0; plugin 0.x.y or commit abc1234
+    validations:
+      required: true
+
+  - type: dropdown
+    id: drift_type
+    attributes:
+      label: Drift category
+      options:
+        - Response shape or field semantics
+        - Endpoint, method, or API version
+        - Pagination or continuation
+        - Status or error code
+        - Permission, scope, or provisioning
+        - Timeout, retry, or asynchronous state
+        - Content type or output encoding
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_contract
+    attributes:
+      label: Expected contract
+      description: Link to the current authoritative Salesforce documentation and the plugin fixture, schema, or command documentation that established the expectation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed_shape
+    attributes:
+      label: Scrubbed observed shape
+      description: Describe only the minimum structural difference. Replace values with typed placeholders and retain field names, nesting, content type, HTTP status, Salesforce error code, and pagination markers.
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Scrubbed doctor JSON
+      description: Paste scrubbed `sf data360 doctor --target-org <org-alias> --json` output and its exit code. Preserve check names/statuses but replace all org-specific values. If doctor cannot run, explain why.
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: command_json
+    attributes:
+      label: Scrubbed command JSON
+      description: Paste safe `--json` output and the exit code, or explain why the operation cannot safely be repeated. Preserve error names/codes/statuses and structural keys; remove response data.
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_scope
+    attributes:
+      label: Reproduction scope
+      description: State whether this occurred once or repeatedly, in one or multiple authorized environment classes, and whether the equivalent mock test still passes. Do not identify any org.
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: User and automation impact
+      description: Explain broken workflows, JSON compatibility risk, data-loss risk, billing risk, or safe fallback behavior.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Live-evidence confirmation
+      options:
+        - label: I used only environments and data that I am authorized to test.
+          required: true
+        - label: I scrubbed every pasted value and attachment according to `LIVE_TESTING.md`.
+          required: true
+        - label: I did not repeat or enable a mutation or billable operation solely to file this report.
+          required: true
+        - label: This report does not disclose a security vulnerability or cross-tenant data.
+          required: true

@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 setup eca",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "appName": "LIVE_ECA_NAME",
+    "consumerKey": "[REDACTED]",
+    "instanceUrl": "https://mock.salesforce.example",
+    "scopes": [
+      "api",
+      "web",
+      "refresh_token"
+    ],
+    "created": true,
+    "reauthorizeCommand": "sf org login web --instance-url <instance-url> --client-id <consumer-key> --alias <org-alias> --scopes \"api web refresh_token cdp_api cdp_query_api cdp_profile_api cdp_ingest_api\""
+  },
+  "warnings": []
+}

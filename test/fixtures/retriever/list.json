@@ -1,0 +1,119 @@
+{
+  "currentPageUrl": "/services/data/v67.0/ssot/machine-learning/retrievers?limit=25&offset=0",
+  "retrievers": [
+    {
+      "activeConfiguration": {
+        "createdDate": "2024-09-14T00:10:57.370Z",
+        "dataSpace": {
+          "name": "Help_Content"
+        },
+        "isActive": true,
+        "label": "SalesforceHelpContentRetriever 1.0",
+        "lastModifiedDate": "2024-11-20T11:28:51.418Z",
+        "name": "SalesforceHelpContentRetrieverVersion1",
+        "namespace": "sfdc_ai",
+        "retrievalMode": "Basic",
+        "sourceDmo": {},
+        "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations/sfdc_ai__SalesforceHelpContentRetrieverVersion1",
+        "version": 1
+      },
+      "configurationsUrl": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations",
+      "dataSourceType": "SearchIndex",
+      "dataSpaces": [],
+      "description": "SalesforceHelpContentRetriever is a retriever for help documentation. It is designed to fetch and provide relevant Salesforce help articles or documentation based on the query.",
+      "isDefault": false,
+      "isGlobal": true,
+      "isVirtual": false,
+      "label": "Salesforce Help Content Retriever",
+      "latestConfiguration": {
+        "createdDate": "2024-09-14T00:10:57.370Z",
+        "dataSpace": {
+          "name": "Help_Content"
+        },
+        "isActive": true,
+        "label": "SalesforceHelpContentRetriever 1.0",
+        "lastModifiedDate": "2024-11-20T11:28:51.418Z",
+        "name": "SalesforceHelpContentRetrieverVersion1",
+        "namespace": "sfdc_ai",
+        "retrievalMode": "Basic",
+        "sourceDmo": {},
+        "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations/sfdc_ai__SalesforceHelpContentRetrieverVersion1",
+        "version": 1
+      },
+      "name": "SalesforceHelpContentRetriever",
+      "namespace": "sfdc_ai",
+      "queryType": "ProCode",
+      "references": [],
+      "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever"
+    },
+    {
+      "activeConfiguration": {
+        "createdDate": "2024-10-10T00:00:00.000Z",
+        "isActive": true,
+        "label": "Dynamic Retriever Version",
+        "name": "DynamicRetrieverVersion",
+        "namespace": "sfdc_ai",
+        "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__DynamicRetriever/configurations/sfdc_ai__DynamicRetrieverVersion",
+        "version": 1
+      },
+      "configurationsUrl": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__DynamicRetriever/configurations",
+      "dataSourceType": "SearchIndex",
+      "dataSpaces": [],
+      "description": "A dynamic retriever is a placeholder retriever that can be referenced and resolved at run time.",
+      "isDefault": false,
+      "isGlobal": false,
+      "isVirtual": true,
+      "label": "Dynamic Retriever",
+      "latestConfiguration": {
+        "createdDate": "2024-10-10T00:00:00.000Z",
+        "isActive": true,
+        "label": "Dynamic Retriever Version",
+        "name": "DynamicRetrieverVersion",
+        "namespace": "sfdc_ai",
+        "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__DynamicRetriever/configurations/sfdc_ai__DynamicRetrieverVersion",
+        "version": 1
+      },
+      "name": "DynamicRetriever",
+      "namespace": "sfdc_ai",
+      "references": [],
+      "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__DynamicRetriever"
+    },
+    {
+      "activeConfiguration": {
+        "createdDate": "2025-04-01T00:00:00.000Z",
+        "isActive": true,
+        "label": "Web search retriever version",
+        "name": "WebRetrievalActionVersion",
+        "namespace": "sfdc_ai",
+        "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__WebRetrievalAction/configurations/sfdc_ai__WebRetrievalActionVersion",
+        "version": 1
+      },
+      "configurationsUrl": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__WebRetrievalAction/configurations",
+      "dataSourceType": "Web",
+      "dataSpaces": [],
+      "description": "Web search retriever retrieves search results from the internet.",
+      "isDefault": false,
+      "isGlobal": false,
+      "isVirtual": false,
+      "label": "Web search retriever",
+      "latestConfiguration": {
+        "createdDate": "2025-04-01T00:00:00.000Z",
+        "isActive": true,
+        "label": "Web search retriever version",
+        "name": "WebRetrievalActionVersion",
+        "namespace": "sfdc_ai",
+        "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__WebRetrievalAction/configurations/sfdc_ai__WebRetrievalActionVersion",
+        "version": 1
+      },
+      "name": "WebRetrievalAction",
+      "namespace": "sfdc_ai",
+      "queryType": "NoCode",
+      "references": [],
+      "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__WebRetrievalAction"
+    }
+  ],
+  "totalSize": 3,
+  "__fixture": {
+    "source": "live-scrubbed"
+  }
+}

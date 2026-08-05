@@ -1,0 +1,18 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 dmo relationship list",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 10,
+  "context": "[REDACTED]",
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "10",
+  "status": 10,
+  "commandName": "[REDACTED]"
+}

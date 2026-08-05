@@ -1,0 +1,13 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "basedOn": "Salesforce REST error format"
+  },
+  "statusCode": 503,
+  "body": [
+    {
+      "errorCode": "SERVER_UNAVAILABLE",
+      "message": "Service temporarily unavailable."
+    }
+  ]
+}

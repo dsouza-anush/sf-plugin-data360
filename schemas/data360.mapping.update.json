@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.mapping.update",
+  "title": "data360.mapping.update JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "required": ["outcomes"],
+      "properties": { "outcomes": { "type": "array", "items": { "type": "object", "additionalProperties": true } } }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

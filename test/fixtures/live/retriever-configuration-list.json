@@ -1,0 +1,31 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 retriever configuration list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "createdDate": "2024-09-14T00:10:57.370Z",
+        "dataSpace": {
+          "name": "[REDACTED]"
+        },
+        "isActive": true,
+        "label": "[REDACTED]",
+        "lastModifiedDate": "2024-11-20T11:28:51.418Z",
+        "name": "[REDACTED]",
+        "namespace": "sfdc_ai",
+        "retrievalMode": "Basic",
+        "sourceDmo": {},
+        "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations/sfdc_ai__SalesforceHelpContentRetrieverVersion1",
+        "version": 1
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

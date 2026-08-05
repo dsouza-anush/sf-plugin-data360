@@ -1,0 +1,8 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "reference": "Salesforce Connect REST API v67 OpenAPI: POST /ssot/data-kits/{dataKitDevName}?asyncMode=true"
+  },
+  "synthetic": true,
+  "jobId": "08P000000000001AAA"
+}

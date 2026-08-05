@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "capturedAt": "2026-07-10",
+    "apiVersion": "67.0"
+  },
+  "synthetic": true,
+  "data": [["001000000000001"]],
+  "metadata": [
+    {
+      "name": "ssot__Id__c",
+      "nullable": false,
+      "type": "Varchar"
+    }
+  ],
+  "returnedRows": 1,
+  "status": {
+    "chunkCount": 1,
+    "completionStatus": "ResultsProduced",
+    "expirationTime": "",
+    "progress": 1,
+    "queryId": "opaque/id%value",
+    "rowCount": 1,
+    "rowsProcessed": 3,
+    "stalenessReasons": [],
+    "wallClockTime": 0.049
+  }
+}

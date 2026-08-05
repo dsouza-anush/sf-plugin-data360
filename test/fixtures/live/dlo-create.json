@@ -1,0 +1,65 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 dlo create",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "capabilities": {},
+      "category": "Profile",
+      "createdDate": "2026-07-29T06:13:55.000Z",
+      "dataLakeFieldInfoRepresentation": [
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": true,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        }
+      ],
+      "dataSpaceInfo": [],
+      "fields": [
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": true,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        },
+        {
+          "dataType": "Text",
+          "isPrimaryKey": false,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]"
+        }
+      ],
+      "id": "LIVE_ID_ba424c6ba6e1",
+      "label": "[REDACTED]",
+      "name": "[REDACTED]",
+      "namespace": "",
+      "status": "PROCESSING"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

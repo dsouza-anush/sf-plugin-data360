@@ -1,0 +1,12 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "id": "0YQ000000000001",
+  "name": "Orders",
+  "label": "Orders",
+  "connectorType": "MarketingCloud",
+  "status": "Active",
+  "lastUpdated": "2026-07-10T00:00:00Z"
+}

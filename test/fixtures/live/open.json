@@ -1,0 +1,15 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 open",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "url": "https://mock.salesforce.example/secur/frontdoor.jsp?otp=REDACTED_FRONTDOOR_OTP&startURL=%2Flightning%2Fpage%<record:e94fe5df1fcd>&cshc=REDACTED"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

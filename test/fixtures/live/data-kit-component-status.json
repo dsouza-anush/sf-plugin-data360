@@ -1,0 +1,17 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit component status",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "componentDetails": []
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 ingest bulk",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 1,
+  "actions": [
+    "Re-run with --verbose to inspect the raw API response."
+  ],
+  "context": "[REDACTED]",
+  "data": {
+    "httpStatus": 409,
+    "apiCode": "",
+    "message": "[REDACTED]",
+    "detail": "[REDACTED]",
+    "endpoint": "[REDACTED]"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "D360_API_ERROR",
+  "status": 1,
+  "commandName": "[REDACTED]"
+}

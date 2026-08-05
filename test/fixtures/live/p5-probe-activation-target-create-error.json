@@ -1,0 +1,22 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-08-03",
+    "command": "data360 activation-target create",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 1,
+  "actions": [
+    "Wrap the resource fields in a JSON object."
+  ],
+  "context": "[REDACTED]",
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "D360_INVALID_DEFINITION",
+  "status": 1,
+  "commandName": "[REDACTED]"
+}

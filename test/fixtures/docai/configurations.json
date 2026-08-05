@@ -1,0 +1,11 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-12",
+    "command": "data360 docai config list"
+  },
+  "configurations": [],
+  "currentPageUrl": null,
+  "nextPageUrl": null,
+  "totalSize": 0
+}

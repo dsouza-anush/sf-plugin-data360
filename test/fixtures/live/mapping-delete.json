@@ -1,0 +1,19 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 mapping delete",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "deleted": true,
+    "name": "[REDACTED]",
+    "fields": [
+      "ValueText__c_fieldmap_ValueText__c"
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

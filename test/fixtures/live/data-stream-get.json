@@ -1,0 +1,124 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-stream get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "advancedAttributes": {},
+      "capabilities": {},
+      "connectorInfo": {
+        "connectorDetails": {
+          "name": "[REDACTED]",
+          "sourceObject": "Opportunity",
+          "type": "SalesforceDotCom"
+        },
+        "connectorType": "SalesforceDotCom"
+      },
+      "dataAccessMode": "INGEST",
+      "dataLakeObjectInfo": {
+        "capabilities": {},
+        "category": "Engagement",
+        "dataLakeFieldInfoRepresentation": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "dataSpaceInfo": [
+          {
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "eventDateTimeFieldName": "CreatedDate",
+        "fields": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "DateTime",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "id": "LIVE_ID_f101d985f287",
+        "label": "[REDACTED]",
+        "name": "[REDACTED]",
+        "recordModifiedFieldName": "SystemModstamp",
+        "status": "ACTIVE"
+      },
+      "dataSource": "Salesforce_Home",
+      "dataStreamType": "SFDC",
+      "extractionTime": "2026-07-29T05:47:26.000Z",
+      "isEnabled": true,
+      "label": "[REDACTED]",
+      "lastAddedRecords": 0,
+      "lastProcessedRecords": 0,
+      "lastRefreshDate": "2026-07-29T05:52:26.000Z",
+      "lastRunStatus": "SUCCESS",
+      "mappings": [],
+      "name": "[REDACTED]",
+      "recordId": "LIVE_ID_1ad5a78e6b08",
+      "refreshConfig": {
+        "frequency": {
+          "frequencyType": "BATCH",
+          "hours": [],
+          "refreshDayOfMonth": []
+        },
+        "fullRefreshIntervalDays": "NONE",
+        "hasHeaders": false,
+        "isAccelerationEnabled": false,
+        "refreshMode": "UPSERT",
+        "shouldFetchImmediately": false,
+        "shouldTreatMissingFilesAsFailures": false
+      },
+      "sourceFields": [
+        {
+          "datatype": "Text",
+          "name": "[REDACTED]"
+        },
+        {
+          "datatype": "Text",
+          "name": "[REDACTED]"
+        },
+        {
+          "datatype": "Text",
+          "name": "[REDACTED]"
+        }
+      ],
+      "status": "ACTIVE",
+      "totalRecords": 20
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

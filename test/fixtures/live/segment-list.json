@@ -1,0 +1,129 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 segment list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "apiName": "[REDACTED]",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-06-29T10:47:17.000Z",
+        "dataSpace": "default",
+        "description": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "includeCriteria": "&lt;DbtPipeline xmlns=&quot;&quot;&gt;&lt;models&gt;&lt;model&gt;&lt;name&gt;codex_live_20260629_segment_lapsed&lt;/name&gt;&lt;sql&gt;SELECT DISTINCT ssot__Individual__dlm.ssot__Id__c, ssot__Individual__dlm.KQ_Id__c FROM ssot__Individual__dlm WHERE trim(cast(ssot__Individual__dlm.ssot__Id__c as varchar(255))) &amp;lt;&amp;gt; &#39;&#39;&lt;/sql&gt;&lt;/model&gt;&lt;/models&gt;&lt;/DbtPipeline&gt;",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-06-29T10:48:13.000Z",
+        "lastSegmentMemberCount": 0,
+        "lookbackPeriod": "P90D",
+        "marketSegmentDefinitionId": "LIVE_ID_77b35c96e171",
+        "marketSegmentId": "LIVE_ID_d0da06b86bb8",
+        "parameters": [],
+        "publishInterval": "NO_REFRESH",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "DBT"
+      },
+      {
+        "apiName": "[REDACTED]",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T23:38:40.000Z",
+        "dataSpace": "default",
+        "description": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-28T14:04:02.000Z",
+        "lastPublishedEndDateTime": "2026-07-28T14:04:00.000Z",
+        "lastSegmentMemberCount": 77,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_9e8dcf580d40",
+        "marketSegmentId": "LIVE_ID_909561be9f95",
+        "nextPublishDateTime": "2026-07-29T14:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-05T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-05T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-05T14:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      },
+      {
+        "apiName": "[REDACTED]",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T23:32:44.000Z",
+        "dataSpace": "default",
+        "description": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-28T14:04:02.000Z",
+        "lastPublishedEndDateTime": "2026-07-28T14:04:00.000Z",
+        "lastSegmentMemberCount": 77,
+        "lookbackPeriod": "P2Y",
+        "marketSegmentDefinitionId": "LIVE_ID_25b5c3c61dde",
+        "marketSegmentId": "LIVE_ID_0f2f4c30dde7",
+        "nextPublishDateTime": "2026-07-29T14:00:00.000Z",
+        "parameters": [],
+        "publishInterval": "TWENTY_FOUR",
+        "publishScheduleEndDate": "2027-07-05T00:00:00.000Z",
+        "publishScheduleEndDateTime": "2027-07-05T00:00:00.000Z",
+        "publishScheduleInfo": {
+          "daysOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday"
+          ],
+          "frequency": "Daily",
+          "interval": 24,
+          "nextScheduledDate": null,
+          "runFrom": null,
+          "runTo": null,
+          "timeInfo": null
+        },
+        "publishScheduleStartDateTime": "2026-07-05T14:00:00.000Z",
+        "publishStatus": "SUCCESS",
+        "segmentMembershipTable": "Individual_SMH_1782730047378__dlm",
+        "segmentOnApiName": "ssot__Individual__dlm",
+        "segmentOnId": "LIVE_ID_9349891214fe",
+        "segmentStatus": "ACTIVE",
+        "segmentType": "UI"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

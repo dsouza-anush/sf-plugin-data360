@@ -1,0 +1,1219 @@
+{
+  "commands": [
+    {
+      "id": "data360 activation-target create",
+      "state": "beta",
+      "summary": "Create an activation target.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation-target get",
+      "state": "beta",
+      "summary": "Get an activation target.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation-target list",
+      "state": "beta",
+      "summary": "List activation targets.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation-target update",
+      "state": "beta",
+      "summary": "Update an activation target.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation create",
+      "state": "beta",
+      "summary": "Create an activation.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation delete",
+      "state": "beta",
+      "summary": "Delete an activation.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation get",
+      "state": "beta",
+      "summary": "Get an activation.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation list",
+      "state": "beta",
+      "summary": "List activations.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation platforms",
+      "state": "beta",
+      "summary": "List activation external platforms.",
+      "args": [],
+      "flags": ["api-version", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation results",
+      "state": "beta",
+      "summary": "Get activation result data.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 activation update",
+      "state": "beta",
+      "summary": "Update an activation.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 api request",
+      "state": "beta",
+      "summary": "Send a raw authenticated Data 360 API request.",
+      "args": ["endpoint"],
+      "flags": [
+        "api-version",
+        "body",
+        "direct",
+        "header",
+        "include",
+        "method",
+        "no-prompt",
+        "no-token-cache",
+        "stream-to-file",
+        "target-org",
+        "timing"
+      ],
+      "json": false
+    },
+    {
+      "id": "data360 calculated-insight create",
+      "state": "beta",
+      "summary": "Create a calculated insight.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 calculated-insight delete",
+      "state": "beta",
+      "summary": "Delete a calculated insight.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 calculated-insight get",
+      "state": "beta",
+      "summary": "Get a calculated insight.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 calculated-insight list",
+      "state": "beta",
+      "summary": "List calculated insights.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 calculated-insight query",
+      "state": "beta",
+      "summary": "Query calculated insight values or metadata.",
+      "args": [],
+      "flags": [
+        "api-version",
+        "describe",
+        "dimensions",
+        "filters",
+        "measures",
+        "name",
+        "target-org",
+        "time-granularity",
+        "timing"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 calculated-insight run",
+      "state": "beta",
+      "summary": "Run a calculated insight.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 calculated-insight update",
+      "state": "beta",
+      "summary": "Update a calculated insight.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 connection create",
+      "state": "beta",
+      "summary": "Create a Data 360 connection.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 connection delete",
+      "state": "beta",
+      "summary": "Delete a Data 360 connection.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 connection describe",
+      "state": "beta",
+      "summary": "Describe resources available through a Data 360 connection.",
+      "args": [],
+      "flags": [
+        "api-version",
+        "databases",
+        "endpoints",
+        "fields",
+        "name",
+        "object",
+        "objects",
+        "preview",
+        "schemas",
+        "sitemap",
+        "target-org",
+        "timing"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 connection get",
+      "state": "beta",
+      "summary": "Get a Data 360 connection.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 connection list",
+      "state": "beta",
+      "summary": "List Data 360 connections.",
+      "args": [],
+      "flags": ["all", "api-version", "connector-type", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 connection update",
+      "state": "beta",
+      "summary": "Update a supported Data 360 connection.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "schema-file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 connection validate",
+      "state": "beta",
+      "summary": "Validate an existing or candidate Data 360 connection.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 connector get",
+      "state": "beta",
+      "summary": "Get a Data 360 connector type and configuration schema.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 connector list",
+      "state": "beta",
+      "summary": "List Data 360 connector types.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-action-target list",
+      "state": "beta",
+      "summary": "List Data 360 data action targets.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-action list",
+      "state": "beta",
+      "summary": "List Data 360 data actions.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-graph create",
+      "state": "beta",
+      "summary": "Create a data graph.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-graph delete",
+      "state": "beta",
+      "summary": "Delete a data graph.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-graph get",
+      "state": "beta",
+      "summary": "Get a data graph.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-graph list",
+      "state": "beta",
+      "summary": "List data graphs.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-graph query",
+      "state": "beta",
+      "summary": "Query data graph data.",
+      "args": [],
+      "flags": ["api-version", "id", "live", "lookup-keys", "name", "output-file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-graph refresh",
+      "state": "beta",
+      "summary": "Refresh a data graph.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit available",
+      "state": "beta",
+      "summary": "List components available to Data 360 data kits.",
+      "args": [],
+      "flags": ["api-version", "component-type", "data-kit", "limit", "offset", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit component dependencies",
+      "state": "beta",
+      "summary": "List dependencies for a Data 360 data-kit component.",
+      "args": [],
+      "flags": ["api-version", "component", "component-type", "data-space", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit component status",
+      "state": "beta",
+      "summary": "Get deployment status for a Data 360 data-kit component.",
+      "args": [],
+      "flags": ["api-version", "component", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit create",
+      "state": "beta",
+      "summary": "Create a Data 360 data kit.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit delete",
+      "state": "beta",
+      "summary": "Delete a Data 360 data kit.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit deploy",
+      "state": "beta",
+      "summary": "Deploy components from a Data 360 data kit.",
+      "args": [],
+      "flags": ["api-version", "data-space", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit list",
+      "state": "beta",
+      "summary": "List Data 360 data kits.",
+      "args": [],
+      "flags": ["api-version", "namespace", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit manifest",
+      "state": "beta",
+      "summary": "Get a Data 360 data-kit manifest.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit undeploy",
+      "state": "beta",
+      "summary": "Undeploy components from a Data 360 data kit.",
+      "args": [],
+      "flags": ["api-version", "data-space", "file", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-kit update",
+      "state": "beta",
+      "summary": "Synchronize components in a Data 360 data kit.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-space create",
+      "state": "beta",
+      "summary": "Create a data space.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-space get",
+      "state": "beta",
+      "summary": "Get a data space.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-space list",
+      "state": "beta",
+      "summary": "List data spaces.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-space member list",
+      "state": "beta",
+      "summary": "List data-space members.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-space member set",
+      "state": "beta",
+      "summary": "Add or update data-space DLO members.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-space update",
+      "state": "beta",
+      "summary": "Update a data space.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-stream create",
+      "state": "beta",
+      "summary": "Create a data stream.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-stream delete",
+      "state": "beta",
+      "summary": "Delete a data stream while keeping its DLO by default.",
+      "args": [],
+      "flags": ["api-version", "delete-dlo", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-stream get",
+      "state": "beta",
+      "summary": "Get a data stream.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-stream list",
+      "state": "beta",
+      "summary": "List data streams.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-stream run",
+      "state": "beta",
+      "summary": "Run a data stream.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 data-stream update",
+      "state": "beta",
+      "summary": "Update a data stream.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dlo create",
+      "state": "beta",
+      "summary": "Create a Data Lake Object.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dlo delete",
+      "state": "beta",
+      "summary": "Delete a Data Lake Object.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dlo get",
+      "state": "beta",
+      "summary": "Get a Data Lake Object.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dlo list",
+      "state": "beta",
+      "summary": "List Data Lake Objects.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dlo update",
+      "state": "beta",
+      "summary": "Update a Data Lake Object.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dmo create",
+      "state": "beta",
+      "summary": "Create a Data Model Object from a definition or Data Lake Object.",
+      "args": [],
+      "flags": ["api-version", "file", "from-dlo", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dmo delete",
+      "state": "beta",
+      "summary": "Delete a Data Model Object.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dmo get",
+      "state": "beta",
+      "summary": "Get a Data Model Object.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dmo list",
+      "state": "beta",
+      "summary": "List Data Model Objects.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dmo relationship create",
+      "state": "beta",
+      "summary": "Create a relationship on a Data Model Object.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dmo relationship delete",
+      "state": "beta",
+      "summary": "Delete a Data Model Object relationship.",
+      "args": [],
+      "flags": ["api-version", "no-prompt", "relationship-name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dmo relationship list",
+      "state": "beta",
+      "summary": "List relationships for a Data Model Object.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "name", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 dmo update",
+      "state": "beta",
+      "summary": "Update a Data Model Object.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 docai config list",
+      "state": "beta",
+      "summary": "List Document AI configurations.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 docai describe",
+      "state": "beta",
+      "summary": "Describe Document AI capabilities.",
+      "args": [],
+      "flags": ["api-version", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 doctor",
+      "state": "beta",
+      "summary": "Diagnose Data 360 org and plugin configuration.",
+      "args": [],
+      "flags": ["api-version", "data-space", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 identity-resolution create",
+      "state": "beta",
+      "summary": "Create an identity resolution ruleset.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 identity-resolution delete",
+      "state": "beta",
+      "summary": "Delete an identity resolution ruleset.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 identity-resolution get",
+      "state": "beta",
+      "summary": "Get an identity resolution ruleset.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 identity-resolution list",
+      "state": "beta",
+      "summary": "List identity resolution rulesets.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 identity-resolution run",
+      "state": "beta",
+      "summary": "Run an identity resolution ruleset now.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 identity-resolution update",
+      "state": "beta",
+      "summary": "Update an identity resolution ruleset.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 ingest",
+      "state": "beta",
+      "summary": "Stream records into Data 360.",
+      "args": [],
+      "flags": ["api-version", "file", "no-prompt", "object-name", "source-name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 ingest bulk",
+      "state": "beta",
+      "summary": "Bulk ingest CSV files into Data 360.",
+      "args": [],
+      "flags": [
+        "api-version",
+        "async",
+        "file",
+        "no-prompt",
+        "object-name",
+        "operation",
+        "source-name",
+        "target-org",
+        "timing",
+        "wait"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 ingest cancel",
+      "state": "beta",
+      "summary": "Abort an ingestion job.",
+      "args": [],
+      "flags": ["api-version", "job-id", "no-prompt", "target-org", "timing", "use-most-recent"],
+      "json": true
+    },
+    {
+      "id": "data360 ingest delete",
+      "state": "beta",
+      "summary": "Delete records through the streaming Ingestion API.",
+      "args": [],
+      "flags": ["api-version", "file", "ids", "no-prompt", "object-name", "source-name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 ingest report",
+      "state": "beta",
+      "summary": "Report an ingestion job.",
+      "args": [],
+      "flags": ["api-version", "job-id", "target-org", "timing", "use-most-recent"],
+      "json": true
+    },
+    {
+      "id": "data360 ingest resume",
+      "state": "beta",
+      "summary": "Resume waiting for an ingestion job.",
+      "args": [],
+      "flags": ["api-version", "job-id", "target-org", "timing", "use-most-recent", "wait"],
+      "json": true
+    },
+    {
+      "id": "data360 ingest validate",
+      "state": "beta",
+      "summary": "Validate ingestion records without writing data.",
+      "args": [],
+      "flags": ["api-version", "file", "object-name", "source-name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 mapping create",
+      "state": "beta",
+      "summary": "Create a mapping manually or automatically.",
+      "args": [],
+      "flags": ["api-version", "auto", "dlo", "dmo", "dry-run", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 mapping delete",
+      "state": "beta",
+      "summary": "Delete a mapping or selected field mappings.",
+      "args": [],
+      "flags": ["api-version", "fields", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 mapping get",
+      "state": "beta",
+      "summary": "Get a Data Model Object mapping.",
+      "args": [],
+      "flags": ["api-version", "dmo", "name", "source-object", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 mapping list",
+      "state": "beta",
+      "summary": "List Data Model Object mappings.",
+      "args": [],
+      "flags": ["all", "api-version", "dmo", "limit", "result-format", "source-object", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 mapping update",
+      "state": "beta",
+      "summary": "Update mapping fields using one PATCH per field.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 metadata get",
+      "state": "beta",
+      "summary": "Get a Data 360 metadata entity.",
+      "args": [],
+      "flags": ["api-version", "data-space", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 metadata list",
+      "state": "beta",
+      "summary": "List Data 360 metadata entities.",
+      "args": [],
+      "flags": [
+        "all",
+        "api-version",
+        "data-space",
+        "entity-category",
+        "entity-type",
+        "limit",
+        "result-format",
+        "target-org",
+        "timing"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 open",
+      "state": "beta",
+      "summary": "Open Data 360 in a browser.",
+      "args": [],
+      "flags": ["path", "private", "target-org", "url-only"],
+      "json": true
+    },
+    {
+      "id": "data360 profile describe",
+      "state": "beta",
+      "summary": "Describe profile metadata.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 profile get",
+      "state": "beta",
+      "summary": "Get Data 360 profile data.",
+      "args": [],
+      "flags": ["api-version", "fields", "id", "insight", "name", "search-key", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 profile lookup",
+      "state": "beta",
+      "summary": "Look up a Data 360 universal ID.",
+      "args": [],
+      "flags": ["api-version", "data-source", "data-source-object", "entity", "record", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 query",
+      "state": "beta",
+      "summary": "Run SQL against Data 360.",
+      "args": [],
+      "flags": [
+        "api-version",
+        "async",
+        "data-space",
+        "file",
+        "no-prompt",
+        "output-file",
+        "query",
+        "query-options-file",
+        "result-format",
+        "row-limit",
+        "target-org",
+        "timing",
+        "wait",
+        "workload-name"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 query cancel",
+      "state": "beta",
+      "summary": "Cancel a Data 360 SQL query.",
+      "args": [],
+      "flags": [
+        "api-version",
+        "data-space",
+        "no-prompt",
+        "query-id",
+        "target-org",
+        "timing",
+        "use-most-recent",
+        "workload-name"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 query hybrid",
+      "state": "beta",
+      "summary": "Run hybrid search through Data 360 SQL.",
+      "args": [],
+      "flags": [
+        "api-version",
+        "async",
+        "data-space",
+        "filter",
+        "index",
+        "no-prompt",
+        "output-file",
+        "result-format",
+        "select",
+        "target-org",
+        "text",
+        "timing",
+        "top-k",
+        "wait"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 query results",
+      "state": "beta",
+      "summary": "Fetch cached rows for a Data 360 SQL query.",
+      "args": [],
+      "flags": [
+        "all",
+        "api-version",
+        "data-space",
+        "offset",
+        "omit-schema",
+        "output-file",
+        "query-id",
+        "result-format",
+        "row-limit",
+        "target-org",
+        "timing",
+        "use-most-recent",
+        "workload-name"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 query resume",
+      "state": "beta",
+      "summary": "Resume waiting for a Data 360 SQL query.",
+      "args": [],
+      "flags": [
+        "api-version",
+        "data-space",
+        "output-file",
+        "query-id",
+        "result-format",
+        "target-org",
+        "timing",
+        "use-most-recent",
+        "wait",
+        "workload-name"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 query vector",
+      "state": "beta",
+      "summary": "Run vector search through Data 360 SQL.",
+      "args": [],
+      "flags": [
+        "api-version",
+        "async",
+        "data-space",
+        "filter",
+        "index",
+        "no-prompt",
+        "output-file",
+        "result-format",
+        "select",
+        "target-org",
+        "text",
+        "timing",
+        "top-k",
+        "wait"
+      ],
+      "json": true
+    },
+    {
+      "id": "data360 retriever configuration list",
+      "state": "beta",
+      "summary": "List configurations for a Data 360 retriever.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 retriever get",
+      "state": "beta",
+      "summary": "Get a verified Data 360 retriever.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 retriever list",
+      "state": "beta",
+      "summary": "List Data 360 retrievers.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 search-index create",
+      "state": "beta",
+      "summary": "Create a search index.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 search-index delete",
+      "state": "beta",
+      "summary": "Delete a search index.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 search-index describe",
+      "state": "beta",
+      "summary": "Describe search index configuration.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 search-index get",
+      "state": "beta",
+      "summary": "Get a search index.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 search-index list",
+      "state": "beta",
+      "summary": "List search indexes.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 search-index update",
+      "state": "beta",
+      "summary": "Update a search index.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 segment create",
+      "state": "beta",
+      "summary": "Create a segment.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 segment deactivate",
+      "state": "beta",
+      "summary": "Deactivate a segment.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 segment delete",
+      "state": "beta",
+      "summary": "Delete a segment.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 segment get",
+      "state": "beta",
+      "summary": "Get a segment.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing", "with-count"],
+      "json": true
+    },
+    {
+      "id": "data360 segment list",
+      "state": "beta",
+      "summary": "List segments.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 segment publish",
+      "state": "beta",
+      "summary": "Publish a segment.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing", "wait"],
+      "json": true
+    },
+    {
+      "id": "data360 segment update",
+      "state": "beta",
+      "summary": "Update a segment.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 semantic model list",
+      "state": "beta",
+      "summary": "List Data 360 semantic models.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 setup eca",
+      "state": "beta",
+      "summary": "Create an External Client Application (ECA) for Data 360 Direct API access.",
+      "args": [],
+      "flags": ["api-version", "app-name", "contact-email", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 token display",
+      "state": "beta",
+      "summary": "Display a Data 360 Direct API token.",
+      "args": [],
+      "flags": ["api-version", "no-token-cache", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform cancel",
+      "state": "beta",
+      "summary": "Cancel a data transform.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform create",
+      "state": "beta",
+      "summary": "Create a data transform.",
+      "args": [],
+      "flags": ["api-version", "file", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform delete",
+      "state": "beta",
+      "summary": "Delete a data transform.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform get",
+      "state": "beta",
+      "summary": "Get a data transform.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform list",
+      "state": "beta",
+      "summary": "List data transforms.",
+      "args": [],
+      "flags": ["all", "api-version", "limit", "result-format", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform report",
+      "state": "beta",
+      "summary": "Report data transform status.",
+      "args": [],
+      "flags": ["api-version", "history", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform retry",
+      "state": "beta",
+      "summary": "Retry a data transform.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform run",
+      "state": "beta",
+      "summary": "Run a data transform.",
+      "args": [],
+      "flags": ["api-version", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform schedule display",
+      "state": "beta",
+      "summary": "Display a data transform schedule.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform schedule set",
+      "state": "beta",
+      "summary": "Set a data transform schedule.",
+      "args": [],
+      "flags": ["api-version", "cron", "interval", "name", "no-prompt", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform update",
+      "state": "beta",
+      "summary": "Update data transforms.",
+      "args": [],
+      "flags": ["api-version", "file", "name", "target-org", "timing"],
+      "json": true
+    },
+    {
+      "id": "data360 transform validate",
+      "state": "beta",
+      "summary": "Validate data transforms.",
+      "args": [],
+      "flags": ["api-version", "name", "target-org", "timing"],
+      "json": true
+    }
+  ]
+}

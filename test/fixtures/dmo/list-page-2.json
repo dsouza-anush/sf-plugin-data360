@@ -1,0 +1,15 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "dataModelObjects": [
+    {
+      "name": "Contact",
+      "label": "Contact",
+      "category": "Profile",
+      "mappedDlos": ["Contacts__dll"]
+    }
+  ],
+  "totalSize": 2
+}

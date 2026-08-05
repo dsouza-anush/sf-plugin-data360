@@ -1,0 +1,182 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-08-03",
+    "command": "data360 dlo list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "capabilities": {},
+        "category": "Profile",
+        "createdDate": "2026-07-12T04:26:14.000Z",
+        "dataLakeFieldInfoRepresentation": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "dataSpaceInfo": [
+          {
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "fields": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Number",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "id": "LIVE_ID_ca39c7d5e2d4",
+        "label": "[REDACTED]",
+        "name": "[REDACTED]",
+        "namespace": "",
+        "recordModifiedFieldName": "SystemModstamp__c",
+        "status": "ACTIVE"
+      },
+      {
+        "capabilities": {},
+        "category": "Profile",
+        "createdDate": "2026-07-12T04:26:14.000Z",
+        "dataLakeFieldInfoRepresentation": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "dataSpaceInfo": [
+          {
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "fields": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "id": "LIVE_ID_4b3b46f8821f",
+        "label": "[REDACTED]",
+        "name": "[REDACTED]",
+        "namespace": "",
+        "recordModifiedFieldName": "SystemModstamp__c",
+        "status": "ACTIVE"
+      },
+      {
+        "capabilities": {},
+        "category": "Engagement",
+        "createdDate": "2026-07-12T02:33:45.000Z",
+        "dataLakeFieldInfoRepresentation": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "dataSpaceInfo": [],
+        "eventDateTimeFieldName": "error_timestamp__c",
+        "fields": [
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": true,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          },
+          {
+            "dataType": "Text",
+            "isPrimaryKey": false,
+            "label": "[REDACTED]",
+            "name": "[REDACTED]"
+          }
+        ],
+        "id": "LIVE_ID_34d1b30fd9ef",
+        "label": "[REDACTED]",
+        "name": "[REDACTED]",
+        "namespace": "",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

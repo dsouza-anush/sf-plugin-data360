@@ -1,0 +1,19 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit create",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "components": [],
+      "devName": "[REDACTED]",
+      "label": "[REDACTED]"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 docai describe",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "supportedContentTypes": [
+        {
+          "isDefault": false,
+          "label": "[REDACTED]",
+          "maxFileSizeInMB": 10,
+          "type": "application/pdf"
+        },
+        {
+          "isDefault": false,
+          "label": "[REDACTED]",
+          "maxFileSizeInMB": 10,
+          "type": "image/png"
+        },
+        {
+          "isDefault": false,
+          "label": "[REDACTED]",
+          "maxFileSizeInMB": 10,
+          "type": "image/jpg"
+        }
+      ],
+      "supportedModels": [
+        {
+          "id": "LIVE_ID_47026a794707",
+          "isDefault": false,
+          "label": "[REDACTED]",
+          "provider": "Vertex AI (Google)",
+          "status": "ENABLED"
+        },
+        {
+          "id": "LIVE_ID_c4725f95f477",
+          "isDefault": false,
+          "label": "[REDACTED]",
+          "provider": "AWS Bedrock",
+          "status": "ENABLED"
+        },
+        {
+          "id": "LIVE_ID_57797d87b5d0",
+          "isDefault": false,
+          "label": "[REDACTED]",
+          "provider": "OpenAI",
+          "status": "ENABLED"
+        }
+      ],
+      "version": "2.0"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

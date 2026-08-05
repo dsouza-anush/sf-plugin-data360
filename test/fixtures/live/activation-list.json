@@ -1,0 +1,103 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 activation list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "activationTarget": {
+          "id": "LIVE_ID_79c2fbc2eec7",
+          "name": "[REDACTED]"
+        },
+        "activationTargetId": "LIVE_ID_79c2fbc2eec7",
+        "activationTargetName": "cs24_ad_0704_target",
+        "activationType": "SEGMENT",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T23:36:33.000Z",
+        "dataSpaceName": "default",
+        "developerName": "[REDACTED]",
+        "id": "LIVE_ID_68647dceb057",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-28T14:07:59.000Z",
+        "lastPublishDate": "2026-07-28T14:07:48.000Z",
+        "lastPublishStatus": "SUCCESS",
+        "marketSegmentId": "LIVE_ID_35604ca5faec",
+        "name": "[REDACTED]",
+        "processingType": "Batch",
+        "refreshType": "FULL_REFRESH",
+        "segmentApiName": "cs24_ad_0704_repeat_engagers",
+        "segmentId": "LIVE_ID_35604ca5faec",
+        "status": "ACTIVE"
+      },
+      {
+        "activationTarget": {
+          "id": "LIVE_ID_a4cbf91c574d",
+          "name": "[REDACTED]"
+        },
+        "activationTargetId": "LIVE_ID_a4cbf91c574d",
+        "activationTargetName": "Full Test DataCloud Target Jul4",
+        "activationType": "SEGMENT",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T22:30:25.000Z",
+        "dataSpaceName": "default",
+        "developerName": "[REDACTED]",
+        "id": "LIVE_ID_86324abefb82",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-04T22:44:33.000Z",
+        "lastPublishDate": "2026-07-04T22:44:32.000Z",
+        "lastPublishStatus": "SUCCESS",
+        "marketSegmentId": "LIVE_ID_1bce8e6aa11d",
+        "name": "[REDACTED]",
+        "processingType": "Batch",
+        "refreshType": "FULL_REFRESH",
+        "segmentApiName": "Full Test DBT Segment Jul4",
+        "segmentId": "LIVE_ID_1bce8e6aa11d",
+        "status": "ACTIVE"
+      },
+      {
+        "activationTarget": {
+          "id": "LIVE_ID_9bbc3e871d87",
+          "name": "[REDACTED]"
+        },
+        "activationTargetId": "LIVE_ID_9bbc3e871d87",
+        "activationTargetName": "Retail Test DataCloud Target",
+        "activationType": "SEGMENT",
+        "createdBy": {
+          "id": "LIVE_ID_edbf0014d350"
+        },
+        "createdDate": "2026-07-04T01:57:56.000Z",
+        "dataSpaceName": "default",
+        "developerName": "[REDACTED]",
+        "id": "LIVE_ID_7156a6bed935",
+        "lastModifiedBy": {
+          "id": "LIVE_ID_4a0133c3614b"
+        },
+        "lastModifiedDate": "2026-07-29T00:21:13.000Z",
+        "lastPublishDate": "2026-07-29T00:21:10.000Z",
+        "lastPublishStatus": "SUCCESS",
+        "marketSegmentId": "LIVE_ID_361f91532bde",
+        "name": "[REDACTED]",
+        "processingType": "Batch",
+        "refreshType": "FULL_REFRESH",
+        "segmentApiName": "Retail Test - High Value Customers",
+        "segmentId": "LIVE_ID_361f91532bde",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

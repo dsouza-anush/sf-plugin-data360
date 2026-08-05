@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.metadata.get",
+  "title": "data360.metadata.get JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "displayName": { "type": "string" },
+        "category": { "type": "string" },
+        "type": { "type": "string" },
+        "fields": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+        "relationships": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+        "primaryKeys": { "type": "array", "items": { "type": "object", "additionalProperties": true } }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

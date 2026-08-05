@@ -1,0 +1,43 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-kit manifest",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "developerName": [
+          "[REDACTED]"
+        ],
+        "entityName": "DataPackageKitDefinition",
+        "id": [
+          "LIVE_ID_2d6a26df2182"
+        ]
+      },
+      {
+        "developerName": [
+          "[REDACTED]"
+        ],
+        "entityName": "DataPackageKitObject",
+        "id": [
+          "LIVE_ID_8651d86fefc9"
+        ]
+      },
+      {
+        "developerName": [
+          "[REDACTED]"
+        ],
+        "entityName": "DataSource",
+        "id": [
+          "LIVE_ID_6e382cafdf00"
+        ]
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

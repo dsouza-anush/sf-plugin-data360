@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "createdDate": "2024-09-14T00:10:57.370Z",
+      "dataSpace": {
+        "name": "Help_Content"
+      },
+      "isActive": true,
+      "label": "SalesforceHelpContentRetriever 1.0",
+      "lastModifiedDate": "2024-11-20T11:28:51.418Z",
+      "name": "SalesforceHelpContentRetrieverVersion1",
+      "namespace": "sfdc_ai",
+      "retrievalMode": "Basic",
+      "sourceDmo": {},
+      "url": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations/sfdc_ai__SalesforceHelpContentRetrieverVersion1",
+      "version": 1
+    }
+  ],
+  "currentPageUrl": "/services/data/v67.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations?limit=25&offset=0",
+  "totalSize": 1,
+  "__fixture": {
+    "source": "live-scrubbed"
+  }
+}

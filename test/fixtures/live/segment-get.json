@@ -1,0 +1,51 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-19",
+    "command": "data360 segment get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "apiName": "[REDACTED]",
+      "createdBy": {
+        "id": "LIVE_ID_ccb8797279ca"
+      },
+      "createdDate": "2026-07-19T08:51:25.000Z",
+      "dataSpace": "default",
+      "description": "[REDACTED]",
+      "displayName": "[REDACTED]",
+      "includeCriteria": "&lt;DbtPipeline xmlns=&quot;&quot;&gt;&lt;models&gt;&lt;model&gt;&lt;name&gt;Account&lt;/name&gt;&lt;sql&gt;SELECT ssot__Account__dlm.ssot__Id__c, ssot__Account__dlm.KQ_Id__c FROM ssot__Account__dlm WHERE ssot__Account__dlm.ssot__Id__c IS NOT NULL&lt;/sql&gt;&lt;/model&gt;&lt;/models&gt;&lt;/DbtPipeline&gt;",
+      "includeDbt": {
+        "models": [
+          {
+            "name": "[REDACTED]",
+            "sql": "SELECT ssot__Account__dlm.ssot__Id__c, ssot__Account__dlm.KQ_Id__c FROM ssot__Account__dlm WHERE ssot__Account__dlm.ssot__Id__c IS NOT NULL"
+          }
+        ]
+      },
+      "lastModifiedBy": {
+        "id": "LIVE_ID_dcd39ee36c1e"
+      },
+      "lastModifiedDate": "2026-07-19T08:52:26.000Z",
+      "lastSegmentMemberCount": 660,
+      "lookbackPeriod": "P90D",
+      "marketSegmentDefinitionId": "LIVE_ID_8c424d39bfd6",
+      "marketSegmentId": "LIVE_ID_dc512eee638a",
+      "parameters": [],
+      "publishInterval": "NO_REFRESH",
+      "segmentMembershipDmo": {
+        "historyTable": "Account_SMH_1784451092160__dlm",
+        "latestTable": "Account_SM_1784451086279__dlm"
+      },
+      "segmentOnApiName": "ssot__Account__dlm",
+      "segmentOnId": "LIVE_ID_b4bd33910714",
+      "segmentStatus": "ACTIVE",
+      "segmentType": "DBT"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

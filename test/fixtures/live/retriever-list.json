@@ -1,0 +1,126 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 retriever list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "activeConfiguration": {
+          "createdDate": "2024-09-14T00:10:57.370Z",
+          "dataSpace": {
+            "name": "[REDACTED]"
+          },
+          "isActive": true,
+          "label": "[REDACTED]",
+          "lastModifiedDate": "2024-11-20T11:28:51.418Z",
+          "name": "[REDACTED]",
+          "namespace": "sfdc_ai",
+          "retrievalMode": "Basic",
+          "sourceDmo": {},
+          "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations/sfdc_ai__SalesforceHelpContentRetrieverVersion1",
+          "version": 1
+        },
+        "configurationsUrl": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations",
+        "dataSourceType": "SearchIndex",
+        "dataSpaces": [],
+        "description": "[REDACTED]",
+        "isDefault": false,
+        "isGlobal": true,
+        "isVirtual": false,
+        "label": "[REDACTED]",
+        "latestConfiguration": {
+          "createdDate": "2024-09-14T00:10:57.370Z",
+          "dataSpace": {
+            "name": "[REDACTED]"
+          },
+          "isActive": true,
+          "label": "[REDACTED]",
+          "lastModifiedDate": "2024-11-20T11:28:51.418Z",
+          "name": "[REDACTED]",
+          "namespace": "sfdc_ai",
+          "retrievalMode": "Basic",
+          "sourceDmo": {},
+          "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever/configurations/sfdc_ai__SalesforceHelpContentRetrieverVersion1",
+          "version": 1
+        },
+        "name": "[REDACTED]",
+        "namespace": "sfdc_ai",
+        "queryType": "ProCode",
+        "references": [],
+        "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__SalesforceHelpContentRetriever"
+      },
+      {
+        "activeConfiguration": {
+          "createdDate": "2024-10-10T00:00:00.000Z",
+          "isActive": true,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "namespace": "sfdc_ai",
+          "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__DynamicRetriever/configurations/sfdc_ai__DynamicRetrieverVersion",
+          "version": 1
+        },
+        "configurationsUrl": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__DynamicRetriever/configurations",
+        "dataSourceType": "SearchIndex",
+        "dataSpaces": [],
+        "description": "[REDACTED]",
+        "isDefault": false,
+        "isGlobal": false,
+        "isVirtual": true,
+        "label": "[REDACTED]",
+        "latestConfiguration": {
+          "createdDate": "2024-10-10T00:00:00.000Z",
+          "isActive": true,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "namespace": "sfdc_ai",
+          "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__DynamicRetriever/configurations/sfdc_ai__DynamicRetrieverVersion",
+          "version": 1
+        },
+        "name": "[REDACTED]",
+        "namespace": "sfdc_ai",
+        "references": [],
+        "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__DynamicRetriever"
+      },
+      {
+        "activeConfiguration": {
+          "createdDate": "2025-04-01T00:00:00.000Z",
+          "isActive": true,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "namespace": "sfdc_ai",
+          "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__WebRetrievalAction/configurations/sfdc_ai__WebRetrievalActionVersion",
+          "version": 1
+        },
+        "configurationsUrl": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__WebRetrievalAction/configurations",
+        "dataSourceType": "Web",
+        "dataSpaces": [],
+        "description": "[REDACTED]",
+        "isDefault": false,
+        "isGlobal": false,
+        "isVirtual": false,
+        "label": "[REDACTED]",
+        "latestConfiguration": {
+          "createdDate": "2025-04-01T00:00:00.000Z",
+          "isActive": true,
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "namespace": "sfdc_ai",
+          "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__WebRetrievalAction/configurations/sfdc_ai__WebRetrievalActionVersion",
+          "version": 1
+        },
+        "name": "[REDACTED]",
+        "namespace": "sfdc_ai",
+        "queryType": "NoCode",
+        "references": [],
+        "url": "/services/data/v68.0/ssot/machine-learning/retrievers/sfdc_ai__WebRetrievalAction"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

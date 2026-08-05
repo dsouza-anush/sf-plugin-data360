@@ -1,0 +1,12 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "dataSpaces": [
+    {
+      "name": "default",
+      "label": "Default"
+    }
+  ]
+}

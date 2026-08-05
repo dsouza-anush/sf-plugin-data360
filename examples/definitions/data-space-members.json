@@ -1,0 +1,13 @@
+{
+  "members": [
+    {
+      "memberName": "ExampleEvent__dll",
+      "filter": {
+        "conjunctiveOperator": "NoneOperator",
+        "conditions": {
+          "conditions": []
+        }
+      }
+    }
+  ]
+}

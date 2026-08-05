@@ -1,0 +1,18 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-19",
+    "command": "data360 query",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "queryId": "LIVE_ID_104d24014db8",
+    "status": "ResultsProduced",
+    "done": true,
+    "rowCount": 1
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

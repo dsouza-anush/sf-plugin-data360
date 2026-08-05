@@ -1,0 +1,18 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-19",
+    "command": "data360 calculated-insight run",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "errors": [],
+      "success": true
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

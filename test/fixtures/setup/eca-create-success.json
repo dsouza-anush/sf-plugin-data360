@@ -1,0 +1,47 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "capturedAt": "2026-07-12",
+    "apiVersion": "67.0",
+    "notes": "Metadata SOAP API createMetadata and readMetadata responses for ECA provisioning."
+  },
+  "createApp": {
+    "request": {
+      "type": "ExternalClientApplication",
+      "fullName": "D360CLI",
+      "fields": {
+        "label": "D360CLI",
+        "contactEmail": "admin@example.com",
+        "distributionState": "LOCAL"
+      }
+    },
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:met=\"http://soap.sforce.com/2006/04/metadata\"><soapenv:Body><createMetadataResponse><result><success>true</success><fullName>D360CLI</fullName></result></createMetadataResponse></soapenv:Body></soapenv:Envelope>"
+  },
+  "createOauth": {
+    "request": {
+      "type": "ExtlClntAppOauthSettings",
+      "fullName": "D360CLI_oauth",
+      "fields": {
+        "label": "D360CLI_oauth",
+        "externalClientApplication": "D360CLI",
+        "commaSeparatedOauthScopes": "Api, RefreshToken, CDPIngest, CDPProfile, CDPQuery",
+        "isFirstPartyAppEnabled": "false"
+      }
+    },
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:met=\"http://soap.sforce.com/2006/04/metadata\"><soapenv:Body><createMetadataResponse><result><success>true</success><fullName>D360CLI_oauth</fullName></result></createMetadataResponse></soapenv:Body></soapenv:Envelope>"
+  },
+  "createGlobal": {
+    "request": {
+      "type": "ExtlClntAppGlobalOauthSettings",
+      "fullName": "D360CLI_glbloauth"
+    },
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:met=\"http://soap.sforce.com/2006/04/metadata\"><soapenv:Body><createMetadataResponse><result><success>true</success><fullName>D360CLI_glbloauth</fullName></result></createMetadataResponse></soapenv:Body></soapenv:Envelope>"
+  },
+  "readConsumerKey": {
+    "request": {
+      "type": "ExtlClntAppGlobalOauthSettings",
+      "fullNames": "D360CLI_glbloauth"
+    },
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:met=\"http://soap.sforce.com/2006/04/metadata\"><soapenv:Body><readMetadataResponse><result><records><fullName>D360CLI_glbloauth</fullName><consumerKey>SYNTHETIC_CONSUMER_KEY</consumerKey></records></result></readMetadataResponse></soapenv:Body></soapenv:Envelope>"
+  }
+}

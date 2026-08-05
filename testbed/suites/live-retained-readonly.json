@@ -1,0 +1,26 @@
+{
+  "name": "live-retained-readonly",
+  "mode": "live",
+  "description": "Read-only verification of maintainer-owned retained resources supplied through local environment variables.",
+  "steps": [
+    {
+      "id": "01-stream",
+      "title": "Retained data stream remains readable by exact ID",
+      "tags": ["live", "read-only", "retained", "P4"],
+      "commands": [
+        {
+          "argv": ["data360", "data-stream", "get", "--name", "${D360_STREAM_ID}", "--json"],
+          "expect": { "exitCode": 0 }
+        }
+      ]
+    },
+    {
+      "id": "02-dlo",
+      "title": "Retained data lake object remains readable by exact API name",
+      "tags": ["live", "read-only", "retained", "P4"],
+      "commands": [
+        { "argv": ["data360", "dlo", "get", "--name", "${D360_DLO_NAME}", "--json"], "expect": { "exitCode": 0 } }
+      ]
+    }
+  ]
+}

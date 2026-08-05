@@ -1,0 +1,69 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 metadata get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "fields": [
+      {
+        "name": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "type": "NUMBER",
+        "businessType": "NUMBER"
+      },
+      {
+        "name": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "type": "STRING",
+        "businessType": "TEXT"
+      },
+      {
+        "name": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "type": "STRING",
+        "businessType": "TEXT"
+      }
+    ],
+    "indexes": [],
+    "category": "Profile",
+    "name": "[REDACTED]",
+    "displayName": "[REDACTED]",
+    "relationships": [
+      {
+        "fromEntity": "SearchResults_d7ace855_7_chunk__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "SourceRecordId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__ContactPointPhone__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__PartyId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      },
+      {
+        "fromEntity": "ssot__ContactPointEmail__dlm",
+        "toEntity": "ssot__Account__dlm",
+        "fromEntityAttribute": "ssot__PartyId__c",
+        "toEntityAttribute": "ssot__Id__c",
+        "cardinality": "NTOONE"
+      }
+    ],
+    "primaryKeys": [
+      {
+        "name": "[REDACTED]",
+        "displayName": "[REDACTED]",
+        "indexOrder": "1"
+      }
+    ],
+    "referenceModelEntityDeveloperName": "Account"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

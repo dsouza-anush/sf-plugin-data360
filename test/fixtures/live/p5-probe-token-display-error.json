@@ -1,0 +1,26 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-08-03",
+    "command": "data360 token display",
+    "outcome": "error",
+    "expectedFailure": true
+  },
+  "name": "[REDACTED]",
+  "message": "[REDACTED]",
+  "exitCode": 1,
+  "actions": [
+    "Check the External Client App and its cdp_* scopes.",
+    "Run sf data360 doctor for setup guidance."
+  ],
+  "context": "[REDACTED]",
+  "data": {
+    "httpStatus": 400
+  },
+  "warnings": [
+    "[REDACTED]"
+  ],
+  "code": "D360_TOKEN_EXCHANGE_FAILED",
+  "status": 1,
+  "commandName": "[REDACTED]"
+}

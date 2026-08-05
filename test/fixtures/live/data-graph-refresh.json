@@ -1,0 +1,23 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-graph refresh",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "errors": [
+        {
+          "errorCode": "DG_REFRESH_NOT_ALLOWED",
+          "message": "[REDACTED]"
+        }
+      ],
+      "success": false
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

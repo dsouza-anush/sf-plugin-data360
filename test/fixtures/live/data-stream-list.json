@@ -1,0 +1,332 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-stream list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "advancedAttributes": {},
+        "capabilities": {},
+        "connectorInfo": {
+          "connectorDetails": {
+            "name": "[REDACTED]",
+            "sourceObject": "Account",
+            "type": "SalesforceDotCom"
+          },
+          "connectorType": "SalesforceDotCom"
+        },
+        "dataAccessMode": "INGEST",
+        "dataLakeObjectInfo": {
+          "capabilities": {},
+          "category": "Profile",
+          "dataLakeFieldInfoRepresentation": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Number",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "dataSpaceInfo": [
+            {
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "fields": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Number",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "id": "LIVE_ID_d4d08fef1720",
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "recordModifiedFieldName": "SystemModstamp",
+          "status": "ACTIVE"
+        },
+        "dataSource": "Salesforce_Home",
+        "dataStreamType": "SFDC",
+        "isEnabled": false,
+        "label": "[REDACTED]",
+        "lastRunStatus": "NONE",
+        "mappings": [],
+        "name": "[REDACTED]",
+        "recordId": "LIVE_ID_337873f8b8ed",
+        "refreshConfig": {
+          "frequency": {
+            "frequencyType": "BATCH",
+            "hours": [],
+            "refreshDayOfMonth": []
+          },
+          "fullRefreshIntervalDays": "NONE",
+          "hasHeaders": false,
+          "isAccelerationEnabled": false,
+          "refreshMode": "UPSERT",
+          "shouldFetchImmediately": false,
+          "shouldTreatMissingFilesAsFailures": false
+        },
+        "sourceFields": [
+          {
+            "datatype": "Text",
+            "name": "[REDACTED]"
+          },
+          {
+            "datatype": "Text",
+            "name": "[REDACTED]"
+          },
+          {
+            "datatype": "Text",
+            "name": "[REDACTED]"
+          }
+        ],
+        "status": "INACTIVE"
+      },
+      {
+        "advancedAttributes": {},
+        "capabilities": {},
+        "connectorInfo": {
+          "connectorDetails": {
+            "name": "[REDACTED]",
+            "sourceObject": "BusinessHours",
+            "type": "SalesforceDotCom"
+          },
+          "connectorType": "SalesforceDotCom"
+        },
+        "dataAccessMode": "INGEST",
+        "dataLakeObjectInfo": {
+          "capabilities": {},
+          "category": "Other",
+          "dataLakeFieldInfoRepresentation": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "dataSpaceInfo": [
+            {
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "fields": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "id": "LIVE_ID_1bc40c6ffae9",
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "recordModifiedFieldName": "SystemModstamp",
+          "status": "ACTIVE"
+        },
+        "dataSource": "Salesforce_Home",
+        "dataStreamType": "SFDC",
+        "isEnabled": false,
+        "label": "[REDACTED]",
+        "lastRunStatus": "NONE",
+        "mappings": [],
+        "name": "[REDACTED]",
+        "recordId": "LIVE_ID_9dd663cf5fc1",
+        "refreshConfig": {
+          "frequency": {
+            "frequencyType": "BATCH",
+            "hours": [],
+            "refreshDayOfMonth": []
+          },
+          "fullRefreshIntervalDays": "NONE",
+          "hasHeaders": false,
+          "isAccelerationEnabled": false,
+          "refreshMode": "UPSERT",
+          "shouldFetchImmediately": false,
+          "shouldTreatMissingFilesAsFailures": false
+        },
+        "sourceFields": [
+          {
+            "datatype": "Text",
+            "name": "[REDACTED]"
+          },
+          {
+            "datatype": "Text",
+            "name": "[REDACTED]"
+          },
+          {
+            "datatype": "Text",
+            "name": "[REDACTED]"
+          }
+        ],
+        "status": "INACTIVE"
+      },
+      {
+        "advancedAttributes": {},
+        "capabilities": {},
+        "connectorInfo": {
+          "connectorDetails": {
+            "name": "[REDACTED]",
+            "sourceObject": "Campaign",
+            "type": "SalesforceDotCom"
+          },
+          "connectorType": "SalesforceDotCom"
+        },
+        "dataAccessMode": "INGEST",
+        "dataLakeObjectInfo": {
+          "capabilities": {},
+          "category": "Other",
+          "dataLakeFieldInfoRepresentation": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "dataSpaceInfo": [
+            {
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "fields": [
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            },
+            {
+              "dataType": "Text",
+              "isPrimaryKey": false,
+              "label": "[REDACTED]",
+              "name": "[REDACTED]"
+            }
+          ],
+          "id": "LIVE_ID_fc089ad12d60",
+          "label": "[REDACTED]",
+          "name": "[REDACTED]",
+          "recordModifiedFieldName": "SystemModstamp",
+          "status": "ACTIVE"
+        },
+        "dataSource": "Salesforce_Home",
+        "dataStreamType": "SFDC",
+        "isEnabled": false,
+        "label": "[REDACTED]",
+        "lastRunStatus": "NONE",
+        "mappings": [],
+        "name": "[REDACTED]",
+        "recordId": "LIVE_ID_fa01f1c9b2d1",
+        "refreshConfig": {
+          "frequency": {
+            "frequencyType": "BATCH",
+            "hours": [],
+            "refreshDayOfMonth": []
+          },
+          "fullRefreshIntervalDays": "NONE",
+          "hasHeaders": false,
+          "isAccelerationEnabled": false,
+          "refreshMode": "UPSERT",
+          "shouldFetchImmediately": false,
+          "shouldTreatMissingFilesAsFailures": false
+        },
+        "sourceFields": [
+          {
+            "datatype": "Text",
+            "name": "[REDACTED]"
+          },
+          {
+            "datatype": "Text",
+            "name": "[REDACTED]"
+          },
+          {
+            "datatype": "Text",
+            "name": "[REDACTED]"
+          }
+        ],
+        "status": "INACTIVE"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

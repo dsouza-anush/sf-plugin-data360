@@ -1,0 +1,18 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 data-kit undeploy",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "jobId": "LIVE_ID_e51f13374c40"
+    },
+    "jobId": "LIVE_ID_e51f13374c40"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

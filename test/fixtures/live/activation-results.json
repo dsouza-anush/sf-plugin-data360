@@ -1,0 +1,17 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 activation results",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "redacted": true
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

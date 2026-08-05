@@ -1,0 +1,37 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 mapping get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "developerName": "[REDACTED]",
+      "fieldMappings": [
+        {
+          "developerName": "[REDACTED]",
+          "sourceFieldDeveloperName": "Ownership__c",
+          "targetFieldDeveloperName": "ssot__AccountOwnershipType__c"
+        },
+        {
+          "developerName": "[REDACTED]",
+          "sourceFieldDeveloperName": "AnnualRevenue__c",
+          "targetFieldDeveloperName": "ssot__AnnualRevenueAmount__c"
+        },
+        {
+          "developerName": "[REDACTED]",
+          "sourceFieldDeveloperName": "LastActivityDate__c",
+          "targetFieldDeveloperName": "ssot__LastActivityDate__c"
+        }
+      ],
+      "sourceEntityDeveloperName": "Account_Home__dll",
+      "status": "ACTIVE",
+      "targetEntityDeveloperName": "ssot__Account__dlm"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

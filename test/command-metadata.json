@@ -1,0 +1,2136 @@
+{
+  "data360 activation create": {
+    "testFile": "test/p5-activation.test.ts",
+    "testPattern": "executes CRUD, results, and platforms through exact stateful routes",
+    "fixtures": [
+      "test/fixtures/activation/create.json",
+      "test/fixtures/activation/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/activations"
+    }
+  },
+  "data360 activation delete": {
+    "testFile": "test/p5-activation.test.ts",
+    "testPattern": "executes CRUD, results, and platforms through exact stateful routes",
+    "fixtures": [
+      "test/fixtures/activation/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/activations/{id}"
+    }
+  },
+  "data360 activation get": {
+    "testFile": "test/p5-activation.test.ts",
+    "testPattern": "executes CRUD, results, and platforms through exact stateful routes",
+    "fixtures": [
+      "test/fixtures/activation/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/activations/{id}"
+    }
+  },
+  "data360 activation list": {
+    "testFile": "test/p5-activation.test.ts",
+    "testPattern": "executes CRUD, results, and platforms through exact stateful routes",
+    "fixtures": [
+      "test/fixtures/activation/list.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/activations"
+    }
+  },
+  "data360 activation platforms": {
+    "testFile": "test/p5-activation.test.ts",
+    "testPattern": "executes CRUD, results, and platforms through exact stateful routes",
+    "fixtures": [
+      "test/fixtures/activation/platforms.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/activation-external-platforms"
+    }
+  },
+  "data360 activation results": {
+    "testFile": "test/p5-activation.test.ts",
+    "testPattern": "executes CRUD, results, and platforms through exact stateful routes",
+    "fixtures": [
+      "test/fixtures/activation/results.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/activations/{id}/data"
+    }
+  },
+  "data360 activation update": {
+    "testFile": "test/p5-activation.test.ts",
+    "testPattern": "executes CRUD, results, and platforms through exact stateful routes",
+    "fixtures": [
+      "test/fixtures/activation/get.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PUT",
+      "path": "/activations/{id}"
+    }
+  },
+  "data360 activation-target create": {
+    "testFile": "test/p5-activation-target.test.ts",
+    "testPattern": "executes all commands and rejects out-of-range maxFileSize without requests",
+    "fixtures": [
+      "test/fixtures/activation-target/create.json",
+      "test/fixtures/activation-target/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ],
+    "wire": {
+      "method": "POST",
+      "path": "/activation-targets"
+    }
+  },
+  "data360 activation-target get": {
+    "testFile": "test/p5-activation-target.test.ts",
+    "testPattern": "executes all commands and rejects out-of-range maxFileSize without requests",
+    "fixtures": [
+      "test/fixtures/activation-target/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/activation-targets/{id}"
+    }
+  },
+  "data360 activation-target list": {
+    "testFile": "test/p5-activation-target.test.ts",
+    "testPattern": "executes all commands and rejects out-of-range maxFileSize without requests",
+    "fixtures": [
+      "test/fixtures/activation-target/list.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/activation-targets"
+    }
+  },
+  "data360 activation-target update": {
+    "testFile": "test/p5-activation-target.test.ts",
+    "testPattern": "executes all commands and rejects out-of-range maxFileSize without requests",
+    "fixtures": [
+      "test/fixtures/activation-target/update.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ],
+    "wire": {
+      "method": "PATCH",
+      "path": "/activation-targets/{id}"
+    }
+  },
+  "data360 api request": {
+    "testFile": "test/platform.test.ts",
+    "testPattern": "preserves raw bytes",
+    "fixtures": [
+      "test/fixtures/direct/metadata.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 calculated-insight create": {
+    "testFile": "test/p5-calculated-insight.test.ts",
+    "testPattern": "runs every shipped command with suffix validation and exact values/metadata queries",
+    "fixtures": [
+      "test/fixtures/calculated-insight/create.json",
+      "test/fixtures/calculated-insight/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ],
+    "wire": {
+      "method": "POST",
+      "path": "/calculated-insights"
+    }
+  },
+  "data360 calculated-insight delete": {
+    "testFile": "test/p5-calculated-insight.test.ts",
+    "testPattern": "runs every shipped command with suffix validation and exact values/metadata queries",
+    "fixtures": [
+      "test/fixtures/calculated-insight/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION",
+      "D360_CONFIRMATION_REQUIRED"
+    ],
+    "wire": {
+      "method": "DELETE",
+      "path": "/calculated-insights/{apiName}"
+    }
+  },
+  "data360 calculated-insight get": {
+    "testFile": "test/p5-calculated-insight.test.ts",
+    "testPattern": "runs every shipped command with suffix validation and exact values/metadata queries",
+    "fixtures": [
+      "test/fixtures/calculated-insight/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ],
+    "wire": {
+      "method": "GET",
+      "path": "/calculated-insights/{apiName}"
+    }
+  },
+  "data360 calculated-insight list": {
+    "testFile": "test/p5-calculated-insight.test.ts",
+    "testPattern": "runs every shipped command with suffix validation and exact values/metadata queries",
+    "fixtures": [
+      "test/fixtures/calculated-insight/list-page-1.json",
+      "test/fixtures/calculated-insight/list-page-2.json"
+    ],
+    "flags": [
+      "all",
+      "limit",
+      "result-format"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/calculated-insights"
+    }
+  },
+  "data360 calculated-insight query": {
+    "testFile": "test/p5-calculated-insight.test.ts",
+    "testPattern": "runs every shipped command with suffix validation and exact values/metadata queries",
+    "fixtures": [
+      "test/fixtures/calculated-insight/values.json",
+      "test/fixtures/calculated-insight/metadata.json"
+    ],
+    "flags": [
+      "name",
+      "dimensions",
+      "measures",
+      "filters",
+      "time-granularity",
+      "describe"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ],
+    "wire": {
+      "method": "GET",
+      "path": "/insight/calculated-insights/{apiName}|/insight/metadata/{apiName}"
+    }
+  },
+  "data360 calculated-insight run": {
+    "testFile": "test/p5-calculated-insight.test.ts",
+    "testPattern": "runs every shipped command with suffix validation and exact values/metadata queries",
+    "fixtures": [
+      "test/fixtures/calculated-insight/run.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ],
+    "wire": {
+      "method": "POST",
+      "path": "/calculated-insights/{apiName}/actions/run"
+    }
+  },
+  "data360 calculated-insight update": {
+    "testFile": "test/p5-calculated-insight.test.ts",
+    "testPattern": "runs every shipped command with suffix validation and exact values/metadata queries",
+    "fixtures": [
+      "test/fixtures/calculated-insight/get.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ],
+    "wire": {
+      "method": "PATCH",
+      "path": "/calculated-insights/{apiName}"
+    }
+  },
+  "data360 connection create": {
+    "testFile": "test/p4-connection.test.ts",
+    "testPattern": "runs CRUD, connector iteration, validation, description, and schema upsert through real parsers",
+    "fixtures": [
+      "test/fixtures/connection/create.json",
+      "test/fixtures/connection/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/connections"
+    }
+  },
+  "data360 connection delete": {
+    "testFile": "test/p4-connection.test.ts",
+    "testPattern": "runs CRUD, connector iteration, validation, description, and schema upsert through real parsers",
+    "fixtures": [
+      "test/fixtures/connection/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/connections/{id}"
+    }
+  },
+  "data360 connection describe": {
+    "testFile": "test/p4-connection.test.ts",
+    "testPattern": "runs CRUD, connector iteration, validation, description, and schema upsert through real parsers",
+    "fixtures": [
+      "test/fixtures/connection/describe.json"
+    ],
+    "flags": [
+      "name",
+      "databases",
+      "schemas",
+      "objects",
+      "fields",
+      "preview",
+      "endpoints",
+      "sitemap",
+      "object"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/connections/{id}/{section}"
+    }
+  },
+  "data360 connection get": {
+    "testFile": "test/p4-connection.test.ts",
+    "testPattern": "runs CRUD, connector iteration, validation, description, and schema upsert through real parsers",
+    "fixtures": [
+      "test/fixtures/connection/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/connections/{id}"
+    }
+  },
+  "data360 connection list": {
+    "testFile": "test/p4-connection.test.ts",
+    "testPattern": "runs CRUD, connector iteration, validation, description, and schema upsert through real parsers",
+    "fixtures": [
+      "test/fixtures/connection/list.json"
+    ],
+    "flags": [
+      "connector-type",
+      "limit",
+      "all"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/connections"
+    }
+  },
+  "data360 connection update": {
+    "testFile": "test/p4-connection.test.ts",
+    "testPattern": "runs CRUD, connector iteration, validation, description, and schema upsert through real parsers",
+    "fixtures": [
+      "test/fixtures/connection/get.json"
+    ],
+    "flags": [
+      "name",
+      "file",
+      "schema-file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PATCH",
+      "path": "/connections/{id}"
+    }
+  },
+  "data360 connection validate": {
+    "testFile": "test/p4-connection.test.ts",
+    "testPattern": "runs CRUD, connector iteration, validation, description, and schema upsert through real parsers",
+    "fixtures": [
+      "test/fixtures/connection/validate.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/connections/{id}/actions/test"
+    }
+  },
+  "data360 connector get": {
+    "testFile": "test/p4-connector.test.ts",
+    "testPattern": "runs list and get through concrete oclif leaves and mocked transport",
+    "fixtures": [
+      "test/fixtures/connector/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/connectors/{type}"
+    }
+  },
+  "data360 connector list": {
+    "testFile": "test/p4-connector.test.ts",
+    "testPattern": "runs list and get through concrete oclif leaves and mocked transport",
+    "fixtures": [
+      "test/fixtures/connector/list.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/connectors"
+    }
+  },
+  "data360 data-action list": {
+    "testFile": "test/p6-list-families.test.ts",
+    "testPattern": "executes every recorded collection with the API-specific page-size parameter",
+    "fixtures": [
+      "test/fixtures/data-action/list.json"
+    ],
+    "flags": [
+      "all",
+      "limit"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-actions"
+    }
+  },
+  "data360 data-action-target list": {
+    "testFile": "test/p6-list-families.test.ts",
+    "testPattern": "executes every recorded collection with the API-specific page-size parameter",
+    "fixtures": [
+      "test/fixtures/data-action-target/list.json"
+    ],
+    "flags": [
+      "all",
+      "limit"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-action-targets"
+    }
+  },
+  "data360 data-graph create": {
+    "testFile": "test/p5-data-graph.test.ts",
+    "testPattern": "executes metadata CRUD, refresh, and both exact data query forms",
+    "fixtures": [
+      "test/fixtures/data-graph/create.json",
+      "test/fixtures/data-graph/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-graphs"
+    }
+  },
+  "data360 data-graph delete": {
+    "testFile": "test/p5-data-graph.test.ts",
+    "testPattern": "executes metadata CRUD, refresh, and both exact data query forms",
+    "fixtures": [
+      "test/fixtures/data-graph/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/data-graphs/{name}"
+    }
+  },
+  "data360 data-graph get": {
+    "testFile": "test/p5-data-graph.test.ts",
+    "testPattern": "executes metadata CRUD, refresh, and both exact data query forms",
+    "fixtures": [
+      "test/fixtures/data-graph/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-graphs/{name}"
+    }
+  },
+  "data360 data-graph list": {
+    "testFile": "test/p5-data-graph.test.ts",
+    "testPattern": "executes metadata CRUD, refresh, and both exact data query forms",
+    "fixtures": [
+      "test/fixtures/data-graph/list.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-graphs/metadata"
+    }
+  },
+  "data360 data-graph query": {
+    "testFile": "test/p5-data-graph.test.ts",
+    "testPattern": "executes metadata CRUD, refresh, and both exact data query forms",
+    "fixtures": [
+      "test/fixtures/data-graph/query.json"
+    ],
+    "flags": [
+      "name",
+      "id",
+      "lookup-keys",
+      "live",
+      "output-file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-graphs/data/{entity}[/{id}]?lookupKeys=&live="
+    }
+  },
+  "data360 data-graph refresh": {
+    "testFile": "test/p5-data-graph.test.ts",
+    "testPattern": "executes metadata CRUD, refresh, and both exact data query forms",
+    "fixtures": [
+      "test/fixtures/data-graph/refresh.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-graphs/{name}/actions/refresh"
+    }
+  },
+  "data360 data-kit available": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/available.json"
+    ],
+    "flags": [
+      "component-type",
+      "data-kit",
+      "limit",
+      "offset"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-kits/available-components"
+    }
+  },
+  "data360 data-kit component dependencies": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/dependencies.json"
+    ],
+    "flags": [
+      "name",
+      "component",
+      "component-type",
+      "data-space"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-kits/{name}/components/{component}/dependencies"
+    }
+  },
+  "data360 data-kit component status": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/status.json"
+    ],
+    "flags": [
+      "name",
+      "component"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-kits/{name}/components/{component}/deployment-status"
+    }
+  },
+  "data360 data-kit create": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-kits"
+    }
+  },
+  "data360 data-kit delete": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_CONFIRMATION_REQUIRED"
+    ],
+    "wire": {
+      "method": "DELETE",
+      "path": "/data-kits/{name}"
+    }
+  },
+  "data360 data-kit deploy": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/deploy.json"
+    ],
+    "flags": [
+      "name",
+      "file",
+      "data-space"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-kits/{name}?asyncMode=true"
+    }
+  },
+  "data360 data-kit list": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/list.json"
+    ],
+    "flags": [
+      "namespace"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-kits"
+    }
+  },
+  "data360 data-kit manifest": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/manifest.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/datakit/{name}/manifest"
+    }
+  },
+  "data360 data-kit undeploy": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/undeploy.json"
+    ],
+    "flags": [
+      "name",
+      "file",
+      "data-space",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_CONFIRMATION_REQUIRED"
+    ],
+    "wire": {
+      "method": "POST",
+      "path": "/data-kits/{name}/undeploy?asyncMode=true"
+    }
+  },
+  "data360 data-kit update": {
+    "testFile": "test/p6-data-kit.test.ts",
+    "testPattern": "executes the exact v67 Data Kit surface through real parsers",
+    "fixtures": [
+      "test/fixtures/data-kit/update.json"
+    ],
+    "flags": [
+      "name",
+      "file",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_CONFIRMATION_REQUIRED"
+    ],
+    "wire": {
+      "method": "PATCH",
+      "path": "/data-kits/{name}"
+    }
+  },
+  "data360 data-space create": {
+    "testFile": "test/p4-data-space.test.ts",
+    "testPattern": "registers no delete and only verified member list/set",
+    "fixtures": [
+      "test/fixtures/data-space/create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-spaces"
+    }
+  },
+  "data360 data-space get": {
+    "testFile": "test/p4-data-space.test.ts",
+    "testPattern": "registers no delete and only verified member list/set",
+    "fixtures": [
+      "test/fixtures/data-space/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-spaces/{name}"
+    }
+  },
+  "data360 data-space list": {
+    "testFile": "test/p4-data-space.test.ts",
+    "testPattern": "registers no delete and only verified member list/set",
+    "fixtures": [
+      "test/fixtures/data-space/list.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-spaces"
+    }
+  },
+  "data360 data-space member list": {
+    "testFile": "test/p4-data-space.test.ts",
+    "testPattern": "registers no delete and only verified member list/set",
+    "fixtures": [
+      "test/fixtures/data-space/member-list.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-spaces/{name}/members"
+    }
+  },
+  "data360 data-space member set": {
+    "testFile": "test/p4-data-space.test.ts",
+    "testPattern": "registers no delete and only verified member list/set",
+    "fixtures": [
+      "test/fixtures/data-space/member-set.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PUT",
+      "path": "/data-spaces/{name}/members"
+    }
+  },
+  "data360 data-space update": {
+    "testFile": "test/p4-data-space.test.ts",
+    "testPattern": "registers no delete and only verified member list/set",
+    "fixtures": [
+      "test/fixtures/data-space/update.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PATCH",
+      "path": "/data-spaces/{name}"
+    }
+  },
+  "data360 data-stream create": {
+    "testFile": "test/p4-data-stream.test.ts",
+    "testPattern": "runs CRUD/run and enforces CRM and safe delete behavior",
+    "fixtures": [
+      "test/fixtures/data-stream/create.json",
+      "test/fixtures/data-stream/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-streams"
+    }
+  },
+  "data360 data-stream delete": {
+    "testFile": "test/p4-data-stream.test.ts",
+    "testPattern": "runs CRUD/run and enforces CRM and safe delete behavior",
+    "fixtures": [
+      "test/fixtures/data-stream/delete.json"
+    ],
+    "flags": [
+      "name",
+      "delete-dlo",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/data-streams/{name}?shouldDeleteDataLakeObject=false"
+    }
+  },
+  "data360 data-stream get": {
+    "testFile": "test/p4-data-stream.test.ts",
+    "testPattern": "runs CRUD/run and enforces CRM and safe delete behavior",
+    "fixtures": [
+      "test/fixtures/data-stream/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-streams/{name}"
+    }
+  },
+  "data360 data-stream list": {
+    "testFile": "test/p4-data-stream.test.ts",
+    "testPattern": "runs CRUD/run and enforces CRM and safe delete behavior",
+    "fixtures": [
+      "test/fixtures/data-stream/list.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-streams"
+    }
+  },
+  "data360 data-stream run": {
+    "testFile": "test/p4-data-stream.test.ts",
+    "testPattern": "runs CRUD/run and enforces CRM and safe delete behavior",
+    "fixtures": [
+      "test/fixtures/data-stream/run.json",
+      "test/fixtures/data-stream/crm.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-streams/{name}/actions/run"
+    }
+  },
+  "data360 data-stream update": {
+    "testFile": "test/p4-data-stream.test.ts",
+    "testPattern": "runs CRUD/run and enforces CRM and safe delete behavior",
+    "fixtures": [
+      "test/fixtures/data-stream/get.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PATCH",
+      "path": "/data-streams/{name}"
+    }
+  },
+  "data360 dlo create": {
+    "testFile": "test/p4-dlo.test.ts",
+    "testPattern": "runs all verified CRUD leaves with definition input and exact paths",
+    "fixtures": [
+      "test/fixtures/dlo/create.json",
+      "test/fixtures/dlo/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-lake-objects"
+    }
+  },
+  "data360 dlo delete": {
+    "testFile": "test/p4-dlo.test.ts",
+    "testPattern": "runs all verified CRUD leaves with definition input and exact paths",
+    "fixtures": [
+      "test/fixtures/dlo/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/data-lake-objects/{name}"
+    }
+  },
+  "data360 dlo get": {
+    "testFile": "test/p4-dlo.test.ts",
+    "testPattern": "runs all verified CRUD leaves with definition input and exact paths",
+    "fixtures": [
+      "test/fixtures/dlo/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-lake-objects/{name}"
+    }
+  },
+  "data360 dlo list": {
+    "testFile": "test/p4-dlo.test.ts",
+    "testPattern": "runs all verified CRUD leaves with definition input and exact paths",
+    "fixtures": [
+      "test/fixtures/dlo/list-page-1.json",
+      "test/fixtures/dlo/list-page-2.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-lake-objects"
+    }
+  },
+  "data360 dlo update": {
+    "testFile": "test/p4-dlo.test.ts",
+    "testPattern": "runs all verified CRUD leaves with definition input and exact paths",
+    "fixtures": [
+      "test/fixtures/dlo/get.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PATCH",
+      "path": "/data-lake-objects/{name}"
+    }
+  },
+  "data360 dmo create": {
+    "testFile": "test/p4-dmo.test.ts",
+    "testPattern": "runs CRUD, from-DLO creation, and exact relationship collection/delete paths",
+    "fixtures": [
+      "test/fixtures/dmo/create.json",
+      "test/fixtures/dmo/invalid-create.json",
+      "test/fixtures/dmo/from-dlo.json"
+    ],
+    "flags": [
+      "file",
+      "from-dlo"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-model-objects"
+    }
+  },
+  "data360 dmo delete": {
+    "testFile": "test/p4-dmo.test.ts",
+    "testPattern": "runs CRUD, from-DLO creation, and exact relationship collection/delete paths",
+    "fixtures": [
+      "test/fixtures/dmo/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/data-model-objects/{name}"
+    }
+  },
+  "data360 dmo get": {
+    "testFile": "test/p4-dmo.test.ts",
+    "testPattern": "runs CRUD, from-DLO creation, and exact relationship collection/delete paths",
+    "fixtures": [
+      "test/fixtures/dmo/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-model-objects/{name}"
+    }
+  },
+  "data360 dmo list": {
+    "testFile": "test/p4-dmo.test.ts",
+    "testPattern": "runs CRUD, from-DLO creation, and exact relationship collection/delete paths",
+    "fixtures": [
+      "test/fixtures/dmo/list-page-1.json",
+      "test/fixtures/dmo/list-page-2.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-model-objects"
+    }
+  },
+  "data360 dmo relationship create": {
+    "testFile": "test/p4-dmo.test.ts",
+    "testPattern": "runs CRUD, from-DLO creation, and exact relationship collection/delete paths",
+    "fixtures": [
+      "test/fixtures/dmo/relationship-create.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-model-objects/{name}/relationships"
+    }
+  },
+  "data360 dmo relationship delete": {
+    "testFile": "test/p4-dmo.test.ts",
+    "testPattern": "runs CRUD, from-DLO creation, and exact relationship collection/delete paths",
+    "fixtures": [
+      "test/fixtures/dmo/relationship-delete.json"
+    ],
+    "flags": [
+      "relationship-name",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/data-model-objects/relationships/{name}"
+    }
+  },
+  "data360 dmo relationship list": {
+    "testFile": "test/p4-dmo.test.ts",
+    "testPattern": "runs CRUD, from-DLO creation, and exact relationship collection/delete paths",
+    "fixtures": [
+      "test/fixtures/dmo/relationships.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-model-objects/{name}/relationships"
+    }
+  },
+  "data360 dmo update": {
+    "testFile": "test/p4-dmo.test.ts",
+    "testPattern": "runs CRUD, from-DLO creation, and exact relationship collection/delete paths",
+    "fixtures": [
+      "test/fixtures/dmo/get.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PATCH",
+      "path": "/data-model-objects/{name}"
+    }
+  },
+  "data360 docai config list": {
+    "testFile": "test/p6-list-families.test.ts",
+    "testPattern": "executes every recorded collection with the API-specific page-size parameter",
+    "fixtures": [
+      "test/fixtures/docai/configurations.json"
+    ],
+    "flags": [
+      "all",
+      "limit"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/document-processing/configurations"
+    }
+  },
+  "data360 docai describe": {
+    "testFile": "test/p6-verified.test.ts",
+    "testPattern": "executes retriever reads and Document AI describe through recorded HTTP fixtures",
+    "fixtures": [
+      "test/fixtures/docai/global-config.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/document-processing/global-config"
+    }
+  },
+  "data360 doctor": {
+    "testFile": "test/platform.test.ts",
+    "testPattern": "executes doctor through real parsing",
+    "fixtures": [
+      "test/fixtures/doctor/data-spaces.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 identity-resolution create": {
+    "testFile": "test/p5-identity-resolution.test.ts",
+    "testPattern": "runs every shipped command through stateful exact paths and blocks unconfirmed run",
+    "fixtures": [
+      "test/fixtures/identity-resolution/create.json",
+      "test/fixtures/identity-resolution/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/identity-resolutions"
+    }
+  },
+  "data360 identity-resolution delete": {
+    "testFile": "test/p5-identity-resolution.test.ts",
+    "testPattern": "runs every shipped command through stateful exact paths and blocks unconfirmed run",
+    "fixtures": [
+      "test/fixtures/identity-resolution/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_CONFIRMATION_REQUIRED"
+    ],
+    "wire": {
+      "method": "DELETE",
+      "path": "/identity-resolutions/{name}"
+    }
+  },
+  "data360 identity-resolution get": {
+    "testFile": "test/p5-identity-resolution.test.ts",
+    "testPattern": "runs every shipped command through stateful exact paths and blocks unconfirmed run",
+    "fixtures": [
+      "test/fixtures/identity-resolution/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/identity-resolutions/{name}"
+    }
+  },
+  "data360 identity-resolution list": {
+    "testFile": "test/p5-identity-resolution.test.ts",
+    "testPattern": "runs every shipped command through stateful exact paths and blocks unconfirmed run",
+    "fixtures": [
+      "test/fixtures/identity-resolution/list-page-1.json",
+      "test/fixtures/identity-resolution/list-page-2.json"
+    ],
+    "flags": [
+      "all",
+      "limit",
+      "result-format"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/identity-resolutions"
+    }
+  },
+  "data360 identity-resolution run": {
+    "testFile": "test/p5-identity-resolution.test.ts",
+    "testPattern": "runs every shipped command through stateful exact paths and blocks unconfirmed run",
+    "fixtures": [
+      "test/fixtures/identity-resolution/run.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_CONFIRMATION_REQUIRED"
+    ],
+    "wire": {
+      "method": "POST",
+      "path": "/identity-resolutions/{id}/actions/run-now"
+    }
+  },
+  "data360 identity-resolution update": {
+    "testFile": "test/p5-identity-resolution.test.ts",
+    "testPattern": "runs every shipped command through stateful exact paths and blocks unconfirmed run",
+    "fixtures": [
+      "test/fixtures/identity-resolution/get.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PATCH",
+      "path": "/identity-resolutions/{name}"
+    }
+  },
+  "data360 ingest": {
+    "testFile": "test/ingest.test.ts",
+    "testPattern": "runs all seven commands through exchange and a stateful Fastify lifecycle",
+    "fixtures": [
+      "test/fixtures/ingest/stream-accepted.json"
+    ],
+    "flags": [
+      "source-name",
+      "object-name",
+      "file"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ]
+  },
+  "data360 ingest bulk": {
+    "testFile": "test/ingest.test.ts",
+    "testPattern": "runs all seven commands through exchange and a stateful Fastify lifecycle",
+    "fixtures": [
+      "test/fixtures/ingest/lifecycle.json"
+    ],
+    "flags": [
+      "source-name",
+      "object-name",
+      "file",
+      "operation",
+      "wait",
+      "async",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION",
+      "D360_CONFIRMATION_REQUIRED",
+      "D360_JOB_TIMEOUT",
+      "D360_JOB_FAILED"
+    ]
+  },
+  "data360 ingest cancel": {
+    "testFile": "test/ingest.test.ts",
+    "testPattern": "runs all seven commands through exchange and a stateful Fastify lifecycle",
+    "fixtures": [
+      "test/fixtures/ingest/lifecycle.json"
+    ],
+    "flags": [
+      "job-id",
+      "use-most-recent",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_NOT_FOUND",
+      "D360_CONFIRMATION_REQUIRED"
+    ]
+  },
+  "data360 ingest delete": {
+    "testFile": "test/ingest.test.ts",
+    "testPattern": "runs all seven commands through exchange and a stateful Fastify lifecycle",
+    "fixtures": [
+      "test/fixtures/ingest/stream-accepted.json"
+    ],
+    "flags": [
+      "source-name",
+      "object-name",
+      "ids",
+      "file",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION",
+      "D360_CONFIRMATION_REQUIRED"
+    ]
+  },
+  "data360 ingest report": {
+    "testFile": "test/ingest.test.ts",
+    "testPattern": "runs all seven commands through exchange and a stateful Fastify lifecycle",
+    "fixtures": [
+      "test/fixtures/ingest/lifecycle.json"
+    ],
+    "flags": [
+      "job-id",
+      "use-most-recent"
+    ],
+    "errors": [
+      "D360_NOT_FOUND"
+    ]
+  },
+  "data360 ingest resume": {
+    "testFile": "test/ingest.test.ts",
+    "testPattern": "runs all seven commands through exchange and a stateful Fastify lifecycle",
+    "fixtures": [
+      "test/fixtures/ingest/lifecycle.json"
+    ],
+    "flags": [
+      "job-id",
+      "use-most-recent",
+      "wait"
+    ],
+    "errors": [
+      "D360_NOT_FOUND",
+      "D360_JOB_TIMEOUT",
+      "D360_JOB_FAILED"
+    ]
+  },
+  "data360 ingest validate": {
+    "testFile": "test/ingest.test.ts",
+    "testPattern": "runs all seven commands through exchange and a stateful Fastify lifecycle",
+    "fixtures": [
+      "test/fixtures/ingest/validation-error.json"
+    ],
+    "flags": [
+      "source-name",
+      "object-name",
+      "file"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ]
+  },
+  "data360 mapping create": {
+    "testFile": "test/p4-mapping.test.ts",
+    "testPattern": "runs filtered CRUD, per-field methods, and dry-run auto mapping through real parsers",
+    "fixtures": [
+      "test/fixtures/mapping/create.json",
+      "test/fixtures/mapping/invalid-create.json",
+      "test/fixtures/mapping/auto.json"
+    ],
+    "flags": [
+      "file",
+      "auto",
+      "dlo",
+      "dmo",
+      "dry-run"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-model-object-mappings"
+    }
+  },
+  "data360 mapping delete": {
+    "testFile": "test/p4-mapping.test.ts",
+    "testPattern": "runs filtered CRUD, per-field methods, and dry-run auto mapping through real parsers",
+    "fixtures": [
+      "test/fixtures/mapping/delete.json"
+    ],
+    "flags": [
+      "name",
+      "fields",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/data-model-object-mappings/{name}/field-mappings/{field}"
+    }
+  },
+  "data360 mapping get": {
+    "testFile": "test/p4-mapping.test.ts",
+    "testPattern": "runs filtered CRUD, per-field methods, and dry-run auto mapping through real parsers",
+    "fixtures": [
+      "test/fixtures/mapping/get.json"
+    ],
+    "flags": [
+      "name",
+      "dmo",
+      "source-object"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION",
+      "D360_NAME_AMBIGUOUS",
+      "D360_NAME_NOT_FOUND"
+    ],
+    "wire": {
+      "method": "GET",
+      "path": "/data-model-object-mappings/{name}"
+    }
+  },
+  "data360 mapping list": {
+    "testFile": "test/p4-mapping.test.ts",
+    "testPattern": "runs filtered CRUD, per-field methods, and dry-run auto mapping through real parsers",
+    "fixtures": [
+      "test/fixtures/mapping/list.json"
+    ],
+    "flags": [
+      "dmo",
+      "source-object",
+      "all",
+      "limit",
+      "result-format"
+    ],
+    "errors": [
+      "D360_INVALID_DEFINITION"
+    ],
+    "wire": {
+      "method": "GET",
+      "path": "/data-model-object-mappings?dmoDeveloperName=&dloDeveloperName="
+    }
+  },
+  "data360 mapping update": {
+    "testFile": "test/p4-mapping.test.ts",
+    "testPattern": "runs filtered CRUD, per-field methods, and dry-run auto mapping through real parsers",
+    "fixtures": [
+      "test/fixtures/mapping/update.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PATCH",
+      "path": "/data-model-object-mappings/{name}/field-mappings/{field}"
+    }
+  },
+  "data360 metadata get": {
+    "testFile": "test/platform.test.ts",
+    "testPattern": "executes metadata commands through real parsing",
+    "fixtures": [
+      "test/fixtures/metadata/entity.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 metadata list": {
+    "testFile": "test/platform.test.ts",
+    "testPattern": "executes metadata commands through real parsing",
+    "fixtures": [
+      "test/fixtures/metadata/entities.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 open": {
+    "testFile": "test/platform.test.ts",
+    "testPattern": "uses real parser constraints for raw request and open",
+    "fixtures": [
+      "test/fixtures/doctor/data-spaces.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 profile describe": {
+    "testFile": "test/p5-profile.test.ts",
+    "testPattern": "executes verified profile variants and four encoded lookup parameters",
+    "fixtures": [
+      "test/fixtures/profile/metadata.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/profile/metadata[/{model}]"
+    }
+  },
+  "data360 profile get": {
+    "testFile": "test/p5-profile.test.ts",
+    "testPattern": "executes verified profile variants and four encoded lookup parameters",
+    "fixtures": [
+      "test/fixtures/profile/list.json",
+      "test/fixtures/profile/get.json",
+      "test/fixtures/profile/insight.json"
+    ],
+    "flags": [
+      "name",
+      "id",
+      "search-key",
+      "fields",
+      "insight"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/profile/{model}[/{id}[/calculated-insights/{ci}]]"
+    }
+  },
+  "data360 profile lookup": {
+    "testFile": "test/p5-profile.test.ts",
+    "testPattern": "executes verified profile variants and four encoded lookup parameters",
+    "fixtures": [
+      "test/fixtures/profile/lookup.json"
+    ],
+    "flags": [
+      "entity",
+      "data-source",
+      "data-source-object",
+      "record"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/universalIdLookup/{entity}/{source}/{object}/{record}"
+    }
+  },
+  "data360 query": {
+    "testFile": "test/query.test.ts",
+    "testPattern": "executes a mocked submit through the real command parser",
+    "fixtures": [
+      "test/fixtures/query/submit-results.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 query cancel": {
+    "testFile": "test/query.test.ts",
+    "testPattern": "executes explicitly confirmed cancel through the real parser",
+    "fixtures": [
+      "test/fixtures/query/status-running.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 query hybrid": {
+    "testFile": "test/p5-query-search.test.ts",
+    "testPattern": "executes both builders through the standard query job endpoint",
+    "fixtures": [
+      "test/fixtures/query/search.json"
+    ],
+    "flags": [
+      "index",
+      "text",
+      "top-k",
+      "filter",
+      "select"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/query-sql"
+    }
+  },
+  "data360 query results": {
+    "testFile": "test/query.test.ts",
+    "testPattern": "executes results pagination",
+    "fixtures": [
+      "test/fixtures/query/rows-page-1.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 query resume": {
+    "testFile": "test/query.test.ts",
+    "testPattern": "uses cached resume output defaults",
+    "fixtures": [
+      "test/fixtures/query/status-running.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 query vector": {
+    "testFile": "test/p5-query-search.test.ts",
+    "testPattern": "executes both builders through the standard query job endpoint",
+    "fixtures": [
+      "test/fixtures/query/search.json"
+    ],
+    "flags": [
+      "index",
+      "text",
+      "top-k",
+      "filter",
+      "select"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/query-sql"
+    }
+  },
+  "data360 retriever configuration list": {
+    "testFile": "test/p6-verified.test.ts",
+    "testPattern": "executes retriever reads and Document AI describe through recorded HTTP fixtures",
+    "fixtures": [
+      "test/fixtures/retriever/list.json",
+      "test/fixtures/retriever/configurations.json"
+    ],
+    "flags": [
+      "name",
+      "all",
+      "limit"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/machine-learning/retrievers/{name}/configurations"
+    }
+  },
+  "data360 retriever get": {
+    "testFile": "test/p6-verified.test.ts",
+    "testPattern": "executes retriever reads and Document AI describe through recorded HTTP fixtures",
+    "fixtures": [
+      "test/fixtures/retriever/list.json",
+      "test/fixtures/retriever/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/machine-learning/retrievers/{name}"
+    }
+  },
+  "data360 retriever list": {
+    "testFile": "test/p6-verified.test.ts",
+    "testPattern": "executes retriever reads and Document AI describe through recorded HTTP fixtures",
+    "fixtures": [
+      "test/fixtures/retriever/list.json"
+    ],
+    "flags": [
+      "all",
+      "limit"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/machine-learning/retrievers"
+    }
+  },
+  "data360 search-index create": {
+    "testFile": "test/p5-search-index.test.ts",
+    "testPattern": "executes every shipped command with exact CRUD and describe paths",
+    "fixtures": [
+      "test/fixtures/search-index/create.json",
+      "test/fixtures/search-index/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/search-index"
+    }
+  },
+  "data360 search-index delete": {
+    "testFile": "test/p5-search-index.test.ts",
+    "testPattern": "executes every shipped command with exact CRUD and describe paths",
+    "fixtures": [
+      "test/fixtures/search-index/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/search-index/{nameOrId}"
+    }
+  },
+  "data360 search-index describe": {
+    "testFile": "test/p5-search-index.test.ts",
+    "testPattern": "executes every shipped command with exact CRUD and describe paths",
+    "fixtures": [
+      "test/fixtures/search-index/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/search-index/{nameOrId}"
+    }
+  },
+  "data360 search-index get": {
+    "testFile": "test/p5-search-index.test.ts",
+    "testPattern": "executes every shipped command with exact CRUD and describe paths",
+    "fixtures": [
+      "test/fixtures/search-index/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/search-index/{nameOrId}"
+    }
+  },
+  "data360 search-index list": {
+    "testFile": "test/p5-search-index.test.ts",
+    "testPattern": "executes every shipped command with exact CRUD and describe paths",
+    "fixtures": [
+      "test/fixtures/search-index/list.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/search-index"
+    }
+  },
+  "data360 search-index update": {
+    "testFile": "test/p5-search-index.test.ts",
+    "testPattern": "executes every shipped command with exact CRUD and describe paths",
+    "fixtures": [
+      "test/fixtures/search-index/get.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PATCH",
+      "path": "/search-index/{nameOrId}"
+    }
+  },
+  "data360 segment create": {
+    "testFile": "test/p5-segment.test.ts",
+    "testPattern": "runs every shipped command through exact keys and blocks unconfirmed destructive actions",
+    "fixtures": [
+      "test/fixtures/segment/create.json",
+      "test/fixtures/segment/invalid-create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/segments"
+    }
+  },
+  "data360 segment deactivate": {
+    "testFile": "test/p5-segment.test.ts",
+    "testPattern": "runs every shipped command through exact keys and blocks unconfirmed destructive actions",
+    "fixtures": [
+      "test/fixtures/segment/deactivate.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_CONFIRMATION_REQUIRED"
+    ],
+    "wire": {
+      "method": "POST",
+      "path": "/segments/{apiName}/actions/deactivate"
+    }
+  },
+  "data360 segment delete": {
+    "testFile": "test/p5-segment.test.ts",
+    "testPattern": "runs every shipped command through exact keys and blocks unconfirmed destructive actions",
+    "fixtures": [
+      "test/fixtures/segment/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [
+      "D360_CONFIRMATION_REQUIRED"
+    ],
+    "wire": {
+      "method": "DELETE",
+      "path": "/segments/{apiName}"
+    }
+  },
+  "data360 segment get": {
+    "testFile": "test/p5-segment.test.ts",
+    "testPattern": "runs every shipped command through exact keys and blocks unconfirmed destructive actions",
+    "fixtures": [
+      "test/fixtures/segment/get.json",
+      "test/fixtures/segment/count.json"
+    ],
+    "flags": [
+      "name",
+      "with-count"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET|POST",
+      "path": "/segments/{idOrApiName}|/segments/{apiName}/actions/count"
+    }
+  },
+  "data360 segment list": {
+    "testFile": "test/p5-segment.test.ts",
+    "testPattern": "runs every shipped command through exact keys and blocks unconfirmed destructive actions",
+    "fixtures": [
+      "test/fixtures/segment/list-page-1.json",
+      "test/fixtures/segment/list-page-2.json"
+    ],
+    "flags": [
+      "all",
+      "limit",
+      "result-format"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/segments"
+    }
+  },
+  "data360 segment publish": {
+    "testFile": "test/p5-segment.test.ts",
+    "testPattern": "runs every shipped command through exact keys and blocks unconfirmed destructive actions",
+    "fixtures": [
+      "test/fixtures/segment/publish.json",
+      "test/fixtures/segment/get.json"
+    ],
+    "flags": [
+      "name",
+      "wait"
+    ],
+    "errors": [
+      "D360_JOB_TIMEOUT",
+      "D360_JOB_FAILED"
+    ],
+    "wire": {
+      "method": "POST",
+      "path": "/segments/{id}/actions/publish"
+    }
+  },
+  "data360 segment update": {
+    "testFile": "test/p5-segment.test.ts",
+    "testPattern": "runs every shipped command through exact keys and blocks unconfirmed destructive actions",
+    "fixtures": [
+      "test/fixtures/segment/get.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PATCH",
+      "path": "/segments/{apiName}"
+    }
+  },
+  "data360 semantic model list": {
+    "testFile": "test/p6-list-families.test.ts",
+    "testPattern": "executes every recorded collection with the API-specific page-size parameter",
+    "fixtures": [
+      "test/fixtures/semantic/models.json"
+    ],
+    "flags": [
+      "all",
+      "limit"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/semantic/models"
+    }
+  },
+  "data360 setup eca": {
+    "testFile": "test/setup.test.ts",
+    "testPattern": "creates ECA through real parsing",
+    "fixtures": [
+      "test/fixtures/setup/eca-create-success.json"
+    ],
+    "flags": [
+      "app-name",
+      "contact-email"
+    ],
+    "errors": [
+      "D360_ECA_INVALID_NAME",
+      "D360_ECA_CREATE_FAILED",
+      "D360_ECA_OAUTH_FAILED"
+    ]
+  },
+  "data360 token display": {
+    "testFile": "test/p2.test.ts",
+    "testPattern": "uses logSensitive in human mode",
+    "fixtures": [
+      "test/fixtures/token/exchange-success.json"
+    ],
+    "flags": [],
+    "errors": []
+  },
+  "data360 transform cancel": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/cancel.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-transforms/{name}/actions/cancel"
+    }
+  },
+  "data360 transform create": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/create.json"
+    ],
+    "flags": [
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-transforms"
+    }
+  },
+  "data360 transform delete": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/delete.json"
+    ],
+    "flags": [
+      "name",
+      "no-prompt"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "DELETE",
+      "path": "/data-transforms/{name}"
+    }
+  },
+  "data360 transform get": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/get.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-transforms/{name}"
+    }
+  },
+  "data360 transform list": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/list.json"
+    ],
+    "flags": [],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-transforms"
+    }
+  },
+  "data360 transform report": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/report.json"
+    ],
+    "flags": [
+      "name",
+      "history"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-transforms/{name}/actions/refresh-status"
+    }
+  },
+  "data360 transform retry": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/retry.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-transforms/{name}/actions/retry"
+    }
+  },
+  "data360 transform run": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/run.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-transforms/{name}/actions/run"
+    }
+  },
+  "data360 transform schedule display": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/schedule-display.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "GET",
+      "path": "/data-transforms/{name}/schedule"
+    }
+  },
+  "data360 transform schedule set": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/schedule-set.json"
+    ],
+    "flags": [
+      "name",
+      "cron",
+      "interval"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PUT",
+      "path": "/data-transforms/{name}/schedule"
+    }
+  },
+  "data360 transform update": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/update.json"
+    ],
+    "flags": [
+      "name",
+      "file"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "PUT",
+      "path": "/data-transforms/{name}"
+    }
+  },
+  "data360 transform validate": {
+    "testFile": "test/p4-transform.test.ts",
+    "testPattern": "registers PUT update and verified actions only",
+    "fixtures": [
+      "test/fixtures/transform/validate.json"
+    ],
+    "flags": [
+      "name"
+    ],
+    "errors": [],
+    "wire": {
+      "method": "POST",
+      "path": "/data-transforms/{name}/actions/validate"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 data-space member list",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "items": [
+      {
+        "memberLabel": "Account_Home",
+        "memberName": "Account_Home__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "OrgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AgentOpt_Tag_Association_BCF18D32__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AgentOpt-Tag Association",
+        "memberName": "AgentOpt_Tag_Association_BCF18D32__dll",
+        "status": "ACTIVE"
+      },
+      {
+        "filter": {
+          "conditionGroups": [],
+          "conditions": [
+            {
+              "fieldName": "OrgId__c",
+              "filterValue": "LIVE_ID_e5bf7f4e2bb9",
+              "operator": "EqualsOperator",
+              "tableName": "AgentOpt_Tag_D37274F6__dll"
+            }
+          ],
+          "conjunctiveOperator": "OrOperator"
+        },
+        "memberLabel": "AgentOpt-Tag",
+        "memberName": "AgentOpt_Tag_D37274F6__dll",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 identity-resolution get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "anonymousUnifiedProfiles": 0,
+      "configurationType": "individual",
+      "consolidationRate": 75,
+      "dataSpaceName": "default",
+      "description": "[REDACTED]",
+      "doesRunAutomatically": false,
+      "filters": [],
+      "id": "LIVE_ID_4a5f3774f9b1",
+      "isCaseSensitive": true,
+      "knownUnifiedProfiles": 2,
+      "label": "[REDACTED]",
+      "lastJobCompleted": "2026-07-04T22:01:08.000Z",
+      "lastJobStatus": "SUCCESS",
+      "matchRules": [
+        {
+          "criteria": [
+            {
+              "caseSensitiveMatch": false,
+              "entityName": "ssot__ContactPointEmail__dlm",
+              "fieldName": "ssot__EmailAddress__c",
+              "matchMethodType": "exactnormalized",
+              "shouldMatchOnBlank": false
+            }
+          ],
+          "label": "[REDACTED]"
+        }
+      ],
+      "matchedSourceProfiles": 7,
+      "objectApiName": "Individual",
+      "reconciliationRules": [
+        {
+          "entityName": "ssot__Individual__dlm",
+          "fields": [],
+          "linkDmoName": "IndividualIdentityLink__dlm",
+          "ruleType": "lastupdated",
+          "shouldIgnoreEmptyValue": true,
+          "sources": [],
+          "unifiedDmoName": "UnifiedIndividual__dlm"
+        },
+        {
+          "entityName": "ssot__ContactPointEmail__dlm",
+          "fields": [],
+          "linkDmoName": "ContactPointEmailIdentityLink__dlm",
+          "ruleType": "lastupdated",
+          "shouldIgnoreEmptyValue": true,
+          "sources": [],
+          "unifiedDmoName": "UnifiedContactPointEmail__dlm"
+        },
+        {
+          "entityName": "ssot__ContactPointPhone__dlm",
+          "fields": [],
+          "linkDmoName": "ContactPointPhoneIdentityLink__dlm",
+          "ruleType": "lastupdated",
+          "shouldIgnoreEmptyValue": true,
+          "sources": [],
+          "unifiedDmoName": "UnifiedContactPointPhone__dlm"
+        }
+      ],
+      "rulesetStatus": "PUBLISHED",
+      "secondaryDmo": "ssot__Individual__dlm",
+      "sourceProfiles": 8,
+      "totalUnifiedProfiles": 2
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

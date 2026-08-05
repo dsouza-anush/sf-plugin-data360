@@ -1,0 +1,26 @@
+{
+  "name": "ExampleEvent",
+  "label": "Example Event",
+  "category": "Engagement",
+  "eventDateTimeFieldName": "event_time",
+  "dataLakeFieldInputRepresentations": [
+    {
+      "name": "event_id",
+      "label": "Event ID",
+      "dataType": "Text",
+      "isPrimaryKey": true
+    },
+    {
+      "name": "event_time",
+      "label": "Event Time",
+      "dataType": "DateTime",
+      "isPrimaryKey": false
+    },
+    {
+      "name": "value",
+      "label": "Value",
+      "dataType": "Number",
+      "isPrimaryKey": false
+    }
+  ]
+}

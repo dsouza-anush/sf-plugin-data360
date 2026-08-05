@@ -1,0 +1,71 @@
+name: publish
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: npm-publish-${{ github.event.release.tag_name }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Validate release package
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          registry-url: https://registry.npmjs.org
+      - name: Activate pinned Yarn
+        run: corepack enable && corepack prepare yarn@1.22.22 --activate
+      - run: yarn install --frozen-lockfile
+      - name: Install pinned Salesforce CLI
+        run: npm install --global @salesforce/cli@2.145.6
+      - name: Verify release identity
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: yarn release:tag:check "$RELEASE_TAG"
+      - name: Verify tag commit is reachable from main
+        run: |
+          git fetch origin main --no-tags
+          git merge-base --is-ancestor HEAD refs/remotes/origin/main
+      - name: Run exact release gate
+        run: yarn release:check
+      - name: Build exact publish artifact
+        run: |
+          yarn pack --filename sf-plugin-data360.tgz
+          node scripts/package-contents.mjs sf-plugin-data360.tgz
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: npm-package
+          path: sf-plugin-data360.tgz
+          retention-days: 1
+          if-no-files-found: error
+
+  npm:
+    name: Publish validated npm package
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: npm
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: npm-package
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          registry-url: https://registry.npmjs.org
+      - name: Publish with trusted publishing
+        run: npm publish ./sf-plugin-data360.tgz --access public

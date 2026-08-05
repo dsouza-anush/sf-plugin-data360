@@ -1,0 +1,176 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 profile describe",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "metadata": [
+        {
+          "fields": [
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "type": "STRING",
+              "keyQualifier": "KQ_AccountId__c",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Profile",
+          "name": "[REDACTED]",
+          "displayName": "[REDACTED]",
+          "relationships": [
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__AccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__AccountContact__dlm",
+              "fromEntityAttribute": "ssot__ReportsToAccountContactId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__OpportunityContact__dlm",
+              "toEntity": "ssot__AccountContact__dlm",
+              "fromEntityAttribute": "ssot__AccountContactId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "AccountContact"
+        },
+        {
+          "fields": [
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Profile",
+          "name": "[REDACTED]",
+          "displayName": "[REDACTED]",
+          "relationships": [
+            {
+              "fromEntity": "mcp_test_account_idx_chunk__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "SourceRecordId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__AccountContact__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__AccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            },
+            {
+              "fromEntity": "ssot__ContactPointEmail__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__PartyId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "Account"
+        },
+        {
+          "fields": [
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "type": "STRING",
+              "businessType": "TEXT"
+            },
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "type": "STRING",
+              "businessType": "TEXT"
+            }
+          ],
+          "indexes": [],
+          "category": "Profile",
+          "name": "[REDACTED]",
+          "displayName": "[REDACTED]",
+          "relationships": [
+            {
+              "fromEntity": "ssot__FinancialCustomer__dlm",
+              "toEntity": "ssot__Account__dlm",
+              "fromEntityAttribute": "ssot__AccountId__c",
+              "toEntityAttribute": "ssot__Id__c",
+              "cardinality": "NTOONE"
+            }
+          ],
+          "primaryKeys": [
+            {
+              "name": "[REDACTED]",
+              "displayName": "[REDACTED]",
+              "indexOrder": "1"
+            }
+          ],
+          "referenceModelEntityDeveloperName": "FinancialCustomer"
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

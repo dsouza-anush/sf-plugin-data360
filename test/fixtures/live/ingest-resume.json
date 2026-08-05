@@ -1,0 +1,27 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-13",
+    "command": "data360 ingest resume",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "id": "LIVE_ID_69794c46fa1d",
+    "operation": "upsert",
+    "sourceName": "[REDACTED]",
+    "createdById": "LIVE_ID_5d70fa419405",
+    "createdDate": "2026-07-13T02:16:35.784560Z",
+    "systemModstamp": "2026-07-13T02:19:53.281Z",
+    "state": "JobComplete",
+    "contentType": "CSV",
+    "apiVersion": "v1",
+    "contentUrl": "/api/v1/ingest/jobs/LIVE_UUID_69794c46fa1d/batches",
+    "retries": 0,
+    "totalProcessingTime": 197,
+    "object": "live_verify_event"
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

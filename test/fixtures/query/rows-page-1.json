@@ -1,0 +1,17 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "capturedAt": "2026-07-10",
+    "apiVersion": "67.0"
+  },
+  "synthetic": true,
+  "data": [["001000000000001"]],
+  "metadata": [
+    {
+      "name": "ssot__Id__c",
+      "nullable": false,
+      "type": "Varchar"
+    }
+  ],
+  "returnedRows": 1
+}

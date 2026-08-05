@@ -1,0 +1,117 @@
+name: Bug report
+description: Report reproducible CLI behavior that differs from the documented contract.
+title: '[bug] '
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the Data 360 CLI plugin.
+
+        **Do not paste secrets or tenant data.** Before submitting, remove access and refresh tokens, auth URLs, consumer keys, passwords, usernames, email addresses, org and tenant IDs, org and tenant domains, customer data, and sensitive Salesforce record or resource identifiers. Do not attach Salesforce auth files, raw live captures, or debug logs that may contain authorization headers.
+
+        Security vulnerabilities do not belong in a public issue. Follow `SECURITY.md` instead.
+
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: Provide the full command name and flags, replacing org aliases and resource names with placeholders.
+      placeholder: sf data360 <topic> <command> --target-org <org-alias> --json
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe the documented or intended result, including the expected exit code when relevant.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Describe what happened, including the actual exit code and whether output was human-readable, JSON, CSV, or another format.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Use synthetic or disposable inputs. Do not rerun a destructive or billable operation only to complete this report.
+      placeholder: |
+        1. Authenticate to an authorized non-production org.
+        2. Run ...
+        3. Observe ...
+      render: shell
+    validations:
+      required: true
+
+  - type: dropdown
+    id: operation_class
+    attributes:
+      label: Operation class
+      description: Select the highest-risk behavior involved in the reproduction.
+      options:
+        - Read-only
+        - Local-only (help, parsing, rendering, or files)
+        - Mutation (approval required)
+        - Billable or credit-consuming (approval required)
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Scrubbed doctor JSON
+      description: Run `sf data360 doctor --target-org <org-alias> --json`. Paste scrubbed output, or explain why the command cannot run. Preserve check names, statuses, messages, actions, and the process exit code; replace all org-specific values.
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: command_json
+    attributes:
+      label: Scrubbed command JSON
+      description: Rerun the failing command with `--json` when safe. Paste its scrubbed stdout and note its exit code, or explain why rerunning is unsafe or impossible. Preserve error names, codes, statuses, actions, and response shape.
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions and runtime
+      description: Provide the plugin version, Salesforce CLI version, Node.js version, operating system, shell, and installation method. Scrub usernames and filesystem paths.
+      placeholder: |
+        plugin: 0.x.y
+        sf CLI: 2.x.y
+        Node.js: 22.x or 24.x
+        OS: macOS / Linux / Windows
+        shell: zsh / bash / PowerShell
+        install: linked checkout / tarball / package registry
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add documentation links, screenshots with sensitive values removed, or a minimal synthetic input. Do not upload `.sf` files, `.env` files, ignored live-verification ledgers, or raw fixtures.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I reviewed every pasted value and attachment for credentials, tenant identifiers, customer data, and sensitive org metadata.
+          required: true
+        - label: I used only an org and data that I am authorized to test.
+          required: true
+        - label: I did not enable mutation or billing gates solely to reproduce this issue.
+          required: true

@@ -1,0 +1,12 @@
+{
+  "0": {
+    "errorCode": "INVALID_INPUT",
+    "message": "[REDACTED]"
+  },
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 api request",
+    "expectedFailure": true
+  }
+}

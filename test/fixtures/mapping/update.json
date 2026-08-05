@@ -1,0 +1,8 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "name": "EmailMap",
+  "success": true
+}

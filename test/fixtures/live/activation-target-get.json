@@ -1,0 +1,36 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-29",
+    "command": "data360 activation-target get",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "createdBy": {
+        "id": "LIVE_ID_edbf0014d350"
+      },
+      "createdDate": "2026-07-04T23:36:17.000Z",
+      "dataSpaceName": "default",
+      "description": "[REDACTED]",
+      "historyAudienceDmoApiName": "AA_DataCloud_LIVE_ID_79c2fbc2eec7__dlm",
+      "historyAudienceDmoLabel": "Activation Audience - cs24_ad_0704_target",
+      "id": "LIVE_ID_79c2fbc2eec7",
+      "isCappingEnabled": false,
+      "lastModifiedBy": {
+        "id": "LIVE_ID_4a0133c3614b"
+      },
+      "lastModifiedDate": "2026-07-04T23:36:33.000Z",
+      "latestAudienceDmoApiName": "AAL_DataCloud_LIVE_ID_79c2fbc2eec7__dlm",
+      "latestAudienceDmoLabel": "Activation Audience Latest - cs24_ad_0704_target",
+      "name": "[REDACTED]",
+      "platformName": "DataCloud",
+      "platformType": "DataCloud",
+      "status": "ACTIVE"
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

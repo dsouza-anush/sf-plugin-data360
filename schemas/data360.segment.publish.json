@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sf-plugin-data360:schema:data360.segment.publish",
+  "title": "data360.segment.publish JSON output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "result", "warnings"],
+  "properties": {
+    "status": { "type": "integer" },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["item"],
+      "properties": {
+        "item": { "type": "object", "additionalProperties": true },
+        "segment": { "type": "object", "additionalProperties": true }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

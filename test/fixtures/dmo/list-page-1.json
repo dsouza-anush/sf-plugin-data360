@@ -1,0 +1,15 @@
+{
+  "__fixture": {
+    "source": "synthetic"
+  },
+  "synthetic": true,
+  "dataModelObjects": [
+    {
+      "name": "Order",
+      "label": "Order",
+      "category": "Engagement",
+      "mappedDlos": ["Orders__dll"]
+    }
+  ],
+  "totalSize": 2
+}

@@ -1,0 +1,14 @@
+.env*
+.github/
+.githooks/
+.tmp/
+/internal/
+docs/internal/
+docs/evidence/
+scripts/
+src/
+test/
+testbed/
+CONTRIBUTING.md
+LIVE_TESTING.md
+TESTING.md

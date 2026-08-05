@@ -1,0 +1,9 @@
+{
+  "__fixture": {
+    "source": "synthetic",
+    "reference": "Data 360 Ingestion API documentation"
+  },
+  "synthetic": true,
+  "errorCode": "INVALID_FIELD",
+  "message": "Synthetic fixture: required field ext_id is missing."
+}

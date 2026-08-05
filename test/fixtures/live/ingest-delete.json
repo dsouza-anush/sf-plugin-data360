@@ -1,0 +1,15 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-11",
+    "command": "data360 ingest delete",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "accepted": true
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}

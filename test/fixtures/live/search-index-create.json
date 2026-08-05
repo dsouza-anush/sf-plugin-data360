@@ -1,0 +1,36 @@
+{
+  "__fixture": {
+    "source": "live-scrubbed",
+    "recordedAt": "2026-07-26",
+    "command": "data360 search-index create",
+    "outcome": "success"
+  },
+  "status": 0,
+  "result": {
+    "item": {
+      "chunkingStrategies": [
+        "LIVE_ID_07b2dc61fa65"
+      ],
+      "currentPageUrl": null,
+      "id": "LIVE_ID_310629ab2840",
+      "nextPageUrl": null,
+      "parsingConfigurations": [],
+      "postProcessingConfigurations": [],
+      "preProcessingConfigurations": [],
+      "rankingConfigurations": [],
+      "ruleConfiguration": null,
+      "semanticSearchRankingConfigurations": [],
+      "totalSize": null,
+      "transformations": [],
+      "vectorEmbedding": {
+        "id": "LIVE_ID_51067163d854",
+        "relatedFields": [
+          "LIVE_ID_25a25ddc2bbc"
+        ]
+      }
+    }
+  },
+  "warnings": [
+    "[REDACTED]"
+  ]
+}
