@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 - 2026-08-07
+
+- Bound connection endpoint discovery, transform report refresh, and every Data Kit read so unavailable platform APIs return structured recovery guidance instead of hanging.
+- Preserve encoded opaque query job identifiers while continuing to reject malformed paths and single-, double-, or mixed-encoded traversal attempts.
+- Restore explicit non-interactive confirmation in query and ingestion testbed scenarios.
+- Harden the release suite for Windows paths, CRLF input, POSIX-only file modes, portable trace sinks, repository path scanning, and slower command-matrix execution.
+
 ## 0.1.1 - 2026-08-07
 
 - Add the P0 Salesforce CLI plugin foundation, typed Connect transport, retries, pagination, registry skeleton, fixtures, and contract gates.

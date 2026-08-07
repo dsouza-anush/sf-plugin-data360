@@ -23,7 +23,7 @@ The plugin adds 135 `sf data360` commands that behave like the rest of the CLI: 
 Install the reviewed beta release at an exact version:
 
 ```bash
-sf plugins install @anushdsouza/sf-plugin-data360@0.1.1
+sf plugins install @anushdsouza/sf-plugin-data360@0.1.2
 sf data360 doctor --target-org my-org
 ```
 

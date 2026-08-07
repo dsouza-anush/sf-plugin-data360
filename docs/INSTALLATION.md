@@ -24,7 +24,7 @@ Run `sf plugins` to confirm that the linked plugin points to this checkout. Re-r
 Use the exact package name and a pinned version from the release notes:
 
 ```shell
-sf plugins install @anushdsouza/sf-plugin-data360@0.1.1
+sf plugins install @anushdsouza/sf-plugin-data360@0.1.2
 sf plugins inspect @anushdsouza/sf-plugin-data360
 sf data360 --help
 sf data360 doctor --target-org my-org
@@ -35,7 +35,7 @@ Third-party Salesforce CLI plugins aren't digitally signed by Salesforce. The CL
 For an unattended installation, pin the reviewed version and explicitly answer the trust prompt:
 
 ```shell
-printf 'y\n' | sf plugins install @anushdsouza/sf-plugin-data360@0.1.1
+printf 'y\n' | sf plugins install @anushdsouza/sf-plugin-data360@0.1.2
 ```
 
 An enterprise can instead add the exact published package name to `unsignedPluginAllowList.json` in the Salesforce CLI configuration directory. Follow Salesforce's [unsigned-plugin allowlist guidance](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_allowlist.htm) and manage the file through the organization's endpoint-management policy.
