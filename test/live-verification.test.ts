@@ -97,6 +97,7 @@ type Orchestrator = {
     cleanup?: string[];
     ownershipProof?: { name: string; status: string };
   }) => string[] | null;
+  rawCleanupArgsFor: (current: { cleanupRawFamily: string; cleanupDirect?: boolean }, cleanupKey: string) => string[];
   redactSecrets: (value: unknown) => unknown;
   serializeLiveSummary: (value: unknown, org?: string) => string;
   scrubFixture: (value: unknown, key?: string) => unknown;
@@ -116,6 +117,10 @@ type Orchestrator = {
     date: string,
     expectedFailure?: boolean
   ) => { command: string; expectedFailure: boolean; outcome: string; recordedAt: string; source: string };
+  liveCliInvocation: (
+    args: string[],
+    environment?: Record<string, string | undefined>
+  ) => { command: string; args: string[]; cwd: string };
   spawnCapture: (
     command: string,
     args: string[],
@@ -303,6 +308,35 @@ describe('live verification orchestrator', () => {
     expect(error).to.be.instanceOf(Error);
     expect((error as Error).message).to.include('Unknown or inaccessible org');
     expect(invocation).to.equal('sf org display --target-org does-not-exist --json');
+  });
+
+  it('can execute live probes through an installed Salesforce CLI outside the plugin checkout', async () => {
+    const { liveCliInvocation } = await loadOrchestrator();
+    const invocation = liveCliInvocation(['data360', 'doctor', '--json'], {
+      D360_LIVE_SF_BIN: '/opt/salesforce/bin/sf',
+      D360_LIVE_COMMAND_CWD: '/tmp/data360-live-installed',
+    });
+    expect(invocation).to.deep.equal({
+      command: '/opt/salesforce/bin/sf',
+      args: ['data360', 'doctor', '--json'],
+      cwd: '/tmp/data360-live-installed',
+    });
+  });
+
+  it('makes raw cleanup non-interactive and preserves direct routing', async () => {
+    const { rawCleanupArgsFor } = await loadOrchestrator();
+    expect(
+      rawCleanupArgsFor({ cleanupRawFamily: 'data-lake-objects', cleanupDirect: true }, 'Owned DLO')
+    ).to.deep.equal([
+      'data360',
+      'api',
+      'request',
+      'data-lake-objects/Owned%20DLO',
+      '--direct',
+      '--method',
+      'DELETE',
+      '--no-prompt',
+    ]);
   });
 
   it('requires an exact gated allowlist for generic billable execution', async () => {

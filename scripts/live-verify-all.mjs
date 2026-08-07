@@ -79,6 +79,30 @@ import {
 } from './live-scenarios/p6.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const liveCommandWorkingDirectory = (environment = process.env) => {
+  if (environment.D360_LIVE_COMMAND_CWD) return resolve(environment.D360_LIVE_COMMAND_CWD);
+  if (environment.D360_LIVE_SF_BIN) return dirname(resolve(environment.D360_LIVE_SF_BIN));
+  return root;
+};
+
+export const liveCliInvocation = (args, environment = process.env) =>
+  environment.D360_LIVE_SF_BIN
+    ? {
+        command: environment.D360_LIVE_SF_BIN,
+        args,
+        cwd: liveCommandWorkingDirectory(environment),
+      }
+    : {
+        command: process.execPath,
+        args: [resolve(root, 'bin', 'run.js'), ...args],
+        cwd: root,
+      };
+
+const sfCliInvocation = (args, environment = process.env) => ({
+  command: environment.D360_LIVE_SF_BIN ?? 'sf',
+  args,
+  cwd: liveCommandWorkingDirectory(environment),
+});
 // Keep this aligned with src/shared/redact.ts. This copy is required because the
 // live orchestrator runs before TypeScript build artifacts necessarily exist.
 const secretKeys =
@@ -343,7 +367,13 @@ export const spawnCapture = async (command, args, options = {}) =>
     });
   });
 
-export const validateTargetOrg = async (org, runner = async (command, args) => spawnCapture(command, args)) => {
+export const validateTargetOrg = async (
+  org,
+  runner = async (_command, args) => {
+    const invocation = sfCliInvocation(args);
+    return spawnCapture(invocation.command, invocation.args, { cwd: invocation.cwd });
+  }
+) => {
   const result = await runner('sf', ['org', 'display', '--target-org', org, '--json']);
   if (result.exitCode !== 0) throw new Error(`Unknown or inaccessible org: ${org}`);
 };
@@ -873,9 +903,10 @@ const runCommand = async (entry, org, dependencies, runDirectory, date) => {
     ];
     const stdoutHandle = policy.captureStdout ? await open(stdoutPath, 'w', 0o600) : null;
     const stderrHandle = await open(stderrPath, 'w', 0o600);
+    const invocation = liveCliInvocation(args);
     const result = await new Promise((done, reject) => {
-      const child = spawn(process.execPath, [resolve(root, 'bin', 'run.js'), ...args], {
-        cwd: root,
+      const child = spawn(invocation.command, invocation.args, {
+        cwd: invocation.cwd,
         env: { ...process.env, SF_DISABLE_TELEMETRY: 'true' },
         stdio: ['ignore', stdoutHandle?.fd ?? 'ignore', stderrHandle.fd],
       });
@@ -1020,24 +1051,21 @@ const runScenarioCli = async ({
   const stdoutPath = resolve(runDirectory, `${slug}.raw.json`);
   const stderrPath = resolve(runDirectory, `${slug}.stderr.log`);
   const timeoutMs = current.timeoutMs ?? 120_000;
-  const result = await spawnCapture(
-    process.execPath,
-    [
-      resolve(root, 'bin', 'run.js'),
-      ...args,
-      ...(current.omitTargetOrg ? [] : ['--target-org', org]),
-      ...(current.command === 'data360 api request' ? [] : ['--json']),
-    ],
-    {
-      timeoutMs,
-      env: {
-        ...process.env,
-        // Scenario jobs deliberately share a private cache with their own -r
-        // continuations, never with the user's interactive query history.
-        SF_DATA360_QUERY_CACHE_DIR: resolve(runDirectory, 'query-cache'),
-      },
-    }
-  );
+  const invocation = liveCliInvocation([
+    ...args,
+    ...(current.omitTargetOrg ? [] : ['--target-org', org]),
+    ...(current.command === 'data360 api request' ? [] : ['--json']),
+  ]);
+  const result = await spawnCapture(invocation.command, invocation.args, {
+    cwd: invocation.cwd,
+    timeoutMs,
+    env: {
+      ...process.env,
+      // Scenario jobs deliberately share a private cache with their own -r
+      // continuations, never with the user's interactive query history.
+      SF_DATA360_QUERY_CACHE_DIR: resolve(runDirectory, 'query-cache'),
+    },
+  });
   await writeFile(stdoutPath, scrubCapturedText(result.stdout.toString('utf8')), { mode: 0o600 });
   await writeFile(stderrPath, scrubCapturedText(result.stderr.toString('utf8')), { mode: 0o600 });
   let payload;
@@ -1140,6 +1168,17 @@ export const plannedCleanupArgsFor = (current) => {
   if (!['data360 data-stream create', 'data360 dlo create'].includes(current.command)) return null;
   return [...current.cleanup];
 };
+
+export const rawCleanupArgsFor = (current, cleanupKey) => [
+  'data360',
+  'api',
+  'request',
+  `${current.cleanupRawFamily}/${encodeURIComponent(cleanupKey)}`,
+  ...(current.cleanupDirect ? ['--direct'] : []),
+  '--method',
+  'DELETE',
+  '--no-prompt',
+];
 
 const runFoundationMain = async (options) => {
   const date = new Date().toISOString().slice(0, 10);
@@ -1353,17 +1392,7 @@ const runFoundationMain = async (options) => {
           reason: 'Create produced no recorded resource ID or canonical key; cleanup retained for retry',
         };
       }
-      const cleanupArgs = current.cleanupRawFamily
-        ? [
-            'data360',
-            'api',
-            'request',
-            `${current.cleanupRawFamily}/${encodeURIComponent(cleanupKey)}`,
-            ...(current.cleanupDirect ? ['--direct'] : []),
-            '--method',
-            'DELETE',
-          ]
-        : [...current.cleanup];
+      const cleanupArgs = current.cleanupRawFamily ? rawCleanupArgsFor(current, cleanupKey) : [...current.cleanup];
       for (const flag of ['--name', '--relationship-name']) {
         const index = cleanupArgs.indexOf(flag);
         if (index >= 0) cleanupArgs[index + 1] = cleanupKey;
@@ -1788,16 +1817,7 @@ const runP4Main = async (options) => {
           reason: 'No exact disposable create name was registered; cleanup retained rather than guessing',
         };
       }
-      const cleanupArgs = current.cleanupRawFamily
-        ? [
-            'data360',
-            'api',
-            'request',
-            `${current.cleanupRawFamily}/${encodeURIComponent(cleanupKey)}`,
-            '--method',
-            'DELETE',
-          ]
-        : [...current.cleanup];
+      const cleanupArgs = current.cleanupRawFamily ? rawCleanupArgsFor(current, cleanupKey) : [...current.cleanup];
       for (const flag of ['--name', '--relationship-name']) {
         const index = cleanupArgs.indexOf(flag);
         if (index >= 0) cleanupArgs[index + 1] = cleanupKey;
