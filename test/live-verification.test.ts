@@ -319,7 +319,7 @@ describe('live verification orchestrator', () => {
     expect(invocation).to.deep.equal({
       command: '/opt/salesforce/bin/sf',
       args: ['data360', 'doctor', '--json'],
-      cwd: '/tmp/data360-live-installed',
+      cwd: resolve('/tmp/data360-live-installed'),
     });
   });
 
