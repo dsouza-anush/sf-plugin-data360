@@ -322,19 +322,21 @@ const git = (root, gitBinary, operation, args, options = {}) => {
 };
 
 const parseNulPaths = (buffer) => buffer.toString('utf8').split('\0').filter(Boolean);
+const normalizeRepositoryPath = (path) => path.replaceAll('\\', '/');
 
 const scanContents = (contents, source, path, findings) => {
-  const allowedFixtureLines = syntheticFixtureLineDigests.get(path);
+  const normalizedPath = normalizeRepositoryPath(path);
+  const allowedFixtureLines = syntheticFixtureLineDigests.get(normalizedPath);
   const lines = allowedFixtureLines ? contents.split(/\r?\n/u) : [];
   for (const finding of findSensitiveValues(contents)) {
-    if (finding.label === 'Salesforce record ID' && !path.startsWith('test/fixtures/live/')) continue;
+    if (finding.label === 'Salesforce record ID' && !normalizedPath.startsWith('test/fixtures/live/')) continue;
     const line = lines[finding.line - 1];
     if (
       line?.includes(syntheticFixtureMarker) &&
       allowedFixtureLines.has(createHash('sha256').update(line).digest('hex'))
     )
       continue;
-    findings.push({ ...finding, path, source });
+    findings.push({ ...finding, path: normalizedPath, source });
   }
 };
 

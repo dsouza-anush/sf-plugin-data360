@@ -656,7 +656,9 @@ describe('P2 direct authentication', () => {
     expect(calls).to.deep.equal(['query:human:select 1', 'tables:dmo', 'describe:Account']);
     expect(await readFile(history, 'utf8')).to.equal('select 1\n');
     expect(text).to.include('data360[default]> ').and.include('Output format is csv.');
-    expect(replHistoryPath({ XDG_CONFIG_HOME: '/tmp/xdg' }, '/home/test')).to.equal('/tmp/xdg/sf-data360/repl_history');
+    expect(replHistoryPath({ XDG_CONFIG_HOME: '/tmp/xdg' }, '/home/test')).to.equal(
+      join('/tmp/xdg', 'sf-data360', 'repl_history')
+    );
   });
 
   it('renders REPL callback errors without active terminal controls', async () => {
@@ -745,7 +747,7 @@ describe('P2 direct authentication', () => {
       listTables: async () => undefined,
       describe: async () => undefined,
     });
-    expect((await stat(history)).mode & 0o777).to.equal(0o600);
+    if (process.platform !== 'win32') expect((await stat(history)).mode & 0o777).to.equal(0o600);
 
     const target = join(directory, 'target');
     const link = join(directory, 'link');

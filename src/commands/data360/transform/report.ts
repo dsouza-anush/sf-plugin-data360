@@ -25,9 +25,16 @@ export default class TransformReport extends TransformCommand<{ item: Record<str
     const item = await client.request<Record<string, unknown>>({
       method: 'POST',
       endpoint: `${base}/actions/refresh-status`,
+      timeoutMs: 30_000,
+      errorContext: {
+        actionTimeout: {
+          label: 'transform status refresh',
+          recoveryCommand: 'Run sf data360 transform get --name <name> --target-org <alias> before retrying.',
+        },
+      },
     });
     const history = flags.history
-      ? await client.request({ method: 'GET', endpoint: `${base}/run-history` })
+      ? await client.request({ method: 'GET', endpoint: `${base}/run-history`, timeoutMs: 30_000 })
       : undefined;
     return { item, history };
   }

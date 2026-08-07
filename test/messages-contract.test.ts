@@ -5,6 +5,7 @@ import { expect } from 'chai';
 const root = process.cwd();
 const sourceRoot = join(root, 'src');
 const commandsRoot = join(sourceRoot, 'commands', 'data360');
+const readText = async (path: string): Promise<string> => (await readFile(path, 'utf8')).replaceAll('\r\n', '\n');
 
 const walk = async (directory: string): Promise<string[]> => {
   const files: string[] = [];
@@ -27,11 +28,11 @@ describe('Messages contract', () => {
     ];
     const violations: string[] = [];
     for (const file of await walk(sourceRoot)) {
-      const source = await readFile(file, 'utf8');
+      const source = await readText(file);
       if (prohibited.some((pattern) => pattern.test(source))) violations.push(relative(root, file));
     }
     expect(violations).to.deep.equal([]);
-    const config = await readFile(join(root, 'eslint.config.js'), 'utf8');
+    const config = await readText(join(root, 'eslint.config.js'));
     for (const rule of [
       'sf-plugin/no-hardcoded-messages-commands',
       'sf-plugin/no-hardcoded-messages-flags',
@@ -43,7 +44,7 @@ describe('Messages contract', () => {
   it('loads a command message bundle for every shipped command source', async () => {
     const missing: string[] = [];
     for (const file of await walk(commandsRoot)) {
-      const source = await readFile(file, 'utf8');
+      const source = await readText(file);
       if (!source.includes('loadCommandMessages(') && !source.includes('Messages.loadMessages('))
         missing.push(relative(root, file));
     }
@@ -53,7 +54,7 @@ describe('Messages contract', () => {
   it('wires descriptions and examples into every shipped command class', async () => {
     const missing: string[] = [];
     for (const file of await walk(commandsRoot)) {
-      const source = await readFile(file, 'utf8');
+      const source = await readText(file);
       const wired = source.includes('createRegistryCommand(')
         ? source.includes('messages: commandMessages')
         : source.includes("public static readonly description = commandMessages.getMessage('description');") &&
@@ -66,10 +67,10 @@ describe('Messages contract', () => {
   it('keeps complete, user-facing help content in every command message bundle', async () => {
     const violations: string[] = [];
     for (const file of await walk(commandsRoot)) {
-      const source = await readFile(file, 'utf8');
+      const source = await readText(file);
       const match = /loadCommandMessages\('([^']+)'\)/u.exec(source);
       if (!match) continue;
-      const markdown = await readFile(join(root, 'messages', `${match[1]}.md`), 'utf8');
+      const markdown = await readText(join(root, 'messages', `${match[1]}.md`));
       for (const key of ['summary', 'description', 'examples']) {
         const section = new RegExp(`# ${key}\\n\\n([\\s\\S]*?)(?=\\n# |$)`, 'u').exec(markdown)?.[1].trim();
         if (!section) violations.push(`${relative(root, file)} -> ${key}`);
@@ -95,7 +96,7 @@ describe('Messages contract', () => {
     const violations: string[] = [];
     for (const entry of await readdir(join(root, 'messages'), { withFileTypes: true })) {
       if (!entry.isFile() || !entry.name.endsWith('.md')) continue;
-      const markdown = await readFile(join(root, 'messages', entry.name), 'utf8');
+      const markdown = await readText(join(root, 'messages', entry.name));
       for (const match of markdown.matchAll(/^# flags\.([^\n]+)\.summary\n\n([^\n]+)/gmu)) {
         if (/^[a-z0-9-]+ option\.$/iu.test(match[2].trim())) {
           violations.push(`${entry.name} -> flags.${match[1]}.summary`);
@@ -106,12 +107,12 @@ describe('Messages contract', () => {
   });
 
   it('scopes the sanctioned command inheritance suppression at each explicit leaf', async () => {
-    const config = await readFile(join(root, 'eslint.config.js'), 'utf8');
+    const config = await readText(join(root, 'eslint.config.js'));
     expect(config).to.include("'sf-plugin/only-extend-SfCommand': 'error'");
     expect(config).to.not.include("'sf-plugin/only-extend-SfCommand': 'off'");
     const missing: string[] = [];
     for (const file of await walk(commandsRoot)) {
-      const source = await readFile(file, 'utf8');
+      const source = await readText(file);
       if (
         source.includes('export default class ') &&
         !source.includes(
@@ -126,12 +127,12 @@ describe('Messages contract', () => {
   it('resolves every statically referenced message key', async () => {
     const missing: string[] = [];
     for (const file of await walk(sourceRoot)) {
-      const source = await readFile(file, 'utf8');
+      const source = await readText(file);
       const bundleMatches = [
         ...source.matchAll(/\b([A-Za-z]+Messages|messages)\s*=\s*loadCommandMessages\('([^']+)'\)/gu),
       ];
       for (const [, variable, bundle] of bundleMatches) {
-        const markdown = await readFile(join(root, 'messages', `${bundle}.md`), 'utf8');
+        const markdown = await readText(join(root, 'messages', `${bundle}.md`));
         const keyPattern = new RegExp(`${variable}\\.getMessage\\('([^']+)'`, 'gu');
         for (const [, key] of source.matchAll(keyPattern)) {
           if (!markdown.includes(`# ${key}\n`)) missing.push(`${relative(root, file)} -> ${bundle}:${key}`);

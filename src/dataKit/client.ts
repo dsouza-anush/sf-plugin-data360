@@ -46,13 +46,19 @@ const collection = (value: unknown, key: string): DataKitRecord[] => {
 };
 
 const encoded = (value: string): string => encodeURIComponent(value);
+const READ_TIMEOUT_MS = 30_000;
 
 export class DataKitClient {
   public constructor(private readonly client: SsotClient) {}
 
   public async list(namespace?: string): Promise<DataKitRecord[]> {
     return collection(
-      await this.client.request({ method: 'GET', endpoint: '/data-kits', query: { namespace } }),
+      await this.client.request({
+        method: 'GET',
+        endpoint: '/data-kits',
+        query: { namespace },
+        timeoutMs: READ_TIMEOUT_MS,
+      }),
       'dataKitDetails'
     );
   }
@@ -73,6 +79,7 @@ export class DataKitClient {
           limit: options.limit,
           offset: options.offset,
         },
+        timeoutMs: READ_TIMEOUT_MS,
       }),
       'components'
     );
@@ -83,6 +90,7 @@ export class DataKitClient {
       await this.client.request({
         method: 'GET',
         endpoint: `/datakit/${encoded(dataKitDevName)}/manifest`,
+        timeoutMs: READ_TIMEOUT_MS,
       }),
       'dataKitMembers'
     );
@@ -139,6 +147,7 @@ export class DataKitClient {
         method: 'GET',
         endpoint: `/data-kits/${encoded(options.dataKitName)}/components/${encoded(options.componentName)}/dependencies`,
         query: { componentType: options.componentType, dataspace: options.dataspace },
+        timeoutMs: READ_TIMEOUT_MS,
       }),
       'componentDependencies'
     );
@@ -149,6 +158,7 @@ export class DataKitClient {
       await this.client.request({
         method: 'GET',
         endpoint: `/data-kits/${encoded(dataKitName)}/components/${encoded(componentName)}/deployment-status`,
+        timeoutMs: READ_TIMEOUT_MS,
       })
     );
   }

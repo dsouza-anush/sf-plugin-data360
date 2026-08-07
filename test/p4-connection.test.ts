@@ -28,9 +28,11 @@ describe('P4 connection family', () => {
     const org = new MockTestOrgData('p4-connection');
     await commandTest.context.stubAuths(org);
     const requests: Array<{ method?: string; url?: string; body?: string }> = [];
-    commandTest.context.fakeConnectionRequest = async (request): Promise<never> => {
+    const requestOptions: Array<{ timeout?: number }> = [];
+    commandTest.context.fakeConnectionRequest = async (request, options): Promise<never> => {
       const value = request as { method?: string; url?: string; body?: string };
       requests.push(value);
+      requestOptions.push((options ?? {}) as { timeout?: number });
       if (value.url?.endsWith('/connectors')) {
         return { connectors: [{ type: 'MarketingCloud' }, { type: 'Web' }] } as never;
       }
@@ -124,6 +126,7 @@ describe('P4 connection family', () => {
     });
     expect(requests.filter(({ url }) => url?.includes('/connections?'))).to.have.length.greaterThan(2);
     expect(requests.some(({ url }) => url?.endsWith('/database-schemas'))).to.equal(true);
+    expect(requestOptions.filter(({ timeout }) => timeout === 30_000)).to.have.length(2);
     expect(requests.some(({ method, url }) => method === 'PUT' && url?.endsWith('/schema'))).to.equal(true);
   });
 });

@@ -1,6 +1,6 @@
 # Install and verify the plugin
 
-`sf-plugin-data360` is an experimental beta plugin. Install only a version identified by a release announcement and review its source and provenance before use.
+`@anushdsouza/sf-plugin-data360` is an experimental beta plugin. Install only a version identified by a release announcement and review its source and provenance before use.
 
 The supported runtime is Node.js 22.19+ in the 22.x line or Node.js 24, plus a current Salesforce CLI. The installed package declares this engine range and the CI/package smoke uses it.
 
@@ -24,8 +24,8 @@ Run `sf plugins` to confirm that the linked plugin points to this checkout. Re-r
 Use the exact package name and a pinned version from the release notes:
 
 ```shell
-sf plugins install sf-plugin-data360@0.1.0
-sf plugins inspect sf-plugin-data360
+sf plugins install @anushdsouza/sf-plugin-data360@0.1.2
+sf plugins inspect @anushdsouza/sf-plugin-data360
 sf data360 --help
 sf data360 doctor --target-org my-org
 ```
@@ -35,7 +35,7 @@ Third-party Salesforce CLI plugins aren't digitally signed by Salesforce. The CL
 For an unattended installation, pin the reviewed version and explicitly answer the trust prompt:
 
 ```shell
-printf 'y\n' | sf plugins install sf-plugin-data360@0.1.0
+printf 'y\n' | sf plugins install @anushdsouza/sf-plugin-data360@0.1.2
 ```
 
 An enterprise can instead add the exact published package name to `unsignedPluginAllowList.json` in the Salesforce CLI configuration directory. Follow Salesforce's [unsigned-plugin allowlist guidance](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_allowlist.htm) and manage the file through the organization's endpoint-management policy.
@@ -44,7 +44,7 @@ An enterprise can instead add the exact published package name to `unsignedPlugi
 
 ```shell
 sf plugins update
-sf plugins uninstall sf-plugin-data360
+sf plugins uninstall @anushdsouza/sf-plugin-data360
 sf plugins
 ```
 
