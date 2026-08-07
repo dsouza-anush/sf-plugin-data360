@@ -1,6 +1,6 @@
 # Get started with the experimental Data 360 CLI plugin
 
-> **Experimental release:** `sf-plugin-data360` is an unsupported `0.x` beta. Every command is marked beta. Pin the exact plugin version in automation, start in a non-production org, and review the command's help before allowing mutations or credit-consuming work.
+> **Experimental release:** `@anushdsouza/sf-plugin-data360` is an unsupported `0.x` beta. Every command is marked beta. Pin the exact plugin version in automation, start in a non-production org, and review the command's help before allowing mutations or credit-consuming work.
 
 The plugin adds scriptable Data 360 operations to Salesforce CLI. It is intended for developers, solution engineers, and release reviewers who need repeatable command-line access to Data 360 metadata, queries, ingestion, data-foundation resources, identity and audience workflows, and selected search and AI-adjacent resources.
 
@@ -41,7 +41,7 @@ sf plugins
 sf data360 --help
 ```
 
-`sf plugins` should show `sf-plugin-data360` linked to this checkout. Re-run `yarn build` after source or message changes. For the reviewed-package, unsigned-plugin, update, and uninstall flows, see [Install and verify the plugin](INSTALLATION.md).
+`sf plugins` should show `@anushdsouza/sf-plugin-data360` linked to this checkout. Re-run `yarn build` after source or message changes. For the reviewed-package, unsigned-plugin, update, and uninstall flows, see [Install and verify the plugin](INSTALLATION.md).
 
 ## Authenticate and run diagnostics
 

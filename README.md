@@ -1,4 +1,4 @@
-# sf-plugin-data360
+# @anushdsouza/sf-plugin-data360
 
 Salesforce Data 360 (Data Cloud) commands for the [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli). Query, ingest, model, and operate a Data 360 tenant from your terminal or CI instead of clicking through Setup.
 
@@ -23,7 +23,7 @@ The plugin adds 135 `sf data360` commands that behave like the rest of the CLI: 
 Install the reviewed beta release at an exact version:
 
 ```bash
-sf plugins install sf-plugin-data360@0.1.0
+sf plugins install @anushdsouza/sf-plugin-data360@0.1.1
 sf data360 doctor --target-org my-org
 ```
 

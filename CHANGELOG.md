@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 - 2026-08-04
+## 0.1.1 - 2026-08-07
 
 - Add the P0 Salesforce CLI plugin foundation, typed Connect transport, retries, pagination, registry skeleton, fixtures, and contract gates.
 - Add P1 Query SQL submit/resume/results/cancel commands.
@@ -34,6 +34,7 @@
 - Refresh high-severity transitive dependency resolutions for the 0.1.0 release candidate.
 - Add a guarded npm trusted-publishing workflow, exact release-tag validation, canonical public metadata, and pinned GitHub Actions.
 - Replace verification-phase jargon in command help with task-oriented descriptions.
+- Publish the public package under the `@anushdsouza` npm scope.
 
 ### Known limitations
 
