@@ -536,7 +536,7 @@ describe('P1 platform commands', () => {
       },
     });
     expect(pluginData).to.have.length(4);
-    expect(pluginData.every(({ plugin }) => plugin === 'sf-plugin-data360')).to.equal(true);
+    expect(pluginData.every(({ plugin }) => plugin === '@anushdsouza/sf-plugin-data360')).to.equal(true);
     expect(diagnostics).to.have.length(4);
     expect(suggestions).to.have.length.greaterThan(0);
   });

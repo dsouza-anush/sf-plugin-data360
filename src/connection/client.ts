@@ -130,6 +130,7 @@ export class ConnectionClient {
         .request({
           method: section === 'sitemap' ? 'GET' : 'POST',
           endpoint: `/connections/${encodeURIComponent(id)}${suffix}`,
+          timeoutMs: 30_000,
         })
         .then((response) => redactSecrets(response) as Record<string, unknown> | Array<Record<string, unknown>>);
     });

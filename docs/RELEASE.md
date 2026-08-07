@@ -25,7 +25,7 @@ A release is publishable only when every applicable item below passes on the exa
 
 ## Publisher-owned prerequisites
 
-The package name is `sf-plugin-data360`; the public source, issue tracker, and private-vulnerability-reporting route are the GitHub repository named in `package.json`. The `publish.yml` workflow publishes from a GitHub Release by using npm trusted publishing and automatic provenance.
+The package name is `@anushdsouza/sf-plugin-data360`; the public source, issue tracker, and private-vulnerability-reporting route are the GitHub repository named in `package.json`. The `publish.yml` workflow publishes from a GitHub Release by using npm trusted publishing and automatic provenance.
 
 Before the first release, the release owner must claim the npm package, configure `dsouza-anush/sf-plugin-data360` and `publish.yml` as its trusted publisher, protect the GitHub `npm` environment with required reviewers, require two-factor authentication, and record release approval. These credentialed registry and repository settings cannot be completed from source code.
 

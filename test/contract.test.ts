@@ -341,6 +341,8 @@ describe('P1 contracts', () => {
     const gateSource = await readFile(resolve(root, 'scripts', 'pre-push.mjs'), 'utf8');
     expect(gateSource).to.include("spawn(yarn, ['run', script]");
     expect(gateSource).to.include("process.platform === 'win32' ? 'yarn.cmd' : 'yarn'");
+    expect(gateSource).to.include("spawnSync('git', ['rev-parse', '--local-env-vars']");
+    expect(gateSource).to.include('delete gateEnvironment[name]');
     for (const gate of [
       'secrets:scan',
       'clean',

@@ -1,6 +1,6 @@
 import type { SfDoctor } from '@salesforce/plugin-info';
 
-const pluginName = 'sf-plugin-data360';
+const pluginName = '@anushdsouza/sf-plugin-data360';
 const genericChecks = [
   {
     name: 'Org authentication',
