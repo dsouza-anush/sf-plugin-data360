@@ -37,9 +37,19 @@ describe('P1 contracts', () => {
       '/services/data/v67.0/connect/search/metadata/results'
     );
     expect(() => buildApiPath('67.0', '../limits', 'ssot')).to.throw('outside the ssot API root');
-    for (const endpoint of ['%2e%2e/limits', '%252e%252e/limits', '..%2flimits', '..%5climits', '%zz/limits']) {
+    for (const endpoint of [
+      '%2e%2e/limits',
+      '%252e%252e/limits',
+      '%25zz/%252e%252e/limits',
+      '..%2flimits',
+      '..%5climits',
+      '%zz/limits',
+    ]) {
       expect(() => buildApiPath('67.0', endpoint, 'ssot'), endpoint).to.throw('outside the ssot API root');
     }
+    expect(buildApiPath('67.0', '/query-sql/opaque%2Fid%25value', 'ssot')).to.equal(
+      '/services/data/v67.0/ssot/query-sql/opaque%2Fid%25value'
+    );
     expect(() => buildApiPath('67.0', '/services/data/v67.0/ssot/query-sql', 'core')).not.to.throw();
   });
 

@@ -16,7 +16,7 @@ describe('criteria parser evidence', () => {
   it('rejects unknown flags for every shipped command through the actual oclif parser', async function () {
     // Importing and parsing every shipped command takes ~28s on the release
     // runner, so leave enough headroom for a warm full-suite process.
-    this.timeout(60_000);
+    this.timeout(180_000);
     const org = new MockTestOrgData('criteria-unknown');
     await commandTest.context.stubAuths(org);
     await commandTest.context.stubConfig({ 'target-org': org.username });
@@ -56,7 +56,7 @@ describe('criteria parser evidence', () => {
   });
 
   it('rejects every omitted non-org required flag through the actual oclif parser', async function () {
-    this.timeout(60_000);
+    this.timeout(180_000);
     const criteria = JSON.parse(await readFile(new URL('test/command-criteria.json', root), 'utf8')) as Record<
       string,
       { requiredFlags: string[] }

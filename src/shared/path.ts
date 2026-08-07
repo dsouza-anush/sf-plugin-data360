@@ -7,17 +7,18 @@ export type ApiRoot = 'ssot' | 'core';
 
 const assertSafeEndpoint = (endpoint: string, rootKind: ApiRoot): void => {
   let candidate = endpoint.split(/[?#]/u, 1)[0];
+  if (/%(?![A-Fa-f\d]{2})/u.test(candidate)) {
+    throw new Error(runtimeMessages.getMessage('error.RUNTIME_1.1', [String(rootKind), String(endpoint)]));
+  }
   for (let depth = 0; depth < 16; depth += 1) {
     if (candidate.includes('\\') || candidate.split('/').some((segment) => segment === '..')) {
       throw new Error(runtimeMessages.getMessage('error.RUNTIME_1.1', [String(rootKind), String(endpoint)]));
     }
-    if (!candidate.includes('%')) return;
-    let decoded: string;
-    try {
-      decoded = decodeURIComponent(candidate);
-    } catch {
-      throw new Error(runtimeMessages.getMessage('error.RUNTIME_1.1', [String(rootKind), String(endpoint)]));
-    }
+    const decoded = candidate
+      .replaceAll(/%25/giu, '%')
+      .replaceAll(/%2e/giu, '.')
+      .replaceAll(/%2f/giu, '/')
+      .replaceAll(/%5c/giu, '\\');
     if (decoded === candidate) return;
     candidate = decoded;
   }

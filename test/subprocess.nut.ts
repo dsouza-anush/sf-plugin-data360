@@ -48,7 +48,7 @@ describe('installed-command subprocess NUT', () => {
       done: boolean;
       rowCount: number;
       rows: unknown[][];
-    }>('data360 query --target-org subprocess-nut@example.invalid --query "select 1" --json', {
+    }>('data360 query --target-org subprocess-nut@example.invalid --query "select 1" --no-prompt --json', {
       env: environment(),
       timeout: 10_000,
       async: true,

@@ -442,7 +442,7 @@ describe('ingest job framework', () => {
     await utimes(lockPath, new Date(0), new Date(0));
     await reloaded.save({ ...base, id: 'third' });
     await assertRejects(access(lockPath));
-    expect((await stat(cachePath)).mode & 0o777).to.equal(0o600);
+    if (process.platform !== 'win32') expect((await stat(cachePath)).mode & 0o777).to.equal(0o600);
   });
 });
 
@@ -456,7 +456,7 @@ describe('ingest CSV splitting', () => {
     expect(first.done).to.equal(false);
     const chunk = first.value as unknown as { path: string; bytes: number };
     expect(chunk.bytes).to.be.a('number').and.lessThan(10);
-    expect((await stat(chunk.path)).mode & 0o777).to.equal(0o600);
+    if (process.platform !== 'win32') expect((await stat(chunk.path)).mode & 0o777).to.equal(0o600);
     await iterator.return(undefined);
     await assertRejects(access(chunk.path));
   });

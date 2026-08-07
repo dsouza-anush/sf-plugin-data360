@@ -148,5 +148,5 @@ describe('P4 remaining command-level Fastify matrix', () => {
     await run(SpaceUpdate, [...common, '-n', 'default', '-f', file, '--json']);
     assertWire('PATCH', '/data-spaces/default');
     await server.close();
-  });
+  }).timeout(60_000);
 });

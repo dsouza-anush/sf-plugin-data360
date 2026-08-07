@@ -54,7 +54,16 @@
       "tags": ["ingest", "billable"],
       "commands": [
         {
-          "argv": ["data360", "ingest", "--source-name", "FixtureSource", "--object-name", "FixtureObject", "--json"],
+          "argv": [
+            "data360",
+            "ingest",
+            "--source-name",
+            "FixtureSource",
+            "--object-name",
+            "FixtureObject",
+            "--no-prompt",
+            "--json"
+          ],
           "stdin": "{\"id\":\"one\"}\n{\"id\":\"two\"}\n",
           "expect": {
             "exitCode": 0,
@@ -80,6 +89,7 @@
             "--file",
             "testbed/fixtures/records.csv",
             "--async",
+            "--no-prompt",
             "--json"
           ],
           "expect": {

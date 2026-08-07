@@ -43,7 +43,16 @@
       "tags": ["U10"],
       "commands": [
         {
-          "argv": ["data360", "ingest", "--source-name", "FixtureSource", "--object-name", "FixtureObject", "--json"],
+          "argv": [
+            "data360",
+            "ingest",
+            "--source-name",
+            "FixtureSource",
+            "--object-name",
+            "FixtureObject",
+            "--no-prompt",
+            "--json"
+          ],
           "stdin": "{not-json}\n",
           "expect": { "exitCode": 1, "jsonPath": { "$.name": { "matches": "D360_INVALID_DEFINITION" } } }
         }

@@ -35,6 +35,7 @@ type OclifCommand = {
 };
 
 const root = new URL('../', import.meta.url);
+const normalizedText = async (path: URL): Promise<string> => (await readFile(path, 'utf8')).replaceAll('\r\n', '\n');
 const readSourceTree = async (directory: URL): Promise<string[]> => {
   const sources: string[] = [];
   for (const entry of await readdir(directory, { withFileTypes: true })) {
@@ -86,7 +87,7 @@ describe('135-command criteria adoption', () => {
     for (const command of snapshot.commands) {
       const record = manifest[command.id];
       const definition = oclif.commands[command.id.replaceAll(' ', ':')];
-      const message = await readFile(new URL(`messages/${command.id.replaceAll(' ', '.')}.md`, root), 'utf8');
+      const message = await normalizedText(new URL(`messages/${command.id.replaceAll(' ', '.')}.md`, root));
       const examples = message.match(/<%= config\.bin %> <%= command\.id %>/gu) ?? [];
       const explainedExamples = message.match(/^- .+\n.*<%= config\.bin %> <%= command\.id %>/gmu) ?? [];
       expect(explainedExamples.length, `${command.id} explained examples`).to.be.at.least(2);
@@ -168,7 +169,7 @@ describe('135-command criteria adoption', () => {
 
     for (const command of snapshot.commands) {
       const definition = oclif.commands[command.id.replaceAll(' ', ':')];
-      const message = await readFile(new URL(`messages/${command.id.replaceAll(' ', '.')}.md`, root), 'utf8');
+      const message = await normalizedText(new URL(`messages/${command.id.replaceAll(' ', '.')}.md`, root));
       const examples = message.match(/<%= config\.bin %> <%= command\.id %>/gu) ?? [];
       const explainedExamples = message.match(/^- .+\n.*<%= config\.bin %> <%= command\.id %>/gmu) ?? [];
       criteria.assertU1({

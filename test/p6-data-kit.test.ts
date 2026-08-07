@@ -17,6 +17,8 @@ import Update from '../src/commands/data360/data-kit/update.js';
 import { componentRows, componentStatusRows, dataKitRows, manifestRows } from '../src/dataKit/command.js';
 import { dataKitResource } from '../src/resources/dataKit.js';
 import { registry } from '../src/resources/registry.js';
+import { DataKitClient } from '../src/dataKit/client.js';
+import type { SsotClient, SsotRequest } from '../src/client/ssotClient.js';
 import { createCommandTestContext } from './helpers/command.js';
 import { loadFixture } from './helpers/fixtures.js';
 
@@ -120,6 +122,25 @@ describe('P6 Data Kit family', () => {
       code: 'ACTIVE',
       message: 'The status of the component is ACTIVE',
     });
+  });
+
+  it('bounds every Data Kit GET request', async () => {
+    const requests: SsotRequest[] = [];
+    const client = new DataKitClient({
+      request: async (request: SsotRequest): Promise<Record<string, unknown>> => {
+        requests.push(request);
+        return {};
+      },
+    } as unknown as SsotClient);
+
+    await client.list();
+    await client.available({ componentType: 'DataLakeObject', dataKitDevName: 'Kit', limit: 1, offset: 0 });
+    await client.manifest('Kit');
+    await client.dependencies({ dataKitName: 'Kit', componentName: 'Object', componentType: 'DataLakeObject' });
+    await client.status('Kit', 'Object');
+
+    expect(requests).to.have.length(5);
+    expect(requests.every(({ method, timeoutMs }) => method === 'GET' && timeoutMs === 30_000)).to.equal(true);
   });
 
   it('executes the exact v67 Data Kit surface through real parsers', async () => {

@@ -1,4 +1,4 @@
-import { mkdtemp, readFile } from 'node:fs/promises';
+import { mkdtemp, readFile, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { expect } from 'chai';
@@ -415,7 +415,10 @@ describe('Agent Testbed trace hook', () => {
   });
 
   it('drops trace filesystem failures instead of changing command behavior', async () => {
-    process.env.SF_DATA360_TRACE = '/dev/null/events.jsonl';
+    const directory = await mkdtemp(join(tmpdir(), 'data360-trace-failure-'));
+    const file = join(directory, 'not-a-directory');
+    await writeFile(file, 'fixture');
+    process.env.SF_DATA360_TRACE = join(file, 'events.jsonl');
     process.env.SF_DATA360_TRACE_ID = 'trace-failure-0001';
     expect(await appendTraceEvent({ type: 'note', text: 'ignored' })).to.equal(undefined);
   });
