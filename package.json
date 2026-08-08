@@ -294,7 +294,7 @@
     "@salesforce/kit": "^3.2.6",
     "@salesforce/sf-plugins-core": "^12.2.28",
     "open": "^11.0.0",
-    "undici": "^6.28.0"
+    "undici": "^8.10.0"
   },
   "devDependencies": {
     "@eslint/js": "^8.57.1",
